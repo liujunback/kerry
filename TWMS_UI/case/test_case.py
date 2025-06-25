@@ -103,7 +103,25 @@ class MyTestCase(unittest.TestCase):
             print(f"✅ {case['name']} 测试通过")
             driver.quit()
 
-
+    def test_case_ASN_Select(self):
+        #正常登录
+        driver = create_driver()
+        result, message = login(
+            web_driver=driver,
+            username=self.pro["username"],
+            password=self.pro["password"],
+            properties = self.pro
+        )
+        # 显式等待菜单展开
+        search_toggle = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH,"//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]"))
+        )
+        search_toggle.click()
+        asn_link = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))
+        )
+        asn_link.click()
+        time.sleep(15)
 
 if __name__ == '__main__':
     unittest.main()

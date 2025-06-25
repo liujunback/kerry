@@ -20,7 +20,7 @@ def login(web_driver, username, password,properties, wait_time=10):
     :return: (success, message) 元组，登录是否成功及状态信息
     """
     try:
-        web_driver.get(properties["TWMS_URL"] +  "/admin/login")
+        web_driver.get(properties["TWMS_URL"] +  "/opt/login")
 
         # 输入用户名
         username_input = WebDriverWait(web_driver, wait_time).until(
@@ -57,13 +57,3 @@ def login(web_driver, username, password,properties, wait_time=10):
 
         return (False, error_msg)
 
-    # # 显式等待菜单展开
-    # search_toggle = WebDriverWait(web_driver, 10).until(
-    #     EC.element_to_be_clickable((By.XPATH,"//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]"))
-    # )
-    # search_toggle.click()
-    # asn_link = WebDriverWait(web_driver, 10).until(
-    #     EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))
-    # )
-    # asn_link.click()
-    # time.sleep(15)
