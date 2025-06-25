@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run tests
+      - name: Run back
         run: echo "Running tests..."  # 替换为实际测试命令
