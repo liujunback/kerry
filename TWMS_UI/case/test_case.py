@@ -114,8 +114,9 @@ class MyTestCase(unittest.TestCase):
         )
         # 显式等待菜单展开
         search_toggle = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH,"//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]"))
-        )
+            EC.element_to_be_clickable(
+                (By.XPATH,"//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]")
+            ))
         search_toggle.click()
         asn_link = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))
