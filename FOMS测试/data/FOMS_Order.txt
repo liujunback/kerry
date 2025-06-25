@@ -1,0 +1,59 @@
+{
+    "warehouse_code": "ITST",
+    "merchant_code": "KEC-TESTGX",
+    "logistics_provider": {
+        "code": "KEC-TESTGX",
+        "tracking_number": "BACK_OR2024082367262"
+    },
+    "order_number": "BACK_OR202408209967262",
+    "platform": {
+
+    },
+    "currency": "THB",
+    "shipment_term": "DDU",
+    "cod_value_currency": "THB",
+    "declared_value": 1,
+    "require_customized_invoice": "0",
+    "remarks": "บิลออกในชื่อบริษัท40",
+    "self_pick_store1":"0070186601866",
+    "sender": {
+        "name": "test",
+        "company": "test company",
+        "address": "test address",
+        "district": "test12",
+        "city": "S1Z",
+        "province": "GD",
+        "country_code": "CN",
+        "post_code": "21001",
+        "phone": "123456789",
+        "email": "123@abnc.com"
+    },
+    "receiver": {
+        "name": "側是",
+        "company": "test company",
+        "address": "test address",
+        "district": "test",
+        "city": "SZ",
+        "province": "GD",
+        "country_code": "TH",
+        "post_code": "21000",
+        "phone": "223456789",
+        "email": "123@abnc.com"
+    },
+    "items": [
+        {
+            "sku_code": "BACK_SKU202412237355561",
+            "description": "backtest",
+            "unit_price": 167600,
+            "qty": 2,
+            "condition": "GOOD",
+            "weight": 6,
+            "properties": [
+                {
+                    "name": "5t234",
+                    "value": "32423"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "currency": "EUR",
+      "description": "Women Suit",
+      "description_origin_language": "女式套装",
+      "quantity": 1,
+      "unit_price": 12.82
+    },
+    {
+      "currency": "EUR",
+      "description": "Women Suit",
+      "description_origin_language": "女式套装",
+      "quantity": 1,
+      "unit_price": 12.82
+    }
+  ],
+  "package": {
+    "actual_weight": 868,
+    "declared_value": 25.64,
+    "declared_value_currency": "EUR",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "314270904598",
+    "shipment_term": "DDU",
+    "shipping_fee": 0
+  },
+  "receiver": {
+    "address": " CALLE GARZAS 22,28320,PINTO ",
+    "city": "MADRID",
+    "company": "INFINITE STYLES ECOMMERCE CO., LIMITED",
+    "country_code": "ES",
+    "district": "ES",
+    "name": "INFINITE STYLES",
+    "phone": "0034916155072",
+    "post_code": "28320",
+    "province": "es"
+  },
+  "sender": {
+    "address": " Avenida de la paz n°2.  puerta 6 Primer piso",
+    "city": "Riba-Roja De Turia",
+    "company": "Silvia Ojeda piriz",
+    "country_code": "ES",
+    "name": "Silvia Ojeda piriz",
+    "phone": "605555807",
+    "post_code": "46190"
+  },
+  "service": {
+    "channel_code": "ITTEST"
+  }
+}

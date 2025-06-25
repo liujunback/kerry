@@ -1,0 +1,64 @@
+{
+    "sale_platform": "",
+    "service": {
+        "channel_code": "testcnmyp001",
+        "service_type": ""
+    },
+    "package": {
+        "reference_number": "${__Random(100000,999999,)}",
+        "tracking_number":"MYTST00002177",
+        "declared_value": 2,
+        "declared_value_currency": "USD",
+        "cod_value": 0,
+        "cod_value_currency": "",
+        "height": "",
+        "length": "",
+        "width": "",
+        "actual_weight": 29,
+        "shipment_term": "",
+        "payment_method": "PP",
+        "shipment_type": ""
+    },
+    "sender": {
+        "name": "WuQi",
+        "company": "XiamenHexinEcommerceLtd",
+        "address": "3floor19,DianliIndustrial,Wutong",
+        "district": "",
+        "city": "350200",
+        "province": "",
+        "country_code": "CN",
+        "post_code": "361006",
+        "phone": "1",
+        "email": "",
+        "id_number": ""
+    },
+    "receiver": {
+        "name": "VarpuTorkko",
+        "company": "xxx",
+        "address": "Rehtorinkuja",
+        "district": "",
+        "city": "Vaasa",
+        "province": "",
+        "country_code": "MY",
+        "post_code": "24000",
+        "phone": "1",
+        "email": "",
+        "id_number": ""
+    },
+    "items": [
+        {
+            "sku": "",
+            "description": "Socks",
+            "description_origin_language": "",
+            "description_destination_language": "",
+            "category": "",
+            "unit_price": 2,
+            "currency": "USD",
+            "quantity": 1,
+            "country_of_origin": "",
+            "hs_code": "",
+            "brand": "",
+            "remark": ""
+        }
+    ]
+}

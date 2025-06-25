@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "category": "Other",
+      "country_of_origin": "SG",
+      "currency": "THB",
+      "description": "Sportswear",
+      "description_origin_language": "",
+      "height": 5,
+      "hs_code": "62064000",
+      "length": 5,
+      "quantity": 1,
+      "unit_price": 1,
+      "unit_weight": 1000,
+      "width": 5
+    }
+  ],
+  "package": {
+    "actual_weight": 1000,
+    "declared_value": 1,
+    "declared_value_currency": "THB",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "200000014015554",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0
+  },
+  "receiver": {
+    "address": "171หมู่10 ต หนองอ้อ.",
+    "city": "บ้านโป่ง",
+    "country_code": "TH",
+    "district": "",
+    "email": "arsj.p10@gmail.com",
+    "id_number": "",
+    "location_code": "",
+    "name": "จิราเจต อร่ามสีจันทน์",
+    "phone": "+66882257059",
+    "post_code": "70110",
+    "province": "RBR"
+  },
+  "sender": {
+    "address": "eShopWorld C/O Maersk",
+    "city": "Singapore",
+    "country_code": "SG",
+    "email": "Control_tower_logistics@eshopworld.com",
+    "ioss_number": "",
+    "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
+    "phone": "+65 6450 1234",
+    "post_code": "648165",
+    "province": "SG"
+  },
+  "service": {
+    "channel_code": "ITTEST",
+    "service_type": "default"
+  }
+}

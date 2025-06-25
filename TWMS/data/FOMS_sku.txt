@@ -1,0 +1,22 @@
+{
+    "sku_code": "BACKTEST2025040230",
+    "barcodes": [
+        "BACKTEST2025040230"
+    ],
+    "name": "Lightweight Cotton Cashmere Crew Sweater",
+    "brand": "Quince",
+    "description": "Lightweight Cotton Cashmere Crew Sweater",
+    "origin_country": "CN",
+    "hts_code": {
+        "default": "6110202020"
+    },
+    "queue_order": "FIFO",
+    "is_udf1_required": "Y",
+    "temperature_condition": "AMBIENT",
+    "uom": "EA",
+    "length": 28,
+    "width": 28,
+    "height": 2,
+    "weight": 0.19,
+    "declared_value": 27.5
+}

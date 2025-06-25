@@ -1,0 +1,49 @@
+[I 2023-07-07 11:13:15] concurrency model: async
+[I 2023-07-07 11:13:15] masquerade (NAT) address: None
+[I 2023-07-07 11:13:15] passive ports: 2000->2332
+[I 2023-07-07 11:13:15] >>> starting FTP server on 0.0.0.0:21, pid=16336 <<<
+[I 2023-07-07 11:13:45] concurrency model: async
+[I 2023-07-07 11:13:45] masquerade (NAT) address: None
+[I 2023-07-07 11:13:45] passive ports: 2000->2332
+[I 2023-07-07 11:13:45] >>> starting FTP server on 127.0.0.1:21, pid=30028 <<<
+[I 2023-07-07 11:14:08] 127.0.0.1:58774-[] FTP session opened (connect)
+[I 2023-07-07 11:14:08] 127.0.0.1:58774-[] FTP session closed (disconnect).
+[I 2023-07-07 11:14:09] 127.0.0.1:58776-[] FTP session opened (connect)
+[I 2023-07-07 11:14:09] 127.0.0.1:58776-[] FTP session closed (disconnect).
+[I 2023-07-07 11:15:08] 127.0.0.1:58810-[] FTP session opened (connect)
+[I 2023-07-07 11:15:08] 127.0.0.1:58810-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:15:37] 127.0.0.1:58810-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:15:38] 127.0.0.1:58831-[] FTP session opened (connect)
+[I 2023-07-07 11:15:40] 127.0.0.1:58831-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:16:04] 127.0.0.1:58831-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:16:04] 127.0.0.1:58842-[] FTP session opened (connect)
+[I 2023-07-07 11:16:06] 127.0.0.1:58842-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:16:29] 127.0.0.1:58842-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:16:50] 127.0.0.1:58927-[] FTP session opened (connect)
+[I 2023-07-07 11:16:50] 127.0.0.1:58927-[] FTP session closed (disconnect).
+[I 2023-07-07 11:16:51] 127.0.0.1:58929-[] FTP session opened (connect)
+[I 2023-07-07 11:16:51] 127.0.0.1:58929-[] FTP session closed (disconnect).
+[I 2023-07-07 11:17:19] 127.0.0.1:58945-[] FTP session opened (connect)
+[I 2023-07-07 11:17:21] 127.0.0.1:58945-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:17:44] 127.0.0.1:58945-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:17:44] 127.0.0.1:58990-[] FTP session opened (connect)
+[I 2023-07-07 11:17:46] 127.0.0.1:58992-[] FTP session opened (connect)
+[I 2023-07-07 11:17:46] 127.0.0.1:58992-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:17:46] 127.0.0.1:58990-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:18:56] 127.0.0.1:59091-[] FTP session opened (connect)
+[I 2023-07-07 11:18:56] 127.0.0.1:59091-[] FTP session closed (disconnect).
+[I 2023-07-07 11:18:57] 127.0.0.1:59096-[] FTP session opened (connect)
+[I 2023-07-07 11:18:57] 127.0.0.1:59096-[] FTP session closed (disconnect).
+[I 2023-07-07 11:18:58] 127.0.0.1:59100-[] FTP session opened (connect)
+[I 2023-07-07 11:18:58] 127.0.0.1:59100-[] FTP session closed (disconnect).
+[I 2023-07-07 11:18:58] 127.0.0.1:59101-[] FTP session opened (connect)
+[I 2023-07-07 11:18:58] 127.0.0.1:59101-[] FTP session closed (disconnect).
+[I 2023-07-07 11:19:44] 127.0.0.1:58992-[xwp] FTP session closed (disconnect).
+[I 2023-07-07 11:19:44] 127.0.0.1:52237-[] FTP session opened (connect)
+[I 2023-07-07 11:19:44] 127.0.0.1:52237-[xwp] USER 'xwp' logged in.
+[I 2023-07-07 11:19:52] 127.0.0.1:52237-[xwp] MKD D:\FTP\test 257
+[I 2023-07-07 11:22:15] 127.0.0.1:57674-[] FTP session opened (connect)
+[I 2023-07-07 11:22:15] 127.0.0.1:57674-[] FTP session closed (disconnect).
+[I 2023-07-07 11:22:15] 127.0.0.1:57676-[] FTP session opened (connect)
+[I 2023-07-07 11:22:15] 127.0.0.1:57676-[] FTP session closed (disconnect).
+[I 2023-07-07 11:22:29] 127.0.0.1:52237-[xwp] FTP session closed (disconnect).

@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "brand": "",
+      "category": "",
+      "country_of_origin": "CN",
+      "currency": "EUR",
+      "description": "pen holder",
+      "description_destination_language": "pen holder",
+      "description_origin_language": "笔筒",
+      "hs_code": "3926100000",
+      "original_tracking_number": "",
+      "quantity": 1,
+      "remark": "",
+      "sale_platform_url": "",
+      "sku": "",
+      "unit_price": 2.6,
+      "unit_weight": 25
+    }
+  ],
+  "package": {
+    "actual_weight": 25,
+    "cargo_value": 2.6,
+    "cod_value": 0,
+    "cod_value_currency": "",
+    "declared_value": 2.6,
+    "declared_value_currency": "EUR",
+    "height": "1",
+    "length": "1",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "019280P0355101495",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "width": "1"
+  },
+  "receiver": {
+    "address": "Calle progreso,10",
+    "city": "Sevilla",
+    "company": "",
+    "country_code": "ES",
+    "district": "",
+    "email": "ord-149726714001015559-c0a5d53c8de6@ot.fruugo.com",
+    "house_number": "",
+    "id_card_number": "",
+    "id_number": "",
+    "location_code": "",
+    "name": "Victor Ceballos",
+    "phone": "625422164",
+    "post_code": "41013",
+    "province": "Espeña"
+  },
+  "sale_platform": "",
+  "sender": {
+    "address": "BT",
+    "city": "SZ",
+    "company": "",
+    "country_code": "CN",
+    "email": "",
+    "house_number": "",
+    "id_card_number": "",
+    "id_card_number_type": "",
+    "id_number": "IM3720001952",
+    "id_number_type": "",
+    "ioss_number": "IM3720001952",
+    "ioss_number_country": "",
+    "name": "SHUNBANG",
+    "phone": "131415",
+    "post_code": "518100",
+    "province": "GD"
+  },
+  "service": {
+    "channel_code": "CACNESMCR",
+    "delivery_instruction": "",
+    "service_type": "default"
+  }
+}

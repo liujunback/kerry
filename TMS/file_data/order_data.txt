@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "brand": "",
+      "category": "",
+      "country_of_origin": "US",
+      "currency": "HKD",
+      "description": "TEST TORI",
+      "description_origin_language": "BACK",
+      "height": 26,
+      "hs_code": "537530",
+      "length": 19,
+      "quantity": 1,
+      "sku": "trWMSQT25041701",
+      "unit_price": 10,
+      "unit_weight": 2800,
+      "width": 10
+    }
+  ],
+  "package": {
+    "actual_weight": 2800,
+    "cod_value": 0,
+    "cod_value_currency": "HKD",
+    "declared_value": 10,
+    "declared_value_currency": "HKD",
+    "height": "1",
+    "length": "1",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "TESTBACK20250610163748206",
+    "shipment_term": "DDP",
+    "shipment_type": "def",
+    "shipping_fee": 0,
+    "width": "1"
+  },
+  "receiver": {
+    "address": "(TESTR UYU001)326 Heol Cennen Ffairfach  -",
+    "city": "VILLESSE",
+    "company": "JOEY CHAN",
+    "country_code": "TH",
+    "district": "987yutj",
+    "email": "juan@gmail.com",
+    "id_number": "0000000",
+    "location_code": "TESTR UYU001",
+    "name": "JOEY TEST",
+    "phone": "7717698000",
+    "post_code": "21000",
+    "province": "NE"
+  },
+  "sale_platform": "",
+  "sender": {
+    "address": "Hong Kong Xi Jiu Long A-001-",
+    "city": "VILLESSE",
+    "company": "TIMES-TEC",
+    "country_code": "TH",
+    "district": "987yutj",
+    "email": "juan@gmail.com",
+    "id_card_number": "0000000",
+    "id_number": "0000000",
+    "name": "IT Support Team",
+    "phone": "+85215811123456",
+    "post_code": "000000",
+    "province": "NE"
+  },
+  "service": {
+    "channel_code": "KEC-TESTGX",
+    "service_type": "DDP"
+  }
+}
