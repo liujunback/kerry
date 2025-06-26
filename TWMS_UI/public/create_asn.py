@@ -59,12 +59,66 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
             search_input.send_keys(search_value)
             print(f"已输入搜索词: {search_value}")
 
-            # 等待并选择选项
-            option_xpath = f"//li[contains(@class, 'select2-results__option') and contains(., '{option_text}')]"
-            option = wait.until(
-                EC.element_to_be_clickable((By.XPATH, option_xpath))
+            # 等待结果出现
+            results_container = wait.until(
+                EC.visibility_of_element_located((By.CLASS_NAME, "select2-results"))
             )
-            return safe_click(option, f"选择{description}选项")
+
+            # 检查结果状态
+            no_results_elements = results_container.find_elements(
+                By.XPATH, ".//li[contains(@class, 'select2-results__message')]"
+            )
+
+            # 检查是否有实际结果选项
+            result_options = results_container.find_elements(
+                By.XPATH,
+                ".//li[contains(@class, 'select2-results__option') and not(contains(@class, 'select2-results__message'))]"
+            )
+
+            # 判断结果是否存在
+            if no_results_elements and "No results found" in no_results_elements[0].text:
+                print(f"❌ 未找到匹配的{description}选项: {option_text}")
+                # 关闭下拉框
+                driver.find_element(By.TAG_NAME, "body").click()
+                return False
+
+            elif not result_options:
+                print(f"❌ 未找到任何{description}选项: {option_text}")
+                return False
+
+            matching_option = None
+            for option in result_options:
+                if option_text in option.text:
+                    matching_option = option
+                    break
+
+            if matching_option:
+                print(f"找到匹配的{description}选项: {option_text}")
+                return safe_click(matching_option, f"选择{description}选项")
+            else:
+                print(f"❌ 未找到精确匹配的{description}选项，尝试模糊匹配: {option_text}")
+                # 构造模糊匹配的XPath（不区分大小写）
+                escaped_text = option_text.replace('"', '\\"').replace("'", "\\'")
+                fuzzy_xpath = (
+                    f"//li[contains(@class, 'select2-results__option') and "
+                    f"contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), "
+                    f"translate('{escaped_text}', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'))]"
+                )
+
+                try:
+                    # 等待模糊匹配选项出现
+                    fuzzy_option = WebDriverWait(driver, 3).until(
+                        EC.presence_of_element_located((By.XPATH, fuzzy_xpath))
+                    )
+                    actual_text = fuzzy_option.text.split(' - ')[0]  # 提取主要部分
+                    print(f"⚠️ 找到模糊匹配项: {actual_text} (原始: {option_text})")
+                    return safe_click(fuzzy_option, f"模糊匹配的{description}选项")
+                except TimeoutException:
+                    print(f"❌ 未找到任何匹配的{description}选项: {option_text}")
+                    # 列出所有可用选项
+                    available_options = [opt.text for opt in result_options]
+                    print(f"可用选项: {available_options}")
+                    return False
         except TimeoutException:
             print(f"选择{description}选项超时")
             return False

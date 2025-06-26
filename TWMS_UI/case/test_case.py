@@ -136,7 +136,7 @@ class MyTestCase(unittest.TestCase):
         )
         try:
             test_items = [
-                {"sku": self.pro["sku"], "qty": 50, "po": "PO20240627"}
+                {"sku": self.pro["sku"], "qty": 50, "po": "PO" +str((datetime.now()).strftime('%Y%m%d'))}
             ]
 
             # 创建ASN
@@ -154,7 +154,7 @@ class MyTestCase(unittest.TestCase):
         finally:
             driver.quit()
 
-    def test_case_invalid_sku(self):
+    def test_case_create_asn_invalid_sku(self):
         """验证测试使用无效SKU时的错误处理"""
         driver = create_driver()
         result, message = login(
@@ -170,7 +170,22 @@ class MyTestCase(unittest.TestCase):
                             items=items
                             )
         assert result is False
-
+    def test_case_create_asn_invalid_lient(self):
+        """验证测试使用无效SKU时的错误处理"""
+        driver = create_driver()
+        result, message = login(
+            web_driver=driver,
+            username=self.pro["username"],
+            password=self.pro["password"],
+            properties=self.pro
+        )
+        items = [{"sku": "INVALID_SKU_123", "qty": 10, "po": "PO-001"}]
+        result = create_asn(driver,
+                            client_name="client_name",
+                            asn_number="BACKTEST" + str((datetime.now()).strftime('%Y%m%d%H%M')),
+                            items=items
+                            )
+        assert result is False
 
 
 if __name__ == '__main__':
