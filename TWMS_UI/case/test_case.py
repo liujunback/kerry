@@ -1,11 +1,18 @@
+from datetime import datetime
 import time
 import unittest
+
+from selenium.common import TimeoutException
+from selenium.webdriver import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 from TWMS_UI.properties.GetProperties import getProperties
+from TWMS_UI.public.create_asn import create_asn
+from TWMS_UI.public.perform_asn_search import perform_asn_search
 from TWMS_UI.public.twms_login import login
+from TWMS_UI.public.verify_asn_result import verify_asn_result
 from TWMS_UI.webdriver.driver import create_driver
 
 
@@ -15,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         self.pro = getProperties("test")
 
     def test_case_successful_login(self):
-        #正常登录
+        """验证正常登录功能"""
         driver = create_driver()
         result, message = login(
             web_driver=driver,
@@ -48,7 +55,7 @@ class MyTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_case_failed_login_scenarios(self):
-        #异常登录
+        """验证异常登录功能"""
         test_cases =[
                 {
                     "name": "空用户名",
@@ -103,8 +110,8 @@ class MyTestCase(unittest.TestCase):
             print(f"✅ {case['name']} 测试通过")
             driver.quit()
 
-    def test_case_ASN_Select(self):
-        #正常登录
+    def test_case_asn_select(self):
+        """验证搜索功能是否正常（用例描述：检查首页搜索框能否正常返回结果）"""
         driver = create_driver()
         result, message = login(
             web_driver=driver,
@@ -112,17 +119,63 @@ class MyTestCase(unittest.TestCase):
             password=self.pro["password"],
             properties = self.pro
         )
-        # 显式等待菜单展开
-        search_toggle = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable(
-                (By.XPATH,"//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]")
-            ))
-        search_toggle.click()
-        asn_link = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))
+        success = perform_asn_search(driver)
+
+        if success:
+            print("ASN查询已成功执行！")
+            if verify_asn_result(driver):
+                print("ASN查询结果存在")
+            else:
+                print("ASN查询结果不存在")
+    def test_case_create_asn(self):
+        """验证正常创建ASN"""
+        driver = create_driver()
+        result, message = login(
+            web_driver=driver,
+            username=self.pro["username"],
+            password=self.pro["password"],
+            properties=self.pro
         )
-        asn_link.click()
-        time.sleep(15)
+        try:
+            test_items = [
+                {"sku": self.pro["sku"], "qty": 50, "po": "PO20240627"}
+            ]
+
+            # 创建ASN
+            success = create_asn(
+                driver,
+                client_name=self.pro["client_name"],
+                asn_number="BACKTEST" + str((datetime.now()).strftime('%Y%m%d%H%M')),
+                items=test_items
+            )
+
+            if success:
+                print("ASN创建测试通过")
+            else:
+                print("ASN创建测试失败")
+        finally:
+            driver.quit()
+
+    def test_case_invalid_sku(self):
+        """验证测试使用无效SKU时的错误处理"""
+        driver = create_driver()
+        result, message = login(
+            web_driver=driver,
+            username=self.pro["username"],
+            password=self.pro["password"],
+            properties=self.pro
+        )
+        items = [{"sku": "INVALID_SKU_123", "qty": 10, "po": "PO-001"}]
+        result = create_asn(driver,
+                            client_name=self.pro["client_name"],
+                            asn_number="BACKTEST" + str((datetime.now()).strftime('%Y%m%d%H%M')),
+                            items=items
+                            )
+        assert result is False
+
+
 
 if __name__ == '__main__':
     unittest.main()
+
+

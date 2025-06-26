@@ -30,7 +30,7 @@
   "receiver": {
     "address": "171หมู่10 ต หนองอ้อ.",
     "city": "บ้านโป่ง",
-    "country_code": "TH",
+    "country_code": "ES",
     "district": "",
     "email": "arsj.p10@gmail.com",
     "id_number": "",
@@ -45,14 +45,14 @@
     "city": "Singapore",
     "country_code": "SG",
     "email": "Control_tower_logistics@eshopworld.com",
-    "ioss_number": "",
+    "ioss_number": "23423",
     "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
     "phone": "+65 6450 1234",
     "post_code": "648165",
     "province": "SG"
   },
   "service": {
-    "channel_code": "ITTEST",
+    "channel_code": "BACKTEST",
     "service_type": "default"
   }
 }
