@@ -5,14 +5,8 @@
       "description": "Women's dress",
       "description_origin_language": "连衣裙",
       "quantity": 1,
-      "unit_price": 11.96
-    },
-    {
-      "currency": "USD",
-      "description": "Women's dress",
-      "description_origin_language": "连衣裙",
-      "quantity": 1,
-      "unit_price": 25.73
+      "unit_price": 11.96,
+      "original_tracking_number":"TESTBACK202506271418083"
     }
   ],
   "package": {
@@ -47,6 +41,6 @@
     "post_code": "80300"
   },
   "service": {
-    "channel_code": "VNHCMRT-TEST"
+    "channel_code": "CTHKCN001"
   }
 }

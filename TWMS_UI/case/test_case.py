@@ -86,8 +86,9 @@ class MyTestCase(unittest.TestCase):
                     "expected_error": "These credentials do not match our records."
                 }
             ]
+        driver = create_driver()
         for case in test_cases:
-            driver = create_driver()
+
             result, message = login(
                 web_driver=driver,
                 username=case["username"],
@@ -106,7 +107,7 @@ class MyTestCase(unittest.TestCase):
             )
 
             print(f"✅ {case['name']} 测试通过")
-            driver.quit()
+        driver.quit()
 
     def test_case_asn_select(self):
         """验证搜索功能是否正常（用例描述：检查首页搜索框能否正常返回结果）"""
@@ -171,7 +172,7 @@ class MyTestCase(unittest.TestCase):
                             )
         assert result is False
     def test_case_create_asn_invalid_lient(self):
-        """验证测试使用无效SKU时的错误处理"""
+        """验证测试使用无效客户时的错误处理"""
         driver = create_driver()
         result, message = login(
             web_driver=driver,
@@ -179,7 +180,7 @@ class MyTestCase(unittest.TestCase):
             password=self.pro["password"],
             properties=self.pro
         )
-        items = [{"sku": "INVALID_SKU_123", "qty": 10, "po": "PO-001"}]
+        items = [{"sku": self.pro["sku"], "qty": 10, "po": "PO-001"}]
         result = create_asn(driver,
                             client_name="client_name",
                             asn_number="BACKTEST" + str((datetime.now()).strftime('%Y%m%d%H%M')),
