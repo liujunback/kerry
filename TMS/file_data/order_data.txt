@@ -1,70 +1,52 @@
 {
   "items": [
     {
-      "brand": "",
-      "category": "",
-      "country_of_origin": "US",
-      "currency": "HKD",
-      "description": "TEST TORI",
-      "description_origin_language": "BACK",
-      "height": 26,
-      "hs_code": "537530",
-      "length": 19,
+      "currency": "USD",
+      "description": "Women's dress",
+      "description_origin_language": "连衣裙",
       "quantity": 1,
-      "sku": "trWMSQT25041701",
-      "unit_price": 10,
-      "unit_weight": 2800,
-      "width": 10
+      "unit_price": 11.96
+    },
+    {
+      "currency": "USD",
+      "description": "Women's dress",
+      "description_origin_language": "连衣裙",
+      "quantity": 1,
+      "unit_price": 25.73
     }
   ],
   "package": {
-    "actual_weight": 2800,
-    "cod_value": 0,
-    "cod_value_currency": "HKD",
-    "declared_value": 10,
-    "declared_value_currency": "HKD",
-    "height": "1",
-    "length": "1",
+    "actual_weight": 713,
+    "declared_value": 37.69,
+    "declared_value_currency": "USD",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTBACK20250610163748206",
-    "shipment_term": "DDP",
-    "shipment_type": "def",
-    "shipping_fee": 0,
-    "width": "1"
+    "reference_number": "TESTBACK2025052217385990",
+    "shipment_term": "DDU",
+    "shipping_fee": 0
   },
   "receiver": {
-    "address": "(TESTR UYU001)326 Heol Cennen Ffairfach  -",
-    "city": "VILLESSE",
-    "company": "JOEY CHAN",
+    "address": " ABX HUB PAH, 2, Jalan Tiaj 2/6, Bandar Puncak Alam, Bandar Puncak  Alam,42300 Bandar Puncak Alam",
+    "city": "Selangor",
+    "company": "ABX EXPRESS (M) SDN BHD",
     "country_code": "TH",
-    "district": "987yutj",
-    "email": "juan@gmail.com",
-    "id_number": "0000000",
-    "location_code": "TESTR UYU001",
-    "name": "JOEY TEST",
-    "phone": "7717698000",
-    "post_code": "21000",
-    "province": "NE"
+    "name": "Shein RTN PAH -Yong",
+    "phone": "03-8084 3064",
+    "post_code": "99999",
+    "province": ""
   },
-  "sale_platform": "",
   "sender": {
-    "address": "Hong Kong Xi Jiu Long A-001-",
-    "city": "VILLESSE",
-    "company": "TIMES-TEC",
-    "country_code": "TH",
-    "district": "987yutj",
-    "email": "juan@gmail.com",
-    "id_card_number": "0000000",
-    "id_number": "0000000",
-    "name": "IT Support Team",
-    "phone": "+85215811123456",
-    "post_code": "000000",
-    "province": "NE"
+    "address": "Johor Bahru No.14, Jalan Berlian. Kim Teng Park ",
+    "city": "Johor Bahru",
+    "company": "Alma Gomez",
+    "country_code": "MY",
+    "ioss_number": "2342",
+    "name": "Alma Gomez",
+    "phone": "167009648",
+    "post_code": "80300"
   },
   "service": {
-    "channel_code": "KEC-TESTGX",
-    "service_type": "DDP"
+    "channel_code": "VNHCMRT-TEST"
   }
 }
