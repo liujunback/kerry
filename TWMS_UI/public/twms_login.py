@@ -1,8 +1,9 @@
+
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-
+from TWMS_UI.tool.click_button import click_button
 
 
 def login(web_driver, username, password,properties, wait_time=10):
@@ -28,10 +29,12 @@ def login(web_driver, username, password,properties, wait_time=10):
         password_input.send_keys(password)
 
         # 点击登录按钮
-        login_button = WebDriverWait(web_driver, wait_time).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "button.btn.btn-times[type='submit']")))
-        login_button.click()
-
+        click_button(
+            web_driver,
+            locator="button.btn.btn-times[type='submit']",
+            locator_type="css",
+            description="登录按钮"
+        )
         # 验证登录成功 - 等待SEARCH菜单出现
         WebDriverWait(web_driver, wait_time).until(
             EC.element_to_be_clickable(
@@ -51,4 +54,3 @@ def login(web_driver, username, password,properties, wait_time=10):
             pass
 
         return (False, error_msg)
-

@@ -5,6 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
+from TWMS_UI.tool.click_button import click_button
+
 
 def perform_asn_search(driver, asn_number="ASNMannings22025062500008"):
     """
@@ -27,24 +29,22 @@ def perform_asn_search(driver, asn_number="ASNMannings22025062500008"):
 
         print("正在展开SEARCH菜单...")
         # 定位并点击SEARCH菜单
-        search_toggle = wait.until(
-            EC.element_to_be_clickable(
-                (By.XPATH, "//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]")
-            )
+        click_button(
+            driver,
+            locator="//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]",
+            locator_type="xpath",
+            description="SEARCH菜单"
         )
-        # 高亮显示菜单元素（可选）
-        driver.execute_script("arguments[0].style.border='2px solid blue';", search_toggle)
-        search_toggle.click()
         print("SEARCH菜单已展开")
 
         print("正在定位ASN链接...")
         # 定位并点击ASN链接
-        asn_link = wait.until(
-            EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))
+        click_button(
+            driver,
+            locator="ASN",
+            locator_type="link_text",
+            description="ASN链接"
         )
-        # 高亮显示链接元素（可选）
-        driver.execute_script("arguments[0].style.border='2px solid green';", asn_link)
-        asn_link.click()
         print("已进入ASN查询页面")
 
         print("正在定位ASN输入框...")

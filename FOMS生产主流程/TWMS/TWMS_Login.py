@@ -14,16 +14,19 @@ def  Twms_CN_login(properties):
     url = properties["twms_url"]
     username = properties["twms_username"]
     password = properties["twms_password"]
-
+    headers ={
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+        }
     IP= url.split("//")[1]
-    res1 = requests.get(url + '/admin/login')
+    res1 = requests.get(url + '/opt/login',headers = headers)
+
     c_token=re.findall(r"name=\"_token\" value=\"(.+?)\"", res1.text)[0]
     payload={
             "username" : username,
             "password" : password,
             "_token" : c_token
         }
-    login= requests.post(url + '/admin/login',data = payload,cookies = res1.cookies)
+    login= requests.post(url + '/opt/login',headers = headers,data = payload,cookies = res1.cookies)
     if "csrf-token" in login.text:
         print("登陆成功")
         # print(login.text)
@@ -37,4 +40,3 @@ def  Twms_CN_login(properties):
                 "_token" : c_token,
                 "csrf_token" : csrf_token
         }
-

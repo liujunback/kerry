@@ -24,7 +24,7 @@
     "address": " ABX HUB PAH, 2, Jalan Tiaj 2/6, Bandar Puncak Alam, Bandar Puncak  Alam,42300 Bandar Puncak Alam",
     "city": "Selangor",
     "company": "ABX EXPRESS (M) SDN BHD",
-    "country_code": "TH",
+    "country_code": "SG",
     "name": "Shein RTN PAH -Yong",
     "phone": "03-8084 3064",
     "post_code": "99999",
@@ -34,13 +34,13 @@
     "address": "Johor Bahru No.14, Jalan Berlian. Kim Teng Park ",
     "city": "Johor Bahru",
     "company": "Alma Gomez",
-    "country_code": "MY",
+    "country_code": "CN",
     "ioss_number": "2342",
     "name": "Alma Gomez",
     "phone": "167009648",
     "post_code": "80300"
   },
   "service": {
-    "channel_code": "CTHKCN001"
+    "channel_code": "VNHCMRT"
   }
 }

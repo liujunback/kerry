@@ -7,6 +7,8 @@ from selenium.common.exceptions import TimeoutException, ElementClickIntercepted
 import datetime
 import time
 
+from TWMS_UI.tool.click_button import click_button
+
 
 def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_retries=3):
     """
@@ -20,28 +22,6 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
     max_retries: 失败重试次数 (默认3次)
     """
 
-    def highlight(element, color="red", width="2px"):
-        """高亮显示元素（调试用）"""
-        driver.execute_script(f"arguments[0].style.border='{width} solid {color}';", element)
-
-    def safe_click(element, description=""):
-        """安全的元素点击方法"""
-        for attempt in range(max_retries):
-            try:
-                driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element)
-                highlight(element, "blue")
-                element.click()
-                print(f"成功点击: {description}")
-                return True
-            except (ElementClickInterceptedException, NoSuchElementException) as e:
-                print(f"点击失败 ({attempt + 1}/{max_retries}): {description} - {str(e)}")
-                time.sleep(1)
-                if attempt == max_retries - 1:
-                    print(f"最终点击失败: {description}")
-                    # driver.save_screenshot(f"click_failed_{description.replace(' ', '_')}.png")
-                    return False
-        return False
-
     def select_option(dropdown_id, search_value, option_text, description=""):
         """选择下拉框选项"""
         try:
@@ -49,8 +29,7 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
             dropdown_trigger = wait.until(
                 EC.element_to_be_clickable((By.ID, f"select2-{dropdown_id}-container"))
             )
-            safe_click(dropdown_trigger, f"打开{description}下拉框")
-
+            click_button(driver, locator=None, locator_type="element", timeout=10, description=f"打开{description}下拉框", element=dropdown_trigger)
             # 输入搜索值
             search_input = wait.until(
                 EC.visibility_of_element_located((By.CLASS_NAME, "select2-search__field"))
@@ -94,7 +73,7 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
 
             if matching_option:
                 print(f"找到匹配的{description}选项: {option_text}")
-                return safe_click(matching_option, f"选择{description}选项")
+                return click_button(driver, locator=None, locator_type="element", timeout=10, description=f"选择{description}选项", element=matching_option)
             else:
                 print(f"❌ 未找到精确匹配的{description}选项，尝试模糊匹配: {option_text}")
                 # 构造模糊匹配的XPath（不区分大小写）
@@ -112,7 +91,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
                     )
                     actual_text = fuzzy_option.text.split(' - ')[0]  # 提取主要部分
                     print(f"⚠️ 找到模糊匹配项: {actual_text} (原始: {option_text})")
-                    return safe_click(fuzzy_option, f"模糊匹配的{description}选项")
+                    return click_button(driver, locator=None, locator_type="element", timeout=10,
+                             description=f"模糊匹配的{description}选项", element=fuzzy_option)
                 except TimeoutException:
                     print(f"❌ 未找到任何匹配的{description}选项: {option_text}")
                     # 列出所有可用选项
@@ -166,7 +146,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
                         break
                 if matching_option:
                     print(f"找到匹配的SKU选项: {sku_value}")
-                    return safe_click(matching_option, f"SKU选项 {sku_value}")
+                    return click_button(driver, locator=None, locator_type="element", timeout=10,
+                             description=f"SKU选项 {sku_value}", element=matching_option)
                 else:
                     print(f"❌ 精确匹配失败，尝试模糊匹配: {sku_value}")
 
@@ -186,8 +167,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
                         actual_text = fuzzy_option.text.split(' - ')[0]  # 提取SKU部分
 
                         print(f"⚠️ 找到模糊匹配项: {actual_text} (原始SKU: {sku_value})")
-                        return safe_click(fuzzy_option, f"模糊匹配的SKU选项 {sku_value}")
-
+                        return click_button(driver, locator=None, locator_type="element", timeout=10,
+                                     description=f"模糊匹配的SKU选项 {sku_value}", element=fuzzy_option)
                     except TimeoutException:
                         print(f"❌ SKU存在但未找到任何匹配项: {sku_value}")
                         # driver.save_screenshot(f"sku_no_match_{sku_value}.png")
@@ -207,24 +188,25 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
 
         # 1. 导航到ASN创建页面
         print("导航到ASN创建页面...")
-        safe_click(
-            wait.until(EC.element_to_be_clickable(
-                (By.XPATH, "//a[contains(@class, 'nav-dropdown-toggle') and contains(text(),'SEARCH')]")
-            )), "SEARCH菜单"
+        click_button(
+            driver,
+            locator="//a[contains(@class, 'nav-dropdown-toggle') and contains(., 'SEARCH')]",
+            locator_type="xpath",
+            description="SEARCH 菜单"
         )
 
-        safe_click(
-            wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "ASN"))),
-            "ASN链接"
+        click_button(
+            driver,
+            locator="ASN",
+            locator_type="link_text",
+            description="ASN链接"
         )
 
-        create_btn = wait.until(
-            EC.element_to_be_clickable(
-                (By.XPATH, "//a[contains(@class, 'btn-success') and contains(@href, '/asn/create')]")
-            )
+        click_button(
+            driver,
+            locator="//a[contains(@class, 'btn-success') and contains(@href, '/asn/create')]",
+            locator_type="xpath"
         )
-        if not safe_click(create_btn, "创建按钮"):
-            return False
 
         # 2. 填写表单
         print("填写ASN表单...")
@@ -268,7 +250,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
                 print(f"添加项目 {i + 1}/{len(items)}: SKU={item['sku']}")
 
                 # 添加新行
-                if not safe_click(add_item_btn, "添加项目按钮"):
+                if not click_button(driver, locator=None, locator_type="element", timeout=10,
+                                 description="添加项目按钮", element=add_item_btn):
                     return False
 
                 # 等待新行出现
@@ -283,7 +266,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
                 sku_container = current_row.find_element(
                     By.XPATH, ".//span[contains(@class, 'select2-container')]"
                 )
-                if not safe_click(sku_container, "SKU下拉框"):
+                if not click_button(driver, locator=None, locator_type="element", timeout=10,
+                                 description="SKU下拉框", element=sku_container):
                     return False
 
                 # 搜索SKU
@@ -317,7 +301,8 @@ def create_asn(driver, client_name="backtest", asn_number=None, items=None, max_
         submit_btn = wait.until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))
         )
-        if not safe_click(submit_btn, "提交按钮"):
+        if not click_button(driver, locator=None, locator_type="element", timeout=10, description="提交按钮",
+                         element=submit_btn):
             return False
 
         # 5. 验证结果

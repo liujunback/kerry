@@ -1,43 +1,88 @@
+import time
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
+import time
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 
-def verify_asn_result(driver, expected_asn="ASNMannings22025062500008"):
+def check_asn_search_results(driver, asn_number, timeout=15):
+    """
+    精确检查ASN搜索结果
+    返回: (操作是否成功, 是否找到匹配结果)
+    """
+    time.sleep(1)
     try:
-        # 等待结果行加载（最多10秒）
-        result_row = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located(
-                (By.XPATH, f"//tbody/tr[td[contains(text(), '{expected_asn}')]]")
-            )
+        # 等待结果表格加载完成
+        WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.ID, "dataTables"))
         )
 
-        # 检查结果行是否可见
-        if result_row.is_displayed():
-            # 获取整个行的文本内容
-            row_text = result_row.text
-            # print(row_text)
-            # 基本验证点
-            checks = [
-                expected_asn in row_text,  # ASN号码存在
-                "Finished" in row_text  # 状态为Finished
-            ]
+        # 获取所有可见的行元素
+        all_rows = driver.find_elements(
+            By.CSS_SELECTOR, "#dataTables tbody tr"
+        )
 
-            # 如果所有基本验证点都通过
-            if all(checks):
-                print(f"ASN结果验证通过: {expected_asn}")
-                return True
-            else:
-                print(f"基本验证点缺失: {checks}")
-                return False
-        else:
-            print("结果行存在但不可见")
-            return False
+        # 过滤出包含实际数据的行
+        result_rows = []
+        for row in all_rows:
+            try:
+                # 检查第一列是否有内容（ID列）
+                first_cell = row.find_element(By.XPATH, "./td[2]")
+                if first_cell.text.strip():  # 如果有文本内容
+                    result_rows.append(row)
+            except:
+                continue
+
+        print(f"实际有效数据行数: {len(result_rows)}")
+
+        if not result_rows:
+            # 检查无数据提示
+            try:
+                no_data_div = driver.find_element(
+                    By.XPATH, "//div[contains(@class, 'dataTables_empty') and contains(text(), 'No data')]"
+                )
+                if no_data_div.is_displayed():
+                    print("ℹ️ 未找到匹配记录")
+                    return True, False
+            except NoSuchElementException:
+                print("⚠️ 结果表格为空")
+                return True, False
+
+        # 检查是否有匹配的ASN号码
+        for i, row in enumerate(result_rows, 1):
+            try:
+                # 获取ASN号码单元格 - 第三列
+                asn_cell = row.find_element(By.XPATH, "./td[3]")
+                cell_text = asn_cell.text.strip()
+
+                # 精确匹配
+                if cell_text == asn_number:
+                    print(f"✅ 找到精确匹配: {asn_number} (第{i}行)")
+                    # 高亮显示匹配行
+                    driver.execute_script(
+                        "arguments[0].style.backgroundColor='#e6ffe6';",
+                        row
+                    )
+                    return True, True
+
+            except NoSuchElementException:
+                continue
+
+        print(f"⚠️ 未找到匹配项 (搜索值: {asn_number})")
+        return True, False
 
     except TimeoutException:
-        print(f"未找到ASN结果: {expected_asn}")
-        return False
+        print("⌛ 结果加载超时")
+        return False, False
     except Exception as e:
-        print(f"验证过程中发生错误: {str(e)}")
-        return False
+        print(f"❌ 结果检查失败: {str(e)}")
+        return False, False
+
