@@ -1,3 +1,4 @@
+import time
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -38,6 +39,7 @@ def perform_asn_search(driver, asn_number="ASNMannings22025062500008"):
         print("SEARCH菜单已展开")
 
         print("正在定位ASN链接...")
+
         # 定位并点击ASN链接
         click_button(
             driver,

@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 from TWMS_UI.properties.GetProperties import getProperties
+from TWMS_UI.public.asn_confirmation import asn_confirmation
 from TWMS_UI.public.create_asn import create_asn
 from TWMS_UI.public.perform_asn_search import perform_asn_search
 from TWMS_UI.public.receive_asn import receive_asn
@@ -20,6 +21,10 @@ def priority(level):
         func._priority = level
         return func
     return decorator
+
+
+
+
 class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -207,7 +212,7 @@ class MyTestCase(unittest.TestCase):
 
     @priority(5)
     def test_case_asn_receive(self):
-        """验证收货功能是否"""
+        """验证正常收货功能"""
         driver = create_driver()
         login(
             web_driver=driver,
@@ -215,18 +220,45 @@ class MyTestCase(unittest.TestCase):
             password=self.pro["password"],
             properties = self.pro
         )
-        asn_number = "BACKTEST202506300959"
-        success = perform_asn_search(driver,asn_number)
-        if success:
-            success, found = check_asn_search_results(driver, asn_number)
+        try:
+            test_items = [
+                {"sku": self.pro["sku"], "qty": 50, "po": "PO" + str((datetime.now()).strftime('%Y%m%d'))}
+            ]
+
+            # 创建ASN
+            asn_number = "BACKTEST" + str((datetime.now()).strftime('%Y%m%d%H%M'))
+            success = create_asn(
+                driver,
+                client_name=self.pro["client_name"],
+                asn_number=asn_number,
+                items=test_items
+            )
+
             if success:
-                if found:
-                    print("✅ 搜索成功且找到匹配结果")
-                    receive_asn(driver,self.pro['location'],self.pro['sku'])
-                else:
-                    print("✅ 搜索成功但未找到匹配结果")
+                self.asn_number = asn_number
+                time.sleep(1)
+                success = perform_asn_search(driver, asn_number)
+                if success:
+                    success, found = check_asn_search_results(driver, asn_number)
+                    if success:
+                        if found:
+                            print("✅ 搜索成功且找到匹配结果")
+                            receive_asn(driver, self.pro['location'], self.pro['sku'])
+                            success = perform_asn_search(driver, asn_number)
+                            if success:
+                                asn_confirmation(driver, asn_number,timeout=30)
+                            else:
+                                print("❌ 收货确认失败")
+                        else:
+                            print("✅ 搜索成功但未找到匹配结果")
+                    else:
+                        print("❌ 搜索操作失败")
+                print("ASN创建-收货-确认测试通过")
             else:
-                print("❌ 搜索操作失败")
+                print("ASN创建-收货-确认测试失败")
+        finally:
+            driver.quit()
+
 
 if __name__ == '__main__':
     unittest.main()

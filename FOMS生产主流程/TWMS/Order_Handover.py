@@ -7,7 +7,7 @@ import requests
 
 
 def order_handover(properties,twms_login,tracking_number):
-    url = properties["twms_url"] + "/zh/admin/scan/handover-by-tracking-number"
+    url = properties["twms_url"] + "/opt/scan/handover-by-tracking-number"
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
       'X-CSRF-TOKEN': twms_login['csrf_token'],

@@ -7,7 +7,7 @@ import requests
 
 def asn_receive(properties,login,asn_data,sku_number):
 
-    url = properties["twms_url"] + "/zh/admin/asn/receive/ajax/batch_submit"
+    url = properties["twms_url"] + "/opt/asn/receive/ajax/submit"
     asn_data = {
             "total": 10,
             "data": [
