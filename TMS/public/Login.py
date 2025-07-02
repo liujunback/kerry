@@ -22,18 +22,18 @@ def login():
     #             "username": "860777_KERRYCN",
     #             "password": "07bf3b995e6a4a8f84d176017a1bbe22"
     #         }
-    # payload = {
-    #             "username": "700094_KERRYCN",
-    #             "password": "af65d9f869fd461a9b3f09253fe7ee1c"
-    #         }
+    payload = {
+                "username": "700094_KERRYCN",
+                "password": "af65d9f869fd461a9b3f09253fe7ee1c"
+            }
     # payload = {
     #             "username": "9900016_KERRYCN",
     #             "password": "c95048ef54cd4a50a7d6df34c25a4161"
     #         }
-    payload={
-                "username": "861116_KERRYCN",
-                "password": "8f53fb3c57264fe5a834ffb220eff535"
-            }
+    # payload={
+    #             "username": "861116_KERRYCN",
+    #             "password": "8f53fb3c57264fe5a834ffb220eff535"
+    #         }
     # payload={
     #             "username": "860915_KERRYCN",
     #             "password": "060f552420d342edad4dd241264c5076"

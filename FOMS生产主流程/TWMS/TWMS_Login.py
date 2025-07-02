@@ -11,22 +11,21 @@ from FOMS生产主流程.properties.GetProperties import getProperties
 
 def  Twms_CN_login(properties):
 
-    url = properties["twms_url"]
+    url = properties["twms_url"] + '/opt/login'
+
     username = properties["twms_username"]
     password = properties["twms_password"]
-    headers ={
-          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
-        }
     IP= url.split("//")[1]
-    res1 = requests.get(url + '/opt/login',headers = headers)
-
+    res1 = requests.get(url)
     c_token=re.findall(r"name=\"_token\" value=\"(.+?)\"", res1.text)[0]
     payload={
             "username" : username,
             "password" : password,
             "_token" : c_token
         }
-    login= requests.post(url + '/opt/login',headers = headers,data = payload,cookies = res1.cookies)
+    headers = {"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"}
+    login= requests.post(url,data = payload,headers = headers,cookies = res1.cookies)
+    print(login.status_code)
     if "csrf-token" in login.text:
         print("登陆成功")
         # print(login.text)
@@ -40,3 +39,7 @@ def  Twms_CN_login(properties):
                 "_token" : c_token,
                 "csrf_token" : csrf_token
         }
+properties = getProperties("FOMS")
+
+twms_login = Twms_CN_login(properties)
+print(twms_login)

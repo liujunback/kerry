@@ -5,7 +5,7 @@ import requests
 
 
 def close_box(properties,login,order_number,pick_wave_data):
-    url = properties["twms_url"] + "/zh/admin/pack/ajax-close-box"
+    url = properties["twms_url"] + "/opt/pack/ajax-close-box"
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
       'X-CSRF-TOKEN': login['csrf_token'],

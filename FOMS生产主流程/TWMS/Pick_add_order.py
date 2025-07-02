@@ -5,7 +5,7 @@ import requests
 
 
 def pick_add_order(properties,login,pick_wave_data):
-    url = properties["twms_url"] + "/admin/pick_wave/" + str(pick_wave_data["pick_wave_id"]) + "/add-orders"
+    url = properties["twms_url"] + "/opt/pick_wave/" + str(pick_wave_data["pick_wave_id"]) + "/add-orders"
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
       'X-CSRF-TOKEN': login['csrf_token'],
