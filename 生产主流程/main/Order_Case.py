@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail =0
-        company = "KEC-备用"#KEC-备用
+        company = "DE"#KEC-备用
         properties = getProperties(company)
         print(company)
         x = 2
@@ -63,7 +63,7 @@ class MyTestCase(unittest.TestCase):
             Close_Box(box_num,trak_List, properties, ops_token)
             time.sleep(10)
             Check_Weight(box_num, properties,ops_token,len(trak_List))
-            time.sleep(10)
+            time.sleep(30)
             shipment_num = shipment_add(properties, tms_token)
             mawb_data = create(tms_token,properties)
             shipmentbatchId = shipment_scan(box_num, shipment_num, properties, tms_token)

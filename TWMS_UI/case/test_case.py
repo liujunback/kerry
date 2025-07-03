@@ -29,7 +29,6 @@ class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.pro = getProperties("test")
-
     @priority(1)
     def test_case_successful_login(self):
         """验证正常登录功能"""
@@ -62,7 +61,6 @@ class MyTestCase(unittest.TestCase):
             print(f"当前登录用户: {user_menu.text}")
         finally:
             driver.quit()
-
     # @unittest.skip
     @priority(2)
     def test_case_failed_login_scenarios(self):
@@ -121,7 +119,6 @@ class MyTestCase(unittest.TestCase):
 
             print(f"✅ {case['name']} 测试通过")
         driver.quit()
-
     @priority(4)
     def test_case_asn_select(self):
         """验证搜索功能是否正常（用例描述：检查首页搜索框能否正常返回结果）"""
@@ -145,7 +142,6 @@ class MyTestCase(unittest.TestCase):
                 print("❌ 搜索操作失败")
 
             return success, found
-
     @priority(3)
     def test_case_create_asn(self):
         """验证正常创建ASN"""
@@ -209,7 +205,6 @@ class MyTestCase(unittest.TestCase):
                             items=items
                             )
         assert result is False
-
     @priority(5)
     def test_case_asn_receive(self):
         """验证正常收货功能"""

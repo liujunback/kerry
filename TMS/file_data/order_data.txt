@@ -1,86 +1,146 @@
 {
-  "items": [
-    {
-      "currency": "EUR",
-      "description": "Women's Pants",
-      "description_origin_language": "Women's Pants",
-      "hs_code": "",
-      "quantity": 1,
-      "sku": "sz2310237853550959",
-      "unit_price": 16.16
+    "service": {
+        "channel_code": "OTSGSG000"
     },
-    {
-      "currency": "EUR",
-      "description": "Women Overcoats",
-      "description_origin_language": "Women Overcoats",
-      "hs_code": "",
-      "quantity": 1,
-      "sku": "sz2410268545035243",
-      "unit_price": 18.47
+    "package": {
+        "reference_number": "116443524489",
+        "declared_value": 167.46,
+        "declared_value_currency": "USD",
+        "actual_weight": 4376,
+        "shipment_term": "DDU",
+        "payment_method": "PP"
     },
-    {
-      "currency": "EUR",
-      "description": "High heels",
-      "description_origin_language": "High heels",
-      "hs_code": "",
-      "quantity": 1,
-      "sku": "sx2406121131378871",
-      "unit_price": 17.09
+    "sender": {
+        "name": "Selvam Nita ",
+        "company": "Selvam Nita ",
+        "address": " blk 41 Yishun street 51 #05-43, Signature at Yishun ",
+        "city": "Singapore",
+        "country_code": "SG",
+        "post_code": "767995",
+        "phone": "87292204"
     },
-    {
-      "currency": "EUR",
-      "description": "Hook Up",
-      "description_origin_language": "Hook Up",
-      "hs_code": "",
-      "quantity": 1,
-      "sku": "sh2312308846114139",
-      "unit_price": 0.7
+    "receiver": {
+        "name": "Theron Ang",
+        "company": "",
+        "address": "Singapore 5 Changi North Street 1 #03-01 ",
+        "city": "Singapore",
+        "province": "Singapore",
+        "country_code": "SG",
+        "post_code": "498766",
+        "phone": "83669742"
     },
-    {
-      "currency": "EUR",
-      "description": "Storage Rack",
-      "description_origin_language": "Storage Rack",
-      "hs_code": "",
-      "quantity": 1,
-      "sku": "sh2409183720511014",
-      "unit_price": 8.83
-    }
-  ],
-  "package": {
-    "actual_weight": 2990,
-    "declared_value": 61.25,
-    "declared_value_currency": "EUR",
-    "number_of_package": 1,
-    "package_type": "WPX",
-    "payment_method": "PP",
-    "reference_number": "TESTBACK20250410145001260",
-    "shipment_term": "DDP",
-    "shipping_fee": 0
-  },
-  "receiver": {
-    "address": "Praza Eduardo Barreiros 6, 2D ",
-    "city": "Ourense",
-    "company": "Adriana Perez vasquez",
-    "country_code": "ES",
-    "district": "",
-    "email": "adrianasarayp@gmail.com",
-    "name": "Adriana Perez vasquez",
-    "phone": "681194869",
-    "post_code": "32003",
-    "province": "Ourense"
-  },
-  "sender": {
-    "address": "Nowa Niedrzwica 58 Gate 44-47 Gate 44-47",
-    "city": "Nowa Niedrzwica",
-    "company": "EU RETURN",
-    "country_code": "ES",
-    "ioss_number": "TH999999",
-    "name": "Ms Li",
-    "phone": "000000000",
-    "post_code": "28042",
-    "province": "Lubuskie"
-  },
-  "service": {
-    "channel_code": "CACNESMCR"
-  }
+    "items": [
+        {
+            "description": "skirt",
+            "description_origin_language": "裙子",
+            "unit_price": 15.58,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 7.85,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Jacket",
+            "description_origin_language": "夹克",
+            "unit_price": 35.85,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Vest",
+            "description_origin_language": "背心",
+            "unit_price": 5.46,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Flat shoes",
+            "description_origin_language": "平底鞋",
+            "unit_price": 6.91,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "skirt",
+            "description_origin_language": "裙子",
+            "unit_price": 6.98,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 9.31,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 13.17,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Pants",
+            "description_origin_language": "裤子",
+            "unit_price": 7.75,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 13.96,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 5.46,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 8.37,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 6.2,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Women's dress",
+            "description_origin_language": "连衣裙",
+            "unit_price": 13.56,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "Pants",
+            "description_origin_language": "裤子",
+            "unit_price": 5.62,
+            "currency": "USD",
+            "quantity": 1
+        },
+        {
+            "description": "skirt",
+            "description_origin_language": "裙子",
+            "unit_price": 5.43,
+            "currency": "USD",
+            "quantity": 1
+        }
+    ]
 }

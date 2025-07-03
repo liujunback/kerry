@@ -163,7 +163,7 @@ class MyTestCase(unittest.TestCase):
 
     @unittest.skip("")#包含WMS的退件入库和上架接口
     def test_case_order_create1(self):#下单
-        box_list = 424191
+        box_list = 100
         token = login()
         #tracking_number = creat_order(token)#ececl下单
         print(token)
@@ -207,9 +207,9 @@ class MyTestCase(unittest.TestCase):
             shipmentbatchId = shipment_scan(box_num,shipment_num)
             shipment_close(shipmentbatchId,shipment_num)
 
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_case_order_create12(self):
-        num = 1100
+        num = 100
         trakings=[]
         box_num_list = []
         shipment_num = shipment_add()
@@ -260,9 +260,9 @@ class MyTestCase(unittest.TestCase):
         for i in range(len(box_num_list)):
             shipmentbatchId = shipment_scan(box_num_list[i],shipment_num)
         shipment_close(shipmentbatchId,shipment_num)
-        # for i in range(len(box_num_list)):
-        #     scan_box(box_num_list[i],mawb["mawb"],mawb["id"])
-        # close_mawb(mawb["mawb"],mawb["id"])
+        for i in range(len(box_num_list)):
+            scan_box(box_num_list[i],mawb["mawb"],mawb["id"])
+        close_mawb(mawb["mawb"],mawb["id"])
 
 
 

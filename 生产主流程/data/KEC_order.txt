@@ -3,37 +3,49 @@
     {
       "country_of_origin": "CN",
       "currency": "USD",
+      "description": "Accessory for mobile device (Grip Stand)",
+      "description_origin_language": "行動裝置塑膠外殼",
+      "hs_code": "3926.90.89",
+      "quantity": 1,
+      "sale_platform_url": "https://www.casetify.com/search/34203705",
+      "sku": "16008771",
+      "unit_price": 40.71,
+      "unit_weight": 1
+    },
+    {
+      "country_of_origin": "CN",
+      "currency": "USD",
       "description": "Plastic case for mobile device",
       "description_origin_language": "行動裝置塑膠外殼",
       "hs_code": "3926.90.89",
       "quantity": 1,
-      "sale_platform_url": "https://www.casetify.com/search/12692439",
-      "sku": "16006566",
-      "unit_price": 73.61,
+      "sale_platform_url": "https://www.casetify.com/search/34191238",
+      "sku": "16008737",
+      "unit_price": 63.93,
       "unit_weight": 1
     }
   ],
   "package": {
-    "actual_weight": 1,
-    "declared_value": 73.61,
+    "actual_weight": 2,
+    "declared_value": 104.65,
     "declared_value_currency": "USD",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "26583048-m1-1",
+    "reference_number": "26881855-m1-1",
     "shipping_fee": 0
   },
   "receiver": {
-    "address": "458/114 Lumpini Park Nawamin, Nawamin Rd. Khlong Kum, Bueng Kum",
-    "city": "Bangkok",
-    "company": "Kanchanit Thorsuwannarak",
+    "address": "1/1 Moo.13, Tumbol Donka",
+    "city": "Thatako",
+    "company": "Jaruwan Prapachaimongkol",
     "country_code": "TH",
-    "district": "Bangkok",
-    "email": "kanchanit.th@gmail.com",
-    "name": "Kanchanit Thorsuwannarak",
-    "phone": "+66945582583",
-    "post_code": "10240",
-    "province": "Bangkok"
+    "district": "Nakhonsawan",
+    "email": "fah6324@gmail.com",
+    "name": "Jaruwan Prapachaimongkol",
+    "phone": "+66946835816",
+    "post_code": "60160",
+    "province": "Thatako"
   },
   "sender": {
     "address": "PO Box 62207, Kwun Tong Post Office",
@@ -48,6 +60,6 @@
     "province": "Kowloon"
   },
   "service": {
-    "channel_code": "KEC-TESTPS"
+    "channel_code": "CTCNTH000"
   }
 }

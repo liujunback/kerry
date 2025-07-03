@@ -95,7 +95,7 @@ def asn_confirmation(driver, asn_number,timeout=30):
             if not wait_for_page_refresh(driver, reference_element, timeout):
                 print("❌ 进入收货页面失败")
                 return False
-            # time.sleep(10)
+            time.sleep(1)
             if is_operation_successful(driver, "BACKTEST202507021137"):
                 # print("操作成功!")
                 print("🎉 ASN确认成功完成!")
