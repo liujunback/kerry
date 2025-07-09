@@ -1,146 +1,67 @@
 {
-    "service": {
-        "channel_code": "OTSGSG000"
+  "items": [
+    {
+      "country_of_origin": "CN",
+      "currency": "USD",
+      "description": "Accessory for mobile device (Grip Stand)",
+      "description_origin_language": "行動裝置塑膠外殼",
+      "hs_code": "3926.90.89",
+      "quantity": 1,
+      "sku": "16005956",
+      "unit_price": 32.29,
+      "unit_weight": 1
     },
-    "package": {
-        "reference_number": "116443524489",
-        "declared_value": 167.46,
-        "declared_value_currency": "USD",
-        "actual_weight": 4376,
-        "shipment_term": "DDU",
-        "payment_method": "PP"
-    },
-    "sender": {
-        "name": "Selvam Nita ",
-        "company": "Selvam Nita ",
-        "address": " blk 41 Yishun street 51 #05-43, Signature at Yishun ",
-        "city": "Singapore",
-        "country_code": "SG",
-        "post_code": "767995",
-        "phone": "87292204"
-    },
-    "receiver": {
-        "name": "Theron Ang",
-        "company": "",
-        "address": "Singapore 5 Changi North Street 1 #03-01 ",
-        "city": "Singapore",
-        "province": "Singapore",
-        "country_code": "SG",
-        "post_code": "498766",
-        "phone": "83669742"
-    },
-    "items": [
-        {
-            "description": "skirt",
-            "description_origin_language": "裙子",
-            "unit_price": 15.58,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 7.85,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Jacket",
-            "description_origin_language": "夹克",
-            "unit_price": 35.85,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Vest",
-            "description_origin_language": "背心",
-            "unit_price": 5.46,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Flat shoes",
-            "description_origin_language": "平底鞋",
-            "unit_price": 6.91,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "skirt",
-            "description_origin_language": "裙子",
-            "unit_price": 6.98,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 9.31,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 13.17,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Pants",
-            "description_origin_language": "裤子",
-            "unit_price": 7.75,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 13.96,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 5.46,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 8.37,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 6.2,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Women's dress",
-            "description_origin_language": "连衣裙",
-            "unit_price": 13.56,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "Pants",
-            "description_origin_language": "裤子",
-            "unit_price": 5.62,
-            "currency": "USD",
-            "quantity": 1
-        },
-        {
-            "description": "skirt",
-            "description_origin_language": "裙子",
-            "unit_price": 5.43,
-            "currency": "USD",
-            "quantity": 1
-        }
-    ]
+    {
+      "country_of_origin": "CN",
+      "currency": "USD",
+      "description": "Plastic case for mobile device",
+      "description_origin_language": "行動裝置塑膠外殼",
+      "hs_code": "3926.90.89",
+      "quantity": 1,
+      "sku": "16007193",
+      "unit_price": 55.91,
+      "unit_weight": 1
+    }
+  ],
+  "package": {
+    "actual_weight": 2,
+    "declared_value": 88.2,
+    "declared_value_currency": "USD",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "rbctest20250513001",
+    "shipment_term": "DDP",
+    "shipping_fee": 0,
+    "length": 10,
+    "width":10,
+    "height": 10
+  },
+  "receiver": {
+    "address": "2/422 soi 12 Supalaiburi village, Klong4 Klongluang Pathumthani 12120",
+    "city": "Klong4",
+    "company": "Pornnapas Didpan",
+    "country_code": "CO",
+    "district": "Pathumthani",
+    "email": "benz1931_@hotmail.com",
+    "name": "Pornnapas Didpan",
+    "phone": "+66863152811",
+    "post_code": "12120",
+    "province": "Klong4"
+  },
+  "sender": {
+    "address": "PO Box 62207, Kwun Tong Post Office",
+    "city": "Kowloon",
+    "company": "CASETiFY",
+    "country_code": "HK",
+    "district": "Kowloon",
+    "email": "hello@casetify.com",
+    "name": "Casetagram Limited",
+    "phone": "+85239984906",
+    "post_code": "000",
+    "province": "Kowloon"
+  },
+  "service": {
+    "channel_code": "XXCOMDCXX"
+  }
 }

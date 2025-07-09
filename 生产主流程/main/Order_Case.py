@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail =0
-        company = "DE"#KEC-备用
+        company = "test"#KEC-备用
         properties = getProperties(company)
         print(company)
         x = 2
@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
         pos_token = Pos_Login(properties)
         ops_token = Ops_Login(properties)
         tms_token = tms_login(properties)
-        print(pos_token)
+        print(ops_token)
         box_num = 0
         box_num_list = []
         if x>=1:
@@ -38,7 +38,7 @@ class MyTestCase(unittest.TestCase):
                 # tr=str(ws['A'+str(i)].value)
                 # tracking_number = tr
                 tracking_number = Order_Create(properties,pos_token)
-                # tracking_number ="ITTEST2024112345437991"
+                # tracking_number ="KECTH92000005"
                 if "失败" in tracking_number:
                     fail=fail+1
                 # tracking_number = "KITME10344230"
@@ -50,7 +50,7 @@ class MyTestCase(unittest.TestCase):
         if x>=2:
             for i in range(len(trak_List)):
                 if i == 0:
-                    time.sleep(30)
+                    time.sleep(40)
                     # Package_Scan(trak[i])
                     OPS_Inbound(trak_List[i], properties, ops_token)
                     time.sleep(10)

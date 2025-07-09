@@ -17,10 +17,11 @@ def file_create_order(token):
         f.close()
 
     reference_number="TESTBACK"+ str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(random.randint(1,300))
-    #
+
     param2['package']['reference_number']=reference_number
     # param2['package']['tracking_number']=reference_number
     url = "http://47.119.120.7:22900/pos-web/shipment/create"
+    # url = "http://47.119.120.7:22900/pos-web/shipment/create"
     time_start = time.time()
     response = requests.post(url ,data=json.dumps(param2), headers = header)
     time_end = time.time()

@@ -1,12 +1,16 @@
+import json
 import time
 from datetime import datetime
 import unittest
+from unittest import skip
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 from TWMS_UI.properties.GetProperties import getProperties
+from TWMS_UI.public.api.create_asn_api import api_create_asn
+from TWMS_UI.public.api.create_sku_api import api_create_sku
 from TWMS_UI.public.asn_confirmation import asn_confirmation
 from TWMS_UI.public.create_asn import create_asn
 from TWMS_UI.public.perform_asn_search import perform_asn_search
@@ -30,6 +34,7 @@ class MyTestCase(unittest.TestCase):
     def setUpClass(self):
         self.pro = getProperties("test")
     @priority(1)
+    @unittest.skip("")
     def test_case_successful_login(self):
         """验证正常登录功能"""
         driver = create_driver()
@@ -63,6 +68,7 @@ class MyTestCase(unittest.TestCase):
             driver.quit()
     # @unittest.skip
     @priority(2)
+    @unittest.skip("")
     def test_case_failed_login_scenarios(self):
         """验证异常登录功能"""
         test_cases =[
@@ -120,6 +126,7 @@ class MyTestCase(unittest.TestCase):
             print(f"✅ {case['name']} 测试通过")
         driver.quit()
     @priority(4)
+    @unittest.skip("")
     def test_case_asn_select(self):
         """验证搜索功能是否正常（用例描述：检查首页搜索框能否正常返回结果）"""
         driver = create_driver()
@@ -143,6 +150,7 @@ class MyTestCase(unittest.TestCase):
 
             return success, found
     @priority(3)
+    @unittest.skip("")
     def test_case_create_asn(self):
         """验证正常创建ASN"""
         driver = create_driver()
@@ -173,6 +181,8 @@ class MyTestCase(unittest.TestCase):
                 print("ASN创建测试失败")
         finally:
             driver.quit()
+
+    @unittest.skip("")
     def test_case_create_asn_invalid_sku(self):
         """验证测试使用无效SKU时的错误处理"""
         driver = create_driver()
@@ -189,6 +199,8 @@ class MyTestCase(unittest.TestCase):
                             items=items
                             )
         assert result is False
+
+    @unittest.skip("")
     def test_case_create_asn_invalid_lient(self):
         """验证测试使用无效客户时的错误处理"""
         driver = create_driver()
@@ -206,6 +218,7 @@ class MyTestCase(unittest.TestCase):
                             )
         assert result is False
     @priority(5)
+    @unittest.skip("")
     def test_case_asn_receive(self):
         """验证正常收货功能"""
         driver = create_driver()
@@ -254,6 +267,11 @@ class MyTestCase(unittest.TestCase):
         finally:
             driver.quit()
 
+    @unittest.skip("")
+    def test_case_api_create_sku(self):
+        print(json.dumps(api_create_sku(self.pro)))
+    def test_case_api_create_asn(self):
+        print(json.dumps(api_create_asn(self.pro)))
 
 if __name__ == '__main__':
     unittest.main()

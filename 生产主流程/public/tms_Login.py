@@ -10,6 +10,7 @@ def tms_login(properties):
             "tms_login_password"] + "&companyNo=&domain="
         response = requests.post(url=url, verify=False)
         # print(response.text)
-        return json.loads(response.text)["body"]["token"]
-    except json.decoder.JSONDecodeError:
-        print("系统正在升级")
+        if response.status_code == 200:
+            return json.loads(response.text)["body"]["token"]
+    except json.decoder.JSONDecodeError as e:
+        print("系统正在升级" + str(e))

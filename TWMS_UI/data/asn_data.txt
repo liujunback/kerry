@@ -1,0 +1,17 @@
+{
+    "items": [
+
+         {
+            "code": "SKU202507081827366181",
+            "qty": 50,
+            "po_number": "0225-02",
+            "line_item_id": "1"
+        }
+
+    ],
+    "centre_code": "FT",
+    "client_code": "FOMSTEST",
+    "asn_number": "",
+    "is_return_asn": "N",
+    "asn_date": "2025-06-12"
+}

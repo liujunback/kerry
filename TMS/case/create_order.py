@@ -47,7 +47,7 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4-4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(1):
+            for i in range(5):
                 tracking_num = file_create_order(token)
                 # tracking_num = "ALSTEST26834153453"
                 if tracking_num == "失败":
