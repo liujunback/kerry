@@ -8,7 +8,7 @@ from TMS.shopee_V2.jwt import jwt
 
 def create_order_shopee(carrier_tn,ilh_shopee_no,parcel_list):
     # url = "https://cb-tms.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/push_info"
-    url = "http://120.24.31.239:20000/tms-saas-web/shopee/api/services/ilh_shipment/push_info"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/push_info"
     parcel_list_data = []
     for i in range(len(parcel_list)):
         with open("../shopee_V2/order_data.txt", 'r',encoding= 'utf-8') as f:

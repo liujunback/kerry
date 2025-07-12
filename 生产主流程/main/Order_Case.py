@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
         pos_token = Pos_Login(properties)
         ops_token = Ops_Login(properties)
         tms_token = tms_login(properties)
-        print(ops_token)
+        print(tms_token)
         box_num = 0
         box_num_list = []
         if x>=1:

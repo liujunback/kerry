@@ -27,15 +27,16 @@
     "actual_weight": 2,
     "declared_value": 88.2,
     "declared_value_currency": "USD",
+    "height": "10",
+    "length": "10",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "rbctest20250513001",
+    "reference_number": "ITESET2027001",
     "shipment_term": "DDP",
     "shipping_fee": 0,
-    "length": 10,
-    "width":10,
-    "height": 10
+    "tracking_number": "TRESET2027001",
+    "width": "10"
   },
   "receiver": {
     "address": "2/422 soi 12 Supalaiburi village, Klong4 Klongluang Pathumthani 12120",

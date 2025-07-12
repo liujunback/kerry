@@ -50,5 +50,12 @@
       <jdbc-url>jdbc:mysql://rm-n9ex807123cf5030lso.mysql.rds.aliyuncs.com:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="TMS新测试环境" uuid="7504f83c-a401-44a0-bb0e-60a755fb521d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.247.65.110:53306/kec_test</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

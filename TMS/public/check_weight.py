@@ -7,7 +7,7 @@ from TMS.public.Controller_Login import Controller_Login
 
 def check_weight(box_num,tracking_list=3):
 
-    url = "http://47.107.105.241:22000/controller/operations/outbound/checkWeight"
+    url = "https://ops-eng-uat.kec-app.com/controller/operations/outbound/checkWeight"
     token = Controller_Login()
     payload={
             "boxTypeCode":"back",

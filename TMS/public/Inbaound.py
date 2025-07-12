@@ -5,7 +5,7 @@ from TMS.public.Controller_Login import Controller_Login
 
 def inbound(tracking_number):
     token=Controller_Login()
-    url = "http://47.107.105.241:22000/controller/inbound/package/hand"
+    url = "https://ops-eng-uat.kec-app.com/controller/inbound/package/hand"
 
     payload={
             "token":token,

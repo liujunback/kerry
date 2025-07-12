@@ -26,21 +26,21 @@ class MyTestCase(unittest.TestCase):
     def test_case_order(self):
 
         properties = getProperties("test")
-        twms_login = Twms_CN_login(properties)
+        # twms_login = Twms_CN_login(properties)
 
         foms_token = foms_login(properties)
 
         print(foms_token)
         # 创建sku
-        for i in range(1):
-            sku_number = create_SKU(properties,foms_token)
-        # sku_number = "BACK_SKU202506176464613"
+        # for i in range(1):
+        #     sku_number = create_SKU(properties,foms_token)
+        sku_number = "BACK_SKU202505076131489"
 
 
          # 完结入库单
-        # asn_number = create_ASN(sku_number,properties,foms_token)
-        # # asn_number = "BACKASN20250417752693"
-        # time.sleep(30)
+        asn_number = create_ASN(sku_number,properties,foms_token)
+        # asn_number = "BACKASN20250417752693"
+        time.sleep(30)
         # asn_data = select_asn_id(properties,twms_login,asn_number)
         # asn_receive(properties,twms_login,asn_data,sku_number)
         # asn_confirm(properties,twms_login,asn_data)

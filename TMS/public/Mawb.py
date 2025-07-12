@@ -14,7 +14,7 @@ with open("../file_data/order_data.txt", 'r',encoding= 'utf-8') as f:
 def create():
 
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/oawb/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/oawb/add"
     mawb = "TESTBACK"+str(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
     payload={
             "oawbNo":mawb,
@@ -100,7 +100,7 @@ def create():
 
 def select_BoxId(box_num):
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/oawb/bagging/list"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/oawb/bagging/list"
 
     payload = {
         "codeType":"7",
@@ -128,7 +128,7 @@ def select_BoxId(box_num):
 
 def scan_box(box_num,mawb,mawb_id):
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/oawb/selbagging/selectBagging"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/oawb/selbagging/selectBagging"
     payload = {
         "id":mawb_id,
         "oawbNo": mawb,
@@ -147,7 +147,7 @@ def scan_box(box_num,mawb,mawb_id):
 
 def close_mawb(mawb,mawb_id):
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/oawbtrack/dtl/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/oawbtrack/dtl/add"
     mawb = random.randint(1000000,9999999)
     mawb = "193-"+str(mawb)+str(mawb%7)
     payload = {

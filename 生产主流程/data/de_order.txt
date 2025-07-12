@@ -1,58 +1,49 @@
 {
   "items": [
     {
-      "category": "Other",
-      "country_of_origin": "SG",
-      "currency": "THB",
-      "description": "Sportswear",
-      "description_origin_language": "",
-      "height": 5,
-      "hs_code": "62064000",
-      "length": 5,
+      "country_of_origin": "CN",
+      "currency": "EUR",
+      "description": "storage box",
+      "description_origin_language": "收纳柜",
+      "hs_code": "9403208000",
       "quantity": 1,
-      "unit_price": 1,
-      "unit_weight": 1000,
-      "width": 5
+      "unit_price": 12.92,
+      "unit_weight": 2660
     }
   ],
   "package": {
-    "actual_weight": 1000,
-    "declared_value": 1,
-    "declared_value_currency": "THB",
+    "actual_weight": 2660,
+    "declared_value": 12.92,
+    "declared_value_currency": "EUR",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "200000014015554",
-    "shipment_term": "DDP",
-    "shipment_type": "General",
+    "reference_number": "BG-25060858261WNQT8",
     "shipping_fee": 0
   },
   "receiver": {
-    "address": "171หมู่10 ต หนองอ้อ.",
-    "city": "บ้านโป่ง",
+    "address": "pare Palau número 1 piso1c edificio número 1 piso1c",
+    "city": "LLEIDA",
+    "company": "Maricarmen valdeolivas López",
     "country_code": "ES",
-    "district": "",
-    "email": "arsj.p10@gmail.com",
-    "id_number": "",
-    "location_code": "",
-    "name": "จิราเจต อร่ามสีจันทน์",
-    "phone": "+66882257059",
-    "post_code": "70110",
-    "province": "RBR"
+    "email": "3w3czo35ii13002@eu.shipping.temuemail.com",
+    "name": "Maricarmen valdeolivas López",
+    "phone": "345345",
+    "post_code": "25005",
+    "province": "LLEIDA"
   },
   "sender": {
-    "address": "eShopWorld C/O Maersk",
-    "city": "Singapore",
-    "country_code": "SG",
-    "email": "Control_tower_logistics@eshopworld.com",
-    "ioss_number": "23423",
-    "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
-    "phone": "+65 6450 1234",
-    "post_code": "648165",
-    "province": "SG"
+    "address": "C/ November 15 - 28042 Madrid",
+    "city": "Madrid",
+    "company": "CAN58",
+    "country_code": "ES",
+    "ioss_number": "test1231231",
+    "name": "CAN58",
+    "phone": "911 631 356",
+    "post_code": "28042",
+    "province": "Madrid"
   },
   "service": {
-    "channel_code": "BACKTEST",
-    "service_type": "default"
+    "channel_code": "BACKTEST"
   }
 }

@@ -10,7 +10,7 @@ from TMS.public.TMS_Login import login
 token = login()
 
 def shipment_add():
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/outbound/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/outbound/add"
     shipment_num = "Back-"+str((datetime.datetime.now()).strftime('%Y%m%d%H%M'))+str(random.randint(1,9999999999))
     payload = {
                 "shipmentbatchNo": shipment_num,
@@ -34,7 +34,7 @@ def shipment_add():
 
 def shipment_num_ids(shipment_num):
     shipment_num_ids=""
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/outbound/list"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/outbound/list"
     payload = {
                 "shipmentbatchDatetime": "",
                 "shipmentStatid": 1199,
@@ -63,7 +63,7 @@ def shipment_num_ids(shipment_num):
     return shipment_num_ids
 
 def shipment_scan(box_num,shipment_num):
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/outbound/scan"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/outbound/scan"
     shipmentbatchId = shipment_num_ids(shipment_num)
     #print(shipmentbatchId)
     payload = {
@@ -84,7 +84,7 @@ def shipment_scan(box_num,shipment_num):
     return shipmentbatchId#出货批次id号
 
 def shipment_close(shipmentbatchId,shopment_num):
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/outbound/send"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/outbound/send"
     payload = {
             "id": shipmentbatchId,
             "outActual": 2.7,

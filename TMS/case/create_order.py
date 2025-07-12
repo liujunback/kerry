@@ -47,9 +47,9 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4-4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(5):
-                tracking_num = file_create_order(token)
-                # tracking_num = "ALSTEST26834153453"
+            for i in range(1):
+                # tracking_num = file_create_order(token)
+                tracking_num = "TRESET202700321"
                 if tracking_num == "失败":
                     fail=fail+1
                 # tracking_num = "CTCNTH000"
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(30)
+                        # time.sleep(30)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])

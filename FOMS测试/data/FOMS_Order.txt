@@ -15,6 +15,7 @@
     "declared_value": 1,
     "require_customized_invoice": "0",
     "remarks": "บิลออกในชื่อบริษัท40",
+    "estimated_outbound_date":"2025-07-10 14:06:57",
     "self_pick_store1":"0070186601866",
     "sender": {
         "name": "test",

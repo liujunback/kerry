@@ -21,7 +21,7 @@ def file_create_order(token):
     param2['package']['reference_number']=reference_number
     # param2['package']['tracking_number']=reference_number
     url = "http://47.119.120.7:22900/pos-web/shipment/create"
-    # url = "http://47.119.120.7:22900/pos-web/shipment/create"
+    url = "https://pos-kec-eng-uat.kec-app.com/pos-web/shipment/create"
     time_start = time.time()
     response = requests.post(url ,data=json.dumps(param2), headers = header)
     time_end = time.time()

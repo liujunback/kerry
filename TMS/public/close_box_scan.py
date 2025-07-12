@@ -8,7 +8,7 @@ def close_Box_Scan(tracking_number,box_num=""):
     token = Controller_Login()
     import requests
 
-    url = "http://47.107.105.241:22000/controller/pss/manual/closeBoxScan"
+    url = "https://ops-eng-uat.kec-app.com/controller/pss/manual/closeBoxScan"
 
     payload={
         "trackingNumber":tracking_number,
@@ -29,7 +29,7 @@ def close_Box_Scan(tracking_number,box_num=""):
     return json.loads(response.text)["data"]["info"]["boxNumber"]
 
 def close_Box(box_num,tracking_num):
-    url = "http://47.107.105.241:22000/controller/pss/manual/closeBox"
+    url = "https://ops-eng-uat.kec-app.com/controller/pss/manual/closeBox"
     token = Controller_Login()
     payload={
         "trackingNumbers":tracking_num,
