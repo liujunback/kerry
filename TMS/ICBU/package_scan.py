@@ -7,7 +7,7 @@ from TMS.public.Controller_Login import Controller_Login
 
 def package_scan(tracking_number):
     token=Controller_Login()
-    url = "http://47.107.105.241:22000/controller/receive/package/scan"
+    url = "https://ops-eng-uat.kec-app.com/controller/receive/package/scan"
     tracking_number_list = []
     tracking_number_list.append(tracking_number)
     payload={

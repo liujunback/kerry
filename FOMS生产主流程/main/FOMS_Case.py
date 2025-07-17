@@ -33,27 +33,27 @@ class MyTestCase(unittest.TestCase):
 
         print(foms_token)
         # 创建SKU
-        for i in range(1):
-            sku_number = create_SKU(properties,foms_token)
-        # sku_number = "BACK_SKU20250630370871"
+        # for i in range(1):
+        #     sku_number = create_SKU(properties,foms_token)
+        sku_number = "BACK_SKU202506036060009"
         # 更新SKU
-        update_sku(properties,foms_token,sku_number)
-         # 完结入库单
-        asn_number = create_ASN(sku_number,properties,foms_token)
-        # asn_number = "BACKASN20250630222389"
-        time.sleep(10)
-        asn_data = select_asn_id(properties,twms_login,asn_number)
-        asn_receive(properties,twms_login,asn_data,sku_number)
-        asn_confirm(properties,twms_login,asn_data)
+        # update_sku(properties,foms_token,sku_number)
+        #  # 完结入库单
+        # asn_number = create_ASN(sku_number,properties,foms_token)
+        # # asn_number = "BACKASN20250630222389"
+        # time.sleep(10)
+        # asn_data = select_asn_id(properties,twms_login,asn_number)
+        # asn_receive(properties,twms_login,asn_data,sku_number)
+        # asn_confirm(properties,twms_login,asn_data)
+        #
+        # # 取消ASN
+        # cancel_asn_number = create_ASN(sku_number,properties,foms_token)
+        # cancel_asn(properties,foms_token,cancel_asn_number)
+        #
 
-        # 取消ASN
-        cancel_asn_number = create_ASN(sku_number,properties,foms_token)
-        cancel_asn(properties,foms_token,cancel_asn_number)
-
-
-        #取消订单
-        cancel_order = create_Order(sku_number,properties,foms_token)
-        Cancel_Order(properties,foms_token,cancel_order)
+        # #取消订单
+        # cancel_order = create_Order(sku_number,properties,foms_token)
+        # Cancel_Order(properties,foms_token,cancel_order)
         #
         #
         # 订单主流程

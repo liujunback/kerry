@@ -10,6 +10,7 @@
     "currency": "THB",
     "shipment_term": "DDU",
     "cod_value_currency": "THB",
+    "estimated_outbound_date":"2025-07-14 17:06:57",
     "declared_value": 5000,
     "require_customized_invoice": "0",
     "customized_invoice": "https://dev-foms.s3.ap-east-1.amazonaws.com/DISABLED/backtest20231011701113.pdf",

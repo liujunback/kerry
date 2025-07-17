@@ -60,6 +60,6 @@
     "province": "Kowloon"
   },
   "service": {
-    "channel_code": "CTCNTH000"
+    "channel_code": "KEC-TESTGX"
   }
 }
