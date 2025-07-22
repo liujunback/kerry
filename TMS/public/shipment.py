@@ -29,6 +29,7 @@ def shipment_add():
     response = requests.request("POST", url = url, data = payload, headers = headers)
     if json.loads(response.text)['message'] != "EnumResCode.OK":
         print(response.text)
+    print(response.text)
     print("出货批次："+shipment_num)
     return shipment_num#出货批次号
 

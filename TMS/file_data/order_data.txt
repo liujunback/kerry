@@ -1,1 +1,59 @@
-{"items":[{"country_of_origin":"CN","currency":"USD","description":"Accessory for mobile device (Grip Stand)","description_origin_language":"行動裝置塑膠外殼","hs_code":"3926.90.89","quantity":1,"sku":"16005956","unit_price":32.29,"unit_weight":1},{"country_of_origin":"CN","currency":"USD","description":"Plastic case for mobile device","description_origin_language":"行動裝置塑膠外殼","hs_code":"3926.90.89","quantity":1,"sku":"16007193","unit_price":55.91,"unit_weight":1}],"package":{"actual_weight":2,"declared_value":88.2,"declared_value_currency":"USD","height":"10","length":"10","number_of_package":1,"package_type":"WPX","payment_method":"PP","reference_number":"ITESET202507002","shipment_term":"DDP","shipping_fee":0,"tracking_number":"TRESET202507002","width":"10"},"receiver":{"address":"2/422 soi 12 Supalaiburi village, Klong4 Klongluang Pathumthani 12120","city":"Klong4","company":"Pornnapas Didpan","country_code":"CO","district":"Pathumthani","email":"benz1931_@hotmail.com","name":"Pornnapas Didpan","phone":"+66863152811","post_code":"12120","province":"Klong4"},"sender":{"address":"PO Box 62207, Kwun Tong Post Office","city":"Kowloon","company":"CASETiFY","country_code":"HK","district":"Kowloon","email":"hello@casetify.com","name":"Casetagram Limited","phone":"+85239984906","post_code":"000","province":"Kowloon"},"service":{"channel_code":"XXCOMDCXX"}}
+{
+  "items": [
+    {
+      "country_of_origin": "CN",
+      "currency": "USD",
+      "description": "Accessory for mobile device (Grip Stand)",
+      "description_origin_language": "行動裝置塑膠外殼",
+      "hs_code": "3926.90.89",
+      "quantity": 1,
+      "sku": "16005956",
+      "unit_price": 32.29,
+      "unit_weight": 1,
+      "excc_legal_qty2": 1
+    }
+  ],
+  "package": {
+    "actual_weight": 2,
+    "declared_value": 88.2,
+    "declared_value_currency": "USD",
+    "height": "10",
+    "length": "10",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "ITESET2027001",
+    "shipment_term": "DDP",
+    "shipping_fee": 0,
+    "width": "10"
+  },
+  "receiver": {
+    "address": "2/422 soi 12 Supalaiburi village, Klong4 Klongluang Pathumthani 12120",
+    "city": "Klong4",
+    "company": "Pornnapas Didpan",
+    "country_code": "TH",
+    "district": "Pathumthani",
+    "email": "benz1931_@hotmail.com",
+    "name": "Pornnapas Didpan",
+    "phone": "+66863152811",
+    "post_code": "12120",
+    "province": "Klong4",
+    "id_number": "Klong4"
+  },
+  "sender": {
+    "address": "PO Box 62207, Kwun Tong Post Office",
+    "city": "Kowloon",
+    "company": "CASETiFY",
+    "country_code": "HK",
+    "district": "Kowloon",
+    "email": "hello@casetify.com",
+    "name": "Casetagram Limited",
+    "phone": "+85239984906",
+    "post_code": "000",
+    "province": "Kowloon",
+    "id_number": "Klong4"
+  },
+  "service": {
+    "channel_code": "backtest"
+  }
+}

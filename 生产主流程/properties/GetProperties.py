@@ -1,5 +1,5 @@
 def getProperties(API = "KEC"):
-    if API == "KEC":
+    if API == "KEC-备用":
         file_name = "../../生产主流程/data/KEC_params.properties"
     elif API == "KP":
         file_name = "../../生产主流程/data/KP_params.properties"
@@ -9,7 +9,7 @@ def getProperties(API = "KEC"):
         file_name = "../../生产主流程/data/DE_params.properties"
     elif API == "TH":
         file_name = "../../生产主流程/data/TH_params.properties"
-    elif API == "KEC-备用":
+    elif API == "KEC":
         file_name = "../../生产主流程/data/kec_备用.properties"
     else:
         file_name = "../../生产主流程/data/Test_params.properties"
