@@ -5,6 +5,7 @@ from 生产主流程.OPS.Check_Weight import Check_Weight
 from 生产主流程.OPS.Close_Box import Close_Box
 from 生产主流程.OPS.Inbound import OPS_Inbound
 from 生产主流程.OPS.Outbound import Outbound_Scan
+from 生产主流程.TMS.export_packing_list import export_packing_list, check_file_urls
 from 生产主流程.TMS.mawb import create, scan_box, close_mawb
 from 生产主流程.TMS.mawb_status import mawb_status
 from 生产主流程.TMS.shipment import shipment_add, shipment_scan, shipment_close
@@ -34,8 +35,9 @@ class MyTestCase(unittest.TestCase):
         pos_token = Pos_Login(properties)
         ops_token = Ops_Login(properties)
         tms_token = tms_login(properties)
-        print(f"TMS Token: {tms_token}")
-
+        print(f"POS Token: {pos_token}")
+        # print(f"OPS Token: {ops_token}")
+        # print(f"TMS Token: {tms_token}")
         box_num = 0  # 存储箱号
 
         try:
@@ -111,6 +113,8 @@ class MyTestCase(unittest.TestCase):
                     mawb_status(mawb_data["id"], "OF", tms_token, properties)
                     time.sleep(5)
                     status(tracking_number, "OK", tms_token, properties, "出口报关开始")
+                    export_packing_list(tracking_number, tms_token,properties)
+                    check_file_urls(tms_token, properties)
                     # time.sleep(1)
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)

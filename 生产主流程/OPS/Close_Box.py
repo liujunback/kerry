@@ -16,17 +16,6 @@ def Close_Box(
         max_retries: int = 3,
         retry_delay: float = 2.0
 ) -> bool:
-    """
-    执行关箱操作
-
-    :param box_num: 箱号
-    :param tracking_num: 运单号列表
-    :param properties: 配置属性字典
-    :param token: 认证token
-    :param max_retries: 最大重试次数
-    :param retry_delay: 重试延迟(秒)
-    :return: 是否成功
-    """
     base_url = properties['ops_url']
     endpoint = "/pss/manual/closeBox"
     url = base_url + endpoint

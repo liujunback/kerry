@@ -30,11 +30,11 @@ def Check_Weight(
     payload = {
         "boxTypeCode": "BAFYL",
         "boxNumber": box_num,
-        "weighingWeight": "2600",  # 称重重量
+        "weighingWeight": "2700",  # 称重重量
         "length": 490,  # 长度(mm)
         "width": 490,  # 宽度(mm)
         "height": 630,  # 高度(mm)
-        "weight": 1600  # 重量(g)
+        "weight": 1700  # 重量(g)
     }
 
     headers = {
