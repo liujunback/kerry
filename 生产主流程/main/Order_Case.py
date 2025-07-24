@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "KEC"  # KEC-备用
+        company = "JP"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -75,7 +75,7 @@ class MyTestCase(unittest.TestCase):
                     try:
                         if i == 0:  # 第一个订单特殊处理
                             print(f"处理首单: {tracking_number}")
-                            time.sleep(40)
+                            time.sleep(30)
                             OPS_Inbound(tracking_number, properties, ops_token)
                             time.sleep(10)
                             box_num = Outbound_Scan(tracking_number, properties, ops_token)

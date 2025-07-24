@@ -127,6 +127,3 @@ def Twms_CN_login(properties):
         return None
 
 
-from FOMS生产主流程.properties.GetProperties import getProperties
-properties = getProperties("FOMS")
-twms_login = Twms_CN_login(properties)

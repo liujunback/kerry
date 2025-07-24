@@ -1,6 +1,8 @@
 import json
+import time
 
 import requests
+from typing import Dict, Any
 
 
 
@@ -37,7 +39,7 @@ def export_packing_list(jobno: str, token: str,properties, timeout: int = 30):
         )
         # 处理响应
         response.raise_for_status()  # 检查HTTP错误
-
+        response = response.json()
         if  response.get("result_code") == 0:
             print(f"异步导出报表成功：{properties['temp_Name']}")
             return True
@@ -51,12 +53,7 @@ def export_packing_list(jobno: str, token: str,properties, timeout: int = 30):
         return False
 
 
-import requests
-from typing import Dict, List, Any, Union
 
-import json
-import requests
-from typing import Dict, Any, List
 
 
 def check_file_urls(token: str, properties: Dict[str, str], timeout: int = 10) -> Dict[str, Any]:
@@ -193,15 +190,8 @@ def check_file_urls(token: str, properties: Dict[str, str], timeout: int = 10) -
                 status = "valid"
                 reason = "HEAD请求成功"
                 valid_count += 1
-                url = properties['tms_url'] + "/tms-saas-web/cmn/excel/update"
-                payload = f'id={file_id}&token={token}'
-                headers = {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
-                response = requests.request("POST", url, headers=headers, data=payload)
-                if response.json().get("result_code") == 0:
-                    print(f"更新文件状态成功：下载成功")
-                    return True
+                update_excel_status(file_id,token,properties)
+
                 print(f"  ✅ 有效: {reason}")
             else:
                 # 尝试GET方法获取更多信息（当HEAD不被支持时）
@@ -284,5 +274,104 @@ def check_file_urls(token: str, properties: Dict[str, str], timeout: int = 10) -
         "file_results": results,
         "all_valid": invalid_count == 0
     }
+
+
+import requests
+from typing import Dict, Any, Union
+
+
+def update_excel_status(
+        file_id: Union[int, str],
+        token: str,
+        properties: Dict[str, str],
+        timeout: int = 30
+) -> Dict[str, Any]:
+    """
+    更新Excel文件状态
+
+    :param file_id: 要更新的文件ID
+    :param token: 认证token
+    :param properties: 系统配置参数
+    :param timeout: 请求超时时间（秒）
+    :return: 包含操作结果的字典
+    """
+    # 构建请求
+    endpoint = "/tms-saas-web/cmn/excel/update"
+    url = properties['tms_url'] + endpoint
+
+    # 准备请求数据
+    payload = {
+        'id': str(file_id),
+        'token': token
+    }
+
+    headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
+    print("\n" + "=" * 50)
+    print(f"开始更新文件状态 (ID: {file_id})...")
+    print(f"请求URL: {url}")
+    print(f"请求数据: {payload}")
+
+    try:
+        # 发送请求
+        response = requests.post(
+            url,
+            data=payload,
+            headers=headers,
+            timeout=timeout
+        )
+
+        # 记录响应信息
+        print(f"响应状态码: {response.status_code}")
+        print(f"响应内容: {response.text[:300]}{'...' if len(response.text) > 300 else ''}")
+
+        # 尝试解析JSON响应
+        try:
+            response_data = response.json()
+        except ValueError:
+            print("警告: 响应不是有效的JSON格式")
+            return {
+                "success": False,
+                "error": "Invalid JSON response",
+                "status_code": response.status_code,
+                "response_text": response.text
+            }
+
+        # 检查业务状态码
+        if response_data.get("result_code") == 0:
+            print(f"✅ 文件状态更新成功 (ID: {file_id})")
+            return {
+                "success": True,
+                "status_code": response.status_code,
+                "response_data": response_data
+            }
+        else:
+            error_msg = response_data.get("message", "Unknown error")
+            print(f"❌ 文件状态更新失败 (ID: {file_id}): {error_msg}")
+            return {
+                "success": False,
+                "error": error_msg,
+                "status_code": response.status_code,
+                "response_data": response_data
+            }
+
+    except requests.exceptions.RequestException as e:
+        error_msg = f"请求失败: {str(e)}"
+        print(f"❌ {error_msg}")
+        return {
+            "success": False,
+            "error": error_msg,
+            "status_code": getattr(e.response, 'status_code', None)
+        }
+
+    except Exception as e:
+        error_msg = f"未预期的错误: {str(e)}"
+        print(f"❌ {error_msg}")
+        return {
+            "success": False,
+            "error": error_msg
+        }
 
 

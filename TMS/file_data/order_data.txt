@@ -54,6 +54,6 @@
     "id_number": "Klong4"
   },
   "service": {
-    "channel_code": "backtest"
+    "channel_code": "CACNTHS990"
   }
 }

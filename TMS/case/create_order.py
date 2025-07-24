@@ -49,7 +49,7 @@ class MyTestCase(unittest.TestCase):
         if x>=1:
             for i in range(1):
                 tracking_num = file_create_order(token)
-                # tracking_num = "KECTH92000135"
+                # tracking_num = "KPR0000000003007AT"
                 if tracking_num == "失败":
                     fail=fail+1
                 # tracking_num = "CTCNTH000"
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        # time.sleep(30)
+                        time.sleep(30)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
