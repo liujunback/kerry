@@ -5,7 +5,7 @@ import requests
 
 def login():
     try:
-        url = "http://120.24.31.239:20000/tms-saas-web/user/login?userNo=KEC064&password=123465&companyNo=&domain="
+        url = "https://tms-kec-eng-uat.kec-app.com//tms-saas-web/user/login?userNo=KEC064&password=123465&companyNo=&domain="
         response =requests.post(url=url)
         # print(response.text)
         if "token" in response.text:

@@ -6,7 +6,7 @@ from TMS.channel_code.public.TMS_login import login
 
 def add_hubout(name,country):
 
-    url = "http://120.24.31.239:20000/tms-saas-web/bas/hubout/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/bas/hubout/add"
 
     payload = {
                 "isusing":"1",
@@ -81,7 +81,7 @@ def add_hubout(name,country):
 
 
 def select_hubOutId(name):
-    url = "http://120.24.31.239:20000/tms-saas-web/bas/hubout/transfer/list?tableName=bas_hub_out&token="+login()
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/bas/hubout/transfer/list?tableName=bas_hub_out&token="+login()
     response = requests.request("GET", url = url)
     for i in json.loads(response.text)["body"]:
         if i["code"]==name :

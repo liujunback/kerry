@@ -7,7 +7,7 @@ from TMS.channel_code.public.TMS_login import login
 
 
 def add_channel(name,country):
-    url = "http://120.24.31.239:20000/tms-saas-web/bas/hubin/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/bas/hubin/add"
     payload = {
                 "quotationSegment":"1",
                 "isconsomode":"0",
@@ -115,7 +115,7 @@ def add_channel(name,country):
 
 
 def select_hubInId(name):
-    url = "http://120.24.31.239:20000/tms-saas-web/bas/hubin/transfer/list?tableName=bas_hub_in_name&token="+login()
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/bas/hubin/transfer/list?tableName=bas_hub_in_name&token="+login()
     response = requests.request("GET", url = url)
     for i in json.loads(response.text)["body"]:
         if i["code"]==name :

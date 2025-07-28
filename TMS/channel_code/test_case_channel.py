@@ -19,8 +19,8 @@ class MyTestCase(unittest.TestCase):
             # ws = wb.active
             # name = str(ws['A'+str(i)].value)
             # even_mess = str(ws['B'+str(i)].value)
-            name = "VNHCMRT-TEST2"
-            country = "TH"
+            name = "IXKCNLCXX"
+            country = "NL"
             # sortCode = "TH-15"
             # name = str(ws['A'+str(i)].value)
             # country = str(ws['B'+str(i)].value)

@@ -1,3 +1,4 @@
+
 import time
 import unittest
 
@@ -24,7 +25,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "JP"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -53,6 +54,7 @@ class MyTestCase(unittest.TestCase):
 
                         # 创建新订单
                         tracking_number = Order_Create(properties, pos_token)
+                        # tracking_number = "KPR0000000000006AT"
 
                         if "失败" in tracking_number:
                             fail += 1
@@ -105,16 +107,17 @@ class MyTestCase(unittest.TestCase):
                     shipmentbatchId = shipment_scan(box_num, shipment_num, properties, tms_token)
                     time.sleep(10)
                     shipment_close(shipmentbatchId, shipment_num, properties, tms_token)
-                    time.sleep(5)
-                    scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
-                    time.sleep(5)
-                    close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
-                    time.sleep(5)
-                    mawb_status(mawb_data["id"], "OF", tms_token, properties)
-                    time.sleep(5)
-                    status(tracking_number, "OK", tms_token, properties, "出口报关开始")
-                    export_packing_list(tracking_number, tms_token,properties)
-                    check_file_urls(tms_token, properties)
+                    # time.sleep(5)
+                    # scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
+                    # time.sleep(5)
+                    # close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
+                    # time.sleep(5)
+                    # mawb_status(mawb_data["id"], "OF", tms_token, properties)
+                    # time.sleep(5)
+                    # status(tracking_number, "OK", tms_token, properties, "出口报关开始")
+                    # export_packing_list(tracking_number, tms_token,properties)
+                    # time.sleep(10)
+                    # check_file_urls(tms_token, properties)
                     # time.sleep(1)
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)

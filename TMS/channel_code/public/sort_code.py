@@ -7,7 +7,7 @@ from TMS.channel_code.public.TMS_login import login
 
 def add_sortcode(name,country,sortCode,hubOutId,hubInId):
 
-    url = "http://120.24.31.239:20000/tms-saas-web/bas/sortcode/add"
+    url = "https://tms-kec-eng-uat.kec-app.com//tms-saas-web/bas/sortcode/add"
 
     payload = {
             "custIds":"",
