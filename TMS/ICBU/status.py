@@ -15,7 +15,7 @@ def status(tracking_number,statu,message='test'):
     # print(manifest_data)
     manifestid = manifest_data["manifestId"]
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/manifesttrack/locus/add"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/manifesttrack/locus/add"
 
     payload = {
                 "scanId": 508,
@@ -42,7 +42,7 @@ def status(tracking_number,statu,message='test'):
 
 def manifestId(tracking_number):
     token = login()
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/manifestmanage/list"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/manifestmanage/list"
 
     payload = {
             "pcs":"",

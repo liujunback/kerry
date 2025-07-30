@@ -49,7 +49,7 @@ class MyTestCase(unittest.TestCase):
         if x>=1:
             for i in range(1):
                 tracking_num = file_create_order(token)
-                # tracking_num = "KPR0000000003007AT"
+                # tracking_num = "YTMX5063000436365"
                 if tracking_num == "失败":
                     fail=fail+1
                 # tracking_num = "CTCNTH000"
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(30)
+                        time.sleep(1)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
@@ -82,8 +82,20 @@ class MyTestCase(unittest.TestCase):
                 time.sleep(10)
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
-                # time.sleep(10)
-                # status(tracking_num,"OC","航班起飞")
+                time.sleep(10)
+                status(trak[i],"ES","出口报关开始")
+                time.sleep(1)
+                status(trak[i],"FX","出口清关完成")
+                # time.sleep(1)
+                # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
+                # time.sleep(1)
+                # status(trak[i],"OF","航班抵达")
+                # time.sleep(1)
+                # status(trak[i],"OR","入口清关收到货")
+                # time.sleep(1)
+                # status(trak[i],"OS","进口清关开始")
+                # time.sleep(1)
+                # status(trak[i],"OQ","进口清关完成")
                 # time.sleep(10)
                 # status(tracking_num,"OQ","进口清关完成")
        # for i in range(len(trak)):
@@ -99,31 +111,6 @@ class MyTestCase(unittest.TestCase):
         # status(tracking_num,"ON","未放行")
         # status(tracking_num,"OE","放行")
         # status(tracking_num,"RJ","收件⼈拒绝签收")
-        # time.sleep(3)
-        # for i in range(len(trak)):
-        # #     # status(trak[i],"DT",tms_token,properties,"干线交接")#"EH", "EN", "OG", "ON", "SP3F", "SP2F", "XH", "LS", "DM"
-        #     time.sleep(1)
-        #     status(trak[i],"ES","出口报关开始")#CAINIAO_GLOBAL_CCEX_START_CALLBACK
-        # #     # time.sleep(1)
-        # #     # status(trak[i],"EH","出口清关查件")
-        # #     # time.sleep(1)
-        # #     # status(trak[i],"EN","违禁品")
-        #     time.sleep(1)
-        #     status(trak[i],"FX","出口清关完成")
-        #     time.sleep(1)
-        #     status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
-        #     time.sleep(1)
-        #     status(trak[i],"OF","航班抵达")
-        #     time.sleep(1)
-        #     status(trak[i],"OR","入口清关收到货")
-        #     time.sleep(1)
-        #     status(trak[i],"OS","进口清关开始")
-        # #     # time.sleep(1)
-        # #     # status(trak[i],"OG","进口清关查件")
-        # #     # time.sleep(1)
-        # #     # status(trak[i],"ON","进口清关销毁")
-        #     time.sleep(1)
-        #     status(trak[i],"OQ","进口清关完成")
         # #     # time.sleep(1)
         # #     # status(trak[i],"HL","交货到末公里")
         #     time.sleep(1)

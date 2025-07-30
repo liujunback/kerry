@@ -45,7 +45,10 @@
     "name": "Jaruwan Prapachaimongkol",
     "phone": "+66946835816",
     "post_code": "60160",
-    "province": "Thatako"
+    "province": "Thatako",
+    "id_number_country": "CN",
+    "id_number": "666666",
+    "id_number_type": "tax_card"
   },
   "sender": {
     "address": "PO Box 62207, Kwun Tong Post Office",
@@ -57,9 +60,12 @@
     "name": "Casetagram Limited",
     "phone": "+85239984906",
     "post_code": "000",
-    "province": "Kowloon"
+    "province": "Kowloon",
+    "id_number_country": "CN",
+    "id_number": "666666",
+    "id_number_type": "tax_card"
   },
   "service": {
-    "channel_code": "KEC-TESTGX"
+    "channel_code": "KEC-TESTQL"
   }
 }

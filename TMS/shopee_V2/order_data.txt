@@ -1,1 +1,52 @@
-{"parcel_list":[{"parcel_length":1,"shopee_order_no":"TEST202503031131190","sender_info":{"sender_phone":"66****111","sender_postal_code":"999077","sender_name":"Everley","sender_city":"HongKong","sender_state":"HongKong","sender_address":"Logistics Sorting Hub, Xi Niu Yi Street, Maiyuan Village, Changping Town, Dongguan City","sender_district":"Kowloon","sender_region":"CN"},"parcel_volume":1,"parcel_width":1,"parcel_weight":2.87,"invoice_date":1731596909,"domestic_third_party_no":"TEST202503031131190","parcel_height":1,"sku_list":[{"quantity":1,"declare_name":"Home & Living-Kitchenware-Bakewares & Decorations","product_name":"KitchenAid 7-piece Baking Set - Empire Red","lvg_tag":"2","declare_value_usd":43,"declare_value":1472}],"reference_no":"TEST202503031131190","receiver_info":{"receiver_postal_code":"50100","receiver_city":"อำเภอเมืองเชียงใหม่","receiver_district":"ตำบลช้างคลาน","receiver_state":"จังหวัดเชียงใหม่","receiver_region":"TH","receiver_name":"นางสาวเกศินี ปินตาสาม","receiver_address":"สำนักบริหานพื้นที่อนุรักษ์ที่ 16 ( เชียงใหม่ ) ฝ่ายพัสดุฯ, 153 ถนน เจริญประเทศ, ตำบล ช้างคลาน, อำเภอเมืองเชียงใหม่","receiver_phone":"66****111"}},{"parcel_length":1,"shopee_order_no":"TEST202503031131191","sender_info":{"sender_phone":"66****111","sender_postal_code":"999077","sender_name":"Everley","sender_city":"HongKong","sender_state":"HongKong","sender_address":"Logistics Sorting Hub, Xi Niu Yi Street, Maiyuan Village, Changping Town, Dongguan City","sender_district":"Kowloon","sender_region":"CN"},"parcel_volume":1,"parcel_width":1,"parcel_weight":2.87,"invoice_date":1731596909,"domestic_third_party_no":"TEST202503031131191","parcel_height":1,"sku_list":[{"quantity":1,"declare_name":"Home & Living-Kitchenware-Bakewares & Decorations","product_name":"KitchenAid 7-piece Baking Set - Empire Red","lvg_tag":"2","declare_value_usd":43,"declare_value":1472}],"reference_no":"TEST202503031131191","receiver_info":{"receiver_postal_code":"50100","receiver_city":"อำเภอเมืองเชียงใหม่","receiver_district":"ตำบลช้างคลาน","receiver_state":"จังหวัดเชียงใหม่","receiver_region":"TH","receiver_name":"นางสาวเกศินี ปินตาสาม","receiver_address":"สำนักบริหานพื้นที่อนุรักษ์ที่ 16 ( เชียงใหม่ ) ฝ่ายพัสดุฯ, 153 ถนน เจริญประเทศ, ตำบล ช้างคลาน, อำเภอเมืองเชียงใหม่","receiver_phone":"66****111"}},{"parcel_length":1,"shopee_order_no":"TEST202503031131192","sender_info":{"sender_phone":"66****111","sender_postal_code":"999077","sender_name":"Everley","sender_city":"HongKong","sender_state":"HongKong","sender_address":"Logistics Sorting Hub, Xi Niu Yi Street, Maiyuan Village, Changping Town, Dongguan City","sender_district":"Kowloon","sender_region":"CN"},"parcel_volume":1,"parcel_width":1,"parcel_weight":2.87,"invoice_date":1731596909,"domestic_third_party_no":"TEST202503031131192","parcel_height":1,"sku_list":[{"quantity":1,"declare_name":"Home & Living-Kitchenware-Bakewares & Decorations","product_name":"KitchenAid 7-piece Baking Set - Empire Red","lvg_tag":"2","declare_value_usd":43,"declare_value":1472}],"reference_no":"TEST202503031131192","receiver_info":{"receiver_postal_code":"50100","receiver_city":"อำเภอเมืองเชียงใหม่","receiver_district":"ตำบลช้างคลาน","receiver_state":"จังหวัดเชียงใหม่","receiver_region":"TH","receiver_name":"นางสาวเกศินี ปินตาสาม","receiver_address":"สำนักบริหานพื้นที่อนุรักษ์ที่ 16 ( เชียงใหม่ ) ฝ่ายพัสดุฯ, 153 ถนน เจริญประเทศ, ตำบล ช้างคลาน, อำเภอเมืองเชียงใหม่","receiver_phone":"66****111"}}],"order":{"ilh_shopee_no":"BACKTEST20250303113119","carrier_tn":"TWSPTEST20250303113119"}}
+{
+    "parcel_list": [
+        {
+            "parcel_length": 1,
+            "shopee_order_no": "TEST202503031131192",
+            "sender_info": {
+                "sender_phone": "66****111",
+                "sender_postal_code": "999077",
+                "sender_name": "Everley",
+                "sender_city": "HongKong",
+                "sender_state": "HongKong",
+                "sender_address": "Logistics Sorting Hub, Xi Niu Yi Street, Maiyuan Village, Changping Town, Dongguan City",
+                "sender_district": "Kowloon",
+                "sender_region": "CN"
+            },
+            "parcel_volume": 1,
+            "parcel_width": 1,
+            "parcel_weight": 2.87,
+            "invoice_date": 1731596909,
+            "domestic_third_party_no": "TEST202503031131192",
+            "parcel_height": 1,
+            "sku_list": [
+                {
+                    "quantity": 1,
+                    "declare_name": "Home & Living-Kitchenware-Bakewares & Decorations",
+                    "product_name": "KitchenAid 7-piece Baking Set - Empire Red",
+                    "lvg_tag": "2",
+                    "declare_value_usd": 43,
+                    "declare_value": 1472
+                }
+            ],
+            "reference_no": "TEST202503031131192",
+            "receiver_info": {
+                "receiver_postal_code": "50100",
+                "receiver_city": "อำเภอเมืองเชียงใหม่",
+                "receiver_district": "ตำบลช้างคลาน",
+                "receiver_state": "จังหวัดเชียงใหม่",
+                "receiver_region": "TH",
+                "receiver_name": "นางสาวเกศินี ปินตาสาม",
+                "receiver_address": "สำนักบริหานพื้นที่อนุรักษ์ที่ 16 ( เชียงใหม่ ) ฝ่ายพัสดุฯ, 153 ถนน เจริญประเทศ, ตำบล ช้างคลาน, อำเภอเมืองเชียงใหม่",
+                "receiver_phone": "66****111",
+                "receiver_declare_name": "Datu Amizan Datu Raiman",
+                "receiver_declare_id": "1111111111",
+                "receiver_declare_address": "76, Lorong PJ 22, Taman Putera Jaya Telipok"
+            }
+        }
+    ],
+    "order": {
+        "ilh_shopee_no": "BACKTEST20250303113119",
+        "carrier_tn": "TWSPTEST20250303113119"
+    }
+}

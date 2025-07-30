@@ -7,8 +7,8 @@ def login():
     # url = "http://47.119.120.7:22900/pos-web/token/get"#测试
     url = "https://pos-kec-eng-uat.kec-app.com/pos-web/token/get" #生产
     payload={
-                "username": "999668_KERRYCN",
-                "password": "f5455a023b054aa4b192b7806eb6c085"
+                "username": "999666_KERRYCN",
+                "password": "b05b41732aac4fa491723669c35f10d3"
             }
     # payload = {
     #             "username": "860915_KERRYCN",
@@ -39,8 +39,8 @@ def login():
     #             "password": "060f552420d342edad4dd241264c5076"
     #         }
     # payload={
-    #             "username": "860708_KERRYCN",
-    #             "password": "b3a5d95d923f4aad84ee2c60cb929f06"
+    #             "username": "859999_KERRYCN",
+    #             "password": "680499ea7a83467ba6e154fbfb831697"
     #         }
 
     headers = {

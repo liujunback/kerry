@@ -30,7 +30,10 @@
     "name": "Maricarmen valdeolivas López",
     "phone": "345345",
     "post_code": "25005",
-    "province": "LLEIDA"
+    "province": "LLEIDA",
+    "id_number_country": "CN",
+    "id_number": "666666",
+    "id_number_type": "tax_card"
   },
   "sender": {
     "address": "C/ November 15 - 28042 Madrid",
@@ -41,7 +44,10 @@
     "name": "CAN58",
     "phone": "911 631 356",
     "post_code": "28042",
-    "province": "Madrid"
+    "province": "Madrid",
+    "id_number_country": "CN",
+    "id_number": "666666",
+    "id_number_type": "tax_card"
   },
   "service": {
     "channel_code": "BACKTEST"

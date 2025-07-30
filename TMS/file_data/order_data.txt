@@ -38,7 +38,10 @@
     "name": "Pornnapas Didpan",
     "phone": "+66863152811",
     "post_code": "12120",
-    "province": "Klong4"
+    "province": "Klong4",
+    "id_number_country": "ES",
+    "id_number": "12123120",
+    "id_number_type": "tax_card"
   },
   "sender": {
     "address": "PO Box 62207, Kwun Tong Post Office",
@@ -51,7 +54,10 @@
     "name": "Casetagram Limited",
     "phone": "+85239984906",
     "post_code": "000",
-    "province": "Kowloon"
+    "province": "Kowloon",
+    "id_number_country": "CN",
+    "id_number": "12123120",
+    "id_number_type": "tax_card"
   },
   "service": {
     "channel_code": "CACNTHS990"

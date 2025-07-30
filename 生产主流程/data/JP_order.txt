@@ -36,14 +36,17 @@
   "receiver": {
     "address": "台北市內湖區大湖山莊街190號5樓之1",
     "city": "台北",
-    "company": "李知晛有限",
+    "company": "IT",
     "country_code": "TW",
     "district": "TW",
     "id_number": "N123497147",
-    "name": "李知晛",
+    "name": "IT",
     "phone": "911391937",
     "post_code": "114",
-    "province": "內湖區"
+    "province": "內湖區",
+    "id_number_country": "CN",
+    "id_number": "666666",
+    "id_number_type": "tax_card"
   },
   "sender": {
     "address": "三豊市山本町辻3278-1",
@@ -54,7 +57,10 @@
     "name": "TEST",
     "phone": "00000000000",
     "post_code": "518100",
-    "province": "香川県"
+    "province": "香川県",
+    "id_number_country": "ES",
+    "id_number": "999999",
+    "id_number_type": "tax_card"
   },
   "service": {
     "channel_code": "CAJPTWS40",

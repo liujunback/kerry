@@ -7,7 +7,7 @@ from TMS.shopee_V2.jwt import jwt
 
 
 def create_BOX():
-    # url = "https://cb-tms.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/create"
+    # url = "https://tms-eng.kec.kln.cn/tms-saas-web/shopee/api/services/ilh_shipment/create"
     url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/create"
 
     with open("../shopee_V2/box_data.txt", 'r',encoding= 'utf-8') as f:
@@ -27,7 +27,7 @@ def create_BOX():
     payload["data"]["order"]["ilh_shopee_no"] = ilh_shopee_no
     payload["data"]["order"]["unique_id"] = unique_id
     parcel_list = []
-    for i in range(3):
+    for i in range(1):
         parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
     payload["data"]["parcel_list"] = parcel_list
     payload = json.dumps(jwt(payload))
