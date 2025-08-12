@@ -1,55 +1,58 @@
 {
   "items": [
     {
-      "country_of_origin": "CN",
-      "currency": "EUR",
-      "description": "storage box",
-      "description_origin_language": "收纳柜",
-      "hs_code": "9403208000",
-      "quantity": 1,
-      "unit_price": 12.92,
-      "unit_weight": 2660
+      "currency": "USD",
+      "description": "面单的生成重印和打印：(服务器label删掉之后，还要能继续打印，并且连接小企鹅能自动打印！！！！订单方面动态的),按照upload at时间计算取消，移交以及其他的,发往末端成功之后调用更新重量接口，会请求末端并更新detail表weight",
+      "description_origin_language": "面单的生成重印和打印：(服务器label删掉之后，还要能继续打印，并且连接小企鹅能自动打印！！！！订单方面动态的),按照upload at时间计算取消，移交以及其他的,发往末端成功之后调用更新重量接口，会请求末端并更新detail表weight",
+      "height": 6,
+      "hs_code": "9507300000",
+      "length": 9,
+      "quantity": 4,
+      "sku": "144624",
+      "unit_price": 0.01,
+      "unit_weight": 509,
+      "width": 17
     }
   ],
   "package": {
-    "actual_weight": 2660,
-    "declared_value": 12.92,
-    "declared_value_currency": "EUR",
+    "actual_weight": 509,
+    "declared_value": 0.06,
+    "declared_value_currency": "USD",
+    "height": "6",
+    "length": "17",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "BG-25060858261WNQT8",
-    "shipping_fee": 0
+    "reference_number": "TRTMS2025071503",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "width": "9"
   },
   "receiver": {
-    "address": "pare Palau número 1 piso1c edificio número 1 piso1c",
-    "city": "LLEIDA",
-    "company": "Maricarmen valdeolivas López",
-    "country_code": "ES",
-    "email": "3w3czo35ii13002@eu.shipping.temuemail.com",
-    "name": "Maricarmen valdeolivas López",
-    "phone": "345345",
-    "post_code": "25005",
-    "province": "LLEIDA",
-    "id_number_country": "CN",
-    "id_number": "666666",
-    "id_number_type": "tax_card"
+    "address": "Calle 58 30-70 barrio mirriñao condominio melao casa 65,Calle 132 #8-75 torreon el Nogal torre 16 Apto 504,Calle 58 30-70 barrio mirriñao condominio melao casa 65,Calle 132 #8-75 torreon el Nogal torre 16 Apto 504,North side of Chuangxin street, Sihui C",
+    "city": "Palmira",
+    "company": "Sandra Milena buritica Henao",
+    "country_code": "CO",
+    "email": "bkes5senvn12049@g.shipping.temuemail.com",
+    "name": "Sandra Milena buritica Henao",
+    "phone": "3226932475",
+    "post_code": "763531",
+    "province": "Valle del Cauca"
   },
   "sender": {
-    "address": "C/ November 15 - 28042 Madrid",
-    "city": "Madrid",
-    "company": "CAN58",
-    "country_code": "ES",
-    "ioss_number": "test1231231",
-    "name": "CAN58",
-    "phone": "911 631 356",
-    "post_code": "28042",
-    "province": "Madrid",
-    "id_number_country": "CN",
-    "id_number": "666666",
-    "id_number_type": "tax_card"
+    "address": "North side of Chuangxin street, Sihui City,North side of Chuangxin street, Sihui City",
+    "city": "Zhaoqing",
+    "company": "CAN03",
+    "country_code": "CN",
+    "name": "CAN03",
+    "phone": "33066276",
+    "post_code": "526200",
+    "province": "Guangdong"
   },
   "service": {
-    "channel_code": "BACKTEST"
+    "channel_code": "DXTMCOCLR",
+    "service_type": "default"
   }
 }

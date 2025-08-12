@@ -31,4 +31,5 @@ def create_Order(sku_number,properties,token):
         print("创建订单成功：" + order_num)
         return  order_num
     else:
+        print(order_num)
         print(response.text)

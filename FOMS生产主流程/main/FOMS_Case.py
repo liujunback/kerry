@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
 
         properties = getProperties("FOMS")
 
-        # twms_login = Twms_CN_login(properties)
+        twms_login = Twms_CN_login(properties)
 
         foms_token = foms_login(properties)
 
@@ -36,15 +36,18 @@ class MyTestCase(unittest.TestCase):
         for i in range(1):
             sku_number = create_SKU(properties,foms_token)
         # sku_number = "BACK_SKU202507249910227"
+
         # 更新SKU
         update_sku(properties,foms_token,sku_number)
-         # 完结入库单
+
+
+        #  完结入库单
         asn_number = create_ASN(sku_number,properties,foms_token)
-        # asn_number = "BACKASN20250630222389"
-        # time.sleep(10)
-        # asn_data = select_asn_id(properties,twms_login,asn_number)
-        # asn_receive(properties,twms_login,asn_data,sku_number)
-        # asn_confirm(properties,twms_login,asn_data)
+        # asn_number = "BACKASN202508062767494"
+        time.sleep(10)
+        asn_data = select_asn_id(properties,twms_login,asn_number)
+        asn_receive(properties,twms_login,asn_data,sku_number)
+        asn_confirm(properties,twms_login,asn_data)
 
         # 取消ASN
         cancel_asn_number = create_ASN(sku_number,properties,foms_token)
@@ -59,16 +62,16 @@ class MyTestCase(unittest.TestCase):
         # 订单主流程
         time_start = time.time()
         order_number = create_Order(sku_number,properties,foms_token)
-        # order_number = "BACK_OR202502133657796"
+        # order_number = "BACK_OR202508069176154"
         time_end = time.time()
         print('下单耗时：', round(time_end - time_start, 2), 's')
         time.sleep(60)
-        # wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)
-        # pick_wave_data = create_pick_wave(properties,twms_login,wave_data)
-        # pick_add_order(properties,twms_login,pick_wave_data)
-        # box_by_order(properties,twms_login,order_number,sku_number,pick_wave_data)
-        # tracking_number = close_box(properties,twms_login,order_number,pick_wave_data)
-        # order_handover(properties,twms_login,tracking_number)
+        wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)
+        pick_wave_data = create_pick_wave(properties,twms_login,wave_data)
+        pick_add_order(properties,twms_login,pick_wave_data)
+        box_by_order(properties,twms_login,order_number,sku_number,pick_wave_data)
+        tracking_number = close_box(properties,twms_login,order_number,pick_wave_data)
+        order_handover(properties,twms_login,tracking_number)
 
 
 

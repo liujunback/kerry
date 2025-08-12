@@ -34,13 +34,13 @@ class MyTestCase(unittest.TestCase):
         # 创建sku
         # for i in range(1):
         #     sku_number = create_SKU(properties,foms_token)
-        sku_number = "BACK_SKU202505076131489"
+        sku_number = "BACK_SKU202507103113505"
 
 
          # 完结入库单
-        asn_number = create_ASN(sku_number,properties,foms_token)
+        # asn_number = create_ASN(sku_number,properties,foms_token)
         # asn_number = "BACKASN20250417752693"
-        time.sleep(30)
+        # time.sleep(30)
         # asn_data = select_asn_id(properties,twms_login,asn_number)
         # asn_receive(properties,twms_login,asn_data,sku_number)
         # asn_confirm(properties,twms_login,asn_data)

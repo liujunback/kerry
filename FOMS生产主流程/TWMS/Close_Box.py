@@ -26,4 +26,5 @@ def close_box(properties,login,order_number,pick_wave_data):
         print("打包入箱关箱成功：" + tracking_number)
         return tracking_number
     else:
+        response = requests.request("POST", url, headers=headers, data=payload)
         print("打包入箱关箱失败：" + response.text)

@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(1)
+                        time.sleep(30)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
@@ -83,9 +83,9 @@ class MyTestCase(unittest.TestCase):
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
                 time.sleep(10)
-                status(trak[i],"ES","出口报关开始")
-                time.sleep(1)
-                status(trak[i],"FX","出口清关完成")
+                status(trak[i],"OR","出口报关开始")
+                # time.sleep(1)
+                # status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)

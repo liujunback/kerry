@@ -8,11 +8,7 @@ import logging
 from FOMS生产主流程.properties.GetProperties import getProperties
 
 # 配置日志
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler()]
-)
+
 
 
 def Twms_CN_login(properties):
@@ -69,7 +65,6 @@ def Twms_CN_login(properties):
             "password": password,
             "_token": c_token
         }
-
         # 3. 执行登录
         try:
             login_response = session.post(url, data=payload)

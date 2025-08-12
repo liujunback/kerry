@@ -9,26 +9,14 @@
       "quantity": 1,
       "sale_platform_url": "https://www.casetify.com/search/34203705",
       "sku": "16008771",
-      "unit_price": 40.71,
-      "unit_weight": 1
-    },
-    {
-      "country_of_origin": "CN",
-      "currency": "USD",
-      "description": "Plastic case for mobile device",
-      "description_origin_language": "行動裝置塑膠外殼",
-      "hs_code": "3926.90.89",
-      "quantity": 1,
-      "sale_platform_url": "https://www.casetify.com/search/34191238",
-      "sku": "16008737",
-      "unit_price": 63.93,
+      "unit_price": 17,
       "unit_weight": 1
     }
   ],
   "package": {
     "actual_weight": 2,
-    "declared_value": 104.65,
-    "declared_value_currency": "USD",
+    "declared_value": 17,
+    "declared_value_currency": "EUR",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
@@ -39,14 +27,14 @@
     "address": "1/1 Moo.13, Tumbol Donka",
     "city": "Thatako",
     "company": "Jaruwan Prapachaimongkol",
-    "country_code": "TH",
+    "country_code": "DE",
     "district": "Nakhonsawan",
     "email": "fah6324@gmail.com",
     "name": "Jaruwan Prapachaimongkol",
     "phone": "+66946835816",
-    "post_code": "60160",
+    "post_code": "24534",
     "province": "Thatako",
-    "id_number_country": "CN",
+    "id_number_country": "DE",
     "id_number": "666666",
     "id_number_type": "tax_card"
   },
@@ -66,6 +54,6 @@
     "id_number_type": "tax_card"
   },
   "service": {
-    "channel_code": "KEC-TESTQL"
+    "channel_code": "DTEUNLSSK"
   }
 }
