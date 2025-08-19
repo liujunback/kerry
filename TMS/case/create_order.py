@@ -49,7 +49,7 @@ class MyTestCase(unittest.TestCase):
         if x>=1:
             for i in range(1):
                 tracking_num = file_create_order(token)
-                # tracking_num = "YTMX5063000436365"
+                # tracking_num = "KECTH92000240"
                 if tracking_num == "失败":
                     fail=fail+1
                 # tracking_num = "CTCNTH000"

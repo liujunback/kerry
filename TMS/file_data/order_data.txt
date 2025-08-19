@@ -22,7 +22,7 @@
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTBACK20250808175043222",
+    "reference_number": "TESTBACK20250813100138157",
     "shipment_term": "DDP",
     "shipping_fee": 0,
     "width": "10"

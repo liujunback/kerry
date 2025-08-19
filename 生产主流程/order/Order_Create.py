@@ -61,6 +61,7 @@ def Order_Create(properties, token):
 
         # 8. 发送请求并计时
         start_time = time.perf_counter()
+        print(full_url)
         response = requests.post(
             full_url,
             json=order_data,  # 使用json参数自动序列化

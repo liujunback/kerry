@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
     def setUpClass(self):
         self.pro = getProperties("test")
     @priority(1)
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_case_successful_login(self):
         """验证正常登录功能"""
         driver = create_driver()
@@ -68,7 +68,7 @@ class MyTestCase(unittest.TestCase):
             driver.quit()
     # @unittest.skip
     @priority(2)
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_case_failed_login_scenarios(self):
         """验证异常登录功能"""
         test_cases =[
@@ -126,7 +126,7 @@ class MyTestCase(unittest.TestCase):
             print(f"✅ {case['name']} 测试通过")
         driver.quit()
     @priority(4)
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_case_asn_select(self):
         """验证搜索功能是否正常（用例描述：检查首页搜索框能否正常返回结果）"""
         driver = create_driver()
@@ -218,7 +218,7 @@ class MyTestCase(unittest.TestCase):
                             )
         assert result is False
     @priority(5)
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_case_asn_receive(self):
         """验证正常收货功能"""
         driver = create_driver()

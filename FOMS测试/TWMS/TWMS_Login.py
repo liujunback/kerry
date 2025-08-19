@@ -7,7 +7,6 @@ import re
 import requests
 
 
-
 def  Twms_CN_login(properties):
 
     url = properties["twms_url"]
@@ -15,7 +14,7 @@ def  Twms_CN_login(properties):
     password = properties["twms_password"]
 
     IP= url.split("//")[1]
-    res1 = requests.get(url + '/admin/login')
+    res1 = requests.get(url + '/opt/login')
     c_token=re.findall(r"name=\"_token\" value=\"(.+?)\"", res1.text)[0]
     payload={
             "username" : username,
@@ -23,7 +22,7 @@ def  Twms_CN_login(properties):
             "_token" : c_token
         }
     # print(url)
-    login= requests.post(url + '/admin/login',data = payload,cookies = res1.cookies)
+    login= requests.post(url + '/opt/login',data = payload,cookies = res1.cookies)
 
     if "Logout" in login.text:
         print("登陆成功")
@@ -39,4 +38,3 @@ def  Twms_CN_login(properties):
                 "_token" : c_token,
                 "csrf_token" : csrf_token
         }
-

@@ -19,14 +19,15 @@ from FOMS测试.public.foms_login import foms_login
 from FOMS测试.public.sku_update import update_sku
 from FOMS测试.接收TWMS状态.ASN_status import ASN_Status
 from FOMS测试.接收TWMS状态.Order_status import Order_status
-
+import os
+os.environ["NO_PROXY"] = "stg-twms.kec-app.com"  # 让该域名直连
 
 class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
 
         properties = getProperties("test")
-        # twms_login = Twms_CN_login(properties)
+        twms_login = Twms_CN_login(properties)
 
         foms_token = foms_login(properties)
 
@@ -37,9 +38,9 @@ class MyTestCase(unittest.TestCase):
         sku_number = "BACK_SKU202507103113505"
 
 
-         # 完结入库单
+        #  # 完结入库单
         # asn_number = create_ASN(sku_number,properties,foms_token)
-        # asn_number = "BACKASN20250417752693"
+        # # asn_number = "BACKASN20250417752693"
         # time.sleep(30)
         # asn_data = select_asn_id(properties,twms_login,asn_number)
         # asn_receive(properties,twms_login,asn_data,sku_number)
@@ -49,13 +50,13 @@ class MyTestCase(unittest.TestCase):
         order = []
         for i in range(1):
             time_start = time.time()
-            order_numbers = create_Order(sku_number,properties,foms_token)
-            # order_numbers = "BACK_OR202505307885470"
+            # order_numbers = create_Order(sku_number,properties,foms_token)
+            order_numbers = "BACK_OR202508149267600"
             order.append(order_numbers)
         #
             time_end = time.time()
         print('下单耗时：', round(time_end - time_start, 2), 's')
-        time.sleep(60)
+        # time.sleep(60)
         for order_number in order:
             # Order_status(properties,order_number)
             wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)

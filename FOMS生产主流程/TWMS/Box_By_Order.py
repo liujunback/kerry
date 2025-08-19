@@ -20,7 +20,7 @@ def box_by_order(properties,login,order_number,sku_number,pick_wave_data):
         "order_number":order_number,
         "qty":order_item_qty,
         "barcode": sku_number +  "-1",
-        "weight":"",
+        "weight":2,
         "box_type":1,
         "type":type,
         "uom":"",

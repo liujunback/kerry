@@ -41,8 +41,7 @@ def update_sku(properties,foms_token,sku_number):
       "height": 110,
       "length": 110,
       "width": 50,
-      "weight": 12,
-      "capture_serial_number_in": "INBOUND",
+      "weight": 1,
       "validate_serial_number_in": "INBOUND",
       "validate_serial_number_by": "FORMAT",
       "serial_number_formats": [
