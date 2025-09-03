@@ -17,15 +17,14 @@ from 生产主流程.properties.GetProperties import getProperties
 from 生产主流程.public.Ops_Login import Ops_Login
 from 生产主流程.public.Pos_Login import Pos_Login
 from 生产主流程.public.tms_Login import tms_login
-
+import os
+os.environ["NO_PROXY"] = "pos-eng.kec.kln.cn"
 
 class MyTestCase(unittest.TestCase):
-    import time
-    import openpyxl
 
     def test_case_order(self):
         fail = 0
-        company = "KEC-备用"  # KEC-备用
+        company = "DE"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -111,8 +110,8 @@ class MyTestCase(unittest.TestCase):
                     scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
                     time.sleep(5)
                     close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
-                    time.sleep(5)
-                    mawb_status(mawb_data["id"], "OF", tms_token, properties)
+                    # time.sleep(5)
+                    # mawb_status(mawb_data["id"], "OF", tms_token, properties)
                     # time.sleep(5)
                     # status(tracking_number, "OK", tms_token, properties, "签收成功")
                     # export_packing_list(tracking_number, tms_token,properties)

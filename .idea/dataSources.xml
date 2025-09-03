@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="POS测试环境" uuid="47504c6d-da1a-47d9-a93b-c2f38c7e99b8">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://rm-wz9knez97e4uut979lo.mysql.rds.aliyuncs.com :3306</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="TMS测试环境" uuid="309b935a-8ec2-4e90-896a-3c30a6599522">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://rm-wz9knez97e4uut979lo.mysql.rds.aliyuncs.com:3306</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="OPS测试环境" uuid="d219f69b-aa58-479a-a4c1-ac1729f5d86d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -29,20 +15,6 @@
       <jdbc-url>jdbc:mariadb://database-test.cluster-czjyu1wwoylu.ap-east-1.rds.amazonaws.com:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="KEC生产环境-TMS" uuid="237e7879-3ba4-445e-bea0-268e2c47979d">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://120.78.66.231:30001</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="KEC生产环境-POS" uuid="c747cafa-ed87-4d90-924e-05340558f438">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://120.78.66.231:30004</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="TWMS-前海" uuid="5f658e41-a6bd-4923-afcc-1ebd61910631">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -54,7 +26,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.247.65.110:53306/kec_test</jdbc-url>
+      <jdbc-url>jdbc:mysql://10.247.65.105:53306/kec_test</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="测试环境PUDO" uuid="4c4a7eaa-e697-4db5-9045-9e97655fc726">
@@ -68,7 +40,21 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.247.65.110:53306</jdbc-url>
+      <jdbc-url>jdbc:mysql://10.247.65.105:53306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="生产数据可以集合" uuid="7834ecc7-ac22-459e-85b9-0dcaf70f5057">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.242.45.21:12207/</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@10.242.45.21" uuid="a858a4aa-e05a-4741-8519-e07dfc2978f6">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.242.45.21:12208</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

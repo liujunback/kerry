@@ -1,8 +1,9 @@
 def getProperties(API = "test"):
-    if API == "test":
-        file_name = "../../TWMS/data/TWMS_测试_params.properties"
+    if API == "生产":
+        file_name = "../data/TWMS_CN.properties"
     else:
         file_name = "../../TWMS/data/TWMS_测试_params.properties"
+
     try:
         pro_file = open(file_name, 'r', encoding='utf-8')
         properties = {}

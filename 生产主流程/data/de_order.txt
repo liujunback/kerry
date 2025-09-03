@@ -43,7 +43,16 @@
     "name": "PGiovanni BRUNETTI",
     "phone": "506957563",
     "post_code": "26133",
-    "province": "Veneto Verona"
+    "province": "Veneto Verona",
+     "id_card_number": "12001",
+    "id_card_number_type": "id_card",
+    "idcard_name": "12001",
+     "id_number_country": "CN",
+    "idcard_address": "12002",
+    "idcard_province": "12003",
+    "idcard_city": "12004",
+    "idcard_district": "12005",
+    "idcard_post_code": "12006"
   },
   "sale_platform": "自有网站",
   "sender": {

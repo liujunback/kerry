@@ -3,8 +3,7 @@
     "merchant_code": "KEC-TESTGX",
     "logistics_provider": {
         "code": "KEC-TESTGX",
-        "tracking_number": "BACK_OR2024082367262"
-    },
+        "tracking_number": "BACK_OR2024082367262"},
     "order_number": "BACK_OR202408209967262",
     "platform": {
 
@@ -31,7 +30,7 @@
     "receiver": {
         "name": "側是",
         "company": "test company",
-        "address": "test address",
+        "address": "test addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstes12345678",
         "district": "test",
         "city": "SZ",
         "province": "GD",

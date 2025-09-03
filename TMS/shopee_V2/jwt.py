@@ -19,11 +19,19 @@ def jwt(payload):
     jwt_data = part1 + "." + part2 + "." + part1
     return {"JWT":jwt_data}
 
-with open("../shopee_V2/order_data.txt", 'r',encoding= 'utf-8') as f:
-    payload = json.loads(f.read())#转换成字典
-    payload = {
-                  "data": payload,
-                  "timestamp": 1676448364
-                }
-payload = json.dumps(jwt(payload))
-print(payload)
+# with open("../shopee_V2/order_data.txt", 'r',encoding= 'utf-8') as f:
+#     payload = json.loads(f.read())#转换成字典
+#     payload = {
+#                   "data": payload,
+#                   "timestamp": 1676448364
+#                 }
+# payload = json.dumps(jwt(payload))
+# print(payload)
+
+# print(json.dumps(jwt({
+#   "data": {
+#     "carrier_tn": "TWSPTEST20250903102524",
+#     "unique_id": "BACKTEST20250903102524"
+#   },
+#   "timestamp": 1688061603
+# })))

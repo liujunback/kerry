@@ -29,7 +29,6 @@ from TMS.public.delivery import delivery
 from TMS.public.shipment import shipment_add, shipment_num_ids, shipment_scan, shipment_close
 
 
-
 class MyTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -82,8 +81,8 @@ class MyTestCase(unittest.TestCase):
                 time.sleep(10)
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
-                time.sleep(10)
-                status(trak[i],"OR","出口报关开始")
+                # time.sleep(10)
+                # status(trak[i],"OR","出口报关开始")
                 # time.sleep(1)
                 # status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)

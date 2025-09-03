@@ -19,7 +19,9 @@ from FOMS生产主流程.public.foms_login import foms_login
 from FOMS生产主流程.public.sku_update import update_sku
 from FOMS生产主流程.接收TWMS状态.ASN_status import ASN_Status
 from FOMS生产主流程.接收TWMS状态.Order_status import Order_status
-
+import os
+os.environ["NO_PROXY"] = "foms-api.kec-app.com"  # 让该域名直连
+os.environ["NO_PROXY"] = "hm-cn-twms.kec-app.com"
 
 class MyTestCase(unittest.TestCase):
 
@@ -33,30 +35,30 @@ class MyTestCase(unittest.TestCase):
 
         print(foms_token)
         # 创建SKU
-        for i in range(1):
-            sku_number = create_SKU(properties,foms_token)
-        # sku_number = "BACK_SKU202507249910227"
+        # for i in range(1):
+        #     sku_number = create_SKU(properties,foms_token)
+        sku_number = "BACK_SKU202509011949921"
 
-        # 更新SKU
-        update_sku(properties,foms_token,sku_number)
-
-
-        #  完结入库单
-        asn_number = create_ASN(sku_number,properties,foms_token)
-        # asn_number = "BACKASN202508062767494"
-        time.sleep(10)
-        asn_data = select_asn_id(properties,twms_login,asn_number)
-        asn_receive(properties,twms_login,asn_data,sku_number)
-        asn_confirm(properties,twms_login,asn_data)
-
-        # 取消ASN
-        cancel_asn_number = create_ASN(sku_number,properties,foms_token)
-        cancel_asn(properties,foms_token,cancel_asn_number)
-
-
-        #取消订单
-        cancel_order = create_Order(sku_number,properties,foms_token)
-        Cancel_Order(properties,foms_token,cancel_order)
+        # # 更新SKU
+        # update_sku(properties,foms_token,sku_number)
+        #
+        #
+        # #  完结入库单
+        # asn_number = create_ASN(sku_number,properties,foms_token)
+        # # asn_number = "BACKASN202508062767494"
+        # time.sleep(10)
+        # asn_data = select_asn_id(properties,twms_login,asn_number)
+        # asn_receive(properties,twms_login,asn_data,sku_number)
+        # asn_confirm(properties,twms_login,asn_data)
+        #
+        # # 取消ASN
+        # cancel_asn_number = create_ASN(sku_number,properties,foms_token)
+        # cancel_asn(properties,foms_token,cancel_asn_number)
+        #
+        #
+        # #取消订单
+        # cancel_order = create_Order(sku_number,properties,foms_token)
+        # Cancel_Order(properties,foms_token,cancel_order)
         #
         #
         # 订单主流程

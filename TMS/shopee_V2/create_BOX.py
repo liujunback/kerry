@@ -7,7 +7,7 @@ from TMS.shopee_V2.jwt import jwt
 
 
 def create_BOX():
-    # url = "https://tms-eng.kec.kln.cn/tms-saas-web/shopee/api/services/ilh_shipment/create"
+    # url = "https://cb-tms.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/create"
     url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/shopee/api/services/ilh_shipment/create"
 
     with open("../shopee_V2/box_data.txt", 'r',encoding= 'utf-8') as f:

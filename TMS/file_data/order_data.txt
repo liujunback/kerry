@@ -1,63 +1,63 @@
 {
   "items": [
     {
-      "country_of_origin": "CN",
-      "currency": "USD",
-      "description": "Accessory for mobile device (Grip Stand)",
-      "description_origin_language": "行動裝置塑膠外殼",
-      "excc_legal_qty2": 1,
-      "hs_code": "3926.90.89",
+      "currency": "EUR",
+      "description": "vacuum cleaner brush",
+      "description_origin_language": "吸尘器刷",
+      "hs_code": "8508700090",
       "quantity": 1,
-      "sku": "16005956",
-      "unit_price": 32.29,
-      "unit_weight": 1
+      "unit_price": 5.8
+    },
+    {
+      "currency": "EUR",
+      "description": "hose",
+      "description_origin_language": "软管",
+      "hs_code": "3917310090",
+      "quantity": 1,
+      "unit_price": 4.83
+    },
+    {
+      "currency": "EUR",
+      "description": "fixed rope",
+      "description_origin_language": "固定绳",
+      "hs_code": "5806200000",
+      "quantity": 1,
+      "unit_price": 14.74
     }
   ],
   "package": {
-    "actual_weight": 2,
-    "declared_value": 88.2,
-    "declared_value_currency": "USD",
-    "height": "10",
-    "length": "10",
+    "actual_weight": 1559,
+    "declared_value": 25.37,
+    "declared_value_currency": "EUR",
+    "incidental_fee": 0,
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTBACK20250813100138157",
-    "shipment_term": "DDP",
-    "shipping_fee": 0,
-    "width": "10"
+    "reference_number": "TESTSUN2025829100EI",
+    "shipping_fee": 0
   },
   "receiver": {
-    "address": "2/422 soi 12 Supalaiburi village, Klong4 Klongluang Pathumthani 12120",
-    "city": "Klong4",
-    "company": "Pornnapas Didpan",
-    "country_code": "TH",
-    "district": "Pathumthani",
-    "email": "benz1931_@hotmail.com",
-    "id_number": "Klong4",
-    "id_number_country": "CN",
-    "id_number_type": "tax_card",
-    "name": "Pornnapas Didpan",
-    "phone": "+66863152811",
-    "post_code": "12120",
-    "province": "Klong4"
+    "address": "Urbanización Tancat de L´Alter Illa 32- Parcela 1",
+    "city": "PICASSENT",
+    "company": "Rafael Moratal Margarit",
+    "country_code": "ES",
+    "email": "psujrt3iaw13074@eu.shipping.temuemail.com",
+    "name": "Rafael Moratal Margarit",
+    "phone": "656424144",
+    "post_code": "46220",
+    "province": "VALÈNCIA/VALENCIA"
   },
   "sender": {
-    "address": "PO Box 62207, Kwun Tong Post Office",
-    "city": "Kowloon",
-    "company": "CASETiFY",
-    "country_code": "HK",
-    "district": "Kowloon",
-    "email": "hello@casetify.com",
-    "id_number": "Klong4",
-    "id_number_country": "ES",
-    "id_number_type": "tax_card",
-    "name": "Casetagram Limited",
-    "phone": "+85239984906",
-    "post_code": "000",
-    "province": "Kowloon"
+    "address": "Logistica 9, A-4, Km. 64.500",
+    "city": "Ocana",
+    "company": "CAN58",
+    "country_code": "ES",
+    "name": "CAN58",
+    "phone": "0",
+    "post_code": "45300",
+    "province": "Ocana"
   },
   "service": {
-    "channel_code": "CTCNTH000"
+    "channel_code": "CACNESMCL"
   }
 }

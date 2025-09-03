@@ -80,6 +80,7 @@ def Order_Create(properties, token):
                 tracking_number = response_data.get("data", {}).get("tracking_number")
                 if tracking_number:
                     print(json.dumps(response.json()))
+                    print(f"运单号：{tracking_number}")
                     return tracking_number
                 else:
                     print(f"响应中缺少追踪号: {response.text}")

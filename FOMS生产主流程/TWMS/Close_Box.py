@@ -13,7 +13,7 @@ def close_box(properties,login,order_number,pick_wave_data):
     }
     payload={
         "order_number":order_number,
-        "weight":1,
+        "weight":2,
         "box_type":properties["box_type"],
         "client_id":pick_wave_data["client_id"],
         "skip_weight":"no",

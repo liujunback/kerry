@@ -3,8 +3,7 @@
     "merchant_code": "TORITEST",
     "logistics_provider": {
         "code": "KEC-TESTPS",
-        "require_customized_label": "1"
-    },
+        "require_customized_label": "1"    },
     "order_number": "BACK_OR2025032420210216",
     "platform": {},
     "currency": "EUR",

@@ -14,9 +14,9 @@ from locust import HttpUser,TaskSet,task
 class Test(TaskSet):
 
     def on_start(self):
-        url ="https://cb-pos-kp-de.kec-app.com/"
-        username = "999666_K-PARCEL"
-        password = "e10adc3949ba59abbe56e057f20f883e"
+        url ="https://pos-eng.kec.kln.cn/"
+        username = "999666_KERRYCN"
+        password = "1fc11311376347a59770cdc5c48080ea"
 
         url = url +"pos-web/token/get"
         payload={
@@ -41,7 +41,7 @@ class Test(TaskSet):
             'Content-Type':'application/json',
             "Authorization":"Bearer"+" "+self.token
             }
-        with open("../../生产主流程/生产压测文件/KEC_order.txt", 'r',encoding= 'utf-8') as f:
+        with open("../生产主流程/生产压测文件/KEC_order.txt", 'r',encoding= 'utf-8') as f:
             param2 = json.loads(f.read())#转换成字典
             f.close()
         reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d')) + str(random.randint(1,99999999))
@@ -75,6 +75,6 @@ class Test(TaskSet):
 
 class websitUser(HttpUser):
     tasks = [Test]
-    host = "https://cb-pos-kp-de.kec-app.com/"
+    host = "https://pos-eng.kec.kln.cn/"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒

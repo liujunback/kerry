@@ -35,7 +35,7 @@ class MyTestCase(unittest.TestCase):
         # 创建sku
         # for i in range(1):
         #     sku_number = create_SKU(properties,foms_token)
-        sku_number = "BACK_SKU202507103113505"
+        sku_number = "BACK_SKU202505076131489"
 
 
         #  # 完结入库单
@@ -50,13 +50,13 @@ class MyTestCase(unittest.TestCase):
         order = []
         for i in range(1):
             time_start = time.time()
-            # order_numbers = create_Order(sku_number,properties,foms_token)
-            order_numbers = "BACK_OR202508149267600"
+            order_numbers = create_Order(sku_number,properties,foms_token)
+            # order_numbers = "BACK_OR202508149267600"
             order.append(order_numbers)
         #
             time_end = time.time()
         print('下单耗时：', round(time_end - time_start, 2), 's')
-        # time.sleep(60)
+        time.sleep(60)
         for order_number in order:
             # Order_status(properties,order_number)
             wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)

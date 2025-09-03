@@ -1,52 +1,63 @@
 {
   "items": [
     {
+      "country_of_origin": "TW",
       "currency": "EUR",
-      "description": "Women Suit",
-      "description_origin_language": "女式套装",
+      "description": "(RHINOSHIELD)Plastic watch case 2",
+      "description_origin_language": "watch-case",
+      "height": 2,
+      "hs_code": "392690",
+      "length": 14,
+      "platform_product_id": "001",
       "quantity": 1,
-      "unit_price": 12.82
-    },
-    {
-      "currency": "EUR",
-      "description": "Women Suit",
-      "description_origin_language": "女式套装",
-      "quantity": 1,
-      "unit_price": 12.82
+      "sku": "WCT0133852",
+      "unit_price": 17.99,
+      "unit_weight": 30,
+      "width": 9
     }
   ],
   "package": {
-    "actual_weight": 868,
-    "declared_value": 25.64,
+    "actual_weight": 30,
+    "declared_value": 17.99,
     "declared_value_currency": "EUR",
+    "height": "2",
+    "incidental_fee": 0,
+    "length": "14",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "314270904598",
-    "shipment_term": "DDU",
-    "shipping_fee": 0
+    "reference_number": "FR5404487-10008574-1",
+    "shipment_term": "DDP",
+    "shipment_type": "default",
+    "width": "9"
   },
   "receiver": {
-    "address": " CALLE GARZAS 22,28320,PINTO ",
-    "city": "MADRID",
-    "company": "INFINITE STYLES ECOMMERCE CO., LIMITED",
-    "country_code": "ES",
-    "district": "ES",
-    "name": "INFINITE STYLES",
-    "phone": "0034916155072",
-    "post_code": "28320",
-    "province": "es"
+    "address": "Rue de gages 2D Boîte A01",
+    "city": "Mons",
+    "country_code": "BE",
+    "email": "enzo.cmt@hotmail.com",
+    "name": "enzo Cammarata",
+    "phone": "+32474822414",
+    "post_code": "7000",
+    "province": "Mons"
   },
+  "sale_platform": "",
   "sender": {
-    "address": " Avenida de la paz n°2.  puerta 6 Primer piso",
-    "city": "Riba-Roja De Turia",
-    "company": "Silvia Ojeda piriz",
-    "country_code": "ES",
-    "name": "Silvia Ojeda piriz",
-    "phone": "605555807",
-    "post_code": "46190"
+    "address": "98 Rue de la Belle Étoile,95700 Roissy-en-France\t",
+    "city": "FR",
+    "company": "RhinoShield",
+    "country_code": "FR",
+    "district": "FR",
+    "email": "shipping-help@evolutivelabs.com",
+    "ioss_number": "",
+    "name": "RhinoShield",
+    "phone": "0423897657",
+    "post_code": "95700",
+    "province": "FR"
   },
   "service": {
-    "channel_code": "ITTEST"
+    "channel_code": "CAFREUSGX",
+    "delivery_instruction": "",
+    "service_type": "general"
   }
 }

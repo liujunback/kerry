@@ -9,7 +9,7 @@ from TMS.public.Controller_Login import Controller_Login
 
 def big_bag_inbound(big_bag):
     token=Controller_Login()
-    url = "http://47.107.105.241:22000/controller/operations/inbound/box/boxInBound"
+    url = "https://ops-eng-uat.kec-app.com/controller/operations/inbound/box/boxInBound"
     payload={
             "operationType":"",
             "weights":"2323",

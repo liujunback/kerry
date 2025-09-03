@@ -6,7 +6,7 @@ from TMS.public.Controller_Login import Controller_Login
 
 
 def box_out_bound(big_bag):
-    url = "http://47.107.105.241:22000/controller/operations/inbound/box/boxOutBound"
+    url = "https://ops-eng-uat.kec-app.com/controller/operations/inbound/box/boxOutBound"
     token=Controller_Login()
     payload={
         "boxNumber":big_bag,
