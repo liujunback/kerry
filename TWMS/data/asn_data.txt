@@ -1,0 +1,21 @@
+{
+    "centre_code": "QT",
+    "client_code": "QTST",
+    "asn_number": "ASNQT0002025081810",
+    "is_require_piece_scan": "N",
+    "asn_date": "2025-08-18",
+    "eta_at": "2025-08-18",
+    "is_return_asn": "N",
+    "trade_mode": "5034",
+    "remarks": "remarks",
+    "items": [
+        {
+            "code": "TRQHTS2025071804",
+            "unit_price": 5,
+            "currency": "HKD",
+            "qty": 10,
+            "po_number": "2025-03-12"
+
+        }
+    ]
+}

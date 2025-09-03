@@ -1,0 +1,68 @@
+{
+    "centre_code": "QT",
+    "client_code": "QTST",
+    "real_time_response": false,
+    "created_at": "2025-06-25",
+    "trade_mode": "B2B2C",
+    "order_brand": "TEST617",
+    "order_type": "B2B",
+    "sale_platform_create_at": "2025-06-25 09:00:07",
+    "foms_create_at": "2025-06-25 09:00:07",
+    "estimated_outbound_date":"2025-07-03 17:09:23",
+    "logistics_provider": {
+        "code": "SELFPICK"
+    },
+    "package": {
+        "order_number": "SAM257081802",
+        "platform_order_id": "SAM257081802-02",
+        "declared_value": 10,
+        "declared_value_currency": "HKD",
+        "height": 50,
+        "length": 10,
+        "width": 25,
+        "is_block": "",
+        "actual_weight": 544,
+        "shipment_term": "DDP",
+        "payment_method": "PP",
+        "remarks": "TEST THYL"
+    },
+    "sender": {
+        "name": "IT Support Team",
+        "company": "TIMES-TEC",
+        "address": "Hong Kong Xi Jiu Long A-001",
+        "city": "Hong Kong",
+        "province": "Hong Kong",
+        "country_code": "HK",
+        "post_code": "123456",
+        "phone": "+85215811123456",
+        "email": "Test@163.com",
+        "district": "yutj"
+    },
+    "receiver": {
+        "name": "JOEY TEST",
+        "company": "JOEY CHAN",
+        "address": "香港特别行政区油尖旺区尖沙咀金马伦道22-24号东丽中心",
+        "city": "HK",
+        "province": "NE",
+        "country_code": "TH",
+        "post_code": "21000",
+        "phone": "7717698000",
+        "email": "juan@gmail.com",
+        "selfpick_store_1": "易碎",
+        "district": "987yutj",
+        "hs_code": "888888888888"
+    },
+    "items": [
+        {
+            "sku": "TRQHTS2025081803",
+            "description": "YUGundam Barbatos Lupus Model87812",
+            "category": "shoe",
+            "unit_price": 10,
+            "currency": "HKD",
+            "qty":2,
+            "country_of_origin": "US",
+            "hs_code": "68964335",
+            "condition":"GOOD"
+        }
+    ]
+}

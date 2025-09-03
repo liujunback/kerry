@@ -1,0 +1,50 @@
+{
+        "client_code": "FOMSTEST",
+        "code": "trWMSFT02025061203",
+        "barcodes": ["trWMSFT02025061203"],
+        "name": "BACK",
+        "model": "TEST TORI",
+        "description": "TEST TORI",
+        "origin_country": "TH",
+        "declare_name": "BACK",
+        "queue_order": "FIFO",
+        "is_fragile": "N",
+        "sku_images": [
+            {
+                "url": "https://stg.hk.timeswms.com/storage/sku/5265df844a9e452d834ed5bc27d1818a8b62121195bdefc6e58d3ff219b08cb4.jpg",
+                "extension": ".jpg"
+            }
+        ],
+        "is_batch_required": "N",
+        "is_expire_date_required": "N",
+        "is_manufacture_date_required": "N",
+        "is_udf1_required": "N",
+        "is_udf2_required": "N",
+        "is_udf3_required": "N",
+        "is_packing_material": "N",
+        "packingMaterialType": "test",
+        "temperature_control_factor": "room_temperature",
+        "length": "12",
+        "width": "11",
+        "height": "10",
+        "weight": "0.12",
+        "currency": "HKD",
+        "declare_price": 100.9,
+        "color": "TEST1",
+        "size": "TEST2",
+        "line": "TEST3",
+        "carton_pack_factor": "2",
+        "pallet_pack_factor": "1",
+        "storage_unit": [
+            {
+                "unit_level": "3",
+                "qty_of_previous_level": "2",
+                "barcode": "trWMSFT02025061203-04"
+            },
+            {
+                "unit_level": "2",
+                "qty_of_previous_level": "3",
+                "barcode": "trWMSFT02025061203-07"
+            }
+        ]
+    }
