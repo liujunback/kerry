@@ -1,63 +1,71 @@
 {
   "items": [
     {
-      "currency": "EUR",
-      "description": "vacuum cleaner brush",
-      "description_origin_language": "吸尘器刷",
-      "hs_code": "8508700090",
+      "category": "toys",
+      "country_of_origin": "CN",
+      "currency": "THB",
+      "description": "toys",
+      "description_destination_language": "",
+      "description_origin_language": "toys",
       "quantity": 1,
-      "unit_price": 5.8
-    },
-    {
-      "currency": "EUR",
-      "description": "hose",
-      "description_origin_language": "软管",
-      "hs_code": "3917310090",
-      "quantity": 1,
-      "unit_price": 4.83
-    },
-    {
-      "currency": "EUR",
-      "description": "fixed rope",
-      "description_origin_language": "固定绳",
-      "hs_code": "5806200000",
-      "quantity": 1,
-      "unit_price": 14.74
+      "remark": "121324234325435",
+      "sku": "",
+      "unit_price": 25
     }
   ],
   "package": {
-    "actual_weight": 1559,
-    "declared_value": 25.37,
-    "declared_value_currency": "EUR",
-    "incidental_fee": 0,
+    "actual_weight": 1620,
+    "declared_value": 35,
+    "declared_value_currency": "THB",
+    "height": "45",
+    "length": "67",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTSUN2025829100EI",
-    "shipping_fee": 0
+    "reference_number": "LLtrT5FDh71gh0004",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 10,
+    "shipping_fee_currency": "CNY",
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "56"
   },
   "receiver": {
-    "address": "Urbanización Tancat de L´Alter Illa 32- Parcela 1",
-    "city": "PICASSENT",
-    "company": "Rafael Moratal Margarit",
-    "country_code": "ES",
-    "email": "psujrt3iaw13074@eu.shipping.temuemail.com",
-    "name": "Rafael Moratal Margarit",
-    "phone": "656424144",
-    "post_code": "46220",
-    "province": "VALÈNCIA/VALENCIA"
+    "address": "test etst test testsssqqqqqq2",
+    "city": "Pak Kret",
+    "company": "",
+    "country_code": "TH",
+    "district": "",
+    "email": "1113245dfgdf@163.com",
+    "id_card_number": "000",
+    "id_card_number_type": "id_card",
+    "id_number": "35345754511",
+    "id_number_type": "",
+    "location_code": "SCL1019",
+    "name": "GLS",
+    "phone": "123456789",
+    "post_code": "12000",
+    "province": "Bangkok"
   },
+  "sale_platform": "",
   "sender": {
-    "address": "Logistica 9, A-4, Km. 64.500",
-    "city": "Ocana",
-    "company": "CAN58",
-    "country_code": "ES",
-    "name": "CAN58",
-    "phone": "0",
-    "post_code": "45300",
-    "province": "Ocana"
+    "address": "humen",
+    "city": "dongguan",
+    "company": "GLS",
+    "country_code": "CN",
+    "district": "",
+    "email": "3245dfgdf@163.com",
+    "id_number": "11154511222",
+    "id_number_type": "",
+    "name": "mMMM",
+    "phone": "00000000000",
+    "province": "GLS",
+    "ioss_number": "GLS"
   },
   "service": {
-    "channel_code": "CACNESMCL"
+    "channel_code": "XXTMESCTX",
+    "delivery_instruction": "",
+    "service_type": "pickup_point"
   }
 }

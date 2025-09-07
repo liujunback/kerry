@@ -6,11 +6,6 @@ import logging
 from typing import Dict, Any, Union, List, Optional
 
 # 配置日志
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger('SKU_Creator')
 
 
 def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str, Any]:
@@ -31,7 +26,7 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
     required_keys = ["TWMS_URL", "api_token", "sku_data"]
     if missing := [key for key in required_keys if key not in properties]:
         error_msg = f"缺少必要配置项: {', '.join(missing)}"
-        logger.error(error_msg)
+        print(error_msg)
         return {"error": error_msg, "status": "config_error"}
 
     # 准备基础配置
@@ -45,7 +40,7 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
             sku_data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         error_msg = f"加载SKU模板失败: {str(e)}"
-        logger.error(error_msg)
+        print(error_msg)
         return {"error": error_msg, "status": "template_error"}
 
     # 生成唯一SKU代码
@@ -81,11 +76,12 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
             # 尝试解析JSON响应
             try:
                 result = response.json()
-                logger.info(f"成功创建SKU: {sku_code}")
+                print(f"成功创建SKU: {sku_code}")
                 return {"sku":result["data"][0]["code"],
-                        "sku_barcodes":result["data"][0]["barcodes"][0]}
+                        "sku_barcodes":result["data"][0]["barcodes"][0],
+                        'sku_qty':2}
             except json.JSONDecodeError:
-                logger.warning(f"响应不是有效的JSON: {response.text}")
+                print(f"响应不是有效的JSON: {response.text}")
                 return {"raw_response": response.text, "status": "success"}
 
         except requests.exceptions.HTTPError as http_err:
@@ -94,23 +90,23 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
 
             # 特定错误处理
             if status_code == 401:
-                logger.error("认证失败: 无效的API Token")
+                print("认证失败: 无效的API Token")
                 return {"error": "认证失败", "status": "auth_error"}
 
-            logger.warning(f"HTTP错误 (尝试 {attempt + 1}/{max_retries}): {status_code} - {error_detail}")
+            print(f"HTTP错误 (尝试 {attempt + 1}/{max_retries}): {status_code} - {error_detail}")
 
         except (requests.exceptions.RequestException, TimeoutError) as req_err:
-            logger.warning(f"网络错误 (尝试 {attempt + 1}/{max_retries}): {str(req_err)}")
+            print(f"网络错误 (尝试 {attempt + 1}/{max_retries}): {str(req_err)}")
 
         # 指数退避重试
         if attempt < max_retries - 1:
             sleep_time = 2 ** attempt
-            logger.info(f"将在 {sleep_time} 秒后重试...")
+            print(f"将在 {sleep_time} 秒后重试...")
             import time
             time.sleep(sleep_time)
 
     # 所有重试失败
     error_msg = f"创建SKU失败: {sku_code} (尝试 {max_retries} 次后)"
-    logger.error(error_msg)
+    print(error_msg)
     return {"error": error_msg, "status": "failed"}
 

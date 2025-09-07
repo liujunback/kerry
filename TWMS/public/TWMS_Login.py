@@ -50,7 +50,7 @@ def Twms_login(properties):
         csrf_token_match = re.search(r'<meta name="csrf-token" content="([^"]+)">', login_response.text)
         csrf_token = csrf_token_match.group(1) if csrf_token_match else None
 
-        print("Login successful")
+        print("TWMS登录成功")
         return {
             "cookies": {
                 "XSRF-TOKEN": xsrf_token,
