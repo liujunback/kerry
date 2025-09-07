@@ -12,6 +12,9 @@ from TMS.shopee_V2.create_BOX import create_BOX
 from TMS.shopee_V2.create_order_shopee import create_order_shopee
 
 
+import os
+os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
+
 class MyTestCase(unittest.TestCase):
     def test_case_order_shopee_create(self):
         for i in range(1):

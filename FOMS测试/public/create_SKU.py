@@ -30,7 +30,7 @@ def create_SKU(properties,token):
     }
 
     response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
-
+    print(response.text)
     if  "Created" in response.text:
         print("创建SKU成功：" + sku_number)
         return sku_number

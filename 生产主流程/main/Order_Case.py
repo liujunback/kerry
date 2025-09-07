@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "DE"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 

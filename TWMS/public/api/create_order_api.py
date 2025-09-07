@@ -7,11 +7,6 @@ import time
 from typing import Dict, Any, Union, List, Optional
 
 # 配置日志
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger('Order_Creator')
 
 
 def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> Dict[str, Any]:
@@ -32,7 +27,7 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
     required_keys = ["TWMS_URL", "api_token"]
     if missing := [key for key in required_keys if key not in properties]:
         error_msg = f"缺少必要配置项: {', '.join(missing)}"
-        logger.error(error_msg)
+        print(error_msg)
         return {"error": error_msg, "status": "config_error"}
 
     # 准备基础配置
@@ -54,7 +49,7 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
                 order_data = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError) as e:
             error_msg = f"加载Order模板失败: {str(e)}"
-            logger.error(error_msg)
+            print(error_msg)
             return {"error": error_msg, "status": "template_error"}
     # 构建订单数据
     order_data['package']['order_number'] = order_number
@@ -67,7 +62,7 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
                 "description": "Cycliq Micro SD",
                 "unit_price": 2000,
                 "currency": "THB",
-                "qty": 2,
+                "qty": i["sku_qty"],
                 "condition": "GOOD"
             }
         )
@@ -85,7 +80,7 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
     # 带重试机制的请求
     for attempt in range(max_retries):
         try:
-            logger.info(f"创建订单请求中 (尝试 {attempt + 1}/{max_retries}): {order_number}")
+            print(f"创建订单请求中 (尝试 {attempt + 1}/{max_retries}): {order_number}")
             response = requests.post(
                 url,
                 headers=headers,
@@ -97,12 +92,12 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
             # 尝试解析JSON响应
             try:
                 result = response.json()
-                logger.info(f"成功创建订单: {order_number}")
+                print(f"成功创建订单: {order_number}")
                 return {
                     "order_number": order_number
                 }
             except json.JSONDecodeError:
-                logger.warning(f"响应不是有效的JSON: {response.text}")
+                print(f"响应不是有效的JSON: {response.text}")
                 return{
                     "order_number": order_number
                 }
@@ -113,27 +108,27 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
 
             # 特定错误处理
             if status_code == 401:
-                logger.error("认证失败: 无效的API Token")
+                print("认证失败: 无效的API Token")
                 return {
                     "error": "认证失败",
                     "status": "auth_error",
                     "status_code": 401
                 }
 
-            logger.warning(f"HTTP错误 (尝试 {attempt + 1}/{max_retries}): {status_code} - {error_detail}")
+            print(f"HTTP错误 (尝试 {attempt + 1}/{max_retries}): {status_code} - {error_detail}")
 
         except (requests.exceptions.RequestException, TimeoutError) as req_err:
-            logger.warning(f"网络错误 (尝试 {attempt + 1}/{max_retries}): {str(req_err)}")
+            print(f"网络错误 (尝试 {attempt + 1}/{max_retries}): {str(req_err)}")
 
         # 指数退避重试
         if attempt < max_retries - 1:
             sleep_time = 2 ** attempt
-            logger.info(f"将在 {sleep_time} 秒后重试...")
+            print(f"将在 {sleep_time} 秒后重试...")
             time.sleep(sleep_time)
 
     # 所有重试失败
     error_msg = f"创建订单失败: {order_number} (尝试 {max_retries} 次后)"
-    logger.error(error_msg)
+    print(error_msg)
     return {
         "error": error_msg,
         "status": "failed",

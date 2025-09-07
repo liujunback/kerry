@@ -1,8 +1,8 @@
 {
     "warehouse_code": "ITST",
-    "merchant_code": "KEC-TESTGX",
+    "merchant_code": "KEC-2342",
     "logistics_provider": {
-        "code": "KEC-TESTGX",
+        "code": "KEC-234",
         "tracking_number": "BACK_OR2024082367262"},
     "order_number": "BACK_OR202408209967262",
     "platform": {
@@ -34,7 +34,7 @@
         "district": "test",
         "city": "SZ",
         "province": "GD",
-        "country_code": "TH",
+        "country_code": "SG",
         "post_code": "21000",
         "phone": "223456789",
         "email": "123@abnc.com"

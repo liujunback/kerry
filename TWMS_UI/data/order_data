@@ -1,0 +1,42 @@
+{
+        "centre_code": "FT",
+        "inventory_validation": False,
+        "client_code": "FOMSTEST",
+        "callback_foms_required": False,
+        "logistics_provider": {"code": "SELFPICK"},
+        "package": {
+            "order_number": order_number,
+            "is_block": 0,
+            "platform_order_id": order_number,
+            "declared_value": 5000,
+            "declared_value_currency": "THB",
+            "shipment_term": "DDP",
+            "payment_method": "PP",
+            "cod_value_currency": "THB",
+            "remarks": f"REMARK-{random_suffix}"
+        },
+        "sender": {
+            "name": "backtest",
+            "address": "深圳金融科技创新中心",
+            "city": "SZ",
+            "province": "广东",
+            "country_code": "CN",
+            "district": "test city",
+            "post_code": "21999",
+            "phone": "1234567890",
+            "email": "123123123@qq.com"
+        },
+        "receiver": {
+            "name": "TEST TESTY",
+            "address": "test2 address",
+            "city": "San Francisco",
+            "province": "Hong Kong",
+            "country_code": "HK",
+            "post_code": "80226",
+            "phone": "1234567891",
+            "email": "123@abn.com",
+            "company": "test 32546",
+            "district": "The Peak"
+        },
+        "items": []
+    }
