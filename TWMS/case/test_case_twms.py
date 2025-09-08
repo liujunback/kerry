@@ -9,6 +9,7 @@ from TWMS.public.Order_Close_Box import close_box
 from TWMS.public.Order_Handover import order_handover
 from TWMS.public.Order_Create_Pick_Wave import create_pick_wave
 from TWMS.public.Order_Pick_Add_Order import pick_add_order
+from TWMS.public.Order_handover_pallet import order_handover_pallet
 from TWMS.public.TWMS_Batch_Create_Pick_Wave import batch_create_pick_wave
 from TWMS.public.TWMS_Inventory import inventory
 
@@ -30,7 +31,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "test"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = [{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
         cls.properties = getProperties(company)
 
     def setUp(self):
@@ -241,6 +242,20 @@ class MyTestCase(unittest.TestCase):
         tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
         order_handover(self.properties,self.twms_login,tracking_number)
         self.assertIsNotNone(box_data)
+
+
+    def test_13_order_handover_pallet(self):
+        """出库（通过板）"""
+        order_data = create_order_api(self.properties, self.sku_list)
+        sleep(3)
+        wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
+        pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
+        pick_add_order(self.properties,self.twms_login,pick_wave_data)
+        # sleep(5)
+        box_data = box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
+        tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
+        order_handover_pallet(self.properties,self.twms_login,tracking_number)
+        self.assertIsNotNone(tracking_number)
 
 
 
