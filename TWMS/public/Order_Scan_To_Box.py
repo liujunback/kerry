@@ -60,8 +60,9 @@ def box_by_order_S(properties,login,sku_list,pick_wave_data):
     response = requests.request("POST", url, headers=headers, data=payload)
 
     if json.loads(response.text)['status'] == 0:
-        print(response.text)
+        # print(response.text)
         print("打包入箱扫描成功（S类型）：")
+        return True
     else:
         print("打包入箱扫描失败：" + response.text)
 
