@@ -129,8 +129,15 @@ class MyTestCase(unittest.TestCase):
         for sku, detail in inventory_result['details'].items():
             print(f"  SKU {sku}: {detail['status']} - {detail['message']}")
 
-
     def test_05_create_order(self):
+        """订单创建"""
+        print("订单创建-----------------------------------------------------------")
+        # sku_data = self.sku_list[0].append(["sku_qty"])
+        order_data = create_order_api(self.properties, self.sku_list)
+        self.assertIsNotNone(order_data)
+
+
+    def test_06_create_order(self):
         """波次创建（单件）"""
         print("波次创建（单件）-----------------------------------------------------------")
         # sku_data = self.sku_list[0].append(["sku_qty"])
@@ -143,7 +150,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(pick_order)
 
 
-    def test_06_batch_create_pick_wave(self):
+    def test_07_batch_create_pick_wave(self):
         """波次创建（批量）"""
         print("波次创建（批量）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -156,7 +163,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_07_create_order_S(self):
+    def test_08_create_order_S(self):
         """打包类型（S）"""
         print("打包类型（S）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'],'sku_qty':1}]
@@ -171,7 +178,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(box)
 
 
-    def test_08_create_order_M(self):
+    def test_09_create_order_M(self):
         """打包类型（M）"""
         print("打包类型（M）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
@@ -189,7 +196,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(tracking_number2)
 
 
-    def test_09_create_order_L(self):
+    def test_10_create_order_L(self):
         """打包类型（L）"""
         print("打包类型（L）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -203,7 +210,7 @@ class MyTestCase(unittest.TestCase):
         # order_handover(self.properties,self.twms_login,tracking_number)
         self.assertIsNotNone(box_data)
 
-    def test_10_create_order_M_Multiple(self):
+    def test_11_create_order_M_Multiple(self):
         """打包类型（M爆款）"""
         print("打包类型（M爆款）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
@@ -216,7 +223,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(job_id)
 
 
-    def test_11_create_order_tote(self):
+    def test_12_create_order_tote(self):
         """打包类型（格口）"""
         # print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
@@ -238,7 +245,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_12_create_order_S_Multiple(self):
+    def test_13_create_order_S_Multiple(self):
         """打包类型（S+）"""
         print("打包类型（S+）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'], 'sku_qty': 1}]
@@ -270,7 +277,7 @@ class MyTestCase(unittest.TestCase):
         tracking_number = close_box(self.properties, self.twms_login, order_data5["order_number"], pick_wave_data)
         self.assertIsNotNone(tracking_number)
 
-    def test_13_order_handover(self):
+    def test_14_order_handover(self):
         """出库（by tracking number）"""
         print("出库（by tracking number）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -285,7 +292,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(box_data)
 
 
-    def test_14_order_handover_pallet(self):
+    def test_15_order_handover_pallet(self):
         """出库（通过板）"""
         print("出库（通过板）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
