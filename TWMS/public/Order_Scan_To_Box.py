@@ -116,6 +116,51 @@ def box_by_order_M_Multiple(properties,login,sku_list,pick_wave_data):
     else:
         print("打包入箱扫描失败：" + response.text)
 
+def box_by_order_tote(properties,login,sku_list,pick_wave_data):
+    """打包入箱：格口"""
+    url = properties["TWMS_URL"].rstrip('/')  + "/opt/second_sort"
+    headers = {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      'X-CSRF-TOKEN': login['csrf_token'],
+      'Cookie': 'XSRF-TOKEN=' + login['cookies']['XSRF-TOKEN'] + '; laravel_session='+login['cookies']['laravel_session']
+    }
+    payload={
+        "action":"operation",
+        "pick_wave_number":pick_wave_data["pick_wave_num"]
+    }
+    response = requests.request("POST", url, headers=headers, data=payload)
+    if response.status_code ==200:
+        path = f'/opt/second_sort/{pick_wave_data["pick_wave_id"]}/operation'
+        url = properties["TWMS_URL"].rstrip('/') + path
+        response = requests.request("GET", url, headers=headers, data=payload)
+        if path in response.text:
+            payload = {
+                "tote_set_code": properties["tote_code"]
+            }
+            response = requests.request("POST", url, headers=headers, data=payload)
+            url = properties["TWMS_URL"].rstrip('/') + path + "/scanBarcode"
+            payload = {
+                "barcode": sku_list[0]["sku_barcodes"],
+                "qty": sku_list[0]["sku_qty"],
+                "uom": ""
+            }
+            response = requests.request("POST", url, headers=headers, data=payload)
+
+            if json.loads(response.text)['status'] == 0:
+                tote_data = {"tote_id":json.loads(response.text)['tote']["id"],
+                             "tote_code":json.loads(response.text)['tote']["code"]}
+                close_tote_url = properties["TWMS_URL"].rstrip('/') + f'/opt/second_sort/{pick_wave_data["pick_wave_id"]}/progress/ajax/close-tote'
+                payload = {
+                    "tote_id": tote_data["tote_id"]
+                }
+                response = requests.request("POST", close_tote_url, headers=headers, data=payload)
+                if json.loads(response.text)['status'] == 0:
+                    print(json.loads(response.text)['label_url'])
+                    print("二次分拣成功")
+                    return tote_data
+
+            # if response.status_code ==200:
+            #     print("成功")
 
 
 

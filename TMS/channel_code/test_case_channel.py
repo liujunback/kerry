@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
             # ws = wb.active
             # name = str(ws['A'+str(i)].value)
             # even_mess = str(ws['B'+str(i)].value)
-            name = "XXTMESCTX"
+            name = "XXTMEICXX"
             country = "ES"
             # sortCode = "TH-15"
             # name = str(ws['A'+str(i)].value)

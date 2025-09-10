@@ -69,7 +69,7 @@
     "province": ""
   },
   "service": {
-    "channel_code": "CTCNTH000",
+    "channel_code": "KEC-TESTQL",
     "delivery_instruction": "",
     "service_type": "default"
   }

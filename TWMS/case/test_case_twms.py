@@ -4,7 +4,8 @@ from time import sleep
 
 from TWMS.properties.GetProperties import getProperties
 from TWMS.public.Asn_Confirm import select_asn_id, asn_confirm
-from TWMS.public.Order_Scan_To_Box import box_by_order, box_by_order_S, box_by_order_M_Multiple, box_by_order_S_Multiple
+from TWMS.public.Order_Scan_To_Box import box_by_order, box_by_order_S, box_by_order_M_Multiple, \
+    box_by_order_S_Multiple, box_by_order_tote
 from TWMS.public.Order_Close_Box import close_box
 from TWMS.public.Order_Handover import order_handover
 from TWMS.public.Order_Create_Pick_Wave import create_pick_wave
@@ -31,8 +32,9 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "test"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = [{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
         cls.properties = getProperties(company)
+        # cls.twms_login = Twms_login(cls.properties)
 
     def setUp(self):
         """在每个测试方法执行前的设置"""
@@ -52,7 +54,7 @@ class MyTestCase(unittest.TestCase):
 
         # 添加到类属性列表
         MyTestCase.sku_list.append(sku_data)
-        print(f"创建的SKU: {sku_data}")
+        print(f"创建的SKU: {sku_data['sku']}  Barcode:{sku_data['sku_barcodes']}")
 
 
     def test_01_create_asn(self):
@@ -214,7 +216,29 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(job_id)
 
 
-    def test_11_create_order_S_Multiple(self):
+    def test_11_create_order_tote(self):
+        """打包类型（格口）"""
+        # print("打包类型（格口）-----------------------------------------------------------")
+        order_data1 = create_order_api(self.properties, self.sku_list)
+        order_data2 = create_order_api(self.properties, self.sku_list)
+        wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
+        wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
+        pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
+        # pick_wave_data = {'pick_wave_id': 62843, 'pick_wave_num': 'W000062848', 'client_id': 145, 'centre_id': 37, 'order_ids': ['919598', '919599']}
+        tote_data = box_by_order_tote(self.properties, self.twms_login,self.sku_list,pick_wave_data)
+        print(tote_data)
+        tote_data2 = box_by_order_tote(self.properties, self.twms_login, self.sku_list, pick_wave_data)
+        print(tote_data2)
+        tracking_number1 = close_box(self.properties, self.twms_login, order_data1["order_number"], pick_wave_data,"tote")
+        tracking_number2 = close_box(self.properties, self.twms_login, order_data2["order_number"], pick_wave_data, "tote")
+        print(tracking_number2)
+        self.assertIsNotNone(tracking_number2)
+        # close_box(self.properties, self.twms_login, order_data1["order_number"], pick_wave_data)
+
+
+
+
+    def test_12_create_order_S_Multiple(self):
         """打包类型（S+）"""
         print("打包类型（S+）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'], 'sku_qty': 1}]
@@ -246,7 +270,7 @@ class MyTestCase(unittest.TestCase):
         tracking_number = close_box(self.properties, self.twms_login, order_data5["order_number"], pick_wave_data)
         self.assertIsNotNone(tracking_number)
 
-    def test_12_order_handover(self):
+    def test_13_order_handover(self):
         """出库（by tracking number）"""
         print("出库（by tracking number）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -261,7 +285,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(box_data)
 
 
-    def test_13_order_handover_pallet(self):
+    def test_14_order_handover_pallet(self):
         """出库（通过板）"""
         print("出库（通过板）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)

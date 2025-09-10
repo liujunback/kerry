@@ -4,7 +4,7 @@ from typing import Dict, Any, Optional
 
 
 def close_box(properties: Dict[str, Any], login: Dict[str, Any],
-              order_number: str, pick_wave_data: Dict[str, Any]) -> Optional[str]:
+              order_number: str, pick_wave_data: Dict[str, Any],pack_by="") -> Optional[str]:
     """
     关闭箱子并获取追踪号码
 
@@ -41,7 +41,9 @@ def close_box(properties: Dict[str, Any], login: Dict[str, Any],
         "box_type": properties["box_type"],
         "client_id": pick_wave_data["client_id"],
         "skip_weight": "no",
-        "forceSkipWeight": 0
+        "forceSkipWeight": 0,
+        "pack_by": pack_by,
+        "number_of_packages": 1
     }
 
     # 最多重试一次

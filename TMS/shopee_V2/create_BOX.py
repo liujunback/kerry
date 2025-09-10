@@ -27,7 +27,7 @@ def create_BOX():
     payload["data"]["order"]["ilh_shopee_no"] = ilh_shopee_no
     payload["data"]["order"]["unique_id"] = unique_id
     parcel_list = []
-    for i in range(1):
+    for i in range(5):
         parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
     payload["data"]["parcel_list"] = parcel_list
     payload = json.dumps(jwt(payload))

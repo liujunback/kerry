@@ -20,7 +20,7 @@ def jwt(payload):
     jwt_data = part1 + "." + part2 + "." + part1
     return {"JWT":jwt_data}
 
-#
+
 # with open("../shopee_V2/box_data.txt", 'r', encoding='utf-8') as f:
 #     payload = json.loads(f.read())  # 转换成字典
 #     payload = {
@@ -30,7 +30,7 @@ def jwt(payload):
 #         "timestamp": 1676447280
 #     }
 #     f.close()
-# box_num = "TWSPTEST20250905095860"
+# box_num = "TWYSPKM25090400802"
 # ilh_shopee_no = "BACKTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))
 # unique_id = "BACKTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))
 # payload["data"]["order"]["carrier_tn"] = box_num
@@ -38,7 +38,7 @@ def jwt(payload):
 # payload["data"]["order"]["ilh_shopee_no"] = ilh_shopee_no
 # payload["data"]["order"]["unique_id"] = unique_id
 # parcel_list = []
-# for i in range(1):
+# for i in range(5):
 #     parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
 # payload["data"]["parcel_list"] = parcel_list
 # payload = json.dumps(jwt(payload))
@@ -50,21 +50,21 @@ def jwt(payload):
 
 # print(json.dumps(jwt({
 #   "data": {
-#     "carrier_tn": "TWSPTEST20250904154407",
-#     "unique_id": "BACKTEST20250904154407"
+#     "carrier_tn": "TWSPTEST20250910102457",
+#     "unique_id": "BACKTEST20250910102457"
 #   },
 #   "timestamp": 1688061603
 # })))
 # parcel_list=["TEST202509051142480"]
 # parcel_list_data = []
 # for i in range(len(parcel_list)):
-#     with open("../shopee_V2/order_data.txt", 'r', encoding='utf-8') as f:
-#         payload = json.loads(f.read())  # 转换成字典
-#         payload = {
-#             "data": payload,
-#             "timestamp": 1676448364
-#         }
-#         f.close()
+with open("../shopee_V2/order_data.txt", 'r', encoding='utf-8') as f:
+    payload = json.loads(f.read())  # 转换成字典
+    payload = {
+        "data": payload,
+        "timestamp": 1676448364
+    }
+    f.close()
 #     payload["data"]["order"]["carrier_tn"] = box_num
 #     payload["data"]["order"]["ilh_shopee_no"] = ilh_shopee_no
 #     data_list = payload["data"]["parcel_list"][0]
@@ -74,5 +74,5 @@ def jwt(payload):
 #     parcel_list_data.append(data_list)
 # payload["data"]["parcel_list"] = parcel_list_data
 # print(payload)
-# payload = json.dumps(jwt(payload))
-# print(payload)
+payload = json.dumps(jwt(payload))
+print(payload)
