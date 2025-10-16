@@ -2,7 +2,9 @@ import json
 
 import requests
 
-
+import unittest
+import os
+os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
 def login():
     try:
         #3d9188577cc9bfe9291ac66b5cc872b7

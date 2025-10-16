@@ -1,9 +1,12 @@
 def getProperties(API = "test"):
-    if API == "生产":
-        file_name = "../data/TWMS_CN.properties"
-    else:
-        file_name = "../../TWMS/data/TWMS_测试_params.properties"
+    api_file_map = {
+        "虎门": "../../TWMS/properties_data/生产_TWMS_虎门.properties",
+        "前海": "../../TWMS/properties_data/生产_TWMS_前海.properties",
+        "default": "../../TWMS/properties_data/TWMS_测试_params.properties",  # 确保文件名与实际一致
+        "test": "../../TWMS/properties_data/TWMS_测试_params.properties"
+    }
 
+    file_name = api_file_map.get(API, api_file_map["default"])
     try:
         pro_file = open(file_name, 'r', encoding='utf-8')
         properties = {}

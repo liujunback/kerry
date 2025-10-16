@@ -30,11 +30,11 @@
     "receiver": {
         "name": "側是",
         "company": "test company",
-        "address": "test addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstest addresstes12345678",
+        "address": "test sstest",
         "district": "test",
         "city": "SZ",
         "province": "GD",
-        "country_code": "SG",
+        "country_code": "TH",
         "post_code": "21000",
         "phone": "223456789",
         "email": "123@abnc.com"

@@ -21,16 +21,14 @@ def jwt(payload):
     return {"JWT":jwt_data}
 
 
-# with open("../shopee_V2/box_data.txt", 'r', encoding='utf-8') as f:
-#     payload = json.loads(f.read())  # 转换成字典
-#     payload = {
-#         "data": payload,
-#         "data": payload,
-#         "data": payload,
-#         "timestamp": 1676447280
-#     }
-#     f.close()
-# box_num = "TWYSPKM25090400802"
+with open("../shopee_V2/box_data.txt", 'r', encoding='utf-8') as f:
+    payload = json.loads(f.read())  # 转换成字典
+    payload = {
+        "data": {"parcel_list":["TEST202510131720100","TEST202510131720101","TEST202510131720102","TEST202510131720103","TEST202510131720104"],"order":{"unique_id":"BACKTEST20251013172011","carton_length":45,"receiver":{"address":"Jalan Lapangan Terbang, 93250 Kuching, Sarawak，Malaysia","city":"Kuching","zipcode":523000,"phone":-658930936,"name":"Shopee","state":"Sarawak","region":"Malaysia","region_code":"MY"},"pre_carrier_info":{"carrier_name":"TWYS"},"destination_region_name":"Malaysia","destination_region":"MY","carton_no":"TWSPTEST20251013172010","carton_weight":21.085,"next_carrier_info":{"carrier_tn":"TWYSPKM25090400802","carrier_name":"ABX-(IM)MY","carrier_code":110091},"ilh_shopee_no":"BACKTEST20251013172010","carrier_tn":"TWSPTEST20251013172010","sender":{"address":"Si hai road 1666","city":"Jinhua","phone":149772764,"district":"Yiwu","name":"Logistics Sorting Hub","state":"Zhejiang","region":"China","region_code":"CN"},"parcel_qty":89,"carton_height":49.5,"transport_type":1,"carton_volume":120285,"service_code":"MB79","goods_type":0,"carton_width":54}},
+        "timestamp": 1676447280
+    }
+    f.close()
+# box_num = "TWSPTEST20251013163819"
 # ilh_shopee_no = "BACKTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))
 # unique_id = "BACKTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))
 # payload["data"]["order"]["carrier_tn"] = box_num
@@ -41,8 +39,8 @@ def jwt(payload):
 # for i in range(5):
 #     parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
 # payload["data"]["parcel_list"] = parcel_list
-# payload = json.dumps(jwt(payload))
-#
+payload = json.dumps(jwt(payload))
+print(payload)
 # headers = {
 #     'Content-Type': 'application/json'
 # }
@@ -58,13 +56,13 @@ def jwt(payload):
 # parcel_list=["TEST202509051142480"]
 # parcel_list_data = []
 # for i in range(len(parcel_list)):
-with open("../shopee_V2/order_data.txt", 'r', encoding='utf-8') as f:
-    payload = json.loads(f.read())  # 转换成字典
-    payload = {
-        "data": payload,
-        "timestamp": 1676448364
-    }
-    f.close()
+# with open("../shopee_V2/order_data.txt", 'r', encoding='utf-8') as f:
+#     payload = json.loads(f.read())  # 转换成字典
+#     payload = {
+#         "data": payload,
+#         "timestamp": 1676448364
+#     }
+#     f.close()
 #     payload["data"]["order"]["carrier_tn"] = box_num
 #     payload["data"]["order"]["ilh_shopee_no"] = ilh_shopee_no
 #     data_list = payload["data"]["parcel_list"][0]
@@ -74,5 +72,3 @@ with open("../shopee_V2/order_data.txt", 'r', encoding='utf-8') as f:
 #     parcel_list_data.append(data_list)
 # payload["data"]["parcel_list"] = parcel_list_data
 # print(payload)
-payload = json.dumps(jwt(payload))
-print(payload)

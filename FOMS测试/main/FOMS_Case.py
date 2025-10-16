@@ -33,9 +33,9 @@ class MyTestCase(unittest.TestCase):
 
         print(foms_token)
         # 创建sku
-        for i in range(1):
-            sku_number = create_SKU(properties,foms_token)
-        sku_number = "BACK_SKU202509045990638"
+        # for i in range(1):
+        #     sku_number = create_SKU(properties,foms_token)
+        sku_number = "BACK_SKU202509287351170"
 
 
         #  # 完结入库单

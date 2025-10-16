@@ -31,9 +31,9 @@ class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """在所有测试开始前执行的设置"""
-        company = "test"
+        company = "前海"
         cls.shared_data = {}
-        cls.sku_list = [{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -87,37 +87,17 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_02_receive_asn(self):
-        """测试收货ASN"""
-        print("测试收货ASN-----------------------------------------------------------")
-        # 从类属性中获取值
-        asn_data = MyTestCase.shared_data.get('asn_data')
-        qh_asn_receive(self.properties, self.twms_login, asn_data)
-        asn_receive(self.properties, self.twms_login, asn_data)
-        print("收货成功："+ asn_data['asn_number'])
-        # 断言收货成功
-        self.assertIsNotNone(asn_data)
     def test_02_qh_receive_confirm_asn(self):
-        """测试收货ASN"""
+        """测试收货ASN(前海)"""
         print("测试收货ASN-----------------------------------------------------------")
-        asn_data = api_create_asn(self.properties, MyTestCase.sku_list, item_qty=1)
+        asn_data = MyTestCase.shared_data.get('asn_data')
         qh_asn_receive(self.properties, self.twms_login, asn_data)
         print("收货成功：" + asn_data['asn_number'])
         # 断言收货成功
         self.assertIsNotNone(asn_data)
 
-    def test_03_confirm_asn(self):
-        """测试确认ASN"""
-        print("测试确认ASN-----------------------------------------------------------")
-        # 从类属性中获取值
-        asn_data = MyTestCase.shared_data.get('asn_data')
-        asn_confirm(self.properties, self.twms_login, asn_data)
-        print("收货确认成功：" + asn_data['asn_number'])
-        # 断言确认成功
-        self.assertIsNotNone(asn_data)
 
-
-    def test_04_inventory(self):
+    def test_03_inventory(self):
         """查询核对库存"""
         print("查询核对库存-----------------------------------------------------------")
         asn_data = MyTestCase.shared_data.get('asn_data')
@@ -138,7 +118,7 @@ class MyTestCase(unittest.TestCase):
         for sku, detail in inventory_result['details'].items():
             print(f"  SKU {sku}: {detail['status']} - {detail['message']}")
 
-    def test_05_create_order(self):
+    def test_04_create_order(self):
         """订单创建"""
         print("订单创建-----------------------------------------------------------")
         # sku_data = self.sku_list[0].append(["sku_qty"])
@@ -146,7 +126,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(order_data)
 
 
-    def test_06_create_order(self):
+    def test_05_create_order(self):
         """波次创建（单件）"""
         print("波次创建（单件）-----------------------------------------------------------")
         # sku_data = self.sku_list[0].append(["sku_qty"])
@@ -159,7 +139,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(pick_order)
 
 
-    def test_07_batch_create_pick_wave(self):
+    def test_06_batch_create_pick_wave(self):
         """波次创建（批量）"""
         print("波次创建（批量）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -172,7 +152,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_08_create_order_S(self):
+    def test_07_create_order_S(self):
         """打包类型（S）"""
         print("打包类型（S）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'],'sku_qty':1}]
@@ -187,7 +167,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(box)
 
 
-    def test_09_create_order_M(self):
+    def test_08_create_order_M(self):
         """打包类型（M）"""
         print("打包类型（M）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
@@ -205,7 +185,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(tracking_number2)
 
 
-    def test_10_create_order_L(self):
+    def test_09_create_order_L(self):
         """打包类型（L）"""
         print("打包类型（L）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -219,11 +199,12 @@ class MyTestCase(unittest.TestCase):
         # order_handover(self.properties,self.twms_login,tracking_number)
         self.assertIsNotNone(box_data)
 
-    def test_11_create_order_M_Multiple(self):
+    def test_10_create_order_M_Multiple(self):
         """打包类型（M爆款）"""
         print("打包类型（M爆款）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
+        sleep(3)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         print(wave_data)
@@ -232,7 +213,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(job_id)
 
 
-    def test_12_create_order_tote(self):
+    def test_11_create_order_tote(self):
         """打包类型（格口）"""
         # print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
@@ -254,7 +235,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_13_create_order_S_Multiple(self):
+    def test_12_create_order_S_Multiple(self):
         """打包类型（S+）"""
         print("打包类型（S+）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'], 'sku_qty': 1}]
@@ -285,80 +266,6 @@ class MyTestCase(unittest.TestCase):
         box_by_order_S_Multiple(self.properties, self.twms_login, sku_list, pick_wave_data)
         tracking_number = close_box(self.properties, self.twms_login, order_data5["order_number"], pick_wave_data)
         self.assertIsNotNone(tracking_number)
-
-    def test_14_order_handover(self):
-        """出库（by tracking number）"""
-        print("出库（by tracking number）-----------------------------------------------------------")
-        order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
-        wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
-        pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
-        pick_add_order(self.properties,self.twms_login,pick_wave_data)
-        # sleep(5)
-        box_data = box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
-        tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
-        order_handover(self.properties,self.twms_login,tracking_number)
-        self.assertIsNotNone(box_data)
-
-
-    def test_15_order_handover_pallet(self):
-        """出库（通过板）"""
-        print("出库（通过板）-----------------------------------------------------------")
-        order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
-        wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
-        pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
-        pick_add_order(self.properties,self.twms_login,pick_wave_data)
-        # sleep(5)
-        box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
-        tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
-        order_handover_pallet(self.properties,self.twms_login,tracking_number)
-        self.assertIsNotNone(tracking_number)
-
-    def test_16_qh_order_handover(self):
-        """出库（通过箱）"""
-        print("出库（通过箱）-----------------------------------------------------------")
-        order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
-        wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
-        pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
-        pick_add_order(self.properties,self.twms_login,pick_wave_data)
-        # sleep(5)
-        box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
-        tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
-        print(tracking_number)
-        # self.assertIsNotNone(tracking_number)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # def test_case_order_create(self):
-    #
-    #
-    #     #
-    #     #
-    #     # sku_data = sku_list.append(api_create_sku(properties))
-    #     sku_data = [{"sku":"SKU202508281755598040",
-    #                     "sku_barcodes":"SKU202508281755598040"},{"sku": "SKU202509011010473378","sku_barcodes": "SKU202509011010473378"}]
-    #
-    #
-    #     asn_receive(self.properties, self.twms_login, asn_data)
-    #
-    #     asn_confirm(self.properties,self.twms_login,asn_data)
-        # order_number = create_order_api(properties,[sku_data["sku"]])
 
 
 

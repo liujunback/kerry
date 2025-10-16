@@ -8,7 +8,7 @@ from typing import Dict, Any, Union, List, Optional
 # 配置日志
 
 
-def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], max_retries: int = 3) -> Dict[str, Any]:
+def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], max_retries: int = 3,item_qty = 100) -> Dict[str, Any]:
     """
     创建ASN(Advanced Shipping Notice)的方法
 
@@ -51,6 +51,8 @@ def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], m
     timestamp = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
     random_suffix = str(random.randint(1000, 9999))
     asn_data["asn_number"] = f"ASN{timestamp}{random_suffix}"
+    asn_data["centre_code"] = properties["centre_code"]
+    asn_data["client_code"] = properties["client_code"]
 
     # 设置默认ASN日期（如果未提供）
     if "asn_date" not in asn_data or not asn_data["asn_date"]:
@@ -63,7 +65,7 @@ def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], m
 
     # 处理传入的SKU信息
     asn_data["items"] = []
-    item_qty = 100
+
     # 遍历所有SKU数据并添加到items中
     for sku_info in [item for item in sku_data if item]:
         asn_data["items"].append({

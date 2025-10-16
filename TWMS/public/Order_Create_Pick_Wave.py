@@ -73,7 +73,7 @@ def create_pick_wave(properties: Dict[str, Any], login: Dict[str, Any], wave_dat
         pick_wave_id = pick_wave_id_match.group(1)
 
         # 提取波次号
-        pick_wave_num_match = re.search(r"<title>(.+?) \| WMS @", response_text)
+        pick_wave_num_match = re.search(r"<title>(.+?) \| WMS", response_text)
         if not pick_wave_num_match:
             print("无法从响应中提取波次号")
             print("响应内容:", response_text)

@@ -70,7 +70,7 @@
     "province": "Groningen"
   },
   "service": {
-    "channel_code": "ITTEST",
+    "channel_code": "BACKTEST",
     "service_type": "default"
   }
 }

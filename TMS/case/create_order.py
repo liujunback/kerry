@@ -37,6 +37,9 @@ class MyTestCase(unittest.TestCase):
         pass
     # @unittest.skip("")#包含WMS的退件入库和上架接口CTCNTH000123123
     def test_case_order_create(self):
+        import unittest
+        import os
+        os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
         fail = 0
         x = 2
         trak=[]
@@ -44,11 +47,11 @@ class MyTestCase(unittest.TestCase):
         box_num = 0
         token = login()#be08f7c5-a2c1-4823-a869-c629c2efdc5e
         print(token)
-        shipment_num=0        # token = "aacc2b37-d5f4-4f3e-9a26-12cae1320e7a"
+        shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
             for i in range(1):
                 tracking_num = file_create_order(token)
-                # tracking_num = "1200026047"
+                # tracking_num = "CWB_2024023846125A"
                 if tracking_num == "失败":
                     fail=fail+1
                 # tracking_num = "CTCNTH000"
@@ -58,7 +61,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(30)
+                        time.sleep(10)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
@@ -82,9 +85,9 @@ class MyTestCase(unittest.TestCase):
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
                 time.sleep(10)
-                status(trak[i],"OR","出口报关开始")
-                # time.sleep(1)
-                # status(trak[i],"FX","出口清关完成")
+                # status(trak[i],"OR","出口报关开始")
+                time.sleep(1)
+                status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)
@@ -92,9 +95,13 @@ class MyTestCase(unittest.TestCase):
                 # time.sleep(1)
                 # status(trak[i],"OR","入口清关收到货")
                 # time.sleep(1)
-                # status(trak[i],"OS","进口清关开始")
+                # status(trak[i],"LT","干线转运中")
                 # time.sleep(1)
-                # status(trak[i],"OQ","进口清关完成")
+                # status(trak[i],"HL","交货到末公里")
+                # time.sleep(1)
+                # status(trak[i],"LS","丢失")
+                # time.sleep(1)
+                # status(trak[i],"DM","包裹损坏")
                 # time.sleep(10)
                 # status(tracking_num,"OQ","进口清关完成")
        # for i in range(len(trak)):

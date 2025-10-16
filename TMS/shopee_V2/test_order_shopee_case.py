@@ -17,15 +17,18 @@ os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
 
 class MyTestCase(unittest.TestCase):
     def test_case_order_shopee_create(self):
+        box_list = []
         for i in range(1):
             time.sleep(1)
             box_da = create_BOX()#大包下单
             create_order_shopee(box_da["carrier_tn"],box_da["ilh_shopee_no"],box_da["parcel_list"])
             big_bag_num = box_da["carrier_tn"]
+            box_list.append(big_bag_num)
             # big_bag_num = "TWYW20230714110302"
-            time.sleep(100)
-            time_start = time.time()
-            big_bag_inbound(big_bag_num)
+            # time.sleep(100)
+        time_start = time.time()
+        for i in box_list:
+            big_bag_inbound(i)
         time_end = time.time()
         print('下单耗时：', round(time_end - time_start, 2), 's')
         box_out_bound(big_bag_num)

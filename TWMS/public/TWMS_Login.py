@@ -1,7 +1,6 @@
-import json
-import random
+
 import re
-import datetime
+
 import requests
 from requests.exceptions import RequestException
 
@@ -40,7 +39,8 @@ def Twms_login(properties):
         login_response.raise_for_status()
 
         # Check for successful login
-        if "Logout" not in login_response.text:
+        # print(login_response.text)
+        if "Dashboard" not in login_response.text:
             raise ValueError("Login failed: Invalid credentials or session issue")
 
         # Extract tokens from session cookies and response headers

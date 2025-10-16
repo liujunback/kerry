@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "JP"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
 
                         # 创建新订单
                         tracking_number = Order_Create(properties, pos_token)
-                        # tracking_number = "KPBOGT2025071501"
+                        # tracking_number = "1548732393"
 
                         if "失败" in tracking_number:
                             fail += 1
@@ -123,24 +123,24 @@ class MyTestCase(unittest.TestCase):
                     # status(tracking_number,"EN",tms_token,properties,"违禁品")
                     # time.sleep(1)
                     # status(tracking_number,"FX",tms_token,properties,"出口清关完成")
-                    # time.sleep(1)
-                    # status(tracking_number,"OC",tms_token,properties,"航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
-                    # time.sleep(1)
-                    # status(tracking_number,"OF",tms_token,properties,"航班抵达")
-                    # time.sleep(1)
-                    # status(tracking_number,"OS",tms_token,properties,"进口清关开始")
+                    time.sleep(1)
+                    status(tracking_number,"OC",tms_token,properties,"航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
+                    time.sleep(1)
+                    status(tracking_number,"OF",tms_token,properties,"航班抵达")
+                    time.sleep(1)
+                    status(tracking_number,"OS",tms_token,properties,"进口清关开始")
                     # time.sleep(1)
                     # status(tracking_number,"OG",tms_token,properties,"进口清关查件")
                     # time.sleep(1)
                     # status(tracking_number,"ON",tms_token,properties,"进口清关销毁")
-                    # time.sleep(1)
-                    # status(tracking_number,"OQ",tms_token,properties,"进口清关完成")
+                    time.sleep(1)
+                    status(tracking_number,"OQ",tms_token,properties,"进口清关完成")
                     # time.sleep(1)
                     # status(tracking_number,"HL",tms_token,properties,"交货到末公里")
-                    # time.sleep(1)
-                    # status(tracking_number,"ZY",tms_token,properties,"包裹到达分拣中心")
-                    # time.sleep(1)
-                    # status(tracking_number,"SP",tms_token,properties,"站点发出")
+                    time.sleep(1)
+                    status(tracking_number,"ZY",tms_token,properties,"包裹到达分拣中心")
+                    time.sleep(1)
+                    status(tracking_number,"SP",tms_token,properties,"站点发出")
                     # time.sleep(1)
                     # status(tracking_number,"SP1F",tms_token,properties,"首次派送失败")
                     # time.sleep(1)
@@ -150,8 +150,8 @@ class MyTestCase(unittest.TestCase):
                     # time.sleep(1)
                     # status(tracking_number,"SP3",tms_token,properties,"三次派送")
                     # status(tracking_number,"SP3F",tms_token,properties,"三次派送失败")
-                    # time.sleep(1)
-                    # status(tracking_number,"OK",tms_token,properties,"用户签收")
+                    time.sleep(1)
+                    status(tracking_number,"OK",tms_token,properties,"用户签收")
                     # # status(tracking_number,"RJ",tms_token,properties,"拒收")
                     # # status(tracking_number,"RN",tms_token,properties,"lastmile_eturn")
                     # time.sleep(1)

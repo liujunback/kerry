@@ -11,7 +11,6 @@ from TWMS.public.Order_Handover import order_handover
 from TWMS.public.Order_Create_Pick_Wave import create_pick_wave
 from TWMS.public.Order_Pick_Add_Order import pick_add_order
 from TWMS.public.Order_handover_pallet import order_handover_pallet
-from TWMS.public.QH_Asn_receive import qh_asn_receive
 from TWMS.public.TWMS_Batch_Create_Pick_Wave import batch_create_pick_wave
 from TWMS.public.TWMS_Inventory import inventory
 
@@ -31,9 +30,9 @@ class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """在所有测试开始前执行的设置"""
-        company = "test"
+        company = "虎门"
         cls.shared_data = {}
-        cls.sku_list = [{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -92,19 +91,11 @@ class MyTestCase(unittest.TestCase):
         print("测试收货ASN-----------------------------------------------------------")
         # 从类属性中获取值
         asn_data = MyTestCase.shared_data.get('asn_data')
-        qh_asn_receive(self.properties, self.twms_login, asn_data)
         asn_receive(self.properties, self.twms_login, asn_data)
         print("收货成功："+ asn_data['asn_number'])
         # 断言收货成功
         self.assertIsNotNone(asn_data)
-    def test_02_qh_receive_confirm_asn(self):
-        """测试收货ASN"""
-        print("测试收货ASN-----------------------------------------------------------")
-        asn_data = api_create_asn(self.properties, MyTestCase.sku_list, item_qty=1)
-        qh_asn_receive(self.properties, self.twms_login, asn_data)
-        print("收货成功：" + asn_data['asn_number'])
-        # 断言收货成功
-        self.assertIsNotNone(asn_data)
+
 
     def test_03_confirm_asn(self):
         """测试确认ASN"""
@@ -224,6 +215,7 @@ class MyTestCase(unittest.TestCase):
         print("打包类型（M爆款）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
+        sleep(3)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         print(wave_data)
@@ -237,6 +229,7 @@ class MyTestCase(unittest.TestCase):
         # print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
+        sleep(3)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
@@ -263,6 +256,7 @@ class MyTestCase(unittest.TestCase):
         order_data3 = create_order_api(self.properties, sku_list)
         order_data4 = create_order_api(self.properties, sku_list)
         order_data5 = create_order_api(self.properties, sku_list)
+        sleep(3)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(
             select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
@@ -314,20 +308,6 @@ class MyTestCase(unittest.TestCase):
         tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
         order_handover_pallet(self.properties,self.twms_login,tracking_number)
         self.assertIsNotNone(tracking_number)
-
-    def test_16_qh_order_handover(self):
-        """出库（通过箱）"""
-        print("出库（通过箱）-----------------------------------------------------------")
-        order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
-        wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
-        pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
-        pick_add_order(self.properties,self.twms_login,pick_wave_data)
-        # sleep(5)
-        box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
-        tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
-        print(tracking_number)
-        # self.assertIsNotNone(tracking_number)
 
 
 
