@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
 
                         # 创建新订单
                         tracking_number = Order_Create(properties, pos_token)
-                        # tracking_number = "1548732393"
+                        # tracking_number = "KECTH50688836"
 
                         if "失败" in tracking_number:
                             fail += 1

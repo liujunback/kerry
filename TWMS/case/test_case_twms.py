@@ -12,6 +12,7 @@ from TWMS.public.Order_Create_Pick_Wave import create_pick_wave
 from TWMS.public.Order_Pick_Add_Order import pick_add_order
 from TWMS.public.Order_handover_pallet import order_handover_pallet
 from TWMS.public.QH_Asn_receive import qh_asn_receive
+from TWMS.public.QH_Order_Handover import qh_order_handover
 from TWMS.public.TWMS_Batch_Create_Pick_Wave import batch_create_pick_wave
 from TWMS.public.TWMS_Inventory import inventory
 
@@ -326,6 +327,7 @@ class MyTestCase(unittest.TestCase):
         # sleep(5)
         box_by_order(self.properties,self.twms_login,order_data["order_number"],self.sku_list,pick_wave_data)
         tracking_number = close_box(self.properties,self.twms_login,order_data["order_number"],pick_wave_data)
+        qh_order_handover(self.properties,self.twms_login,tracking_number)
         print(tracking_number)
         # self.assertIsNotNone(tracking_number)
 

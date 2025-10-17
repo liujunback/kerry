@@ -35,7 +35,7 @@ def qh_asn_receive(properties, login, asn_data):
             return {"status": "error", "message": "签收失败"}
 
         # 2. 生成入库箱号
-        inbound_boxid = _generate_inbound_boxid(base_url, headers)
+        inbound_boxid = _generate_inbound_boxid(base_url, headers, properties)
         if not inbound_boxid:
             return {"status": "error", "message": "生成入库箱号失败"}
 
@@ -74,13 +74,13 @@ def _sign_asn_receipt(base_url, headers, asn_number):
         return False
 
 
-def _generate_inbound_boxid(base_url, headers):
+def _generate_inbound_boxid(base_url, headers,properties):
     """生成入库箱号"""
     url = f"{base_url}/opt/quince/receive/check-inbound-box"
 
     # 尝试生成箱号，最多重试3次
     for _ in range(3):
-        inbound_boxid = "KEC" + str(random.randint(1000000, 9999999))
+        inbound_boxid = properties["inbound_boxid_prefix"] + str(random.randint(1000000, 9999999))
         data = {"inbound_boxid": inbound_boxid}
 
         response = requests.post(url, headers=headers, data=data)
@@ -101,7 +101,7 @@ def _process_items_close_box(base_url, headers, asn_data, inbound_boxid):
             "asn_number": asn_data['asn_number'],
             "inbound_boxid": inbound_boxid,
             "qty": item["qty"],
-            "condition": inbound_boxid,
+            "condition": "GOOD",
             "udf_1": ""
         }
 

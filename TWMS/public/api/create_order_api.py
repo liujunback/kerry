@@ -56,6 +56,7 @@ def create_order_api(properties: Dict[str, Any], skus,max_retries: int = 3) -> D
     order_data['package']['platform_order_id'] = order_number
     order_data["centre_code"] = properties["centre_code"]
     order_data["client_code"] = properties["client_code"]
+    order_data["logistics_provider"]["code"] = properties["agent"]
     order_data["items"] = []
     for i in skus:
         order_data["items"].append(
