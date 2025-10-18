@@ -3,6 +3,7 @@ def getProperties(API = "test"):
         "虎门": "../../TWMS/properties_data/生产_TWMS_虎门.properties",
         "前海": "../../TWMS/properties_data/生产_TWMS_前海.properties",
         "香港": "../../TWMS/properties_data/生产_TWMS_香港.properties",
+        "泰国": "../../TWMS/properties_data/生产_TWMS_泰国.properties",
         "default": "../../TWMS/properties_data/TWMS_测试_params.properties",  # 确保文件名与实际一致
         "test": "../../TWMS/properties_data/TWMS_测试_params.properties"
     }
