@@ -13,7 +13,19 @@ filename='测试报告_' + str((datetime.now()).strftime('%Y_%m_%d_%H_%M'))
 #用例名称
 description='TWMS'
 # 需要执行哪些用例，如果目录下的全部，可以改为"*.py"，如果是部分带test后缀的，可以改为"*test.py"
-pattern="test_case_twms.py"
+
+API = "test"
+
+api_file_map = {
+    "虎门": "test_case_CN_twms.py",
+    "前海": "test_case_QH_twms.py",
+    "香港": "test_case_HK_twms.py",
+    "泰国": "test_case_TH_twms.py",
+    "test": "test_case_twms.py"
+}
+
+pattern = api_file_map.get(API, api_file_map["default"])
+
 
 if __name__ == '__main__':
     test_suite = unittest .defaultTestLoader.discover(test_case_path, pattern=pattern)

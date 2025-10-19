@@ -1,6 +1,8 @@
-
+import json
 import unittest
 from time import sleep
+
+import requests
 
 from TWMS.properties.GetProperties import getProperties
 from TWMS.public.Asn_Confirm import select_asn_id, asn_confirm
@@ -13,6 +15,8 @@ from TWMS.public.Order_Pick_Add_Order import pick_add_order
 from TWMS.public.Order_handover_pallet import order_handover_pallet
 from TWMS.public.QH_Asn_receive import qh_asn_receive
 from TWMS.public.QH_Order_Handover import qh_order_handover
+from TWMS.public.TH_Asn_multi_receive import th_asn_multi_receive
+from TWMS.public.TH_Asn_serial_receive import th_asn_serial_receive
 from TWMS.public.TWMS_Batch_Create_Pick_Wave import batch_create_pick_wave
 from TWMS.public.TWMS_Inventory import inventory
 
@@ -93,7 +97,6 @@ class MyTestCase(unittest.TestCase):
         print("测试收货ASN-----------------------------------------------------------")
         # 从类属性中获取值
         asn_data = MyTestCase.shared_data.get('asn_data')
-        qh_asn_receive(self.properties, self.twms_login, asn_data)
         asn_receive(self.properties, self.twms_login, asn_data)
         print("收货成功："+ asn_data['asn_number'])
         # 断言收货成功
@@ -331,6 +334,38 @@ class MyTestCase(unittest.TestCase):
         print(tracking_number)
         # self.assertIsNotNone(tracking_number)
 
+    def test_17_Serial_receive_asn(self):
+        """ASN序列号收货"""
+        print("测试创建ASN-----------------------------------------------------------")
+        sku_list = []
+        sku_list.append(api_create_sku(self.properties,serial_number_required="Y"))
+        # 执行创建ASN的操作
+        asn_data = api_create_asn(self.properties, sku_list)
+        # print(asn_data)
+        # asn_data = {'asn_number': 'ASN202510191320346323', 'items': [{'code': 'SKU202510191320323447', 'barcode': 'SKU202510191320323447', 'unit_price': 5, 'currency': 'HKD', 'qty': 100, 'po_number': 'PO20251019132034'}]}
+        th_asn_serial_receive(self.properties,  self.twms_login, asn_data)
+        print(f"创建的ASN: {asn_data}")
+        asn_confirm_status = asn_confirm(self.properties, self.twms_login, asn_data)
+        self.assertIsNotNone(asn_confirm_status["status"]=="success")
+
+
+    def test_18_Multi_receive_asn(self):
+        """ASN多层级收货"""
+        print("ASN多层级收货·-----------------------------------------------------------")
+        sku_list = []
+        sku_list.append(api_create_sku(self.properties,storage_unit = "Y"))
+        # 执行创建ASN的操作
+        asn_data = api_create_asn(self.properties, sku_list)
+        print(asn_data)
+        # print(sku_list)
+        th_asn_multi_receive(self.properties, self.twms_login, asn_data)
+        asn_confirm_status = asn_confirm(self.properties, self.twms_login, asn_data)
+        self.assertIsNotNone(asn_confirm_status["status"]=="success")
+        # 将值存储到类属性中
+        # MyTestCase.shared_data['asn_data'] = asn_data
+
+
+
 
 
 
@@ -348,19 +383,25 @@ class MyTestCase(unittest.TestCase):
 
 
     # def test_case_order_create(self):
+    #     from TWMS.properties.GetProperties import getProperties
+    #     properties = getProperties("test")
+    #     login = Twms_login(properties)
     #
+    #     payload = {"asn_number": "ASN202510191530218510", "po_number": "PO20251019153021", "centre_id": "37",
+    #                           "location": "QTTR015", "expire_at": "", "manufacture_at": "", "batch": "", "udf_1": "",
+    #                           "udf_2": "", "udf_3": "", "qty": 16, "barcode": "SKU202510191530195148", "serial_number": "",
+    #                           "condition": "GOOD", "pre_carton_qty": "1", "receiving_unit": "ea", "storage_unit": "Carton"}
     #
-    #     #
-    #     #
-    #     # sku_data = sku_list.append(api_create_sku(properties))
-    #     sku_data = [{"sku":"SKU202508281755598040",
-    #                     "sku_barcodes":"SKU202508281755598040"},{"sku": "SKU202509011010473378","sku_barcodes": "SKU202509011010473378"}]
+    #     headers = {
+    #         'Content-Type': 'application/x-www-form-urlencoded',
+    #         'X-CSRF-TOKEN': login['csrf_token'],
+    #         'Cookie': f"XSRF-TOKEN={login['cookies']['XSRF-TOKEN']}; laravel_session={login['cookies']['laravel_session']}"
+    #     }
     #
-    #
-    #     asn_receive(self.properties, self.twms_login, asn_data)
-    #
-    #     asn_confirm(self.properties,self.twms_login,asn_data)
-        # order_number = create_order_api(properties,[sku_data["sku"]])
+    #     print(payload)
+    #     response = requests.post(properties['TWMS_URL'].rstrip('/') + "/opt/asn/receive/ajax/submit", headers=headers,
+    #                              data=payload)
+    #     print(response.text)
 
 
 

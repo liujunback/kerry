@@ -96,7 +96,6 @@ def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], m
         if v not in (None, "", [])  # 过滤空值
     }, ensure_ascii=False)
 
-    print(f"ASN请求数据: {payload}")
 
     # 带重试机制的请求
     for attempt in range(max_retries):
@@ -108,10 +107,15 @@ def api_create_asn(properties: Dict[str, Any], sku_data: List[Dict[str, str]], m
             try:
                 result = response.json()
                 print(f"成功创建ASN: {asn_data['asn_number']}")
-                return {
+                return_data = {
                     "asn_number": asn_data['asn_number'],
                     "items": asn_data["items"]
                 }
+                if "storage_unit" in sku_data:
+                    return_data["storage_unit"]= sku_data[0]["storage_unit"]
+
+
+                return return_data
             except json.JSONDecodeError:
                 print(f"响应不是有效的JSON: {response.text}")
                 return {

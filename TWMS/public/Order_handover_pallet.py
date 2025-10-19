@@ -91,7 +91,7 @@ def get_handover_data(properties: Dict[str, Any], session: requests.Session) -> 
     """获取交接信息"""
     base_url = properties["TWMS_URL"].rstrip('/')
     url = f"{base_url}/opt/scan/handover/show"
-    payload = {"code": "SELFPICK"}
+    payload = {"code": properties["agent"]}
 
     try:
         response = session.post(url, data=payload)

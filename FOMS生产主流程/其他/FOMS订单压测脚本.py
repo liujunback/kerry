@@ -32,6 +32,7 @@ class Test(TaskSet):
     @task()
     def create_order(self):#下单
 
+        sku_number = "TRFOMS2025101702"
         url = "/api/foms/v2/order/create"
         order_number = "back_Order"+ str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')+ str(random.randint(1,30000000)))
 
@@ -80,7 +81,7 @@ class Test(TaskSet):
                     },
                     "items": [
                         {
-                            "sku_code": "BACK_SKU202509287351170",
+                            "sku_code": sku_number,
                             "description": "backtest",
                             "unit_price": 167600,
                             "qty": 1,

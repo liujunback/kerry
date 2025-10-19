@@ -32,7 +32,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "香港"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = [{'sku': 'SKU202510191233489855', 'sku_barcodes': 'SKU202510191233489855','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191233489855', 'sku_barcodes': 'SKU202510191233489855','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 

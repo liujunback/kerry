@@ -8,7 +8,7 @@ from typing import Dict, Any, Union, List, Optional
 # 配置日志
 
 
-def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str, Any]:
+def api_create_sku(properties: Dict[str, Any], max_retries: int = 3,serial_number_required = "N",storage_unit="N") -> Dict[str, Any]:
     """
     创建SKU的方法（优化版）
 
@@ -49,8 +49,21 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
     sku_code = f"SKU{timestamp}{random_suffix}"
 
     # 更新SKU数据
-    sku_data["code"] = sku_code
-    sku_data["barcodes"][0] = sku_code
+    sku_data["sku_list"][0]["code"] = sku_code
+    sku_data["sku_list"][0]["barcodes"][0] = sku_code
+    sku_data["sku_list"][0]["is_serial_number_required"] = serial_number_required
+    if storage_unit == "Y":
+         storage_unit_data = [{
+                    "unit_level": "3",
+                    "qty_of_previous_level": "2",
+                    "barcode": sku_code + "-01"
+                },
+                {
+                    "unit_level": "2",
+                    "qty_of_previous_level": "3",
+                    "barcode": sku_code + "-02"
+                }]
+         sku_data["sku_list"][0]["storage_unit"] = storage_unit_data
 
     # 准备API请求
     url = f"{base_url}/foms/api/sku"
@@ -60,13 +73,8 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
     }
 
     # 构建请求体 - 确保只包含有效的SKU数据
-    payload = json.dumps({
-        "sku_list": [{
-            k: v for k, v in sku_data.items()
-            if v not in (None, "", [])  # 过滤空值
-        }]
-    }, ensure_ascii=False)
-
+    payload = json.dumps(sku_data)
+    # print(payload)
     # 带重试机制的请求
     for attempt in range(max_retries):
         try:
@@ -77,9 +85,12 @@ def api_create_sku(properties: Dict[str, Any], max_retries: int = 3) -> Dict[str
             try:
                 result = response.json()
                 print(f"成功创建SKU: {sku_code}")
-                return {"sku":result["data"][0]["code"],
+                sku_data = {"sku":result["data"][0]["code"],
                         "sku_barcodes":result["data"][0]["barcodes"][0],
                         'sku_qty':2}
+                if storage_unit == "Y":
+                    sku_data["storage_unit"]=storage_unit_data
+                return sku_data
             except json.JSONDecodeError:
                 print(f"响应不是有效的JSON: {response.text}")
                 return {"raw_response": response.text, "status": "success"}

@@ -32,7 +32,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "虎门"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191247116403', 'sku_barcodes': 'SKU202510191247116403','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -310,7 +310,19 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(tracking_number)
 
 
+    def test_16_Multi_receive_asn(self):
+        """测试创建ASN"""
+        print("测试创建ASN-----------------------------------------------------------")
+        sku_list = []
+        sku_list.append(api_create_sku(self.properties,serial_number_required="Y"))
+        # 执行创建ASN的操作
+        asn_data = api_create_asn(self.properties, sku_list)
 
+
+        print(f"创建的ASN: {asn_data}")
+
+        # 将值存储到类属性中
+        MyTestCase.shared_data['asn_data'] = asn_data
 
 
 

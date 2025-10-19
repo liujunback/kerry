@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "前海"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = [{'sku': 'SKU202510191228405710', 'sku_barcodes': 'SKU202510191228405710','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191228405710', 'sku_barcodes': 'SKU202510191228405710','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -190,7 +190,7 @@ class MyTestCase(unittest.TestCase):
         """打包类型（L）"""
         print("打包类型（L）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
         pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
         pick_add_order(self.properties,self.twms_login,pick_wave_data)
@@ -205,7 +205,7 @@ class MyTestCase(unittest.TestCase):
         print("打包类型（M爆款）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         print(wave_data)
@@ -220,7 +220,7 @@ class MyTestCase(unittest.TestCase):
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
-        sleep(3)
+        sleep(10)
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
         # pick_wave_data = {'pick_wave_id': 62843, 'pick_wave_num': 'W000062848', 'client_id': 145, 'centre_id': 37, 'order_ids': ['919598', '919599']}
@@ -247,7 +247,7 @@ class MyTestCase(unittest.TestCase):
         order_data4 = create_order_api(self.properties, sku_list)
         order_data5 = create_order_api(self.properties, sku_list)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
-        sleep(3)
+        sleep(10)
         wave_data['order_ids'].extend(
             select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         wave_data['order_ids'].extend(

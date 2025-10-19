@@ -54,7 +54,7 @@ def select_order_id(properties, login_data, order_number):
             "columns[9][data]": "upload_at",
             "columns[9][searchable]": "true",
             "columns[9][orderable]": "true",
-            "columns[9][search][value]": "2025-08-28 00:00:00 - " + (datetime.datetime.now()).strftime('%Y-%m-%d %H:%M:%S'),
+            "columns[9][search][value]": "2025-08-28 00:00:00 - " + (datetime.datetime.now()).strftime('%Y-%m-%d ') + "23:59:59",
             "columns[9][search][regex]": "false",
             "columns[10][data]": "allocate_at",
             "columns[10][searchable]": "true",

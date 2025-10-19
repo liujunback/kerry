@@ -323,7 +323,7 @@ def box_type(properties,login,pick_wave_data):
                 "number_type":"pick_wave_number",
                 "numbers": pick_wave_data["pick_wave_num"],
                 "timeline_type":"created_at",
-                "timeline_at": "2025-08-28 00:00:00 - " + (datetime.datetime.now()).strftime('%Y-%m-%d %H:%M:%S'),
+                "timeline_at": "2025-08-28 00:00:00 - " + (datetime.datetime.now()).strftime('%Y-%m-%d ') +"23:59:59",
                 "status":"",
                 "_":""}
     headers = {
@@ -334,6 +334,7 @@ def box_type(properties,login,pick_wave_data):
     response = requests.get(url, headers=headers, params=params, timeout=10)
 
     if json.loads(response.text)['draw'] > 0:
+        # print(response.text)
         type = json.loads(response.text)['data'][0]["type"]
         print("波次类型查询成功：" + type)
         return type

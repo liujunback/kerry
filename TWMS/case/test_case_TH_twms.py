@@ -11,6 +11,8 @@ from TWMS.public.Order_Handover import order_handover
 from TWMS.public.Order_Create_Pick_Wave import create_pick_wave
 from TWMS.public.Order_Pick_Add_Order import pick_add_order
 from TWMS.public.Order_handover_pallet import order_handover_pallet
+from TWMS.public.TH_Asn_multi_receive import th_asn_multi_receive
+from TWMS.public.TH_Asn_serial_receive import th_asn_serial_receive
 from TWMS.public.TWMS_Batch_Create_Pick_Wave import batch_create_pick_wave
 from TWMS.public.TWMS_Inventory import inventory
 
@@ -32,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "泰国"
         cls.shared_data = {}
-        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}
+        cls.sku_list = []  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191240478877', 'sku_barcodes': 'SKU202510191240478877','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -132,28 +134,39 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_05_batch_receive_asn(self):
 
-        """ASN批量收货"""
-
-        print("ASN批量收货-----------------------------------------------------------")
-
-        # sku_data = self.sku_list[0].append(["sku_qty"])
-
-        sku_list = [{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2},{'sku': 'SKU202509031144011979', 'sku_barcodes': 'SKU202509031144011979','sku_qty':2}]
-
+    def test_05_Serial_receive_asn(self):
+        """ASN序列号收货"""
+        print("ASN序列号收货-----------------------------------------------------------")
+        sku_list = []
+        sku_list.append(api_create_sku(self.properties,serial_number_required="Y"))
+        # 执行创建ASN的操作
         asn_data = api_create_asn(self.properties, sku_list)
+        # print(asn_data)
+        # asn_data = {'asn_number': 'ASN202510191320346323', 'items': [{'code': 'SKU202510191320323447', 'barcode': 'SKU202510191320323447', 'unit_price': 5, 'currency': 'HKD', 'qty': 100, 'po_number': 'PO20251019132034'}]}
+        th_asn_serial_receive(self.properties,  self.twms_login, asn_data)
+        print(f"创建的ASN: {asn_data}")
+        asn_confirm_status = asn_confirm(self.properties, self.twms_login, asn_data)
+        self.assertIsNotNone(asn_confirm_status["status"]=="success")
 
-        asn_receive(self.properties, self.twms_login, asn_data)
+    def test_06_Multi_receive_asn(self):
+        """ASN多层级收货"""
+        print("ASN多层级收货·-----------------------------------------------------------")
+        sku_list = []
+        sku_list.append(api_create_sku(self.properties,storage_unit = "Y"))
+        # 执行创建ASN的操作
+        asn_data = api_create_asn(self.properties, sku_list)
+        print(asn_data)
+        # print(sku_list)
+        th_asn_multi_receive(self.properties, self.twms_login, asn_data)
+        asn_confirm_status = asn_confirm(self.properties, self.twms_login, asn_data)
+        self.assertIsNotNone(asn_confirm_status["status"]=="success")
+        # 将值存储到类属性中
 
-        asn_confirm(self.properties, self.twms_login, asn_data)
-
-        self.assertIsNotNone(asn_data)
 
 
 
-
-    def test_05_create_order(self):
+    def test_07_create_order(self):
         """订单创建"""
         print("订单创建-----------------------------------------------------------")
         # sku_data = self.sku_list[0].append(["sku_qty"])
@@ -161,7 +174,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(order_data)
 
 
-    def test_06_create_order(self):
+    def test_08_create_order(self):
         """波次创建（单件）"""
         print("波次创建（单件）-----------------------------------------------------------")
         # sku_data = self.sku_list[0].append(["sku_qty"])
@@ -174,7 +187,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(pick_order)
 
 
-    def test_07_batch_create_pick_wave(self):
+    def test_09_batch_create_pick_wave(self):
         """波次创建（批量）"""
         print("波次创建（批量）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
@@ -187,7 +200,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_08_create_order_S(self):
+    def test_10_create_order_S(self):
         """打包类型（S）"""
         print("打包类型（S）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'],'sku_qty':1}]
@@ -202,12 +215,12 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(box)
 
 
-    def test_09_create_order_M(self):
+    def test_11_create_order_M(self):
         """打包类型（M）"""
         print("打包类型（M）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         print(wave_data)
@@ -220,11 +233,11 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(tracking_number2)
 
 
-    def test_10_create_order_L(self):
+    def test_12_create_order_L(self):
         """打包类型（L）"""
         print("打包类型（L）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
         pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
         pick_add_order(self.properties,self.twms_login,pick_wave_data)
@@ -234,12 +247,12 @@ class MyTestCase(unittest.TestCase):
         # order_handover(self.properties,self.twms_login,tracking_number)
         self.assertIsNotNone(box_data)
 
-    def test_11_create_order_M_Multiple(self):
+    def test_13_create_order_M_Multiple(self):
         """打包类型（M爆款）"""
         print("打包类型（M爆款）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         print(wave_data)
@@ -248,12 +261,12 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(job_id)
 
 
-    def test_12_create_order_tote(self):
+    def test_14_create_order_tote(self):
         """打包类型（格口）"""
         # print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
@@ -271,7 +284,7 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_13_create_order_S_Multiple(self):
+    def test_15_create_order_S_Multiple(self):
         """打包类型（S+）"""
         print("打包类型（S+）-----------------------------------------------------------")
         sku_list = [{'sku': self.sku_list[0]['sku'], 'sku_barcodes': self.sku_list[0]['sku_barcodes'], 'sku_qty': 1}]
@@ -280,7 +293,7 @@ class MyTestCase(unittest.TestCase):
         order_data3 = create_order_api(self.properties, sku_list)
         order_data4 = create_order_api(self.properties, sku_list)
         order_data5 = create_order_api(self.properties, sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(
             select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
@@ -306,11 +319,11 @@ class MyTestCase(unittest.TestCase):
 
 
 
-    def test_14_order_handover_pallet(self):
+    def test_16_order_handover_pallet(self):
         """出库（通过板）"""
         print("出库（通过板）-----------------------------------------------------------")
         order_data = create_order_api(self.properties, self.sku_list)
-        sleep(3)
+        sleep(10)
         wave_data = select_order_id(self.properties,  self.twms_login,order_data["order_number"])
         pick_wave_data = create_pick_wave(self.properties,self.twms_login,wave_data)
         pick_add_order(self.properties,self.twms_login,pick_wave_data)
