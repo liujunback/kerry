@@ -1,73 +1,69 @@
 {
   "items": [
     {
-      "currency": "USD",
-      "description": "篮球鞋",
-      "description_origin_language": "休闲鞋",
-      "excc_legal_qty1": 1.1,
-      "hs_code": "6404199000",
-      "measure_unit": "025",
-      "origin_of_cnex_code": "35059",
-      "quantity": 1,
-      "sku": "11921104S-3",
-      "spec": "1|0|款式:未过踝|鞋面材料:网布/橡塑材料|外底材料:橡胶/TPU/碳纤|品牌:中文品牌:安踏 英文品牌:ANTA|货号:11921104S-3|||",
-      "unit_price": 0.01,
-      "unit_weight": 1100
+      "country_of_origin": "CN",
+      "currency": "EUR",
+      "description": "Men Shoes,Sandals & Flip Flops,Flip Flops",
+      "description_origin_language": "测试极端",
+      "hs_code": "6402990000",
+      "quantity": 2,
+      "sku": "test-001",
+      "unit_price": 14.06,
+      "unit_weight": 23
     },
     {
-      "currency": "USD",
-      "description": "篮球鞋",
-      "description_origin_language": "休闲鞋",
-      "excc_legal_qty1": 1.1,
-      "hs_code": "6404199000",
-      "measure_unit": "025",
-      "origin_of_cnex_code": "35059",
-      "quantity": 1,
-      "sku": "11921104S-3",
-      "spec": "1|0|款式:未过踝|鞋面材料:网布/橡塑材料|外底材料:橡胶/TPU/碳纤|品牌:中文品牌:安踏 英文品牌:ANTA|货号:11921104S-3|||",
-      "unit_price": 0.01,
-      "unit_weight": 1100
+      "country_of_origin": "CN",
+      "currency": "EUR",
+      "description": "Men Shoes,Sandals & Flip Flops,Flip Flops",
+      "description_origin_language": "测试极端",
+      "hs_code": "6402990000",
+      "quantity": 2,
+      "sku": "test-001",
+      "unit_price": 14.06,
+      "unit_weight": 23
     }
   ],
   "package": {
-    "actual_weight": 1,
-    "declared_value": 0.02,
-    "declared_value_currency": "USD",
-    "incidental_fee": 0.00304,
-    "insurance_currency": "USD",
-    "insurance_value": 0,
+    "actual_weight": 400,
+    "declared_value": 56.24,
+    "declared_value_currency": "EUR",
+    "height": "25",
+    "incidental_fee": 0,
+    "length": "15",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "CWB_2088079807525A",
+    "reason_for_export": "RETURN",
+    "reference_number": "TESTBACK20251021102644100",
     "shipment_term": "DDP",
-    "shipment_type": "General",
-    "shipping_fee": 0.0195,
-    "shipping_fee_currency": "USD"
+    "shipping_fee": 0,
+    "width": "20",
+    "reason_for_export": "REPAIR"
   },
   "receiver": {
-    "address": "N*************S",
-    "city": "E*******M",
-    "company": "S*************X",
-    "country_code": "HK",
-    "location_code": "",
-    "name": "U*******N",
-    "phone": "2*******8",
-    "post_code": "Z*******D"
+    "address": "Urb. Colinas del Faro C/ Velez Málaga de",
+    "city": "TOULON",
+    "company": "Juan Rodríguez bermúdez",
+    "country_code": "TH",
+    "email": "10392202838i.es22@qqss.com",
+    "name": "Juan Rodríguez bermúdez",
+    "phone": "0614000000",
+    "post_code": "21000",
+    "province": "Málaga"
   },
-  "sale_platform": "tiktok",
+  "sale_platform": "KEC",
   "sender": {
-    "address": "test",
-    "city": "test",
-    "company": "test",
+    "address": "Logistics Sorting Hub, Cizao Zhen, Zhang Lin ",
+    "city": "Quanzhou",
+    "company": "liuqun123",
     "country_code": "CN",
-    "name": "厦门安之意体育用品有限公司",
-    "phone": "test",
-    "post_code": "test"
+    "email": "10392202838i.es@qqss.com",
+    "ioss_number": "IMABCD000242",
+    "name": "liuqun123gw.es",
+    "phone": "86075589351900",
+    "post_code": "362200"
   },
   "service": {
-    "channel_code": "CTCNHK001",
-    "delivery_instruction": "remark",
-    "service_type": "default"
+    "channel_code": "TESTCNTHP005"
   }
 }

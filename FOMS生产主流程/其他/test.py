@@ -16,11 +16,10 @@ class CreateOrderTest(TaskSet):
 
     def on_start(self):
         """登录FOMS系统"""
-        # url = "https://stg-foms-api.kec-app.com/user/login"
-        url = "https://foms-api.kec-app.com/user/login"
+        url = "https://stg-foms-api.kec-app.com/user/login"
         credentials = {
-            "username": "tori.shopline",
-            "password": "Gg1234567981%"
+            "username": "20240815.back",
+            "password": "20240815.backD"
         }
         headers = {'Content-Type': 'application/json'}
 
@@ -38,7 +37,7 @@ class CreateOrderTest(TaskSet):
     @task(1)
     def create_order(self):
         """创建出库订单"""
-        sku_number = "TRFOMS2025102003"
+        sku_number = "TRFOMS2025101702"
         url = "/api/foms/v2/order/create"
 
         # 生成唯一订单号
@@ -47,10 +46,10 @@ class CreateOrderTest(TaskSet):
         tracking_number = order_number  # 使用订单号作为跟踪号
 
         payload = {
-            "warehouse_code": "TEST-TH",
+            "warehouse_code": "ITST",
             "merchant_code": "KEC-2342",
             "logistics_provider": {
-                "code": "SELFPICK-PY",
+                "code": "KEC-234",
                 "tracking_number": tracking_number
             },
             "order_number": order_number,
@@ -112,7 +111,7 @@ class CreateOrderTest(TaskSet):
                               },
                               catch_response=True,
                               name="创建出库订单") as response:
-            if response.status_code == 200 or response.status_code == 201:
+            if response.status_code == 200:
                 try:
                     response_data = json.loads(response.text)
                     if response_data.get("code") in [201, 202]:
@@ -129,7 +128,6 @@ class CreateOrderTest(TaskSet):
                         print(f"订单 {order_number} 已存入Redis队列")
 
                     else:
-                        print(order_number)
                         response.failure(f"业务失败: {response.text}")
                 except json.JSONDecodeError:
                     response.failure(f"响应解析失败: {response.text}")
@@ -140,6 +138,6 @@ class CreateOrderTest(TaskSet):
 class CreateOrderUser(HttpUser):
     """创建订单用户"""
     tasks = [CreateOrderTest]
-    host = "https://foms-api.kec-app.com"
+    host = "https://stg-foms-api.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒
