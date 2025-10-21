@@ -42,7 +42,7 @@ class MyTestCase(unittest.TestCase):
         os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
         fail = 0
         x = 2
-        trak=[]
+        trak=["TN5102000915683","TN5102100916162"]
         box_list=[]
         box_num = 0
         token = login()#be08f7c5-a2c1-4823-a869-c629c2efdc5e
@@ -50,18 +50,18 @@ class MyTestCase(unittest.TestCase):
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
             for i in range(1):
-                tracking_num = file_create_order(token)
-                # tracking_num = "YDMX5101700915620"
-                if tracking_num == "失败":
-                    fail=fail+1
-                # tracking_num = "CTCNTH000"
-                else:
-                    trak.append(tracking_num)
-            print(fail)
+                # tracking_num = file_create_order(token)
+                tracking_num = "TN5102000915680"
+                # if tracking_num == "失败":
+                #     fail=fail+1
+                # # tracking_num = "CTCNTH000"
+                # else:
+                #     trak.append(tracking_num)
+            # print(fail)
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(10)
+                        # time.sleep(10)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
@@ -87,7 +87,8 @@ class MyTestCase(unittest.TestCase):
                 time.sleep(10)
                 # status(trak[i],"OR","出口报关开始")
                 time.sleep(1)
-                status(trak[i],"FX","出口清关完成")
+                # for i in trak:
+                #     status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)

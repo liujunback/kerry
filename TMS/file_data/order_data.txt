@@ -1,69 +1,61 @@
 {
   "items": [
     {
-      "country_of_origin": "CN",
-      "currency": "EUR",
-      "description": "Men Shoes,Sandals & Flip Flops,Flip Flops",
-      "description_origin_language": "测试极端",
-      "hs_code": "6402990000",
-      "quantity": 2,
-      "sku": "test-001",
-      "unit_price": 14.06,
-      "unit_weight": 23
-    },
-    {
-      "country_of_origin": "CN",
-      "currency": "EUR",
-      "description": "Men Shoes,Sandals & Flip Flops,Flip Flops",
-      "description_origin_language": "测试极端",
-      "hs_code": "6402990000",
-      "quantity": 2,
-      "sku": "test-001",
-      "unit_price": 14.06,
-      "unit_weight": 23
+      "currency": "USD",
+      "description": "综训鞋",
+      "description_origin_language": "鞋",
+      "excc_legal_qty1": 0.7,
+      "hs_code": "6404199000",
+      "measure_unit": "025",
+      "origin_of_cnex_code": "35059",
+      "quantity": 1,
+      "sku": "112417718-7",
+      "spec": "1|0|未过踝|鞋面材料:合成革/混纺布/橡塑材料|合成革|安踏|812221601-5",
+      "unit_price": 6.26,
+      "unit_weight": 700
     }
   ],
   "package": {
-    "actual_weight": 400,
-    "declared_value": 56.24,
-    "declared_value_currency": "EUR",
-    "height": "25",
-    "incidental_fee": 0,
-    "length": "15",
+    "actual_weight": 1,
+    "declared_value": 6.26,
+    "declared_value_currency": "USD",
+    "incidental_fee": 0.73934,
+    "incidental_fee_currency": "USD",
+    "insurance_currency": "USD",
+    "insurance_value": 0,
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reason_for_export": "RETURN",
-    "reference_number": "TESTBACK20251021102644100",
+    "pickup_tn": "MX5102000916032",
+    "reference_number": "MX5102000916032",
     "shipment_term": "DDP",
-    "shipping_fee": 0,
-    "width": "20",
-    "reason_for_export": "REPAIR"
+    "shipment_type": "General",
+    "shipping_fee": 7.379,
+    "shipping_fee_currency": "USD"
   },
   "receiver": {
-    "address": "Urb. Colinas del Faro C/ Velez Málaga de",
-    "city": "TOULON",
-    "company": "Juan Rodríguez bermúdez",
-    "country_code": "TH",
-    "email": "10392202838i.es22@qqss.com",
-    "name": "Juan Rodríguez bermúdez",
-    "phone": "0614000000",
-    "post_code": "21000",
-    "province": "Málaga"
+    "address": "J*************N",
+    "city": "M*******E",
+    "company": "J*************Z",
+    "country_code": "HK",
+    "location_code": "",
+    "name": "N*******T",
+    "phone": "4*******4",
+    "post_code": "J*******S"
   },
-  "sale_platform": "KEC",
+  "sale_platform": "TK",
   "sender": {
-    "address": "Logistics Sorting Hub, Cizao Zhen, Zhang Lin ",
-    "city": "Quanzhou",
-    "company": "liuqun123",
+    "address": "test",
+    "city": "test",
+    "company": "test",
     "country_code": "CN",
-    "email": "10392202838i.es@qqss.com",
-    "ioss_number": "IMABCD000242",
-    "name": "liuqun123gw.es",
-    "phone": "86075589351900",
-    "post_code": "362200"
+    "name": "厦门安之意体育用品有限公司",
+    "phone": "test",
+    "post_code": "test"
   },
   "service": {
-    "channel_code": "TESTCNTHP005"
+    "channel_code": "CTCNHK001",
+    "delivery_instruction": "remark",
+    "service_type": "default"
   }
 }
