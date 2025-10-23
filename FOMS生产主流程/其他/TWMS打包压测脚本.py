@@ -1,11 +1,13 @@
 import datetime
 import json
+import os
 import re
 import redis
 import requests
 import openpyxl
 import random
 from locust import HttpUser, TaskSet, task
+from locust.exception import StopUser
 
 
 class PackOrderTest(TaskSet):
@@ -20,12 +22,14 @@ class PackOrderTest(TaskSet):
         self.wave_numbers = self.load_wave_numbers_from_excel()
         # 当前使用的wave_number索引
         self.current_wave_index = 0
+        # 标记是否已用完所有wave_number
+        self.wave_numbers_exhausted = False
 
     def load_wave_numbers_from_excel(self):
         """从Excel文件加载wave_number数据"""
         try:
-            # 请根据实际情况修改Excel文件路径
-            workbook = openpyxl.load_workbook('wave_numbers.xlsx')
+            file_path = r'C:\Users\bliuj\Desktop\kerry\FOMS生产主流程\其他\wave_numbers.xlsx'
+            workbook = openpyxl.load_workbook(file_path)
             sheet = workbook.active
 
             wave_numbers = []
@@ -40,16 +44,16 @@ class PackOrderTest(TaskSet):
             return wave_numbers
         except Exception as e:
             print(f"从Excel加载wave_number失败: {e}")
-            # 返回一些默认值，以防Excel读取失败
-            return ["WAVE_DEFAULT_001", "WAVE_DEFAULT_002", "WAVE_DEFAULT_003"]
+            return []
 
     def get_next_wave_number(self):
-        """获取下一个wave_number，循环使用"""
-        if not self.wave_numbers:
-            return "WAVE_DEFAULT"
+        """获取下一个wave_number，用完返回None"""
+        if not self.wave_numbers or self.current_wave_index >= len(self.wave_numbers):
+            self.wave_numbers_exhausted = True
+            return None
 
         wave_number = self.wave_numbers[self.current_wave_index]
-        self.current_wave_index = (self.current_wave_index + 1) % len(self.wave_numbers)
+        self.current_wave_index += 1
         return wave_number
 
     def on_start(self):
@@ -92,7 +96,12 @@ class PackOrderTest(TaskSet):
 
     @task(1)
     def pack_order(self):
-        """订单打包"""
+        """订单打包 - 用完wave_number后停止"""
+        # 检查是否已用完所有wave_number
+        if self.wave_numbers_exhausted:
+            print("所有wave_number已用完，停止测试")
+            raise StopUser()  # 停止当前用户
+
         if not self.wms_token:
             print("WMS未登录，重新登录")
             self.wms_login()
@@ -101,7 +110,13 @@ class PackOrderTest(TaskSet):
 
         # 从Excel数据中获取wave_number
         wave_number = self.get_next_wave_number()
-        print(f"使用wave_number: {wave_number}")
+
+        # 如果没有可用的wave_number，停止测试
+        if wave_number is None:
+            print("没有可用的wave_number，停止测试")
+            raise StopUser()
+
+        print(f"使用wave_number: {wave_number} (第{self.current_wave_index}/{len(self.wave_numbers)})")
 
         # 打包操作
         sku_number = "TRFOMS2025102003"
@@ -123,6 +138,7 @@ class PackOrderTest(TaskSet):
             "skip_weight": "no",
             "forceSkipWeight": 1
         }
+
         with self.client.post(url,
                               data=payload,
                               headers=headers,
@@ -130,32 +146,28 @@ class PackOrderTest(TaskSet):
                               name="订单打包") as response:
             try:
                 response_data = json.loads(response.text)
-                print(response.text)
+                # print(response.text)
                 if response_data.get('status') == 0:
                     response.success()
                     print(f"打包成功，wave_number: {wave_number}")
 
                     # 从响应中获取tracking_number
                     try:
-                        # 根据API响应结构获取tracking_number
                         new_tracking_number = response_data.get('shipment', {}).get('tracking_number')
                         if not new_tracking_number:
-                            # 如果响应中没有tracking_number，生成一个随机跟踪号
                             print("响应中没有找到tracking_number，使用生成的跟踪号")
                         else:
-                            # 将打包完成的订单信息存入Redis，供移交流程使用
+                            # 将打包完成的订单信息存入Redis
                             packed_order_info = {
-                                "tracking_number": new_tracking_number,  # 使用从响应获取的tracking_number
+                                "tracking_number": new_tracking_number,
                                 "packed_at": datetime.datetime.now().isoformat(),
                                 "box_type": "QT1209",
-                                "wave_number": wave_number  # 保存使用的wave_number，便于后续分析
+                                "wave_number": wave_number
                             }
                             self.redis_client.rpush("packed_orders", json.dumps(packed_order_info))
                             print(f"已打包wave {wave_number} 的跟踪号 {new_tracking_number} 已存入Redis队列")
-                            print(f"从响应获取到tracking_number: {new_tracking_number}")
                     except Exception as e:
                         print(f"获取tracking_number失败: {e}")
-
 
                 else:
                     response.failure(f"打包失败: {response.text}")
@@ -166,7 +178,7 @@ class PackOrderTest(TaskSet):
 
 
 class PackOrderUser(HttpUser):
-    """打包订单用户"""
+    """打包订单用户 - 用完wave_number后自动停止"""
     tasks = [PackOrderTest]
     host = "https://twms-th.kec-app.com"
     min_wait = 1000  # 单位为毫秒

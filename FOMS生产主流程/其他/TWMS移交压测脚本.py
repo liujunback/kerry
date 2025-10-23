@@ -4,6 +4,7 @@ import re
 import redis
 import requests
 from locust import HttpUser, TaskSet, task
+from locust.exception import StopUser
 
 
 class HandoverTest(TaskSet):
@@ -14,6 +15,10 @@ class HandoverTest(TaskSet):
         # 连接Redis
         self.redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
         self.token = None
+        # 记录连续没有订单的次数
+        self.empty_count = 0
+        # 最大允许的空检查次数
+        self.max_empty_checks = 3
 
     def on_start(self):
         """登录WMS系统"""
@@ -51,7 +56,7 @@ class HandoverTest(TaskSet):
 
     @task()
     def handover_order(self):
-        """订单移交"""
+        """订单移交 - 没有订单时自动停止"""
         if not self.token:
             print("WMS未登录，重新登录")
             self.on_start()
@@ -61,8 +66,19 @@ class HandoverTest(TaskSet):
         # 从Redis获取已打包的tracking_number
         packed_order_json = self.redis_client.lpop("packed_orders")
         if not packed_order_json:
-            print("没有已打包的订单可移交")
+            self.empty_count += 1
+            print(f"没有已打包的订单可移交 (第 {self.empty_count} 次检查)")
+
+            # 如果连续多次没有订单，停止测试
+            if self.empty_count >= self.max_empty_checks:
+                print(f"连续 {self.max_empty_checks} 次没有找到可移交订单，停止用户")
+                # 可以选择等待一段时间再检查，或者直接停止
+                # 这里我们选择直接停止，因为打包流程可能已经结束
+                raise StopUser()
             return
+
+        # 重置空计数
+        self.empty_count = 0
 
         try:
             packed_order = json.loads(packed_order_json)
@@ -71,6 +87,8 @@ class HandoverTest(TaskSet):
             print(f"开始移交订单，跟踪号: {tracking_number}, wave_number: {wave_number}")
         except (json.JSONDecodeError, KeyError) as e:
             print(f"解析打包订单信息失败: {e}")
+            # 如果解析失败，将订单重新放回队列
+            self.redis_client.rpush("packed_orders", packed_order_json)
             return
 
         # 移交操作
@@ -103,7 +121,8 @@ class HandoverTest(TaskSet):
                     handed_over_order = {
                         "tracking_number": tracking_number,
                         "handed_over_at": datetime.datetime.now().isoformat(),
-                        "agent": "SELFPICK-PY"
+                        "agent": "SELFPICK-PY",
+                        "wave_number": wave_number
                     }
                     self.redis_client.rpush("handed_over_orders", json.dumps(handed_over_order))
                     print(f"已移交订单 {tracking_number} 已存入Redis队列")
@@ -111,17 +130,17 @@ class HandoverTest(TaskSet):
                 else:
                     response.failure(f"移交失败: {response.text}")
                     # 如果移交失败，将订单重新放回队列
-                    # self.redis_client.lpush("packed_orders", packed_order_json)
+                    self.redis_client.rpush("packed_orders", packed_order_json)
                     print(f"移交失败，已将订单 {tracking_number} 重新放回打包队列")
             except json.JSONDecodeError:
                 response.failure(f"响应解析失败: {response.text}")
                 # 如果解析失败，将订单重新放回队列
-                # self.redis_client.lpush("packed_orders", packed_order_json)
+                self.redis_client.rpush("packed_orders", packed_order_json)
                 print(f"响应解析失败，已将订单 {tracking_number} 重新放回打包队列")
 
 
 class HandoverUser(HttpUser):
-    """订单移交用户"""
+    """订单移交用户 - 没有订单时自动停止"""
     tasks = [HandoverTest]
     host = "https://twms-th.kec-app.com"
     min_wait = 1000  # 单位为毫秒
