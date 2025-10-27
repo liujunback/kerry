@@ -9,15 +9,15 @@ from locust import HttpUser, TaskSet, task
 class CreateOrderTest(TaskSet):
     """创建订单测试任务集"""
 
-    def __init__(self, parent):
-        super().__init__(parent)
-        # 连接Redis
-        self.redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+    # def __init__(self, parent):
+    #     super().__init__(parent)
+    #     # 连接Redis
+    #     self.redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
     def on_start(self):
         """登录FOMS系统"""
         # url = "https://stg-foms-api.kec-app.com/user/login"
-        url = "https://foms-api.kec-app.com/user/login"
+        url = "https://foms-api-lbs.kec-app.com/user/login"
         credentials = {
             "username": "tori.shopline",
             "password": "Gg1234567981%"
@@ -38,7 +38,7 @@ class CreateOrderTest(TaskSet):
     @task(1)
     def create_order(self):
         """创建出库订单"""
-        sku_number = "TRFOMS2025102003"
+        sku_number = "TRFOMS2025101702"
         url = "/api/foms/v2/order/create"
 
         # 生成唯一订单号
@@ -125,7 +125,7 @@ class CreateOrderTest(TaskSet):
                             "tracking_number": tracking_number,
                             "created_at": datetime.datetime.now().isoformat()
                         }
-                        self.redis_client.rpush("pending_orders", json.dumps(order_info))
+                        # self.redis_client.rpush("pending_orders", json.dumps(order_info))
                         print(f"订单 {order_number} 已存入Redis队列")
 
                     else:
@@ -140,6 +140,6 @@ class CreateOrderTest(TaskSet):
 class CreateOrderUser(HttpUser):
     """创建订单用户"""
     tasks = [CreateOrderTest]
-    host = "https://foms-api.kec-app.com"
+    host = "https://foms-api-lbs.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒

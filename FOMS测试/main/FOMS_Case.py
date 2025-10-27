@@ -39,12 +39,12 @@ class MyTestCase(unittest.TestCase):
 
 
          # 完结入库单
-        asn_number = create_ASN(sku_number,properties,foms_token)
-        # asn_number = "BACKASN20250417752693"
-        time.sleep(30)
-        asn_data = select_asn_id(properties,twms_login,asn_number)
-        asn_receive(properties,twms_login,asn_data,sku_number)
-        asn_confirm(properties,twms_login,asn_data)
+        # asn_number = create_ASN(sku_number,properties,foms_token)
+        # # asn_number = "BACKASN20250417752693"
+        # time.sleep(30)
+        # asn_data = select_asn_id(properties,twms_login,asn_number)
+        # asn_receive(properties,twms_login,asn_data,sku_number)
+        # asn_confirm(properties,twms_login,asn_data)
 
         # # 订单主流程
         order = []

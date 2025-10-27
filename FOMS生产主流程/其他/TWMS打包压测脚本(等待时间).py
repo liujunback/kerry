@@ -2,6 +2,8 @@ import datetime
 import json
 import os
 import re
+from time import sleep
+
 import redis
 import requests
 import openpyxl
@@ -199,7 +201,7 @@ class PackOrderTest(TaskSet):
             "skip_weight": "no",
             "forceSkipWeight": 1
         }
-
+        sleep(random.randint(1,5))
         with self.client.post(url,
                               data=payload,
                               headers=headers,
