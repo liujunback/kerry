@@ -25,7 +25,7 @@ class MyTestCase(unittest.TestCase):
             big_bag_num = box_da["carrier_tn"]
             box_list.append(big_bag_num)
             # big_bag_num = "TWYW20230714110302"
-            # time.sleep(100)
+            time.sleep(100)
         time_start = time.time()
         for i in box_list:
             big_bag_inbound(i)

@@ -79,7 +79,7 @@ def Order_Create(properties, token):
                 response_data = response.json()
                 tracking_number = response_data.get("data", {}).get("tracking_number")
                 if tracking_number:
-                    print(json.dumps(response.json()))
+                    print(response.text)
                     print(f"运单号：{tracking_number}")
                     return tracking_number
                 else:

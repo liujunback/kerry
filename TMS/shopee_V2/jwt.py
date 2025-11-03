@@ -39,20 +39,20 @@ with open("../shopee_V2/box_data.txt", 'r', encoding='utf-8') as f:
 # for i in range(5):
 #     parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
 # payload["data"]["parcel_list"] = parcel_list
-payload = json.dumps(jwt(payload))
-print(payload)
+# payload = json.dumps(jwt(payload))
+# print(payload)
 # headers = {
 #     'Content-Type': 'application/json'
 # }
 # print(payload)
 
-# print(json.dumps(jwt({
-#   "data": {
-#     "carrier_tn": "TWSPTEST20250910102457",
-#     "unique_id": "BACKTEST20250910102457"
-#   },
-#   "timestamp": 1688061603
-# })))
+print(json.dumps(jwt({
+  "data": {
+    "carrier_tn": "TWSPTEST20251027142832",
+    "unique_id": "BACKTEST20251027142832"
+  },
+  "timestamp": 1688061603
+})))
 # parcel_list=["TEST202509051142480"]
 # parcel_list_data = []
 # for i in range(len(parcel_list)):

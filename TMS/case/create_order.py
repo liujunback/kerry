@@ -49,9 +49,9 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(1):
-                # tracking_num = file_create_order(token)
-                tracking_num = "LXBPH000263888889"
+            for i in range(10):
+                tracking_num = file_create_order(token)
+                # tracking_num = "LXBMY000107073760"
                 if tracking_num == "失败":
                     fail=fail+1
                 else:
@@ -74,27 +74,35 @@ class MyTestCase(unittest.TestCase):
                 close_Box(box_num,trak)
                 time.sleep(10)
                 check_weight(box_num,trak)
-                shipment_num = shipment_add()
-                mawb_data = create()
-                time.sleep(30)
-                shipmentbatchId = shipment_scan(box_num,shipment_num)
-                shipment_close(shipmentbatchId,shipment_num)
-                # #
-                time.sleep(10)
-                scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
-                close_mawb(mawb_data["mawb"],mawb_data["id"])
-                time.sleep(10)
-                # status(trak[i],"OR","出口报关开始")
-                time.sleep(1)
-                # for i in trak:
-                print(trak[i])
-                status(trak[i],"FX","出口清关完成")
+                # shipment_num = shipment_add()
+                # mawb_data = create()
+                # time.sleep(30)
+                # shipmentbatchId = shipment_scan(box_num,shipment_num)
+                # shipment_close(shipmentbatchId,shipment_num)
+                # # #
+                # time.sleep(10)
+                # scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
+                # close_mawb(mawb_data["mawb"],mawb_data["id"])
+                # time.sleep(10)
+                # # status(trak[i],"OR","出口报关开始")
+                # time.sleep(1)
+                # # for i in trak:
+                # print(trak[i])
+                # status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)
                 # status(trak[i],"OF","航班抵达")
                 # time.sleep(1)
-                # status(trak[i],"OR","入口清关收到货")
+                # status(trak[i],"OS","进口清关开始")
+                # time.sleep(1)
+                # status(trak[i], "OQ", "进口清关完成")
+                # time.sleep(1)
+                # status(trak[i], "ZY", "包裹到达分拣中心")
+                # time.sleep(1)
+                # status(trak[i], "SP", "派送")
+                # time.sleep(1)
+                # status(trak[i], "OK", "用户签收")
                 # time.sleep(1)
                 # status(trak[i],"LT","干线转运中")
                 # time.sleep(1)
