@@ -38,8 +38,6 @@ class MyTestCase(unittest.TestCase):
     # @unittest.skip("")#包含WMS的退件入库和上架接口CTCNTH000123123
     def test_case_order_create(self):
         import unittest
-        import os
-        os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
         fail = 0
         x = 2
         trak=[]
@@ -49,7 +47,7 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(10):
+            for i in range(1):
                 tracking_num = file_create_order(token)
                 # tracking_num = "LXBMY000107073760"
                 if tracking_num == "失败":

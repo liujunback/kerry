@@ -14,9 +14,9 @@ from locust import HttpUser,TaskSet,task
 class Test(TaskSet):
 
     def on_start(self):
-        url ="https://pos-eng.kec.kln.cn/"
-        username = "999666_KERRYCN"
-        password = "1fc11311376347a59770cdc5c48080ea"
+        url ="https://cb-pos-kp-de.kec-app.com/"
+        username = "999666_K-PARCEL"
+        password = "e10adc3949ba59abbe56e057f20f883e"
 
         url = url +"pos-web/token/get"
         payload={
@@ -35,13 +35,13 @@ class Test(TaskSet):
 
     @task()
     def create_order(self):#下单
-
+        """创建订单"""
         # 定义请求头
         header = {
             'Content-Type':'application/json',
             "Authorization":"Bearer"+" "+self.token
             }
-        with open("../生产主流程/生产压测文件/KEC_order.txt", 'r',encoding= 'utf-8') as f:
+        with open("../生产压测文件/KEC_order.txt", 'r',encoding= 'utf-8') as f:
             param2 = json.loads(f.read())#转换成字典
             f.close()
         reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d')) + str(random.randint(1,99999999))
@@ -50,7 +50,7 @@ class Test(TaskSet):
         param2['package']['tracking_number']=reference_number+"01"
 
 
-        with self.client.post('/pos-web/shipment/create', data = json.dumps(param2), headers = header, name = "测试", catch_response = True) as response:
+        with self.client.post('/pos-web/shipment/create', data = json.dumps(param2), headers = header, name = "创建订单", catch_response = True) as response:
             if "success" in response.text:
                 response.success()
                 # pool = redis.ConnectionPool(host='localhost', port=6379, db = 3)
@@ -75,6 +75,6 @@ class Test(TaskSet):
 
 class websitUser(HttpUser):
     tasks = [Test]
-    host = "https://pos-eng.kec.kln.cn/"
+    host = "https://cb-pos-kp-de.kec-app.com/"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒

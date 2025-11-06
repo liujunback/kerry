@@ -9,15 +9,15 @@
       "description_destination_language": "",
       "description_origin_language": "塑料支架",
       "hs_code": "",
-      "quantity": 3,
+      "quantity": 1,
       "remark": "",
       "sku": "",
-      "unit_price": 681.08523
+      "unit_price": 10
     }
   ],
   "package": {
     "actual_weight": 298,
-    "declared_value": 681.08523,
+    "declared_value": 10,
     "declared_value_currency": "THB",
     "height": "",
     "length": "",
@@ -34,7 +34,7 @@
     "address": "Apartment MC1-A4, Royal Phuket Marina, ",
     "city": "Koh Kaew",
     "company": "Michael John O Neill",
-    "country_code": "TH",
+    "country_code": "ES",
     "district": "",
     "email": "mjoneilluk@yahoo.co.uk",
     "id_number": "",
@@ -69,7 +69,7 @@
     "province": ""
   },
   "service": {
-    "channel_code": "KEC-TESTFD",
+    "channel_code": "KEC-TESTGX",
     "delivery_instruction": "",
     "service_type": "default"
   }

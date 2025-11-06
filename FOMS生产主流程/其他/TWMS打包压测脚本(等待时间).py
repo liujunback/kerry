@@ -115,7 +115,7 @@ class PackOrderTest(TaskSet):
 
     def wms_login(self):
         """WMS系统登录"""
-        url = "https://twms-th.kec-app.com"
+        url = "https://qh-cn-twms.kec-app.com"
         username = "TEST-PY"
         password = "Tc123456789%"
 
@@ -127,9 +127,12 @@ class PackOrderTest(TaskSet):
             "password": password,
             "_token": c_token
         }
-
-        login = requests.post(url + '/opt/login', data=payload, cookies=res1.cookies)
-        if "Logout" in login.text:
+        headers ={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+        }
+        login = requests.post(url + '/opt/login', data=payload,headers=headers, cookies=res1.cookies)
+        print(login.text)
+        if "拣货波次任务" in login.text:
             print("WMS登陆成功")
             XSRF_TOKEN = re.findall(r"XSRF-TOKEN=(.+?) for " + IP, str(login.cookies))[0]
             laravel_session = re.findall(r"laravel_session=(.+?) for " + IP, str(login.cookies))[0]
@@ -195,7 +198,7 @@ class PackOrderTest(TaskSet):
             "barcode": sku_number,
             "barcode_type": "default",
             "weight": 2,
-            "box_type": "ITST-01",
+            "box_type": "TEST01",
             "type": "S",
             "serial_number": "",
             "skip_weight": "no",
@@ -250,7 +253,7 @@ class PackOrderTest(TaskSet):
 class PackOrderUser(HttpUser):
     """打包订单用户 - 每个用户对分配的wave_number打包30次，完成后自动切换下一个"""
     tasks = [PackOrderTest]
-    host = "https://twms-th.kec-app.com"
+    host = "https://qh-cn-twms.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒
 

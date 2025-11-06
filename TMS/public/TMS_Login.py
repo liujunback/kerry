@@ -4,14 +4,14 @@ import requests
 
 import unittest
 import os
-os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
+# os.environ["NO_PROXY"] = "tms-kec-eng-uat.kec-app.com"
 def login():
     try:
         #3d9188577cc9bfe9291ac66b5cc872b7
         url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/user/login?userNo=KEC064&password=123465&companyNo=&domain="
-        response =requests.post(url=url)
+        response =requests.post(url=url,timeout=50)
         # print(response.text)
         return json.loads(response.text)["body"]["token"]
     except json.decoder.JSONDecodeError:
         print("系统正在升级")
-# login()
+print(login())

@@ -1,59 +1,75 @@
 {
   "items": [
     {
-      "category": "Other",
-      "country_of_origin": "SG",
-      "currency": "THB",
-      "description": "Sportswear",
-      "description_origin_language": "",
-      "height": 5,
-      "hs_code": "62064000",
-      "length": 5,
+      "currency": "USD",
+      "description": "综训鞋",
+      "description_origin_language": "鞋",
+      "excc_legal_qty1": 0.7,
+      "hs_code": "6404199000",
+      "measure_unit": "025",
+      "origin_of_cnex_code": "35059",
       "quantity": 1,
-      "unit_price": 1,
-      "unit_weight": 1000,
-      "width": 5
+      "sku": "112417718-7",
+      "spec": "1|0|未过踝|鞋面材料:合成革/混纺布/橡塑材料|合成革|安踏|812221601-5",
+      "unit_price": 52.98,
+      "unit_weight": 700
+    },
+    {
+      "currency": "USD",
+      "description": "跑鞋",
+      "description_origin_language": "休闲鞋",
+      "excc_legal_qty1": 0.81,
+      "hs_code": "6404199000",
+      "measure_unit": "025",
+      "origin_of_cnex_code": "35059",
+      "quantity": 1,
+      "sku": "112445581-5",
+      "spec": "1|0|款式:未过踝|鞋面材料:网布/橡塑材料|外底材料:TPU/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:112445581-5|||",
+      "unit_price": 103.19,
+      "unit_weight": 810
     }
   ],
   "package": {
-    "actual_weight": 1000,
-    "declared_value": 1,
-    "declared_value_currency": "THB",
-    "incidental_fee": 0,
+    "actual_weight": 1,
+    "declared_value": 156.17,
+    "declared_value_currency": "USD",
+    "incidental_fee": 28.40717,
+    "incidental_fee_currency": "USD",
+    "insurance_currency": "USD",
+    "insurance_value": 0,
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTBACK20251027151820223",
+    "pickup_tn": "MX5110500918924",
+    "reference_number": "MX5110500918924",
     "shipment_term": "DDP",
     "shipment_type": "General",
-    "shipping_fee": 0
+    "shipping_fee": 20.10156,
+    "shipping_fee_currency": "USD"
   },
   "receiver": {
-    "address": "ซอย เอกชัย 30 แยก 12-2เขตจอมทอง",
-    "city": "Prachathipat",
-    "country_code": "TH",
-    "district": "",
-    "email": "Ikrychun@eshopworld.com",
-    "id_number": "",
+    "address": "R*************Y",
+    "city": "G*******D",
+    "company": "O*************N",
+    "country_code": "HK",
     "location_code": "",
-    "name": "Inna Krychun",
-    "phone": "+66 43 122 541",
-    "post_code": "12130",
-    "province": "LPG"
+    "name": "V*******B",
+    "phone": "8*******8",
+    "post_code": "M*******U"
   },
+  "sale_platform": "SHOPEE",
   "sender": {
-    "address": "eShopWorld C/O LF Logistics Services Pte Ltd",
-    "city": "Singapore",
-    "country_code": "SG",
-    "email": "operations@eshopworld.com",
-    "ioss_number": "",
-    "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
-    "phone": "+6564501234",
-    "post_code": "648165",
-    "province": "SG"
+    "address": "test",
+    "city": "test",
+    "company": "test",
+    "country_code": "CN",
+    "name": "厦门安之意体育用品有限公司",
+    "phone": "test",
+    "post_code": "test"
   },
   "service": {
-    "channel_code": "LACNTHG00",
+    "channel_code": "CTCNHK001",
+    "delivery_instruction": "remark",
     "service_type": "default"
   }
 }

@@ -1,50 +1,104 @@
-import shutil  
-import os  
+import requests
+import json
+import time
+from datetime import datetime
 
 
+def create_shipments():
+    url = "https://pos-eng.kec.kln.cn//pos-web/shipment/create/multiple"
+    token = "ec682758-9d8f-47f5-bfd1-33cd518b91ab"
 
-def pdf(name,destination_folder):
-    # 源文件路径
-    source_file = 'D:\微信文件\WeChat Files\wxid_rkdt6ft7o2yu22\FileStorage\File\\2024-10\\tracking_number\\' + name +".pdf"
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {token}'
+    }
+    data = {
+        "bag_weight": "12223412133",
+        "bag_id": "",
+        "bag_length": "312",
+        "bag_width": 10,
+        "bag_height": 2,
+        "package_list": []
+        }
+    for i in range(1,101):
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+        reference_num = f"TESTBACK{timestamp}{i}"
+        # print(reference_num)
+        tracking_num = f"ITTEST{timestamp}{i}"
+        data["package_list"].append({
+                    "items": [
+                        {
+                            "category": "Other",
+                            "country_of_origin": "SG",
+                            "currency": "THB",
+                            "description": "Sportswear",
+                            "description_origin_language": "",
+                            "height": 5,
+                            "hs_code": "62064000",
+                            "length": 5,
+                            "quantity": 1,
+                            "unit_price": 1,
+                            "unit_weight": 1000,
+                            "width": 5
+                        }
+                    ],
+                    "package": {
+                        "actual_weight": 1000,
+                        "declared_value": 1,
+                        "declared_value_currency": "THB",
+                        "incidental_fee": 0,
+                        "number_of_package": 1,
+                        "package_type": "WPX",
+                        "payment_method": "PP",
+                        "reference_number": reference_num,
+                        "tracking_number": tracking_num,
+                        "shipment_term": "DDP",
+                        "shipment_type": "General",
+                        "shipping_fee": 0
+                    },
+                    "receiver": {
+                        "address": "ซอย เอกชัย 30 แยก 12-2เขตจอมทอง",
+                        "city": "Prachathipat",
+                        "country_code": "TH",
+                        "district": "",
+                        "email": "Ikrychun@eshopworld.com",
+                        "id_number": "",
+                        "location_code": "",
+                        "name": "Inna Krychun",
+                        "phone": "+66 43 122 541",
+                        "post_code": "12130",
+                        "province": "LPG"
+                    },
+                    "sender": {
+                        "address": "eShopWorld C/O LF Logistics Services Pte Ltd",
+                        "city": "Singapore",
+                        "country_code": "SG",
+                        "email": "operations@eshopworld.com",
+                        "ioss_number": "",
+                        "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
+                        "phone": "+6564501234",
+                        "post_code": "648165",
+                        "province": "SG"
+                    },
+                    "service": {
+                        "channel_code": "KEC-TESTGX",
+                        "service_type": "default"
+                    }
+                })
+
+    try:
+        time_start = time.time()
+        response = requests.post(url, headers=headers, json=data)
+        time_end = time.time()
+        print('下单耗时：', round(time_end - time_start, 2), 's')
+        print(f"第 {i} 个包裹: 状态码 {response.status_code}")
+        print(f": {response.text}")
+    except Exception as e:
+        print(f"请求失败: {e}")
+
+        # 添加延迟避免服务器压力
+        # time.sleep(0.5)
 
 
-    # 确保目标文件夹存在，如果不存在则创建
-    if not os.path.exists(destination_folder):
-        os.makedirs(destination_folder)
-
-    # 构建目标文件路径（包括文件名）
-    destination_file = os.path.join(destination_folder, os.path.basename("SKU-" +name + ".pdf"))
-
-    # 复制文件
-    shutil.copy2(source_file, destination_file)
-
-    print(f"文件已成功复制到 {destination_folder}")
-
-
-test = [
-    "DLSXC6578C67982",
-    "DLSXC6578B5827A",
-    "DLSXC6577C91866",
-    "DLSXC6577ACB953",
-    "DLSXC657791A010",
-    "DLSXC657771BA0B",
-    "DLSXC65768437A6",
-    "DLSXC657643A863",
-    "DLSXC6574C90CCB",
-    "DLSXC65748A9CA3",
-    "DLSXC6574761B87",
-    "DLSXC6572CB3B03",
-    "DLSXC65725421AB",
-    "DLSXC657253AC84",
-    "DLSXC6572535C9A",
-    "DLSXC65725354A7",
-    "DLSXC6572535302",
-    "DLSXC6571C95271",
-    "DLSXC6571C36706",
-    "DLSXC65717152A6",
-    "DLSXC65716CC454",
-    "DLSXC6571559602",
-    "DLSXC65713535AA"
-]
-for i in test:
-    pdf(i,"C:\\Users\BLiuJ\Desktop\KEC主流程图片")
+if __name__ == "__main__":
+    create_shipments()
