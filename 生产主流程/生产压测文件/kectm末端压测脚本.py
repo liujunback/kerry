@@ -105,7 +105,7 @@ class KECUser(HttpUser):
         }
 
         headers = {
-            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjE5NzEzLCJ1c2VyTmFtZSI6ImtlY3N0cmVzc3Rlc3QuYXBpIiwiaWF0IjoxNzYxNTQ5MjU0LCJleHAiOjE3NjQxNDEyNTR9.1VcvM9Gb15UIxyQRbm3N3d5hUvQCmjs5iissB1V3jD8',
+            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjE5NzEzLCJ1c2VyTmFtZSI6ImtlY3N0cmVzc3Rlc3QuYXBpIiwiaWF0IjoxNzYyNDI0MTU3LCJleHAiOjE3NjUwMTYxNTd9.tKxSBtKE3w7B64c-MphlDGxa2pn9c1Jgavtp9_OuCP8',
             'Content-Type': 'application/json'
         }
 
