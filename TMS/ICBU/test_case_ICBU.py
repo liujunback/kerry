@@ -22,8 +22,8 @@ class MyTestCase(unittest.TestCase):
         # for i in range(1,2):
         #     ref = Icbu_Create()
         # sleep(30)
-        ref = "1050029437"
-        tracking_number = Order_Inquire(ref)#查询运单号
+        ref = "KECTH92000912"
+        # tracking_number = Order_Inquire(ref)#查询运单号
         tracking_number = ref
         trak.append(tracking_number)
         package_scan(tracking_number)#仓库揽收

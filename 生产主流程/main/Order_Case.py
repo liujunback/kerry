@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "DE"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -101,15 +101,15 @@ class MyTestCase(unittest.TestCase):
                     print(f"检查箱子重量 {box_num}...")
                     Check_Weight(box_num, properties, ops_token, len(trak_List))
                     time.sleep(30)
-                    shipment_num = shipment_add(properties, tms_token)
-                    mawb_data = create(tms_token, properties)
-                    shipmentbatchId = shipment_scan(box_num, shipment_num, properties, tms_token)
-                    time.sleep(10)
-                    shipment_close(shipmentbatchId, shipment_num, properties, tms_token)
-                    time.sleep(5)
-                    scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
-                    time.sleep(5)
-                    close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
+                    # shipment_num = shipment_add(properties, tms_token)
+                    # mawb_data = create(tms_token, properties)
+                    # shipmentbatchId = shipment_scan(box_num, shipment_num, properties, tms_token)
+                    # time.sleep(10)
+                    # shipment_close(shipmentbatchId, shipment_num, properties, tms_token)
+                    # time.sleep(5)
+                    # scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
+                    # time.sleep(5)
+                    # close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
                     # time.sleep(5)
                     # mawb_status(mawb_data["id"], "OF", tms_token, properties)
                     # time.sleep(5)

@@ -18,7 +18,7 @@ from TMS.public.TMS_Login import login
 
 def Icbu_Create():
     datas = open_excel()
-    url = "http://120.24.31.239:20000/tms-saas-web/order/booking"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/order/booking"
     #url = "http://172.16.3.155:8998/web/order/booking"
     for i in range(len(datas)):
         data1 = datas[i]

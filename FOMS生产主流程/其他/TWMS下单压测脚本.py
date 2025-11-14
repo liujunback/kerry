@@ -12,21 +12,21 @@ import json
 
 class OrderLoadTest(HttpUser):
     wait_time = between(1, 3)
-    # host = "https://stg-twms.kec-app.com"
-    host = "https://qh-cn-twms.kec-app.com"
+    host = "https://stg-twms.kec-app.com"
+    # host = "https://qh-cn-twms.kec-app.com"
     clients = [
-        # {
-        #     "client_code": "QTST02",
-        #     "skus": ["TRQHTS2025103104", "TRQHTS2025103105", "TRQHTS2025103106"]
-        # },
+        {
+            "client_code": "QTST02",
+            "skus": ["TRQHTS2025103104", "TRQHTS2025103105", "TRQHTS2025103106"]
+        },
         # {
         #     "client_code": "QTST",
         #     "skus": ["TRQHTS2025103103", "TRQHTS2025103109", "TRQHTS2025103110","TRQHTS2025103111","TRQHTS2025103112","TRQHTS2025103113","TRQHTS2025103114","TRQHTS2025103115","TRQHTS2025103116","TRQHTS2025103117","TRQHTS2025103118","TRQHTS2025103119"]
         # },
-        {
-            "client_code": "TEST-PY",
-            "skus": ["TRFOMS2025101702"]
-        }
+        # {
+        #     "client_code": "TEST-PY",
+        #     "skus": ["TRFOMS2025101702"]
+        # }
     ]
 
     def on_start(self):
@@ -38,7 +38,7 @@ class OrderLoadTest(HttpUser):
 
     def generate_random_items(self, client_skus):
         items = []
-        num_items = random.randint(1, 1)
+        num_items = random.randint(1, 3)
         selected_skus = random.sample(client_skus, min(num_items, len(client_skus)))
         total_declared_value = 0
 
@@ -72,7 +72,7 @@ class OrderLoadTest(HttpUser):
         total_weight = 200 + (len(items) * 100)
 
         order_data = {
-            "centre_code": "ITSTWH",
+            "centre_code": "QT",
             "client_code": client["client_code"],
             "real_time_response": False,
             "created_at": "2025-06-25",
@@ -132,8 +132,8 @@ class OrderLoadTest(HttpUser):
                 json=order_data,
                 headers={
                     'Content-Type': 'application/json',
-                    # 'Authorization': 'Bearer lfXTsgZIvhoFR5gdhY4Tfd6Qspj1BObfAV736HAFhgspDWidLLQK0BweHdDq'#
-                    'Authorization':"Bearer ZCZ3CnAxLhFhbGbZXITdHW8Mpk6dNlBTBmBTAA4tWpOd9JlB2gxcPj5fHw1y"
+                    'Authorization': 'Bearer lfXTsgZIvhoFR5gdhY4Tfd6Qspj1BObfAV736HAFhgspDWidLLQK0BweHdDq'#
+                    # 'Authorization':"Bearer ZCZ3CnAxLhFhbGbZXITdHW8Mpk6dNlBTBmBTAA4tWpOd9JlB2gxcPj5fHw1y"
                 },
                 catch_response=True,
                 name="CreateOrderVariation"
@@ -141,7 +141,7 @@ class OrderLoadTest(HttpUser):
 
             if response.status_code == 200:
                 response.success()
-                print(f"✓ 订单成功: {order_number} - 客户: {client['client_code']} - {len(items)}个商品")
+                print(f"✓ 订单成功: {order_number} - 客户: {client['client_code']} - {len(items)}个商品  - {items[0]['sku']}")
             else:
                 response.failure(f"HTTP {response.status_code}: {response.text}")
                 print(f"✗ 订单失败: {order_number} - 状态码: {response.status_code}")

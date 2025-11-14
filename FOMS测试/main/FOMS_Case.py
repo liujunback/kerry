@@ -33,39 +33,39 @@ class MyTestCase(unittest.TestCase):
 
         print(foms_token)
         # 创建sku
-        # for i in range(1):
-        #     sku_number = create_SKU(properties,foms_token)
-        sku_number = "back0710"
+        for i in range(1):
+            sku_number = create_SKU(properties,foms_token)
+        # sku_number = "back0710"
 
 
          # 完结入库单
-        # asn_number = create_ASN(sku_number,properties,foms_token)
-        # # asn_number = "BACKASN20250417752693"
-        # time.sleep(30)
-        # asn_data = select_asn_id(properties,twms_login,asn_number)
-        # asn_receive(properties,twms_login,asn_data,sku_number)
-        # asn_confirm(properties,twms_login,asn_data)
+        asn_number = create_ASN(sku_number,properties,foms_token)
+        # asn_number = "BACKASN20250417752693"
+        time.sleep(30)
+        asn_data = select_asn_id(properties,twms_login,asn_number)
+        asn_receive(properties,twms_login,asn_data,sku_number)
+        asn_confirm(properties,twms_login,asn_data)
 
-        # # 订单主流程
-        order = []
-        for i in range(1):
-            time_start = time.time()
-            order_numbers = create_Order(sku_number,properties,foms_token)
-            # order_numbers = "BACK_OR202508149267600"
-            order.append(order_numbers)
+        # # # 订单主流程
+        # order = []
+        # for i in range(1):
+        #     time_start = time.time()
+        #     order_numbers = create_Order(sku_number,properties,foms_token)
+        #     # order_numbers = "BACK_OR202508149267600"
+        #     order.append(order_numbers)
+        # #
+        #     time_end = time.time()
+        # print('下单耗时：', round(time_end - time_start, 2), 's')
+        # time.sleep(60)
+        # for order_number in order:
+        #     # Order_status(properties,order_number)
+        #     wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)
+        #     pick_wave_data = create_pick_wave(properties,twms_login,wave_data)
+        #     pick_add_order(properties,twms_login,pick_wave_data)
         #
-            time_end = time.time()
-        print('下单耗时：', round(time_end - time_start, 2), 's')
-        time.sleep(60)
-        for order_number in order:
-            # Order_status(properties,order_number)
-            wave_data = select_centre_id_OR_client_ids(properties,twms_login,order_number)
-            pick_wave_data = create_pick_wave(properties,twms_login,wave_data)
-            pick_add_order(properties,twms_login,pick_wave_data)
-
-            box_by_order(properties,twms_login,order_number,sku_number,pick_wave_data)
-            tracking_number = close_box(properties,twms_login,order_number,pick_wave_data)
-        order_handover(properties,twms_login,tracking_number,wave_data)
+        #     box_by_order(properties,twms_login,order_number,sku_number,pick_wave_data)
+        #     tracking_number = close_box(properties,twms_login,order_number,pick_wave_data)
+        # order_handover(properties,twms_login,tracking_number,wave_data)
         # Order_status(properties,order_number)
 
 

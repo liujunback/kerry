@@ -47,14 +47,14 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(1):
+            for i in range(3):
                 tracking_num = file_create_order(token)
-                # tracking_num = "LXBMY000107073760"
+                # tracking_num = "YD111100928142"
                 if tracking_num == "失败":
                     fail=fail+1
                 else:
                     trak.append(tracking_num)
-            # print(fail)
+            print(fail)
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
@@ -72,21 +72,20 @@ class MyTestCase(unittest.TestCase):
                 close_Box(box_num,trak)
                 time.sleep(10)
                 check_weight(box_num,trak)
-                # shipment_num = shipment_add()
-                # mawb_data = create()
-                # time.sleep(30)
-                # shipmentbatchId = shipment_scan(box_num,shipment_num)
-                # shipment_close(shipmentbatchId,shipment_num)
-                # # #
-                # time.sleep(10)
-                # scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
-                # close_mawb(mawb_data["mawb"],mawb_data["id"])
+                shipment_num = shipment_add()
+                mawb_data = create()
+                time.sleep(30)
+                shipmentbatchId = shipment_scan(box_num,shipment_num)
+                shipment_close(shipmentbatchId,shipment_num)
+                time.sleep(10)
+                scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
+                close_mawb(mawb_data["mawb"],mawb_data["id"])
                 # time.sleep(10)
                 # # status(trak[i],"OR","出口报关开始")
                 # time.sleep(1)
-                # # for i in trak:
-                # print(trak[i])
-                # status(trak[i],"FX","出口清关完成")
+                # for i in trak:
+                print(trak[i])
+                status(trak[i],"FX","出口清关完成")
                 # time.sleep(1)
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)
@@ -209,13 +208,14 @@ class MyTestCase(unittest.TestCase):
 
     # @unittest.skip("")
     def test_case_order_create12(self):
-        num = 100
+        num = 200
         trakings=[]
         box_num_list = []
         shipment_num = shipment_add()
         mawb = create()
+        pos_token = login()
         for i in range(num):
-            tracking_num = file_create_order(login())
+            tracking_num = file_create_order(pos_token)
             # wb = openpyxl.load_workbook('../case/test.xlsx', read_only=True, data_only=True)#读取execl订单后入库
             # ws = wb.active
             # tr=str(ws['A'+str(i)].value)
