@@ -36,7 +36,7 @@ class MyTestCase(unittest.TestCase):
         cls.shared_data = {}
         cls.sku_list = [{'sku': 'SKU202510191228405710', 'sku_barcodes': 'SKU202510191228405710','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191228405710', 'sku_barcodes': 'SKU202510191228405710','sku_qty':2}
         cls.properties = getProperties(company)
-        # cls.twms_login = Twms_login(cls.properties)
+        cls.twms_login = Twms_login(cls.properties)
 
     def setUp(self):
         """在每个测试方法执行前的设置"""

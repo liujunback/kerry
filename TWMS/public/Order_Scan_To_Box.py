@@ -145,7 +145,7 @@ def box_by_order_tote(properties,login,sku_list,pick_wave_data):
                 "uom": ""
             }
             response = requests.request("POST", url, headers=headers, data=payload)
-
+            print(response.text)
             if json.loads(response.text)['status'] == 0:
                 tote_data = {"tote_id":json.loads(response.text)['tote']["id"],
                              "tote_code":json.loads(response.text)['tote']["code"]}

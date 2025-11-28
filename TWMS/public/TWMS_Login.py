@@ -57,7 +57,8 @@ def Twms_login(properties):
                 "laravel_session": laravel_session
             },
             "_token": c_token,
-            "csrf_token": csrf_token
+            "csrf_token": csrf_token,
+            "cookie":login_response.cookies
         }
 
     except RequestException as e:

@@ -22,9 +22,9 @@ class MyTestCase(unittest.TestCase):
         # for i in range(1,2):
         #     ref = Icbu_Create()
         # sleep(30)
-        ref = "KECTH92000912"
-        # tracking_number = Order_Inquire(ref)#查询运单号
-        tracking_number = ref
+        ref = "ALS01225314389"
+        tracking_number = Order_Inquire(ref)#查询运单号
+        # tracking_number = ref
         trak.append(tracking_number)
         package_scan(tracking_number)#仓库揽收
         inbound(tracking_number)#入库称重
@@ -44,7 +44,7 @@ class MyTestCase(unittest.TestCase):
 
         scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
         close_mawb(mawb_data["mawb"],mawb_data["id"])
-        sleep(10)
+        # sleep(10)
         for i in range(len(trak)):
             sleep(1)
             status(trak[i], "ES", "出口报关开始")

@@ -7,11 +7,11 @@ from TMS.public.TMS_Login import login
 
 def Order_Inquire(ref_num):
 
-    response =requests.post(url = "http://120.24.31.239:20000/tms-saas-web/user/login?userNo=KEC064&password=123465&companyNo=&domain=")
+    response =requests.post(url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/user/login?userNo=KEC064&password=123465&companyNo=&domain=")
     # print(response.text)
     token = json.loads(response.text)["body"]["token"]
 
-    url = "http://120.24.31.239:20000/tms-saas-web/tms/order/list"
+    url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/tms/order/list"
     payload = {
                 "reName": "",
                 "sdName": "",

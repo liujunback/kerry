@@ -238,12 +238,13 @@ class MyTestCase(unittest.TestCase):
 
     def test_12_create_order_tote(self):
         """打包类型（格口）"""
-        # print("打包类型（格口）-----------------------------------------------------------")
+        print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
+        print(pick_wave_data)
         # pick_wave_data = {'pick_wave_id': 62843, 'pick_wave_num': 'W000062848', 'client_id': 145, 'centre_id': 37, 'order_ids': ['919598', '919599']}
         tote_data = box_by_order_tote(self.properties, self.twms_login,self.sku_list,pick_wave_data)
         print(tote_data)
@@ -253,7 +254,7 @@ class MyTestCase(unittest.TestCase):
         tracking_number2 = close_box(self.properties, self.twms_login, order_data2["order_number"], pick_wave_data, "tote")
         print(tracking_number2)
         self.assertIsNotNone(tracking_number2)
-        # close_box(self.properties, self.twms_login, order_data1["order_number"], pick_wave_data)
+        close_box(self.properties, self.twms_login, order_data1["order_number"], pick_wave_data)
 
 
 

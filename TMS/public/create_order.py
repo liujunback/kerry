@@ -41,7 +41,8 @@ def file_create_order(token):
     reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(
         random.randint(1, 300))
     param2['package']['reference_number'] = reference_number
-
+    param2['package']['tracking_number'] = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M')) + str(
+        random.randint(1, 300))
     # 两个URL，优先使用第一个，如果失败再尝试第二个
     urls = [
         # "http://47.119.120.7:22900/pos-web/shipment/create",

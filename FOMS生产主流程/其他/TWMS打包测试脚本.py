@@ -313,8 +313,8 @@ class PackOrderTest(TaskSet):
         """WMS系统登录"""
         try:
             url = self.user.host
-            username = "quince.ting"
-            password = "Tt123456789@"
+            username = "TEST-PY"
+            password = "Tc123456789%"
 
             IP = url.split("//")[1]
             res1 = requests.get(url + '/opt/login', timeout=10)
@@ -332,7 +332,11 @@ class PackOrderTest(TaskSet):
                 "_token": c_token
             }
 
-            login = requests.post(url + '/opt/login', data=payload, cookies=res1.cookies, timeout=10)
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            login = requests.post(url + '/opt/login', data=payload,headers=headers, cookies=res1.cookies, timeout=10)
+            # print(login.text)
             if "dashboard" in login.text:
                 XSRF_TOKEN = re.findall(r"XSRF-TOKEN=(.+?) for " + IP, str(login.cookies))
                 laravel_session = re.findall(r"laravel_session=(.+?) for " + IP, str(login.cookies))
@@ -426,7 +430,7 @@ class PackOrderTest(TaskSet):
             "barcode": barcode,
             "barcode_type": "default",
             "weight": 2,
-            "box_type": "QT1209",
+            "box_type": "TEST01",
             "type": "S",
             "serial_number": "",
             "skip_weight": "no",
@@ -517,7 +521,7 @@ class PackOrderTest(TaskSet):
 
             except json.JSONDecodeError:
                 # 响应解析失败
-                response.failure("响应不是有效的JSON格式")
+                response.failure(response.text)
                 # 将失败的条形码重新放回当前波次的条形码列表末尾
                 self.current_barcodes.append(barcode)
                 print(f"条形码 {barcode} 已放回波次 {wave_number} 的末尾等待重试")
@@ -533,7 +537,7 @@ class PackOrderTest(TaskSet):
 class PackOrderUser(HttpUser):
     """打包订单用户 - 每个用户处理一个波次的所有订单"""
     tasks = [PackOrderTest]
-    host = "https://stg-twms.kec-app.com"
+    host = "https://qh-cn-twms.kec-app.com"
     wait_time = between(1, 3)  # 使用between替代min_wait/max_wait
 
     def __init__(self, *args, **kwargs):

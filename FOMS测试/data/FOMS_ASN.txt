@@ -7,7 +7,7 @@
         {
             "sku_code":"BACKSKU20230925002",
             "description":"TESTTORI",
-            "qty":100000,
+            "qty":1,
             "po_number":"12"
         }
     ]

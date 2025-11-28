@@ -1,64 +1,61 @@
 {
   "items": [
     {
-      "country_of_origin": "CN",
-      "currency": "EUR",
-      "description": "sebuya",
-      "description_origin_language": "鞋子1e 28GB",
-      "height": 6,
-      "hs_code": "454657324",
-      "length": 9,
-      "quantity": 4,
-      "sku": "144624",
-      "unit_price": 26.5,
-      "unit_weight": 201,
-      "width": 17
+      "currency": "USD",
+      "description": "跑鞋",
+      "description_origin_language": "休闲鞋",
+      "excc_legal_qty1": 0.74,
+      "hs_code": "6404199000",
+      "measure_unit": "025",
+      "origin_of_cnex_code": "35059",
+      "quantity": 1,
+      "sku": "122415582-9",
+      "spec": "1|0|款式:未过踝|鞋面材料:网布/TPU|外底材料:TPU/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:122415582-9|||",
+      "unit_price": 77.92,
+      "unit_weight": 740
     }
   ],
   "package": {
-    "actual_weight": 809,
-    "declared_value": 106,
-    "declared_value_currency": "EUR",
-    "height": "6",
-    "incidental_fee": 0,
-    "length": "17",
+    "actual_weight": 1,
+    "declared_value": 77.92,
+    "declared_value_currency": "USD",
+    "incidental_fee": 14.17,
+    "incidental_fee_currency": "USD",
+    "insurance_currency": "USD",
+    "insurance_value": 0,
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "LUKTEST20250111302",
+    "pickup_tn": "MX5112500950699",
+    "reference_number": "MX5112500950691",
     "shipment_term": "DDP",
     "shipment_type": "General",
     "shipping_fee": 0,
-    "sort_code": "",
-    "width": "9"
+    "shipping_fee_currency": "USD"
   },
   "receiver": {
-    "address": "Rua Ramiro Ferrao n2A",
-    "city": "Millau",
-    "company": "Leonor Lima",
-    "country_code": "FR",
-    "district": "",
-    "email": "k.huet@laposte.net",
-    "name": "tttt",
-    "phone": "0681052405",
-    "post_code": "12100",
-    "province": "Millau"
+    "address": "K*************Z",
+    "city": "D*******N",
+    "company": "H*************U",
+    "country_code": "HK",
+    "location_code": "",
+    "name": "W*******I",
+    "phone": "7*******9",
+    "post_code": "U*******U"
   },
+  "sale_platform": "SHOPEE",
   "sender": {
-    "address": "li cheng qu an xin xing",
-    "city": "shenzhen",
-    "company": "2016",
+    "address": "test",
+    "city": "test",
+    "company": "test",
     "country_code": "CN",
-    "district": "fubao",
-    "email": "ket@lap22oste.net",
-    "ioss_number": "IM3729999999",
-    "name": "lin xia",
-    "phone": "18576000000",
-    "post_code": "530700",
-    "province": "guangdong"
+    "name": "厦门安之意体育用品有限公司",
+    "phone": "test",
+    "post_code": "test"
   },
   "service": {
-    "channel_code": "clevy",
-    "delivery_instruction": "aaaaaa"
+    "channel_code": "CTCNHK001",
+    "delivery_instruction": "remark",
+    "service_type": "default"
   }
 }

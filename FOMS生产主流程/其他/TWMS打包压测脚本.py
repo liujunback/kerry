@@ -113,9 +113,9 @@ class PackOrderTest(TaskSet):
 
     def wms_login(self):
         """WMS系统登录"""
-        url = "https://twms-th.kec-app.com"
-        username = "TEST-PY"
-        password = "Tc123456789%"
+        url = "https://stg-twms.kec-app.com"
+        username = "TH.ting"
+        password = "Tt123456790%"
 
         IP = url.split("//")[1]
         res1 = requests.get(url + '/opt/login')
@@ -180,7 +180,7 @@ class PackOrderTest(TaskSet):
         print(f"对wave_number {wave_number} 进行第 {self.pack_count + 1}/{self.packs_per_wave} 次打包")
 
         # 打包操作
-        sku_number = "TRFOMS2025101702"
+        sku_number = "TRSKU2025111403"
         url = "/opt/pack/ajax-pack-by-wave"
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -193,7 +193,7 @@ class PackOrderTest(TaskSet):
             "barcode": sku_number,
             "barcode_type": "default",
             "weight": 2,
-            "box_type": "ITST-01",
+            "box_type": "QTH520",
             "type": "S",
             "serial_number": "",
             "skip_weight": "no",
@@ -248,7 +248,7 @@ class PackOrderTest(TaskSet):
 class PackOrderUser(HttpUser):
     """打包订单用户 - 每个用户对分配的wave_number打包30次，完成后自动切换下一个"""
     tasks = [PackOrderTest]
-    host = "https://twms-th.kec-app.com"
+    host = "https://stg-twms.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒
 

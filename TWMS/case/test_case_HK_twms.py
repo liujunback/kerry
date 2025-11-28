@@ -32,7 +32,7 @@ class MyTestCase(unittest.TestCase):
         """在所有测试开始前执行的设置"""
         company = "香港"
         cls.shared_data = {}
-        cls.sku_list = [{'sku': 'SKU202510191233489855', 'sku_barcodes': 'SKU202510191233489855','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191233489855', 'sku_barcodes': 'SKU202510191233489855','sku_qty':2}
+        cls.sku_list = [{'sku': 'SKU202511211618117645', 'sku_barcodes': 'SKU202511211618117645','sku_qty':2}]  # 类级别的SKU列表，所有测试方法共享{'sku': 'SKU202510191233489855', 'sku_barcodes': 'SKU202510191233489855','sku_qty':2}
         cls.properties = getProperties(company)
         # cls.twms_login = Twms_login(cls.properties)
 
@@ -226,14 +226,14 @@ class MyTestCase(unittest.TestCase):
 
     def test_12_create_order_tote(self):
         """打包类型（格口）"""
-        # print("打包类型（格口）-----------------------------------------------------------")
+        print("打包类型（格口）-----------------------------------------------------------")
         order_data1 = create_order_api(self.properties, self.sku_list)
         order_data2 = create_order_api(self.properties, self.sku_list)
         sleep(3)
         wave_data = select_order_id(self.properties, self.twms_login, order_data1["order_number"])
         wave_data['order_ids'].extend(select_order_id(self.properties, self.twms_login, order_data2["order_number"])['order_ids'])
         pick_wave_data = batch_create_pick_wave(self.properties, self.twms_login, wave_data)
-        # pick_wave_data = {'pick_wave_id': 62843, 'pick_wave_num': 'W000062848', 'client_id': 145, 'centre_id': 37, 'order_ids': ['919598', '919599']}
+        # pick_wave_data = {'pick_wave_id': 1690753, 'pick_wave_num': 'W001758280', 'client_id': 163, 'centre_id': 4, 'order_ids': ['2199313', '2199314']}
         tote_data = box_by_order_tote(self.properties, self.twms_login,self.sku_list,pick_wave_data)
         print(tote_data)
         tote_data2 = box_by_order_tote(self.properties, self.twms_login, self.sku_list, pick_wave_data)
