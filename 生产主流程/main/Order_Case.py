@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "DE"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -110,23 +110,23 @@ class MyTestCase(unittest.TestCase):
                     scan_box(box_num, mawb_data["mawb"], mawb_data["id"], tms_token, properties)
                     time.sleep(5)
                     close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
-                    # time.sleep(5)
-                    # mawb_status(mawb_data["id"], "OF", tms_token, properties)
-                    # time.sleep(5)
+                    time.sleep(5)
+                    mawb_status(mawb_data["id"], "OF", tms_token, properties)
+                    time.sleep(5)
                     # status(tracking_number, "OK", tms_token, properties, "签收成功")
-                    # export_packing_list(tracking_number, tms_token,properties)
-                    # time.sleep(10)
-                    # check_file_urls(tms_token, properties)
-                    # time.sleep(1)
+                    export_packing_list(tracking_number, tms_token,properties)
+                    time.sleep(10)
+                    check_file_urls(tms_token, properties)
+                    time.sleep(1)
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)
                     # status(tracking_number,"EN",tms_token,properties,"违禁品")
                     # time.sleep(1)
                     # status(tracking_number,"FX",tms_token,properties,"出口清关完成")
-                    time.sleep(1)
-                    status(tracking_number,"OC",tms_token,properties,"航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
-                    time.sleep(1)
-                    status(tracking_number,"OF",tms_token,properties,"航班抵达")
+                    # time.sleep(1)
+                    # status(tracking_number,"OC",tms_token,properties,"航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
+                    # time.sleep(1)
+                    # status(tracking_number,"OF",tms_token,properties,"航班抵达")
                     time.sleep(1)
                     status(tracking_number,"OS",tms_token,properties,"进口清关开始")
                     # time.sleep(1)

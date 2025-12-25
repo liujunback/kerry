@@ -2,7 +2,7 @@
     "warehouse_code": "ITST",
     "merchant_code": "KEC-2342",
     "logistics_provider": {
-        "code": "KEC-234",
+        "code": "FLOSHIP_FEDEX",
         "tracking_number": "BACK_OR2024082367262"},
     "order_number": "BACK_OR202408209967262",
     "platform": {
@@ -28,16 +28,20 @@
         "email": "123@abnc.com"
     },
     "receiver": {
-        "name": "側是",
-        "company": "test company",
-        "address": "test sstest",
+        "name": "测试",
+        "company": "test com12222222222222222222222222222222222222222222222212312312322222222pany",
+        "address": "test",
         "district": "test",
         "city": "SZ",
         "province": "GD",
-        "country_code": "TH",
+        "country_code": "TW",
         "post_code": "21000",
+
         "phone": "223456789",
-        "email": "123@abnc.com"
+        "email": "123@abnc.com",
+                "tax_id": "t2342342",
+        "tax_id_type": "ID_CARD",
+        "taxid_issued_country_code":"TW"
     },
     "items": [
         {

@@ -29,6 +29,10 @@ from TWMS.public.TWMS_Select_Order_id import select_order_id
 
 import unittest
 import os
+
+from TWMS.public.api.exceptional_create_asn_api import exceptional_api_create_asn
+from TWMS.public.api.exceptional_create_sku_api import exceptional_create_sku
+
 os.environ["NO_PROXY"] = "stg-twms.kec-app.com"
 
 class MyTestCase(unittest.TestCase):
@@ -365,8 +369,30 @@ class MyTestCase(unittest.TestCase):
         # 将值存储到类属性中
         # MyTestCase.shared_data['asn_data'] = asn_data
 
+#异常情况
 
+    def test_18_repeat_sku(self):
+        """创建已存在的sku"""
+        response = exceptional_create_sku(self.properties)
+        self.assertEqual(response.status_code, 400)
+        response_data = response.json()
+        self.assertEqual(response_data.get("message"), "failed")
 
+    def test_19_repeat_adn(self):
+        """创建已存在的ASN"""
+        response = exceptional_api_create_asn(self.properties,self.sku_list)
+        self.assertEqual(response.status_code, 403)
+        response_data = response.json()
+        self.assertEqual(response_data.get("message"), "Asn [ASN202312121312] already  exists.")
+
+    def test_20_repeat_adn(self):
+        """创建ASN，sku不存在或不属于该客户"""
+        sku_list = [{'sku': 'SKU2025090311441011979', 'sku_barcodes': 'SKU202509031144011979', 'sku_qty': 2}]
+        response = exceptional_api_create_asn(self.properties,sku_list,"ASN2023121213121")
+        print(response.text)
+        self.assertEqual(response.status_code, 404)
+        response_data = response.json()
+        self.assertEqual(response_data.get("message"), "Not found SKU [SKU2025090311441011979]")
 
 
 

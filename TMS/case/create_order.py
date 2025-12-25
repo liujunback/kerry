@@ -47,9 +47,9 @@ class MyTestCase(unittest.TestCase):
         print(token)
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
-            for i in range(5):
+            for i in range(3):
                 tracking_num = file_create_order(token)
-                # tracking_num = "YD111100928142"
+                # tracking_num = "KECTH92001254"
                 if tracking_num == "失败":
                     fail=fail+1
                 else:
@@ -58,7 +58,7 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(30)
+                        # time.sleep(10)
                         # spider(trak[i])
                         # package_scan(trak[i])
                         inbound(trak[i])
@@ -80,13 +80,15 @@ class MyTestCase(unittest.TestCase):
                 time.sleep(10)
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
-                # time.sleep(10)
-                # # status(trak[i],"OR","出口报关开始")
-                # time.sleep(1)
-                # for i in trak:
-                print(trak[i])
-                status(trak[i],"FX","出口清关完成")
-                # time.sleep(1)
+                time.sleep(10)
+                # status(trak[i],"OR","出口报关开始")
+                time.sleep(1)
+                for i in trak:
+                    print(i)
+                #     status(i,"FX","出口清关完成")
+                    status(i, "ZY", "包裹到达分拣中心")
+                    time.sleep(1)
+                    status(i, "TH", "退回")
                 # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
                 # time.sleep(1)
                 # status(trak[i],"OF","航班抵达")

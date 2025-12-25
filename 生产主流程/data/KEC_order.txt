@@ -12,7 +12,9 @@
       "quantity": 1,
       "remark": "",
       "sku": "",
-      "unit_price": 10
+      "unit_price": 10,
+      "excc_unit_price":10,
+      "excc_currency":"THB"
     }
   ],
   "package": {
@@ -21,7 +23,8 @@
     "declared_value_currency": "THB",
     "height": "",
     "length": "",
-    "number_of_package": 1,
+    "number_of_package": 1,     "excc_declared_value": 10,
+    "excc_declared_value_currency": "THB",
     "package_type": "WPX",
     "payment_method": "PP",
     "reference_number": "ITTEST2025082031",
@@ -35,10 +38,12 @@
     "city": "Koh Kaew",
     "company": "Michael John O Neill",
     "country_code": "TH",
+        "excc_declared_value": 100,
+    "excc_declared_value_currency": "123",
     "district": "",
     "email": "mjoneilluk@yahoo.co.uk",
     "id_number": "",
-    "location_code": "",
+    "location_code": "1231231",
     "name": "Michael John O Neill",
     "phone": "+66 817 87 17 52",
     "post_code": "S30001119",
@@ -53,7 +58,7 @@
     "idcard_district": "12005",
     "idcard_post_code": "12006"
   },
-  "sale_platform": "",
+  "sale_platform": "shopee",
   "sender": {
     "address": "北京市朝阳区酒仙桥东路",
     "city": "北京",

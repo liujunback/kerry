@@ -1,1 +1,51 @@
-{"parcel_list":["TEST202509280944390","TEST202509280944391","TEST202509280944392","TEST202509280944393","TEST202509280944394","TEST202509280944395","TEST202509280944396","TEST202509280944397","TEST202509280944398","TEST202509280944399","TEST2025092809443910","TEST2025092809443911","TEST2025092809443912","TEST2025092809443913","TEST2025092809443914","TEST2025092809443915","TEST2025092809443916","TEST2025092809443917","TEST2025092809443918","TEST2025092809443919","TEST2025092809443920","TEST2025092809443921","TEST2025092809443922","TEST2025092809443923","TEST2025092809443924","TEST2025092809443925","TEST2025092809443926","TEST2025092809443927","TEST2025092809443928","TEST2025092809443929","TEST2025092809443930","TEST2025092809443931","TEST2025092809443932","TEST2025092809443933","TEST2025092809443934","TEST2025092809443935","TEST2025092809443936","TEST2025092809443937","TEST2025092809443938","TEST2025092809443939","TEST2025092809443940","TEST2025092809443941","TEST2025092809443942","TEST2025092809443943","TEST2025092809443944","TEST2025092809443945","TEST2025092809443946","TEST2025092809443947","TEST2025092809443948","TEST2025092809443949"],"order":{"unique_id":"BACKTEST20250928094439","carton_length":45,"receiver":{"address":"Jalan Lapangan Terbang, 93250 Kuching, Sarawak，Malaysia","city":"Kuching","zipcode":523000,"phone":-658930936,"name":"Shopee","state":"Sarawak","region":"Malaysia","region_code":"MY"},"pre_carrier_info":{"carrier_name":"TWYS"},"destination_region_name":"Malaysia","destination_region":"MY","carton_no":"TWSPTEST20250928094439","carton_weight":21.085,"next_carrier_info":{"carrier_tn":"TWYSPKM25090400802","carrier_name":"ABX-(IM)MY","carrier_code":110091},"ilh_shopee_no":"BACKTEST20250928094439","carrier_tn":"TWSPTEST20250928094439","sender":{"address":"Si hai road 1666","city":"Jinhua","phone":149772764,"district":"Yiwu","name":"Logistics Sorting Hub","state":"Zhejiang","region":"China","region_code":"CN"},"parcel_qty":89,"carton_height":49.5,"transport_type":1,"carton_volume":120285,"service_code":"MB79","goods_type":0,"carton_width":54}}
+{
+    "parcel_list": [
+
+    ],
+    "order": {
+        "unique_id": "BACKTEST20250928094439",
+        "carton_length": 45,
+        "receiver": {
+            "address": "Jalan Lapangan Terbang, 93250 Kuching, Sarawak，Malaysia",
+            "city": "Kuching",
+            "zipcode": 523000,
+            "phone": -658930936,
+            "name": "Shopee",
+            "state": "Sarawak",
+            "region": "Malaysia",
+            "region_code": "MY"
+        },
+        "pre_carrier_info": {
+            "carrier_name": "TWYS"
+        },
+        "destination_region_name": "Malaysia",
+        "destination_region": "MY",
+        "carton_no": "TWSPTEST20250928094439",
+        "handling_type": "2",
+        "carton_weight": 21.085,
+        "next_carrier_info": {
+            "carrier_tn": "TWYSPKM25090400802",
+            "carrier_name": "ABX-(IM)MY",
+            "carrier_code": 110091
+        },
+        "ilh_shopee_no": "BACKTEST20250928094439",
+        "carrier_tn": "TWSPTEST20250928094439",
+        "sender": {
+            "address": "Si hai road 1666",
+            "city": "Jinhua",
+            "phone": 149772764,
+            "district": "Yiwu",
+            "name": "Logistics Sorting Hub",
+            "state": "Zhejiang",
+            "region": "China",
+            "region_code": "CN"
+        },
+        "parcel_qty": 89,
+        "carton_height": 49.5,
+        "transport_type": 1,
+        "carton_volume": 120285,
+        "service_code": "MB79",
+        "goods_type": 0,
+        "carton_width": 54
+    }
+}
