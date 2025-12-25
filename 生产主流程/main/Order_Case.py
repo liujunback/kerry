@@ -13,6 +13,8 @@ from 生产主流程.TMS.shipment import shipment_add, shipment_scan, shipment_c
 from 生产主流程.TMS.status import status
 from 生产主流程.order.Big_Bag_Create import Big_Bag_Create
 from 生产主流程.order.Order_Create import Order_Create
+from 生产主流程.order.order_status import order_status
+from 生产主流程.order.spider_order_status import send_tracking
 from 生产主流程.properties.GetProperties import getProperties
 from 生产主流程.public.Ops_Login import Ops_Login
 from 生产主流程.public.Pos_Login import Pos_Login
@@ -24,7 +26,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "KEC"  # KEC-备用
+        company = "DE"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -118,6 +120,7 @@ class MyTestCase(unittest.TestCase):
                     time.sleep(10)
                     check_file_urls(tms_token, properties)
                     time.sleep(1)
+                    send_tracking(tracking_number)#推送shpider货态
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)
                     # status(tracking_number,"EN",tms_token,properties,"违禁品")
@@ -150,8 +153,8 @@ class MyTestCase(unittest.TestCase):
                     # time.sleep(1)
                     # status(tracking_number,"SP3",tms_token,properties,"三次派送")
                     # status(tracking_number,"SP3F",tms_token,properties,"三次派送失败")
-                    time.sleep(1)
-                    status(tracking_number,"OK",tms_token,properties,"用户签收")
+                    # time.sleep(1)
+                    # status(tracking_number,"OK",tms_token,properties,"用户签收")
                     # # status(tracking_number,"RJ",tms_token,properties,"拒收")
                     # # status(tracking_number,"RN",tms_token,properties,"lastmile_eturn")
                     # time.sleep(1)
@@ -160,6 +163,8 @@ class MyTestCase(unittest.TestCase):
                     # time.sleep(1)
                     # status(tracking_number,"TH",tms_token,properties,"退回")
                     # status(tracking_number,"DM",tms_token,properties,"DAMAGE")
+                    time.sleep(30)
+                    order_status(properties,pos_token,tracking_number)
                     print("\n===== 所有流程完成 =====")
 
                 except Exception as e:

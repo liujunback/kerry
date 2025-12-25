@@ -15,5 +15,7 @@ def order_status(properties,pos_token,tracking_number):
     }
 
     response = requests.request("GET", full_url, headers=headers, data=payload)
-
-    print(response.text)
+    if "Delivered" or "签收" in response.text:
+        print("OK货态校验成功")
+    else:
+        print("货态校验失败")

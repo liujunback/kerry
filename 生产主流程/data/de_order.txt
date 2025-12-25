@@ -1,76 +1,47 @@
 {
   "items": [
     {
-      "brand": "",
-      "category": "",
-      "country_of_origin": "",
-      "currency": "THB",
-      "description": "Plastic bracket",
-      "description_destination_language": "",
-      "description_origin_language": "塑料支架",
-      "hs_code": "",
+      "currency": "EUR",
+      "description": "Pillow Core",
+      "description_origin_language": "枕芯",
       "quantity": 1,
-      "remark": "",
-      "sku": "",
-      "unit_price": 10
+      "unit_price": 9.33
     }
   ],
   "package": {
-    "actual_weight": 298,
-    "declared_value": 10,
-    "declared_value_currency": "THB",
-    "height": "",
-    "length": "",
+    "actual_weight": 1000,
+    "declared_value": 9.33,
+    "declared_value_currency": "EUR",
+    "incidental_fee": 0,
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "ITTEST2025082031",
+    "reference_number": "317893141484",
     "shipment_term": "DDP",
-    "shipment_type": "",
-    "sort_code": "",
-    "width": ""
+    "shipping_fee": 0
   },
   "receiver": {
-    "address": "Apartment MC1-A4, Royal Phuket Marina, ",
-    "city": "Koh Kaew",
-    "company": "Michael John O Neill",
+    "address": "CALLE ESPARTINAS 15 ",
+    "city": "Seseña Viejo",
+    "company": "",
     "country_code": "ES",
-    "district": "",
-    "email": "mjoneilluk@yahoo.co.uk",
-    "id_number": "",
-    "location_code": "",
-    "name": "Michael John O Neill",
-    "phone": "+66 817 87 17 52",
-    "post_code": "21000",
-    "province": "83",
-     "id_card_number": "12001",
-    "id_card_number_type": "id_card",
-    "idcard_name": "12001",
-     "id_number_country": "CN",
-    "idcard_address": "12002",
-    "idcard_province": "12003",
-    "idcard_city": "12004",
-    "idcard_district": "12005",
-    "idcard_post_code": "12006"
+    "name": "test",
+    "phone": "34641384215",
+    "post_code": "45223",
+    "province": "Toledo"
   },
-  "sale_platform": "",
   "sender": {
-    "address": "北京市朝阳区酒仙桥东路",
-    "city": "北京",
-    "company": "北京燕文物流股份有限公司",
-    "country_code": "CN",
-    "district": "",
-    "email": "",
-    "id_number": "",
+    "address": "Avenida Pedro Romero 1 4º B ",
+    "city": "Sevilla",
+    "company": "test",
+    "country_code": "ES",
     "ioss_number": "",
-    "name": "燕文",
-    "phone": "010-64656790",
-    "post_code": "100015",
-    "province": ""
+    "name": "test",
+    "phone": "676237901",
+    "post_code": "41007",
+    "province": "Sevilla"
   },
   "service": {
-    "channel_code": "BACKTEST",
-    "delivery_instruction": "",
-    "service_type": "default"
+    "channel_code": "backtest"
   }
 }
