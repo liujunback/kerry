@@ -28,13 +28,13 @@
         "email": "123@abnc.com"
     },
     "receiver": {
-        "name": "测试",
+        "name": "test",
         "company": "test com12222222222222222222222222222222222222222222222212312312322222222pany",
         "address": "test",
         "district": "test",
         "city": "SZ",
         "province": "GD",
-        "country_code": "TW",
+        "country_code": "KR",
         "post_code": "21000",
 
         "phone": "223456789",

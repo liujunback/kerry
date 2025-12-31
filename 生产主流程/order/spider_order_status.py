@@ -4,9 +4,9 @@ import requests
 import json
 
 
-def send_tracking(tracking_number):
+def send_tracking(properties,tracking_number):
 
-    url = "https://spider.kec-app.com/package/tracking/spider"
+    url = properties['spider_url'] + "/package/tracking/spider"
 
     payload = json.dumps({
         "tracking_number": tracking_number,

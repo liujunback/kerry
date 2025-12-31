@@ -26,7 +26,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "DE"  # KEC-备用
+        company = "test"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -54,8 +54,8 @@ class MyTestCase(unittest.TestCase):
                         # tracking_number = str(ws['A'+str(i)].value)
 
                         # 创建新订单
-                        tracking_number = Order_Create(properties, pos_token)
-                        # tracking_number = "ITTEST20251124174511283"
+                        # tracking_number = Order_Create(properties, pos_token)
+                        tracking_number = "ITTEST20251225180049132"
 
                         if "失败" in tracking_number:
                             fail += 1
@@ -78,7 +78,7 @@ class MyTestCase(unittest.TestCase):
                     try:
                         if i == 0:  # 第一个订单特殊处理
                             print(f"处理首单: {tracking_number}")
-                            time.sleep(30)
+                            # time.sleep(30)
                             OPS_Inbound(tracking_number, properties, ops_token)
                             time.sleep(10)
                             box_num = Outbound_Scan(tracking_number, properties, ops_token)
@@ -120,7 +120,7 @@ class MyTestCase(unittest.TestCase):
                     time.sleep(10)
                     check_file_urls(tms_token, properties)
                     time.sleep(1)
-                    send_tracking(tracking_number)#推送shpider货态
+                    send_tracking(properties,tracking_number)#推送shpider货态
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)
                     # status(tracking_number,"EN",tms_token,properties,"违禁品")

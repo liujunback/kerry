@@ -1,62 +1,73 @@
 {
   "items": [
     {
-      "category": "Other",
-      "country_of_origin": "SG",
-      "currency": "THB",
-      "description": "Sportswear",
-      "description_origin_language": "",
-      "excc_unit_price": 100,
-      "height": 5,
-      "hs_code": "62064000",
-      "length": 5,
+      "currency": "USD",
+      "description": "板鞋",
+      "description_origin_language": "休闲鞋",
+      "excc_legal_qty1": 0.7,
+
+      "hs_code": "6402992900",
+      "measure_unit": "025",
+      "measure_unit_value": 12.12317,
+      "origin_of_cnex_code": "35059",
       "quantity": 1,
-      "unit_price": 1,
-      "unit_weight": 1000,
-      "width": 5
+      "sku": "122418016-2",
+      "spec": "1|0|款式:未过踝|鞋面材料:合成革/网布|外底材料:EVA/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:122418016-2|||",
+      "unit_price": 37.66,
+      "unit_weight": 700
+    },
+    {
+      "currency": "USD",
+      "description": "板鞋",
+      "description_origin_language": "休闲鞋",
+      "excc_legal_qty1": 0.7,
+      "hs_code": "6402992900",
+      "measure_unit": "025",
+      "measure_unit_value": 12.12317,
+      "origin_of_cnex_code": "35059",
+      "quantity": 1,
+      "sku": "122418016-3",
+      "spec": "1|0|款式:未过踝|鞋面材料:合成革/网布|外底材料:EVA/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:122418016-3|||",
+      "unit_price": 37.66,
+      "unit_weight": 700
     }
   ],
   "package": {
-    "actual_weight": 1000,
-    "declared_value": 1,
-    "declared_value_currency": "CNY",
-    "excc_declared_value": 100,
-    "excc_declared_value_currency": "CNY",
-    "incidental_fee": 0,
+    "actual_weight": 1,
+    "declared_value": 75.32,
+    "declared_value_currency": "USD",
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "TESTBACK20251222120742231",
+    "pickup_tn": "MX5102000915709",
+    "reference_number": "MX5102000915709",
     "shipment_term": "DDP",
     "shipment_type": "General",
-    "shipping_fee": 0
+    "tracking_number": ""
   },
   "receiver": {
-    "address": "8/13 บรมราชชนนี 123ศาลาธรรมสพน์",
-    "city": "ทวีวัฒนา",
+    "address": "Q*************W",
+    "city": "F*******P",
+    "company": "A*************N",
     "country_code": "TH",
-    "district": "",
-    "email": "elukashuk@eshopworld.com",
-    "id_number": "",
-    "location_code": "",
-    "name": "First Last",
-    "phone": "+66 99 999 9999",
-    "post_code": "11000",
-    "province": "BKK"
+    "location_code": "anta_lazada",
+    "name": "X*******T",
+    "phone": "4*******8",
+    "post_code": "21000"
   },
+  "sale_platform": "SHOPEE",
   "sender": {
-    "address": "eShopWorld C/O LF Logistics Services Pte Ltd",
-    "city": "Singapore",
-    "country_code": "SG",
-    "email": "operations@eshopworld.com",
-    "ioss_number": "",
-    "name": "U.S. Direct E Commerce (Singapore) Pte Ltd",
-    "phone": "+6564501234",
-    "post_code": "648165",
-    "province": "SG"
+    "address": "test",
+    "city": "test",
+    "company": "test",
+    "country_code": "CN",
+    "name": "厦门安之意体育用品有限公司",
+    "phone": "test",
+    "post_code": "test"
   },
   "service": {
-    "channel_code": "CACNTH000",
+    "channel_code": "backtest",
+    "delivery_instruction": "remark",
     "service_type": "default"
   }
 }
