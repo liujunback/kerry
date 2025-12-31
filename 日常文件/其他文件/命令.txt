@@ -1,0 +1,77 @@
+php artisan consumer:kengine_status                       kengine同步手动触发命令
+php artisan queue:restart                                         重启队列
+php artisan migrate				执行迁移命令
+php artisan route:cache         重置路由缓存
+php artisan route:clear         清除路由
+php artisan config:clear		清除配置缓存
+php artisan cache:clear			清除缓存
+php artisan action:trigger-get-pickup-points inpostit
+php artisan action:trigger-get-pickup-points kerryth   拉取嘉里泰国自提点
+php artisan action:trigger-async-order  correosexpress posti    spider0触发批量推送接口close（异步下单）
+docker exec -it teclastmile_tec-lastmile_1 /bin/bash   执行命令地址
+php artisan action:trigger-lm-status-pull fedex 0            拉取末端货态命令
+ php artisan action:trigger-package-status-pull
+php artisan queue:work --queue=process-package-status-pull --tries=1  拉取货态job
+php artisan queue:work --queue=send-package-status-job    spider发送货态给oms
+php artisan queue:work --queue=process-package-status-pull-kparcel-low  
+php artisan action:trigger-get-cacesa-customs-clearance-status     ftp拉取cacesa文件
+php artisan action:wechat_push push_order_result  机器人下单监控
+php artisan action:wechat_push package_status_monitoring  货态机器人
+
+php artisan queue:work --queue=correos-async-order-create-returnorder   异步客退服务队列S0148
+php artisan queue:work --queue=correos-async-order-create-coorder		异步非客退服务队列S0148
+php artisan action:process-package-extra-info-pull     货态重试队列
+php artisan action:trigger-lm-status-pull colisprive
+
+php artisan action:trigger-package-extra-info-pull
+php artisan queue:work --queue=process-package-extra-info-pull
+
+php artisan action:trigger-get-colisprive-route          colisprive拉取末端下单postcode信息
+
+php artisan queue:work --queue=oms-ui-low         下单订单追踪报告
+php artisan queue:work --queue=oms-ui-high        读取execl模板
+php artisan queue:work --queue=shopee-upload      shopee下单
+
+http://47.119.120.7:8000/pos-web/shipment/createpos-
+goodscan
+service apache2 restart        重启服务
+php artisan client-list:get    wms拉取新系统客户
+php artisan queue:work --queue=api   wms的api队列
+
+git checkout .			丢弃本地的所有修改
+
+http://120.79.229.241:8000/order/orderprediction			TMS生产地址
+
+
+docker ps -a      docker查看已启动的容器
+
+docker restart nginxreverseproxy_certbot_1  docker启动容器
+
+docker start nginxreverseproxy_nginx_1
+php artisan action:trigger-delete-expired-data act_status_pull 366   删除pull表历史数据
+php artisan action:trigger-delete-expired-data act_async_order_booking 183
+
+gradlew --no-daemon jfxNative		打包java端代码
+
+
+CAINIAO_APP_SECRET=Q489gE5SH7n0vbk1N3YxK7pk74223618
+
+w81131195
+GSak0PMg
+6PQQ
+
+
+wusutest
+Hl8lwJJt
+XXX1
+
+
+
+
+ 171836
+ 
+php /var/www/html/artisan queue:work --queue=process-package-status-pull
+php /storage/tec-lastmile/src/artisan queue:work --queue=process-package-status-pull --tries=1 --timeout=3000
+
+sudo -i
+sudo docker exec -it 5c5034aba9f1 bash

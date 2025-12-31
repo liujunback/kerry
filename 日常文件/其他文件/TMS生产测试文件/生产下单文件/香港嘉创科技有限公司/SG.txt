@@ -1,0 +1,47 @@
+{
+    "service":{
+        "channel_code":"CACNSGG00"
+    },
+    "package":{
+        "reference_number":"XS210507115621735-2",
+        "declared_value":3,
+        "declared_value_currency":"USD",
+        "actual_weight":33,
+        "shipment_term":"DDU",
+        "payment_method":"PP"
+    },
+    "sender":{
+        "name":"jiahongwl",
+        "company":"jiahongwl",
+        "address":"dongguanwangniudunzhen",
+        "city":"dongguan",
+        "province":"guangdong",
+        "country_code":"CN",
+        "post_code":"578000",
+        "phone":"1235858542"
+    },
+    "receiver":{
+        "name":"Indrani Govindasamy",
+        "company":"",
+        "address":"941 Tampines Avenue 5 #12-233",
+        "district":"",
+        "city":"Singapore",
+        "province":"",
+        "country_code":"SG",
+        "post_code":"520941",
+        "phone":" 6591516510",
+        "email":"indrani1908@gmail.com",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"YCJTWL450131162",
+            "description":"The other le",
+            "description_origin_language":"咬咬乐",
+            "unit_price":3,
+            "currency":"USD",
+            "quantity":1,
+            "hs_code":"3924100000"
+        }
+    ]
+}

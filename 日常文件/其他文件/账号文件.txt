@@ -1,0 +1,240 @@
+
+
+测试地址：
+
+	TMS
+		http://120.24.31.239:20000/login
+			zmuser     123456
+	TMS测试环境数据库
+		rm-wz9knez97e4uut979lo.mysql.rds.aliyuncs.com
+			liu_jun 	Tmrr3p$Pc7ipG#D11Y
+	OMS
+		http://120.24.31.239:20000/viplogin
+			back		123456
+
+	OPS
+		http://47.107.105.241:22000/#/login
+			kec064     19970718Lj.
+	OPS测试环境数据库
+		rm-wz9knez97e4uut979lo.mysql.rds.aliyuncs.com
+			opst_dev	92@#B5^bn
+
+		
+	POS下单地址
+		http://47.119.120.7:8000/pos-web/shipment/create
+			999666_KERRYCN		b05b41732aac4fa491723669c35f10d3
+	POS平台
+		http://47.119.120.7:22000/#/login
+			pos			pos_test
+	POS测试数据库
+		rm-wz9knez97e4uut979lo.mysql.rds.aliyuncs.com
+			liu_jun		Tmrr3p$Pc7ipG#D11Y
+			
+	集运系统（朗信）
+		http://sys.kerrytje-parcel.com/
+			KEC0001		KEC888888
+
+	amz-eu页面地址
+		https://stg-amz-oms-eu.kec-app.com/nltr/mawbDashboard
+			back.liu	 5mR3HrY7
+	amz数据库
+		https://amz-pma-eu.kec-app.com/
+			back.liu / p3F5CvHlqFTqj
+	EU云端	
+	https://225797836225.signin.aws.amazon.com/console
+		Back.J.Liu@kerrylogistics.com
+		R5aZFwAg4v
+
+	foms测试地址
+		https://stg-foms.kec-app.com/#/login
+			admin   	admin
+			
+			back.test  J2HI#Px0v
+	FOMS测试环境数据库
+		https://amz-pma.kec-app.com/
+		username: stg_kec_foms
+		password:JzZ4!Fk4xMY/lkXa
+			
+	Lazada
+		http://stg.as2.kec-app.com:38011/
+			root		123456
+			rick.lu		rick1994
+			
+	Lazada数据库
+		https://amz-pma.kec-app.com/
+			rick.lu		WWvCm3t+44t5brgN
+	Lazada任务列表
+		timesitteam.atlassian.net/jira/software/projects/AZEU/boards/42/backlog?assignee=5a7acbcfc834f55f4f79b474&selectedIssue=AZEU-506
+		
+	
+	
+	TMS任务调度
+		http://120.79.229.241:8021/job-center/jobinfo?jobGroup=4
+	
+	原型图地址
+		https://psc684.axshare.com/#g=1&p=%E9%A6%96%E9%A1%B5_%E7%AE%80%E4%BD%93
+
+	JIRA-代码库
+		https://bitbucket.org/
+			Back.J.Liu@kerrylogistics.com   a8%ZDGFEd
+
+	times-CBS
+		http://stg.timescbs.com/admin/login
+			back      test123
+
+	times-OMS
+		http://stg.timesoms.com/admin/login
+			testteam      test_123
+
+	times-PSS
+		http://stg.timespss.com/admin/login
+			testteam      test123
+350,"status":[{"id":11466350,"slug":"kerryth","shipper_reference_id":"TESTBACK20240717201929149","tracking_number":"KECTH91183590","provider_status":"POD","event_date":"2024-07-17 20:20:00","event_date_timezone":"N\/A","location":"","location_province":"","location_city":"","location_district":"","location_postcode":"","remark":"Delivery successfully test","return_tracking_number":""}]}}
+2024-07-17 20:21:00 [net.intelink.zmframework.util.JobLogger#info]-[16]-[Thread-25] 转换数据成功 转换的数据-->,net.intelink.tmssaas.core.tms.manifest.dto.PodItemSpider@36fb3761
+	数据库PHP
+		https://amz-pma-sg.kec-app.com/index.php?route=/&server=7
+			chaifenglei     MHxM13SxQIHSt8No
+			kenjamin.wei    T5XfFUnGCuKYUkxl
+			tecit           HSAlmppcJrtkJOi2
+
+	TIMES-WMS
+		http://stg.timeswms.com/admin/login
+			back.liu      123456		
+			
+	TWMS:
+		https://stg.hk.timeswms.com/admin/dashboard
+			back.liu
+			back123
+	HK-OMS
+		http://47.106.191.110/amazon-hk-oms/dist/
+			tiger      12345678	
+			
+
+	
+	日志
+		https://infra-graylog-aws.kec-app.com/search?q=%22auto-pick-wave%22&rangetype=relative&from=172800	
+			timeslogistics      23912442
+	icbu客户登录地址
+		FLiW@kerrylogistics.com
+			lw549264
+			
+			7YVsLsqkjKJ9RXvNBguZ
+			
+			mEtSBp9GrdkDWAUs8GLH
+	开发EAT总览
+		kerryoffice365us-my.sharepoint.com/:x:/g/personal/kweijm_kerrylogistics_com/Efkzk2mvEpJDt2F0nR9rRzwBhCRT74fp2Uyd4M0Vso1hyg?rtime=rGY6sd4K2Ug
+
+	TMS：https://doojw8.axshare.com/
+		KEC20230710
+	
+	TMS原型地址:
+		https://ydkar5.axshare.com/
+			密码: KECRP210601
+	
+		https://www.sandbox.paypal.com/myaccount/activities/?free_text_search=&start_date=2024-04-05&end_date=2024-07-04&type=&status=&currency=&filter_id=&issuance_product_name=&asset_names=&asset_symbols=
+	测试付费账号
+		Username： sb-zct3527342434@personal.example.com
+		Password：bJ[5>Ue(
+
+
+生产环境
+
+	KEC-TMS
+		https://tms-kec.kerry-ecommerce.com.cn/order/orderprediction
+			KEC0064			123465
+		http://120.79.229.241:8000/
+			zmuser			zz6DPV9a	
+	KEC-TMS数据库
+		rr-wz987scp72r1713948o.mysql.rds.aliyuncs.com
+			liu_jun		Tmrr3p$Pc7ipG#D11Y
+	
+	kec-tms: 120.78.66.231:30001
+	kpa-tms: 120.78.66.231:30002
+	pos: 120.78.66.231:30003
+	ops: 120.78.66.231:30004
+	KEC-POS
+		https://pos-kec.kerry-ecommerce.com.cn/
+			999666_KERRYCN		1fc11311376347a59770cdc5c48080ea
+	KEC-POS数据库
+		rm-pos-kerry.mysql.rds.aliyuncs.com
+			liu_jun		$xkqb$J71uGZbAB5
+			
+	KEC-OPS
+		https://cb-pss-hm-api.kec-app.com
+			kec0064		123465
+			
+	KEC-OMS
+		https://tms-kec.kerry-ecommerce.com.cn/VIPlogin
+			BackTest	123456
+	
+	KP-TMS
+		https://tms-kp.kerry-ecommerce.com.cn/
+			kec0064		123465
+	KP-TMS数据库
+		kparcel-agent.rwlb.rds.aliyuncs.com
+			liu_jun		Tmrr3p$Pc7ipG#D11Y
+			
+	FOMS生产环境
+		https://foms.kec-app.com/#/order/fulfillment/inbound
+			back.liu
+			back123456
+	TWMS-TH
+		https://th.timeswms.com/admin/login
+			back.liu
+			back.liu123456
+			
+	FOMS生产数据库
+		https://amz-pma-sg.kec-app.com/
+			back.liu   
+			1d6Mx53kKfsRL6EA
+		 
+	Spider数据库
+		https://amz-pma-sg.kec-app.com/
+			back.he	2NMF2jC6YFfm
+
+	德国TMS
+		http://18.185.101.144:20000/order/orderprediction
+			KEC0064		123465
+			
+	日本TMS
+		 https://tms.jp.kec-app.com/order/orderprediction
+			KEC0064		19970718Lj.
+		
+	paypai
+		sb-ii0en26676981@business.example.com
+
+		r)l8fP.%
+		Username： sb-zct3527342434@personal.example.com
+		Password：bJ[5>Ue(
+	公司
+		DZhouFL
+			Sixteen@1990
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+

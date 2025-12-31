@@ -1,0 +1,18 @@
+{
+    "warehouse_code":"ITST",
+    "asn_number":"BACKASN20230925003",
+    "asn_date":"2023-10-17",
+    "is_return_asn":"N",
+    "items":[
+        {
+            "sku_code":"BACKSKU20230925002",
+            "description":"TESTTORI",
+            "carton_id":"testtori",
+            "pallet_id":"1231112231",
+            "qty":50,
+            "po_number":"12",
+            "udf_1":"345"
+
+        }
+    ]
+}

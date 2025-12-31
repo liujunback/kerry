@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "category": "",
+      "country_of_origin": "CN",
+      "currency": "CNY",
+      "description": "test goods",
+      "description_destination_language": "",
+      "description_origin_language": "test goods",
+      "quantity": 1,
+      "remark": "",
+      "sku": "",
+      "unit_price": 308,
+      "unit_weight": 3
+    }
+  ],
+  "package": {
+    "actual_weight": 250,
+    "cod_value": 0,
+    "cod_value_currency": "",
+    "declared_value": 308,
+    "declared_value_currency": "CNY",
+    "height": "1",
+    "length": "1",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "ITTEST20240522191114106",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "1"
+  },
+  "receiver": {
+    "address": "台北市內湖區大湖山莊街190號5樓之1",
+    "city": "台北",
+    "company": "李知晛有限",
+    "country_code": "TW",
+    "district": "TW",
+    "id_number": "N123497147",
+    "name": "李知晛",
+    "phone": "911391937",
+    "post_code": "114",
+    "province": "內湖區"
+  },
+  "sender": {
+    "address": "三豊市山本町辻3278-1",
+    "city": "香川県",
+    "company": "KEC",
+    "country_code": "JP",
+    "district": "",
+    "name": "TEST",
+    "phone": "00000000000",
+    "post_code": "518100",
+    "province": "香川県"
+  },
+  "service": {
+    "channel_code": "CAJPTWS40",
+    "delivery_instruction": "",
+    "service_type": "default"
+  }
+}

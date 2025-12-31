@@ -1,0 +1,59 @@
+{
+    "warehouse_code":"ITST",
+    "merchant_code":"TORITEST",
+    "logistics_provider":{
+        "code":"KEC-TESTGX"
+    },
+    "order_number":"backtest20231103001013",
+    "platform":{
+
+    },
+    "customized_invoice":"https://dev-foms.s3.ap-east-1.amazonaws.com/DISABLED/backtest20231011701113.pdf",
+    "currency":"THB",
+    "shipment_term":"DDU",
+    "cod_value_currency":"THB",
+    "require_carton_label":"0",
+    "require_carton_photo":"0",
+    "require_customised_inovice":"0",
+    "sender":{
+        "name":"test",
+        "company":"test company",
+        "address":"test address",
+        "district":"-",
+        "city":"S1Z",
+        "province":"GD",
+        "country_code":"CN",
+        "post_code":"21000",
+        "phone":"123456789",
+        "email":"123@abnc.com"
+    },
+    "receiver":{
+        "name":"test",
+        "company":"test company",
+        "address":"test address",
+        "district":"-",
+        "city":"SZ",
+        "province":"GD",
+        "country_code":"TH",
+        "post_code":"21000",
+        "phone":"123456789",
+        "email":"123@abnc.com"
+    },
+    "items":[
+        {
+            "sku_code":"BACK_SKU20240102657183",
+            "description":"backtest",
+            "unit_price":167600,
+            "qty":3,
+            "weight":6,
+            "properties":[
+                {
+                    "name":"5t234",
+                    "value":"32423"
+                }
+            ],
+            "require_product_label":"0",
+            "require_product_photo":"0"
+        }
+    ]
+}

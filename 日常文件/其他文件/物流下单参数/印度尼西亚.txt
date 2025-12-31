@@ -1,0 +1,60 @@
+{
+    "package":{
+        "width":1,
+        "height":1,
+        "length":1,
+        "cod_value":0,
+        "shipment_term":"DDP",
+        "shipment_type":"general",
+        "payment_method":"prepaid",
+        "declared_value":1059000,
+        "reference_number":"GID1241-01",
+        "cod_value_currency":"IDR",
+        "declared_value_currency":"IDR",
+        "actual_weight":1000,
+        "number_of_package":1
+    },
+    "sender":{
+        "city":"HK",
+        "name":"GAIA CORPORATION CO.,LTD.",
+        "email":"",
+        "phone":"+82-31-921-5232",
+        "address":"9F,Kerry warehouse (Shatin),36-42 Shan Mei Street,Fotan",
+        "company":"GAIA CORPORATION CO.,LTD.",
+        "province":"HK",
+        "id_number":"0000000",
+        "post_code":"000000",
+        "country_code":"HK"
+    },
+    "service":{
+        "channel_code":"CAHKIDS00",
+        "product_code":"CAHKIDS00",
+        "service_type":"default"
+    },
+    "receiver":{
+        "city":"Tangerang Selatan",
+        "name":"Tiara Talitha",
+        "email":"tiara.aisyah9@gmail.com",
+        "phone":"0878-7500-7774",
+        "address":"Jl. Maleo XI JC 3 No. 4, Bintaro Jaya Se  ktor 9, Pondok Aren, Pondok Pucung",
+        "company":"Tiara Talitha",
+        "province":"Banten",
+        "id_number":"000000",
+        "post_code":"15229",
+        "country_code":"ID"
+    },
+    "items":[
+        {
+            "sku":"201987",
+            "hs_code":"6110.20.0000",
+            "category":"",
+            "currency":"IDR",
+            "quantity":1,
+            "unit_price":"1059000.00",
+            "description":"BTS [ON] Sweatshirt 04 (blue_M)",
+            "country_of_origin":"VN",
+            "description_origin_language":"BTS [ON] Sweatshirt 04 (blue_M)"
+        }
+    ],
+    "sale_platform":""
+}

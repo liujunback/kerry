@@ -1,0 +1,46 @@
+{
+    "items":[
+        {
+            "currency":"USD",
+            "description":"Men Shoes-Sandals & FlipFlops",
+            "description_destination_language":"Adi-das รองเท้าแตะของผู้ชาย",
+            "quantity":1,
+            "unit_price":180
+        }
+    ],
+    "package":{
+        "actual_weight":276,
+        "declared_value":180,
+        "declared_value_currency":"USD",
+        "height":"1",
+        "length":"1",
+        "payment_method":"PP",
+        "reference_number":"THBACK7932602824322",
+        "shipment_term":"",
+        "shipping_fee":0,
+        "width":"1"
+    },
+    "receiver":{
+        "address":"305 ม.5 ต.ท่าข้าม",
+        "city":"อำเภอปะเหลียน",
+        "company":"พิชญธิดา สุโสะ",
+        "country_code":"TR",
+        "name":"พิชญธิดา สุโสะ",
+        "phone":"66872946036",
+        "post_code":"92120",
+        "province":"จังหวัดตรัง"
+    },
+    "sender":{
+        "address":"Xiaxue Industrial Park, Building 5, Floor 1, Bantian",
+        "city":"Shenzhen",
+        "company":"Mr. Chu",
+        "country_code":"CN",
+        "name":"Mr. Chu",
+        "phone":"+86(0755)89351937",
+        "post_code":"99999",
+        "province":"Guangdong"
+    },
+    "service":{
+        "channel_code":"PALTR"
+    }
+}

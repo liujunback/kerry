@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KEC_Engine下单</title>
+</head>
+<body>
+    <p>1.下单    2.入库    3.出库    4.关包</p>
+    <form action="/search/" method="post">
+        <select name="q">
+            <option value ="1">下单</option>
+            <option value ="2">入库</option>
+            <option value="3">出库</option>
+            <option value="4">关箱</option>
+            <option value="5">出货</option>
+        </select>
+        <select name="w">
+            <option value ="TH">泰国</option>
+            <option value ="MY">马来西亚</option>
+            <option value="HK">香港</option>
+            <option value="SG">新加坡</option>
+            <option value="THKE">泰国不走末端</option>
+            <option value="TR">土邮</option>
+            <option value="AU">澳邮</option>
+        </select>
+        <select name="a">
+            <option value ="b">正常下单</option>
+            <option value ="big">大包下单</option>
+        </select>
+        <input type="submit" value="下单">
+    </form>
+    <p>{{ tracking_number }}</p> 
+    <p>{{ rlt }}</p>
+    <p>{{ inbound }}</p>
+    <p>{{ outbound }}</p>
+    <p>{{ close_box }}</p>
+    <p>{{ shipment_close }}</p>
+</body>
+</html>
+

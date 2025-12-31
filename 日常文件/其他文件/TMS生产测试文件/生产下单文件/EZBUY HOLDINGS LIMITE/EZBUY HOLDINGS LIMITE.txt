@@ -1,0 +1,42 @@
+{
+    "items":[
+        {
+            "description_origin_language":"衣服",
+            "currency":"MYR",
+            "description":"clothes",
+            "hs_code":"6109909050",
+            "quantity":1,
+            "unit_price":76.27
+        }
+    ],
+    "package":{
+        "actual_weight":952,
+        "declared_value":76.27,
+        "declared_value_currency":"MYR",
+        "payment_method":"PP",
+        "reference_number":"QHXEB0512000025YQ"
+    },
+    "receiver":{
+        "address":"Lit 806 kg hutan banggol",
+        "city":"Kota bharu",
+        "company":"-",
+        "country_code":"MY",
+        "name":"Tengku nasrom shah tengku anuar",
+        "phone":"+60193962199",
+        "post_code":"15350",
+        "province":"Kelantan"
+    },
+    "sender":{
+        "address":"yijigou",
+        "city":"DongGuan",
+        "company":"ezBuy",
+        "country_code":"CN",
+        "name":"Louis",
+        "phone":"280995665",
+        "post_code":"356223",
+        "province":"DongGuan"
+    },
+    "service":{
+        "channel_code":"CACNMYG00"
+    }
+}

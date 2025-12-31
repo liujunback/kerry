@@ -1,0 +1,57 @@
+{
+    "service":{
+        "channel_code":"CTCNHK000"
+    },
+    "package":{
+        "reference_number":"XS210502154157873",
+        "declared_value":9,
+        "declared_value_currency":"USD",
+        "actual_weight":191,
+        "shipment_term":"DDU",
+        "payment_method":"PP"
+    },
+    "sender":{
+        "name":"fangqingyi",
+        "company":"fangqingyi",
+        "address":"changan zhen shatou",
+        "city":"guangdong",
+        "province":"donggua",
+        "country_code":"CN",
+        "post_code":"523000",
+        "phone":"13166668888",
+        "email":"jiachuang@166.com"
+    },
+    "receiver":{
+        "name":"KHALIL Muhammad",
+        "company":"",
+        "address":"Flate 1A 4 floor 1A baker street hunghom kowloon 1a",
+        "district":"",
+        "city":"Hunghom",
+        "province":"Kowloon",
+        "country_code":"HK",
+        "post_code":"999077",
+        "phone":" 85285262975605",
+        "email":"BrazilianGems012@yahoo.com",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"YCATWO959180605",
+            "description":"watch",
+            "description_origin_language":"手表",
+            "unit_price":5,
+            "currency":"USD",
+            "quantity":1,
+            "hs_code":"9102110000"
+        },
+        {
+            "sku":"YCATWO959184432",
+            "description":"watch",
+            "description_origin_language":"手表",
+            "unit_price":4,
+            "currency":"USD",
+            "quantity":1,
+            "hs_code":"9102110000"
+        }
+    ]
+}

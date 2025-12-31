@@ -1,0 +1,65 @@
+{
+    "sale_platform":null,
+    "bag_id":null,
+    "receiver":{
+        "name":"สุจินต์. เฉ้งเหา",
+        "company":"-",
+        "address":"泰国สุราษฎร์ธานีเมืองสุราษฎร์ธานีมะขามเตี้ย227/93ซอยชนเกษม24/3หมู่1ถนนชนเกษม",
+        "district":null,
+        "city":"สุราษฎร์ธานี",
+        "province":null,
+        "country_code":"TH",
+        "post_code":"84000",
+        "phone":"0819796275",
+        "email":null,
+        "id_number":null,
+        "location_code":null
+    },
+    "sender":{
+        "name":"Andrew",
+        "company":"Serendipity",
+        "address":"1405, 14/F, 196 Taiwan Tsai Road, Aberdeen, Hong Kong",
+        "district":null,
+        "city":"ShenZhen",
+        "province":null,
+        "country_code":"CN",
+        "post_code":"518000",
+        "phone":"+66903199789",
+        "email":null,
+        "id_number":null
+    },
+    "package":{
+        "reference_number":"TISLK50068942",
+        "tracking_number":null,
+        "declared_value":"950",
+        "declared_value_currency":"THB",
+        "cod_value":"950",
+        "cod_value_currency":"THB",
+        "number_of_package":"1",
+        "length":null,
+        "width":null,
+        "height":null,
+        "actual_weight":500,
+        "shipment_term":"DDP",
+        "payment_method":"COD",
+        "shipment_type":"General"
+    },
+    "service":{
+        "channel_code":"CACNTHG01"
+    },
+    "items":[
+        {
+            "sku":"L-473819-16",
+            "description":"กระทะไฟฟ้ามัลติฟังก์ชัน",
+            "description_origin_language":"迷你多功能电热锅",
+            "description_destination_language":"Mini multifunctional electric cooker",
+            "category":null,
+            "unit_price":"475",
+            "currency":"THB",
+            "quantity":"2",
+            "hs_code":null,
+            "brand":null,
+            "country_of_origin":null
+        }
+    ]
+}

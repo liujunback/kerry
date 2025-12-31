@@ -1,0 +1,63 @@
+{
+    "sale_platform":"",
+    "service":{
+        "channel_code":"bposttest",
+        "service_type":""
+    },
+    "package":{
+        "reference_number":"MY242394234554755",
+        "declared_value":2,
+        "declared_value_currency":"USD",
+        "cod_value":0,
+        "cod_value_currency":"",
+        "height":"",
+        "length":"",
+        "width":"",
+        "actual_weight":29,
+        "shipment_term":"",
+        "payment_method":"PP",
+        "shipment_type":""
+    },
+    "sender":{
+        "name":"WuQi",
+        "company":"XiamenHexinEcommerceLtd",
+        "address":"3floor19,DianliIndustrial,Wutong",
+        "district":"",
+        "city":"350200",
+        "province":"",
+        "country_code":"CN",
+        "post_code":"361006",
+        "phone":"1",
+        "email":"",
+        "id_number":""
+    },
+    "receiver":{
+        "name":"kerry Test",
+        "company":"Kerry",
+        "address":"Jahnstrasse 41",
+        "district":"",
+        "city":"Kirchseeon",
+        "province":"Freistaat Bayern",
+        "country_code":"DE",
+        "post_code":"85610",
+        "phone":"08091 18 84 29",
+        "email":"",
+        "id_number":"2141352"
+    },
+    "items":[
+        {
+            "sku":"",
+            "description":"Socks",
+            "description_origin_language":"CN",
+            "description_destination_language":"CN",
+            "category":"",
+            "unit_price":2,
+            "currency":"USD",
+            "quantity":1,
+            "country_of_origin":"CN",
+            "hs_code":"123",
+            "brand":"",
+            "remark":""
+        }
+    ]
+}

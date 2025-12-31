@@ -1,0 +1,64 @@
+{
+    "sale_platform":null,
+    "receiver":{
+        "name":"Yap Keong Foon",
+        "company":"J&T Express Drop Point @ Salak Tinggi",
+        "address":"109G, jalan warisan central 2, KIP Central, kota warisan, 43900 sepang.",
+        "district":null,
+        "city":"MY",
+        "province":null,
+        "country_code":"MY",
+        "post_code":"43900",
+        "phone":"60142251163",
+        "email":null,
+        "id_number":null,
+        "location_code":null
+    },
+    "sender":{
+        "name":"Mr Zhao",
+        "company":"Mr Zhao",
+        "address":"2nd floor, building 6, Huangtian Industrial Zone, Shenzhen",
+        "district":null,
+        "city":"shenzhen",
+        "province":null,
+        "country_code":"CN",
+        "post_code":"518000",
+        "phone":"12345678900",
+        "email":null,
+        "id_number":null
+    },
+    "package":{
+        "reference_number":"my1-2021-0401-03",
+        "tracking_number":null,
+        "declared_value":"200",
+        "declared_value_currency":"MYR",
+        "cod_value":null,
+        "cod_value_currency":null,
+        "number_of_package":null,
+        "length":null,
+        "width":null,
+        "height":null,
+        "actual_weight":10000,
+        "shipment_term":null,
+        "payment_method":"PP",
+        "shipment_type":null
+    },
+    "service":{
+        "channel_code":"LACNMYG00"
+    },
+    "items":[
+        {
+            "sku":null,
+            "description":"Clothes, shoes, curtains, sofa covers, storage boxes, murals, beauty gadgets",
+            "description_origin_language":"衣服，鞋子，窗帘，沙发套，收纳盒，壁画，美妆小工具",
+            "description_destination_language":null,
+            "category":null,
+            "unit_price":"200",
+            "currency":"MYR",
+            "quantity":"1",
+            "hs_code":null,
+            "brand":null,
+            "country_of_origin":null
+        }
+    ]
+}
