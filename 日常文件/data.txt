@@ -1,1 +1,148 @@
-test
+curl --location 'https://stg-shopee-rms.kec-app.com/api/v1/17track_lastmile_update' \
+--header 'Content-Type: application/json' \
+--data '{
+    "event": "TRACKING_UPDATED",
+    "data": {
+        "number": "ZT000210234231",
+        "carrier": 190455,
+        "param": "5614",
+        "tag": "",
+        "track_info": {
+            "shipping_info": {
+                "shipper_address": {
+                    "country": "CN",
+                    "state": null,
+                    "city": null,
+                    "street": null,
+                    "postal_code": null,
+                    "coordinates": {
+                        "longitude": null,
+                        "latitude": null
+                    }
+                },
+                "recipient_address": {
+                    "country": "",
+                    "state": null,
+                    "city": null,
+                    "street": null,
+                    "postal_code": null,
+                    "coordinates": {
+                        "longitude": null,
+                        "latitude": null
+                    }
+                }
+            },
+            "latest_status": {
+                "status": "OutForDelivery",
+                "sub_status": "OutForDelivery_Other",
+                "sub_status_descr": null
+            },
+            "latest_event": {
+                "time_iso": "2025-11-26T07:17:00+08:00",
+                "time_utc": "2025-11-25T23:17:00Z",
+                "time_raw": {
+                    "date": "2025-11-26",
+                    "time": "07:17:00",
+                    "timezone": "+08:00"
+                },
+                "description": "广州番禺万达 快递员【钟严生,18675867459】正在为您派件（大促期间快件较多，我们将尽快送达，请留意接听中通快递员外呼专属号码95720，如遇问题请联系快递员为您解决，无需找商家/平台。网点电话：020-22049366，投诉电话：18926106127，或关注“中通快递”官方微信公众号获取实时物流信息）",
+                "location": "广州市, China",
+                "stage": "OutForDelivery",
+                "sub_status": "OutForDelivery_Other",
+                "address": {
+                    "country": "CN",
+                    "state": null,
+                    "city": "广州市",
+                    "street": null,
+                    "postal_code": null,
+                    "coordinates": {
+                        "longitude": null,
+                        "latitude": null
+                    }
+                }
+            },
+            "time_metrics": {
+                "days_after_order": 2,
+                "days_of_transit": 2,
+                "days_of_transit_done": 0,
+                "days_after_last_update": 1,
+                "estimated_delivery_date": {
+                    "source": null,
+                    "from": null,
+                    "to": null
+                }
+            },
+            "milestone": [
+                {
+                    "key_stage": "InfoReceived",
+                    "time_iso": null,
+                    "time_utc": null,
+                    "time_raw": {
+                        "date": null,
+                        "time": null,
+                        "timezone": null
+                    }
+                }
+            ],
+            "misc_info": {
+                "risk_factor": 0,
+                "service_type": null,
+                "weight_raw": null,
+                "weight_kg": null,
+                "pieces": null,
+                "dimensions": null,
+                "customer_number": null,
+                "reference_number": null,
+                "local_number": null,
+                "local_provider": null,
+                "local_key": 0
+            },
+            "tracking": {
+                "providers_hash": -1315759850,
+                "providers": [
+                    {
+                        "provider": {
+                            "key": 190455,
+                            "name": "ZTO Express",
+                            "alias": "ZTO Express 中通快递",
+                            "tel": "",
+                            "homepage": "https://www.zto.com",
+                            "country": "CN"
+                        },
+                        "provider_lang": null,
+                        "service_type": null,
+                        "latest_sync_status": "Success",
+                        "latest_sync_time": "2025-11-25T23:32:20Z",
+                        "events_hash": -45843769,
+                        "events": [
+                            {
+                                "time_iso": "2025-11-24T14:01:05+08:00",
+                                "time_utc": "2025-11-24T06:01:05Z",
+                                "time_raw": {
+                                    "date": "2025-11-24",
+                                    "time": "14:01:05",
+                                    "timezone": "+08:00"
+                                },
+                                "description": "【深圳市】 快件已由深圳西乡时丰-虾皮退件（16676585614）揽收（如遇问题无需找商家/平台，请致电【客服热线：0755-36551816】更快解决，或关注“中通快递”官方微信公众号获取实时物流信息）",
+                                "location": "深圳市, China",
+                                "stage": "PickedUp",
+                                "sub_status": "InTransit_PickedUp",
+                                "address": {
+                                    "country": "CN",
+                                    "state": null,
+                                    "city": "深圳市",
+                                    "street": null,
+                                    "postal_code": null,
+                                    "coordinates": {
+                                        "longitude": null,
+                                        "latitude": null
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}'

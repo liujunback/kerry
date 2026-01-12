@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         # for i in range(1,2):
         #     ref = Icbu_Create()
         # sleep(30)
-        ref = "ALSTEST0S6656FDG42"
+        ref = "ALSTEST0S32"
         tracking_number = Order_Inquire(ref)#查询运单号
         # tracking_number = ref
         trak.append(tracking_number)

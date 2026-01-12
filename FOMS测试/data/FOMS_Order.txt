@@ -40,7 +40,7 @@
         "phone": "223456789",
         "email": "123@abnc.com",
                 "tax_id": "t2342342",
-        "tax_id_type": "ID_CARD",
+        "tax_id_type": "PASSPORT",
         "taxid_issued_country_code":"TW"
     },
     "items": [
