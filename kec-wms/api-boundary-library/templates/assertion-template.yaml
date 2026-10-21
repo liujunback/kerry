@@ -1,0 +1,14 @@
+assertion_levels:
+  - http_status
+  - success_flag
+  - error_code
+  - message_contains
+
+pass_rule:
+  description: 返回符合接口契约且业务字段结构正确
+
+fail_rule:
+  description: 类型、边界、格式或状态违反契约，应返回明确失败
+
+blocked_rule:
+  description: 仅用于环境不可用、外部依赖不可达、测试数据无法准备

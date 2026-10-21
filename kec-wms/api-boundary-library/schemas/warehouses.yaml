@@ -1,0 +1,39 @@
+module: warehouses
+schema: createWarehouseSchema
+
+fields:
+  warehouseCode:
+    ref: short_code
+
+  warehouseName:
+    ref: name_128
+
+  warehouseType:
+    type: enum
+    required: true
+    enum_values:
+      - SELF_BUILT
+      - THIRD_PARTY
+      - BONDED
+
+  country:
+    type: string
+    required: false
+    max_length: 2
+
+  latitude:
+    type: number
+    required: false
+    minimum: -90
+    maximum: 90
+
+  longitude:
+    type: number
+    required: false
+    minimum: -180
+    maximum: 180
+
+  warehouseArea:
+    type: number
+    required: false
+    minimum: 0.01

@@ -1,0 +1,324 @@
+openapi: 3.0.0
+info:
+  title: WMS 外部 API - SKU 管理
+  version: 1.2.0
+  description: |
+    SKU（Stock Keeping Unit）商品管理接口。
+
+    **重要提示**：所有请求必须在 HTTP Header 中携带 `X-API-Key` 进行认证，否则将返回 401 未授权错误。
+  contact:
+    name: WMS API Support
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: 开发环境
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: SKU
+    description: SKU 商品管理接口
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API Key 认证
+
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: 操作成功
+        data:
+          type: object
+
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: 错误描述
+        code:
+          type: string
+          example: ERROR_CODE
+
+paths:
+  /skus:
+    post:
+      tags:
+        - SKU
+      summary: 创建SKU
+      description: 创建新的SKU商品信息
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - skuCode
+                - skuName
+                - clientCode
+              properties:
+                skuCode:
+                  type: string
+                  example: SKU-TEST-001
+                  description: SKU编码，唯一标识
+                skuName:
+                  type: string
+                  example: 测试商品A
+                  description: SKU名称
+                clientCode:
+                  type: string
+                  example: C001
+                  description: 客户编码
+                barcode:
+                  type: string
+                  description: 商品条码
+                unit:
+                  type: string
+                  default: PCS
+                  description: 计量单位（如：PCS件、BOX箱、CTN箱）
+                lengthCm:
+                  type: number
+                  description: 长度（厘米）
+                widthCm:
+                  type: number
+                  description: 宽度（厘米）
+                heightCm:
+                  type: number
+                  description: 高度（厘米）
+                weightKg:
+                  type: number
+                  description: 重量（千克）
+                unitPrice:
+                  type: number
+                  description: 单价
+                currency:
+                  type: string
+                  default: CNY
+                  description: 币种（CNY人民币、USD美元等）
+                storageCondition:
+                  type: string
+                  enum: [NORMAL, COLD, FROZEN, HAZMAT, CONTROLLED]
+                  description: 存储条件（NORMAL常温、COLD冷藏、FROZEN冷冻、HAZMAT危险品、CONTROLLED管控品）
+                isBatchManaged:
+                  type: boolean
+                  description: 是否批次管理
+                isSerialManaged:
+                  type: boolean
+                  description: 是否序列号管理
+                isExpiryManaged:
+                  type: boolean
+                  description: 是否效期管理
+                abcClass:
+                  type: string
+                  enum: [A, B, C]
+                  description: ABC分类（A高价值、B中价值、C低价值）
+                notes:
+                  type: string
+                  description: 备注信息
+      responses:
+        '200':
+          description: 创建成功
+        '400':
+          description: 参数错误
+        '401':
+          description: 未授权
+    get:
+      tags:
+        - SKU
+      summary: 查询SKU列表
+      description: 根据客户编码查询SKU列表，支持分页
+      parameters:
+        - name: clientCode
+          in: query
+          required: false
+          description: 客户编码（API Key 已绑定客户时可省略）
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: 页码，从1开始
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          description: 每页数量
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: array
+                    items:
+                      type: object
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                      pageSize:
+                        type: integer
+                      total:
+                        type: integer
+                      totalPages:
+                        type: integer
+        '401':
+          description: 未授权
+
+  /skus/by-code/{skuCode}:
+    get:
+      tags:
+        - SKU
+      summary: 获取SKU详情
+      description: 通过SKU编码获取SKU详细信息
+      parameters:
+        - name: skuCode
+          in: path
+          required: true
+          description: SKU编码
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          required: false
+          description: 客户编码（API Key 已绑定客户时可省略）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+        '404':
+          description: SKU不存在
+        '401':
+          description: 未授权
+
+    put:
+      tags:
+        - SKU
+      summary: 更新SKU
+      description: 通过SKU编码更新SKU信息
+      parameters:
+        - name: skuCode
+          in: path
+          required: true
+          description: SKU编码
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                clientCode:
+                  type: string
+                  description: 客户编码（API Key 已绑定客户时可省略）
+                skuName:
+                  type: string
+                  description: SKU名称
+                barcode:
+                  type: string
+                  description: 商品条码
+                unit:
+                  type: string
+                  description: 计量单位
+                lengthCm:
+                  type: number
+                  description: 长度（厘米）
+                widthCm:
+                  type: number
+                  description: 宽度（厘米）
+                heightCm:
+                  type: number
+                  description: 高度（厘米）
+                weightKg:
+                  type: number
+                  description: 重量（千克）
+                unitPrice:
+                  type: number
+                  description: 单价
+                storageCondition:
+                  type: string
+                  enum: [NORMAL, COLD, FROZEN, HAZMAT, CONTROLLED]
+                  description: 存储条件
+                isBatchManaged:
+                  type: boolean
+                  description: 是否批次管理
+                isSerialManaged:
+                  type: boolean
+                  description: 是否序列号管理
+                isExpiryManaged:
+                  type: boolean
+                  description: 是否效期管理
+                notes:
+                  type: string
+                  description: 备注信息
+      responses:
+        '200':
+          description: 更新成功
+        '404':
+          description: SKU不存在
+        '401':
+          description: 未授权
+
+    delete:
+      tags:
+        - SKU
+      summary: 删除SKU
+      description: 通过SKU编码删除SKU（软删除）
+      parameters:
+        - name: skuCode
+          in: path
+          required: true
+          description: SKU编码
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          required: false
+          description: 客户编码（API Key 已绑定客户时可省略）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 删除成功
+        '404':
+          description: SKU不存在
+        '401':
+          description: 未授权

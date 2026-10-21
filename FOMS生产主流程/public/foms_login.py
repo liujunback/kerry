@@ -15,10 +15,11 @@ def foms_login(properties):
     headers = {
       'Content-Type': 'application/json'
     }
-
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+    # print(json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data=json.dumps(payload),proxies={"http": None, "https": None})
     # print(response.text)
     if "200" in response.text:
         return json.loads(response.text)['data']['token']
     else:
         print(response.text)
+

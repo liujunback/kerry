@@ -1,0 +1,65 @@
+{
+    "sale_platform":null,
+    "bag_id":null,
+    "receiver":{
+        "name":"Mali",
+        "company":"Mali",
+        "address":"SAMUT PRAKARN，บางนา กม. 19 เลขที่ 33/2 ม.7 ต.บางปลา อ.บางพลี จ.สมุทรปราการ",
+        "district":null,
+        "city":"ห้วยขวาง",
+        "province":null,
+        "country_code":"TH",
+        "post_code":"10540",
+        "phone":"958013015",
+        "email":null,
+        "id_number":null,
+        "location_code":"CACNTHG00"
+    },
+    "sender":{
+        "name":"Mr Zhao",
+        "company":"Mr Zhao",
+        "address":"2nd floor, building 6, Huangtian Industrial Zone, Shenzhen",
+        "district":null,
+        "city":"shenzhen",
+        "province":null,
+        "country_code":"CN",
+        "post_code":"518000",
+        "phone":"12345678900",
+        "email":null,
+        "id_number":null
+    },
+    "package":{
+        "reference_number":"KERRY-9982313-K0513-06",
+        "tracking_number":null,
+        "declared_value":"200",
+        "declared_value_currency":"THB",
+        "cod_value":null,
+        "cod_value_currency":null,
+        "number_of_package":null,
+        "length":null,
+        "width":null,
+        "height":null,
+        "actual_weight":1000,
+        "shipment_term":null,
+        "payment_method":"PP",
+        "shipment_type":null
+    },
+    "service":{
+        "channel_code":"CACNTHG00"
+    },
+    "items":[
+        {
+            "sku":null,
+            "description":"Clothes, shoes, sewing machines, tableware",
+            "description_origin_language":"衣服、鞋子、缝纫机、餐具",
+            "description_destination_language":null,
+            "category":null,
+            "unit_price":"200",
+            "currency":"THB",
+            "quantity":"1",
+            "hs_code":null,
+            "brand":null,
+            "country_of_origin":null
+        }
+    ]
+}

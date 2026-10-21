@@ -1,0 +1,20 @@
+id: MODULE-METHOD-CATEGORY-001
+module: clients
+api: POST /api/v1/clients
+title: clientCode 最小长度减一失败
+priority: P1
+category: string_length
+field: clientCode
+precondition: none
+request:
+  query: {}
+  body: {}
+expected:
+  http_status: 400
+  success: false
+  error_code: null
+  message_contains: clientCode
+verdict: fail_expected
+tags:
+  - boundary
+  - negative

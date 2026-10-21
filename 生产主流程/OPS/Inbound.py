@@ -54,7 +54,8 @@ def OPS_Inbound(tracking_number, properties, token):
             json=payload,  # 使用json参数自动序列化
             headers=headers,
             verify=False,
-            timeout=15  # 添加超时设置
+            timeout=15  # 添加超时设置,  # 连接超时3秒，读取超时27秒
+            ,proxies = {"http": None, "https": None}
         )
 
         # 6. 处理响应

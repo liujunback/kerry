@@ -1,0 +1,68 @@
+curl --location 'https://pos-kec-eng-uat.kec-app.com/pos-web/shipment/create' \
+--header 'version: 1.2' \
+--header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer a7d01b78-bc62-42ed-bc5b-b912cd095e8a' \
+--header 'Cookie: incap_ses_1632_3111118=O5wWbXpPPWkaVE6J4QemFrr1tmkAAAAAzwCxkXJzEV/E+RuiPIEuNA==; nlbi_3111118=2hZFP/d6p2SgkVpCbgqv6AAAAACHfX5Bb5MNRlJ7pwT2SSAh; visid_incap_3111118=b2rnoudTTNCF2wZV/qEMfLr1tmkAAAAAQUIPAAAAAACKU9OvWFwdobRs1rafakko; visid_incap_3123216=vbEeqX3GTWWFHP81EqHWqhJOsWkAAAAAQUIPAAAAAAAfDOseVkpCeExVaPTOnHuY' \
+--data '{
+  "items": [
+    {
+      "currency": "USD",
+      "description": "综训鞋",
+      "description_origin_language": "鞋",
+      "excc_legal_qty1": 0.7,
+      "excc_legal_qty2": 1,
+      "hs_code": "6404199000",
+      "measure_unit": "025",
+      "origin_of_cnex_code": "35059",
+      "quantity": 2,
+      "sku": "112417718-7",
+      "spec": "1|0|未过踝|鞋面材料:合成革/混纺布/橡塑材料|合成革|安踏|812221601-5",
+      "unit_price": 43.94,
+      "unit_weight": 5000
+    }
+  ],
+  "package": {
+    "actual_weight": 123,
+    "declared_value": 43.94,
+    "declared_value_currency": "USD",
+    "incidental_fee": 6.64,
+    "incidental_fee_currency": "USD",
+    "insurance_currency": "USD",
+    "insurance_value": 0,
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "MX51225010167204",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "shipping_fee_currency": "USD"
+  },
+  "receiver": {
+    "address": "N*************I",
+    "city": "K*******Z",
+    "company": "R*************N",
+    "country_code": "CA",
+    "location_code": "anta_tk",
+    "name": "J*******P",
+    "phone": "1*******8",
+    "post_code": "21000"
+  },
+  "sale_platform": "TK",
+  "sender": {
+    "address": "test",
+    "city": "test",
+    "company": "test",
+    "country_code": "CN",
+    "location_code": "MX5122501067204",
+    "name": "厦门安之意体育用品有限公司",
+    "phone": "test",
+    "post_code": "test"
+  },
+  "service": {
+    "channel_code": "YVR_DRAGONFLY_HKCN",
+    "delivery_instruction": "remark",
+    "service_type": "default"
+  }
+}'

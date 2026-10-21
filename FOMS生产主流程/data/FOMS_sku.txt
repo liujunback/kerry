@@ -23,7 +23,7 @@
                 "is_packing_material": "N",
                 "is_expire_date_required": "N",
                 "is_manufacture_date_required": "N",
-                "is_udf1_required": "N",
+                "is_udf1_required": "Y",
                 "is_udf2_required": "N",
                 "is_udf3_required": "N",
                 "temperature_condition": "AMBIENT",

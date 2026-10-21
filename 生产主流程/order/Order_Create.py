@@ -81,6 +81,13 @@ def Order_Create(properties, token):
                 if tracking_number:
                     print(response.text)
                     print(f"运单号：{tracking_number}")
+                    label_url = response_data.get("data", {}).get("label_url")
+                    address_to_check = order_data['receiver']['post_code']  # 替换为实际要校验的地址
+                    exists = check_address_in_pdf(label_url, address_to_check)
+                    if exists:
+                        print("✅ 地址存在于 PDF 中")
+                    else:
+                        print("❌ 地址不存在于 PDF 中")
                     return tracking_number
                 else:
                     print(f"响应中缺少追踪号: {response.text}")
@@ -98,6 +105,7 @@ def Order_Create(properties, token):
         print(f"订单模板JSON解析错误: {str(e)}")
         return "失败"
     except RequestException as e:
+        print(reference_number)
         print(f"网络请求异常: {str(e)}")
         return "失败"
     except KeyError as e:
@@ -106,3 +114,47 @@ def Order_Create(properties, token):
     except Exception as e:
         print(f"未知错误: {str(e)}")
         return "失败"
+
+
+import requests
+import pdfplumber
+import io
+
+def check_address_in_pdf(label_url: str, target_address: str) -> bool:
+    """
+    下载 PDF 并检查目标地址是否出现在其文本内容中。
+
+    Args:
+        label_url: PDF 文件的 URL
+        target_address: 需要校验的地址字符串
+
+    Returns:
+        bool: 地址存在返回 True，否则返回 False
+    """
+    try:
+        # 1. 下载 PDF
+        response = requests.get(label_url, timeout=30)
+        response.raise_for_status()  # 如果请求失败则抛出异常
+
+        # 2. 将下载内容作为字节流加载到 pdfplumber
+        with pdfplumber.open(io.BytesIO(response.content)) as pdf:
+            full_text = ""
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    full_text += page_text + "\n"
+
+        # 3. 校验地址是否存在
+        if target_address in full_text:
+            return True
+        else:
+            return False
+
+    except requests.exceptions.RequestException as e:
+        print(f"PDF 下载失败: {e}")
+        return False
+    except Exception as e:
+        print(f"PDF 解析失败: {e}")
+        return False
+
+

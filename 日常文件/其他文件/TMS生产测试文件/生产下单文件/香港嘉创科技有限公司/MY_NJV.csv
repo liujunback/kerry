@@ -1,0 +1,5646 @@
+"original_api_data"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892031613099714"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 66,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Chin Chee Keon"",
+    ""address"": ""89,Lorong Air Putih 21,Kuantan,Pahang DM"",
+    ""district"": """",
+    ""city"": ""Kuantan"",
+    ""province"": ""Pahang"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""25350"",
+    ""phone"": ""016-9873333"",
+    ""email"": ""ckchin5555@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892031613099693"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 318.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 100,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Anand Samuel"",
+    ""address"": ""No.30 Jln Arang Tmn Mewah"",
+    ""district"": """",
+    ""city"": ""kuching"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93250"",
+    ""phone"": ""+60143280094"",
+    ""email"": ""anandsaar@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032017421029"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Jona Kerani"",
+    ""address"": ""MIDA, No. 5 Jalan Stesen Sentral 5, KL Sentral"",
+    ""district"": """",
+    ""city"": ""Kuala Lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""50470"",
+    ""phone"": ""019-8887420"",
+    ""email"": ""Jona7420@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI100"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032118795970"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 66,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Wai Ming HO"",
+    ""address"": ""Evergold  l Roofing Sdn.Bhd, No.13 Inanam Township, Jalan BurungSelingkir, OffJalan Tuaran Bypass In anam"",
+    ""district"": """",
+    ""city"": ""kota kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88450"",
+    ""phone"": ""016-8215688"",
+    ""email"": ""waimingho@hotmail.my"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032118875895"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Geoffery Simon"",
+    ""address"": ""Lot 2573, taman desa senadin,phase 2, lorong 2C, jln maigold"",
+    ""district"": """",
+    ""city"": ""Miri,Lutong"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""98100"",
+    ""phone"": ""012-8762323"",
+    ""email"": ""gsimonajang@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032118876356"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Liew Naie Jen"",
+    ""address"": ""No 19G, Pusat Dagangan Petaling Jaya Selatan"",
+    ""district"": """",
+    ""city"": ""Petaling Jaya"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""46150"",
+    ""phone"": ""+6019-6660193"",
+    ""email"": ""njliew@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI200"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032118972524"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Fatimah Ayup"",
+    ""address"": ""Lot 1090 Piasau Jaya 2, Lorong 2A"",
+    ""district"": """",
+    ""city"": ""Miri"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""98000"",
+    ""phone"": ""013-8351090"",
+    ""email"": ""fatimahayup5060@gmail.comp90"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639881"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Alida Pek"",
+    ""address"": ""Lot 3231, SL 23, Lrg Semaba Park 9, Lrg 7, Jln Semaba"",
+    ""district"": """",
+    ""city"": ""Kuching"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93250"",
+    ""phone"": ""016-8585857"",
+    ""email"": ""alidapek@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639866"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""nur ain"",
+    ""address"": ""no21c,kampung merdang lumut Kampung meredang Kampung meredang"",
+    ""district"": """",
+    ""city"": ""Sarawak"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""94300"",
+    ""phone"": ""012-8097214"",
+    ""email"": ""adamfattah43@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639859"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 100,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""KAI CHUAN TAN"",
+    ""address"": ""NO 6,LORONG RIDGEVIEW 5,PHASE 12 KEPAYAN"",
+    ""district"": """",
+    ""city"": ""Kota Kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88200"",
+    ""phone"": ""013-8684488"",
+    ""email"": ""fookuilen@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN350"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    },
+    {
+      ""sku"": ""HF42010252HEI350"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639856"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""CHEW TEIK CHYE"",
+    ""address"": ""23 Jalan Pejabat Pos"",
+    ""district"": """",
+    ""city"": ""BATU GAJAH"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""31000"",
+    ""phone"": ""012-5282112"",
+    ""email"": ""yeohps@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN400"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639848"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Alias Sam"",
+    ""address"": ""19 Jalan Sembilang 3"",
+    ""district"": """",
+    ""city"": ""Taman Teluk Pulai"",
+    ""province"": ""Taman Teluk Pulai"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""41100"",
+    ""phone"": ""019-3363889"",
+    ""email"": ""hjalias2912@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN350"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639841"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""mimiwati zahari"",
+    ""address"": ""29 Jalan 22/44"",
+    ""district"": """",
+    ""city"": ""Seksyen 22"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""46300"",
+    ""phone"": ""019-2402200"",
+    ""email"": ""mimiwati@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN100"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639844"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 189.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 646,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Kathirasan Baby kalidawson"",
+    ""address"": ""19 Jalan Panglima Awang 35/103B alam impian"",
+    ""district"": """",
+    ""city"": ""Shah Alam"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""40470"",
+    ""phone"": ""016-4414576"",
+    ""email"": ""kathibk@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032320639840"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 109.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""TAT MENG BAY"",
+    ""address"": ""73 Jalan EJ 3/12"",
+    ""district"": """",
+    ""city"": ""Taman Ehsan Jaya"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""81100"",
+    ""phone"": ""012-7148903"",
+    ""email"": ""hupchuanlee@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032321020098"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""ming foh chin"",
+    ""address"": ""lot 429,3km,jalan mashan,"",
+    ""district"": """",
+    ""city"": ""bahau"",
+    ""province"": ""Negeri Sembilan"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""72100"",
+    ""phone"": ""+60133399999"",
+    ""email"": ""cmf96.mc@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI200"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032321020101"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Caroline Hiew"",
+    ""address"": ""Taman tshun nyen lot 118 sandakan"",
+    ""district"": """",
+    ""city"": ""Sandakan"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""90000"",
+    ""phone"": ""+60198817873"",
+    ""email"": ""hiew176@hotmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN300"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032321020011"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ah Tey Sim"",
+    ""address"": ""LOT 68,LRG MAJU 2,TMN MAJU,BATU 4,JLN.TINOSAN,SANDAKAN,SABAH."",
+    ""district"": """",
+    ""city"": ""SANDAKAN"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""90000"",
+    ""phone"": ""011-65651228"",
+    ""email"": ""asim47480@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI200"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032321020007"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ah Tee Lee"",
+    ""address"": ""No. 78A, lorong 1, jalan kung phin, 93250 kuching, sarawak"",
+    ""district"": """",
+    ""city"": ""Kuching"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93250"",
+    ""phone"": ""+6012-8878879"",
+    ""email"": ""leeahtee.0826@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI350"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032321020026"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mike Tan"",
+    ""address"": ""Skyvilla residences.blkB.13A-3A.jln batu kawah"",
+    ""district"": """",
+    ""city"": ""Sarawak"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93250"",
+    ""phone"": ""0128722672"",
+    ""email"": ""Mikec888222@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI300"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742904"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 66,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Gary Yap"",
+    ""address"": ""63 Jalan Patani"",
+    ""district"": """",
+    ""city"": ""George Town"",
+    ""province"": ""Pulau Pinang"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""10150"",
+    ""phone"": ""+60124201111"",
+    ""email"": ""trekcyclon@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742903"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Muhd Anwar Hassan Al Ashari"",
+    ""address"": ""17, Lorong Ishak KM 2 peserai 83000 Batu Pahat. 17 17"",
+    ""district"": """",
+    ""city"": ""Batu Pahat"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""83000"",
+    ""phone"": ""011-60957601"",
+    ""email"": ""Nuabiztrading@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742900"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ganesan Isman isvaran"",
+    ""address"": ""No 21 SS5D/13 kelana jaya"",
+    ""district"": """",
+    ""city"": ""Petaling jaya"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47301"",
+    ""phone"": ""012-6653133"",
+    ""email"": ""Nivasganesan30@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742895"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Anthony P.K.Davessy"",
+    ""address"": ""No 7 , Jalan Nadayu 2,Taman Nadayu 92 ,43000 kajang,selangor"",
+    ""district"": """",
+    ""city"": ""Kajang"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""43000"",
+    ""phone"": ""012-3268170"",
+    ""email"": ""enthonhe@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742894"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Sahadun Rasta"",
+    ""address"": ""Uuc 5 2P-4-7, Jalan kayu madang telipok"",
+    ""district"": """",
+    ""city"": ""Kota kinabalu sabah"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88400"",
+    ""phone"": ""0193377697"",
+    ""email"": ""sahadunrasta@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN100"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742896"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Tan Kim boon"",
+    ""address"": ""29 Lorong Millennium 1. Taman Millennium kepayan. Jalan Lintas. Kota kinabalu sabah"",
+    ""district"": """",
+    ""city"": ""Kota Kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88200"",
+    ""phone"": ""0198833957"",
+    ""email"": ""Kimboontan@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032421742891"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ricky Kee"",
+    ""address"": ""E-7-4, Vista Lavender, Persiaran Kinrara Seksyen 3"",
+    ""district"": """",
+    ""city"": ""Puchong"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47100"",
+    ""phone"": ""016-9822666"",
+    ""email"": ""Rickykee55@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349614"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 155.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mohd Razali Abdul Hamid"",
+    ""address"": ""247 JALAN DELIMA 5 TAMAN DELIMA TAMAN DELIMA"",
+    ""district"": """",
+    ""city"": ""KULIM"",
+    ""province"": ""Kedah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""09000"",
+    ""phone"": ""01118805011"",
+    ""email"": ""samuderacahaya77@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349603"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Tamil Selvan Maruda"",
+    ""address"": ""No. 28 ground floor lorong bayu tinggi 1b /ks6 bayu tinggi"",
+    ""district"": """",
+    ""city"": ""Klang"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""41200"",
+    ""phone"": ""+60162050457"",
+    ""email"": ""vijayqpsb@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN100"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349594"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Loh kok keong"",
+    ""address"": ""k-1-4 allamanda cond. meru valley & country club"",
+    ""district"": """",
+    ""city"": ""Ipoh"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""30020"",
+    ""phone"": ""0125014616"",
+    ""email"": ""andyloh661@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN200"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349595"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 155.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Suhaimi Riffin"",
+    ""address"": ""No.1 Sri Persada Bungalow, Suasana Harvard Hotel"",
+    ""district"": """",
+    ""city"": ""Bedong"",
+    ""province"": ""Kedah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""08100"",
+    ""phone"": ""019-9659215"",
+    ""email"": ""suhaimiriffin65@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349590"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 62,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""CHEW TEIK CHYE"",
+    ""address"": ""23 Jalan Pejabat Pos"",
+    ""district"": """",
+    ""city"": ""BATU GAJAH"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""31000"",
+    ""phone"": ""012-5282112"",
+    ""email"": ""yeohps@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN100"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522349598"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Nancy Henry"",
+    ""address"": ""242, Pearl Garden, Lorong 1A, Jalan Bukit Cahaya, 3rd Mile, 93250 Kuching, Sarawak House House"",
+    ""district"": """",
+    ""city"": ""Kuching"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93250"",
+    ""phone"": ""60128096786"",
+    ""email"": ""nhenry7393@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032522559954"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 50,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Junaidi Daya"",
+    ""address"": ""No. 24, Lorong 8"",
+    ""district"": """",
+    ""city"": ""Kota Kinabalu"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88450"",
+    ""phone"": ""011-26378953"",
+    ""email"": ""junaididaya@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252HEI200"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032622913388"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 155.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""DANIEL BAKING"",
+    ""address"": ""UNIT VEKTOR DENGGI, PEJABAT KESIHATAN BAHAGIAN, BAHAGIAN KUCHING JALAN TUN AHMAD ZAIDI ADRUCE JALAN TUN AHMAD ZAIDI ADRUCE"",
+    ""district"": """",
+    ""city"": ""KUCHING"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93150"",
+    ""phone"": ""014-5804950"",
+    ""email"": ""bujangputat@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032622913385"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 155.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Daniel Tham"",
+    ""address"": ""Dt add 9 Jalan permas 6/1 bandar baru permas jaya 9 Jalan permas 6/1 bandar baru permas jaya"",
+    ""district"": """",
+    ""city"": ""Johor Bahru"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""81750"",
+    ""phone"": ""0127131767"",
+    ""email"": ""dtham9@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032622913387"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""James Wong"",
+    ""address"": ""Lot. 229, Hse No 16, Lrg Ridge 3 A, Fasa 3&4, Tmn Kepayan Ridge, Kepayan, Kota Kinabalu, Sabah. L L"",
+    ""district"": """",
+    ""city"": ""Kota Kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88300"",
+    ""phone"": ""0138991000"",
+    ""email"": ""ondeahooi@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032622913397"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 155.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""AZIZUL HASSAN"",
+    ""address"": ""LOT 14263 KG GEMUROH JALAN KUALA BERANG 21400 MARANG TERENGGANU"",
+    ""district"": """",
+    ""city"": ""BUKIT PAYONG"",
+    ""province"": ""Terengganu"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""21400"",
+    ""phone"": ""+60199924376"",
+    ""email"": ""abuwafiy830626@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032623076415"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 132,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Eugenie Lijua"",
+    ""address"": ""Kg Dabak, Jln dakata, penampang, Kota Kinabalu."",
+    ""district"": """",
+    ""city"": ""Sabah"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88300"",
+    ""phone"": ""019-8471961"",
+    ""email"": ""geniecris@hotmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    },
+    {
+      ""sku"": ""HF42010252HEI250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032623097090"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 159.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 66,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Jahara Saini"",
+    ""address"": ""Majlis daerah putatan, dewan masyarakat putatan, jalan jkr"",
+    ""district"": """",
+    ""city"": ""Kota kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88200"",
+    ""phone"": ""0146555559"",
+    ""email"": ""Rough999@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN250"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032723772095"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 239.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 646,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Allen Siew Poh Wong"",
+    ""address"": ""Regal Court Hotel, Lot 577 Section 10 KTLD Jalan Tun Ahmad Zaidi Adruce"",
+    ""district"": """",
+    ""city"": ""Kuching"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93400"",
+    ""phone"": ""60178309999"",
+    ""email"": ""regalcourt88@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032723772094"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""NG NYUK YIN"",
+    ""address"": ""TAMAN GRANDVIEW LOT 362.JALAN SIM SIM  90000 TAMAN GRANDVIEW LOT 362  SANDAKAN SABAH TAMAN GRANDVIEW LOT 362  SANDAKAN SABAH"",
+    ""district"": """",
+    ""city"": ""SANDAKAN SABAH MALAYSIA"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""90000"",
+    ""phone"": ""+60128673333"",
+    ""email"": ""alanngny@yahoo.com.hk"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032723871654"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 330,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Irene TEOH"",
+    ""address"": ""7 Solok Seri Selayang. Taman Seri Selayang. Sungai Puyu. 13020 Butterworth"",
+    ""district"": """",
+    ""city"": ""Butterworth"",
+    ""province"": ""Pulau Pinang"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""13020"",
+    ""phone"": ""011-70711314"",
+    ""email"": ""ireneteoh717@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HJ1190503101BMTL"",
+      ""description"": ""Music box"",
+      ""description_origin_language"": ""音乐盒"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""3926400000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032824957114"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ali hussein Beha"",
+    ""address"": ""No.2 kampung ulu putatan,putatan. Housing Housing"",
+    ""district"": """",
+    ""city"": ""Kota kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88200"",
+    ""phone"": ""0107728778"",
+    ""email"": ""alihusseinbeha@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032824957115"",
+    ""declared_value"": 8.25,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""paul mani"",
+    ""address"": ""NO 1 JLN REBENA 10 OFF JLN SERULING 59 TMN KLANG JAYA"",
+    ""district"": """",
+    ""city"": ""Klang"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""41200"",
+    ""phone"": ""016-6760209"",
+    ""email"": ""paul21186@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.25,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032825045274"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 356.4,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 840,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Alice Then Lee Ching"",
+    ""address"": ""Unit 2-3A-9,Level 4,The Peak Condo,Lorong Puncak 1,Signal Hill,Tanjung Lipat,"",
+    ""district"": """",
+    ""city"": ""Kota Kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88400"",
+    ""phone"": ""016-8678092"",
+    ""email"": ""alicethen@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HJ1190503102XZMM"",
+      ""description"": ""Music box"",
+      ""description_origin_language"": ""音乐盒"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""3926400000""
+    },
+    {
+      ""sku"": ""HJ11905031SDHC"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""3926400000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958947"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 285,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Teoh boon chuan Teoh boon chuan"",
+    ""address"": ""20 lrg bawal 1 tmn kimsar 13700 s.perai S.perai S.perai"",
+    ""district"": """",
+    ""city"": ""S.perai"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""13700"",
+    ""phone"": ""011-55090036"",
+    ""email"": ""teohboonchuan84@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 3.75,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958946"",
+    ""declared_value"": 15.02,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 495,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""sharuddin mohamat nor"",
+    ""address"": ""No.7, Lorong 3, Jalan PE16A, Taman Paya Emas, Melaka, Malaysia"",
+    ""district"": """",
+    ""city"": ""Bandar Melaka"",
+    ""province"": ""Melaka"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""76450"",
+    ""phone"": ""017-6100013"",
+    ""email"": ""sharuddin01@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 1.88,
+      ""currency"": ""MYR"",
+      ""quantity"": 4,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958941"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 285,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Odilia Chu Oi lan Chu"",
+    ""address"": ""Lot 1112 Lorong Perdana 5F 2A Tudan Desaras Fasa 6 Miri"",
+    ""district"": """",
+    ""city"": ""Miri"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""98000"",
+    ""phone"": ""010-5054146"",
+    ""email"": ""mathewsadas@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 3.75,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958943"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 285,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Wan Hasrul Azman Azman"",
+    ""address"": ""No 9 jalan 15 taman bunga raya"",
+    ""district"": """",
+    ""city"": ""Kuala kangsar"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""33000"",
+    ""phone"": ""60175938118"",
+    ""email"": ""eizmen.rizky@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 3.75,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958942"",
+    ""declared_value"": 15.02,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 249.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 915,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ismaily bin idrus idrus"",
+    ""address"": ""uca2 block 2c-3-8 jln dambai manggatal apartment condo apartment condo"",
+    ""district"": """",
+    ""city"": ""Kota kinabalu"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88450"",
+    ""phone"": ""0138814128"",
+    ""email"": ""idrusismaily@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 0.94,
+      ""currency"": ""MYR"",
+      ""quantity"": 8,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958945"",
+    ""declared_value"": 15.02,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 249.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 915,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mathew AK Matu Thew"",
+    ""address"": ""Puspakom , Tanjung Kidurong lights industrial estate,jalan Tanjung Kidurong,"",
+    ""district"": """",
+    ""city"": ""Bintulu"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""97000"",
+    ""phone"": ""01110566929"",
+    ""email"": ""dayak6097@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 0.94,
+      ""currency"": ""MYR"",
+      ""quantity"": 8,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958939"",
+    ""declared_value"": 15.02,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 249.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 915,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Monuit Bakait"",
+    ""address"": ""House no 4, poropok view, 89250, tamparuli sabah House no 4,poropok view House no 4,poropok view"",
+    ""district"": """",
+    ""city"": ""Tamparuli"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""89250"",
+    ""phone"": ""011-14176031"",
+    ""email"": ""Scullysiska@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 0.94,
+      ""currency"": ""MYR"",
+      ""quantity"": 8,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892032925958940"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 285,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mohd Mazlan Hj Dollah"",
+    ""address"": ""JKR 14, KEDIAMAN PEGAWAI KANAN, KELAS D/E, 6B, KOMPLEKS PENJARA KAJANG,  JALAN SG.JELOK"",
+    ""district"": """",
+    ""city"": ""KAJANG"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""43000"",
+    ""phone"": ""+6029398237"",
+    ""email"": ""lagenda_37@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HN41897535HEI"",
+      ""description"": ""Help the ball"",
+      ""description_origin_language"": ""助力球"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8708309990""
+    },
+    {
+      ""sku"": ""HN32003326JIND"",
+      ""description"": ""cleaner"",
+      ""description_origin_language"": ""清洁器"",
+      ""unit_price"": 3.75,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3924900000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892033229213580"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 99.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 56,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""norzaeMa abdul mahat"",
+    ""address"": ""blok G -17-5 seri riana residence , wnagsa maju"",
+    ""district"": """",
+    ""city"": ""wangsa maju"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""53300"",
+    ""phone"": ""017-7999999"",
+    ""email"": ""norza.1302@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HJ22006161JBRHD"",
+      ""description"": ""ring"",
+      ""description_origin_language"": ""戒指"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""7113119090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892033702392294"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 194.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 127,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""albert phoon"",
+    ""address"": ""53 jalan perisa 12 , bandar baru seri petaling"",
+    ""district"": """",
+    ""city"": ""kuala lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""57000"",
+    ""phone"": ""011-12166268"",
+    ""email"": ""albert_phooncy@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42010252YIN150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    },
+    {
+      ""sku"": ""HF42010252HEI150"",
+      ""description"": ""glasses"",
+      ""description_origin_language"": ""眼镜"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9004100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034308213138"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 179.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 220,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Adiho Cash"",
+    ""address"": ""F2-20-03 Tamarind suit cyberjaya F2-20-03 Tamarind suit cyberjaya F2-20-03 Tamarind suit cyberjaya"",
+    ""district"": """",
+    ""city"": ""Cyberjaya"",
+    ""province"": ""Cyberjaya"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""63000"",
+    ""phone"": ""+601116001708"",
+    ""email"": ""adihocash20@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HF42000220ZMS3"",
+      ""description"": ""Hand rope"",
+      ""description_origin_language"": ""手绳"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""3926909090""
+    },
+    {
+      ""sku"": ""HF22000010HJ23L"",
+      ""description"": ""Men's clothing"",
+      ""description_origin_language"": ""男装"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""6211331000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163136"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 215,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Zulkifly Abdullah Zulkifly"",
+    ""address"": ""15 Lorong SP/13"",
+    ""district"": """",
+    ""city"": ""Taman Suria Permai"",
+    ""province"": ""Taman Suria Permai"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""34000"",
+    ""phone"": ""017-2291770"",
+    ""email"": ""zulroy34611@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE71905816JIN26"",
+      ""description"": ""bit"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8201500090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163124"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Azmadi Abd Ghani"",
+    ""address"": ""Pt 1978k Taman Permint Jaya, Fasa  Chendering"",
+    ""district"": """",
+    ""city"": ""Kuala Terengganu"",
+    ""province"": ""Terengganu"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""21080"",
+    ""phone"": ""60108395262"",
+    ""email"": ""rezqi2021@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163122"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""ASHAARI Hamad"",
+    ""address"": ""Jalan Kubang Tuman"",
+    ""district"": """",
+    ""city"": ""Kota Bharu"",
+    ""province"": ""Kelantan"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""15400"",
+    ""phone"": ""0133110463"",
+    ""email"": ""cikguyi@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163117"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ck Khoo"",
+    ""address"": ""52,Taman Sri Utama Indah"",
+    ""district"": """",
+    ""city"": ""Gurun"",
+    ""province"": ""Kedah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""08300"",
+    ""phone"": ""012-4119339"",
+    ""email"": ""ck_khoo@hotmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163120"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mohd Rozaini"",
+    ""address"": ""Lot PTB 2295 Jalan Putera 2,Taman Impian Putera,18500 Machang,Kelantan."",
+    ""district"": """",
+    ""city"": ""Machanh"",
+    ""province"": ""Kelantan"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""18500"",
+    ""phone"": ""019-9700889"",
+    ""email"": ""cikguz_mchg@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034409163129"",
+    ""declared_value"": 8.24,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 160.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 323,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Stephanie Abok"",
+    ""address"": ""8-14-7, Danau Permai Condo, Jln 3/109F, Tmn Danau Desa Jln 3/109F, Tmn Danau Desa"",
+    ""district"": """",
+    ""city"": ""Kuala Lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""58100"",
+    ""phone"": ""+60129758317"",
+    ""email"": ""stephanieabok@live.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""CE71703747CHE"",
+      ""description"": ""cleaners"",
+      ""description_origin_language"": ""清洗器"",
+      ""unit_price"": 8.24,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8424899990""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034509803399"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""norhidayah bt abu hurairah"",
+    ""address"": ""No 7A jln bersatu 8 tmn bersatu rawang 48000 selangor"",
+    ""district"": """",
+    ""city"": ""Rawang"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""48000"",
+    ""phone"": ""012-6731816"",
+    ""email"": ""norhidayah@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034509803361"",
+    ""declared_value"": 7.6,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 238.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 142,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Shamsul Ismail"",
+    ""address"": ""61 Jalan Kayak 13/25"",
+    ""district"": """",
+    ""city"": ""Shah Alam"",
+    ""province"": ""Shah Alam"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""40100"",
+    ""phone"": ""012-3075069"",
+    ""email"": ""Shamsulizran@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE320155351523ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 1.9,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    },
+    {
+      ""sku"": ""HE320155351323ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 1.9,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034509803311"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Yusri Hassan"",
+    ""address"": ""Lot 6137 Jalan Gelam Mas 3 22200 Besut Terengganu"",
+    ""district"": """",
+    ""city"": ""Jertih"",
+    ""province"": ""Terengganu"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""22200"",
+    ""phone"": ""014-2148844"",
+    ""email"": ""Yusrihassan76@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034611195728"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Kamaruzzaman mustapha"",
+    ""address"": ""26 Jalan Gajah 7.kg Kubu Gajah. Sungai buluh"",
+    ""district"": """",
+    ""city"": ""Sungai Buluh"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47000"",
+    ""phone"": ""0122213820"",
+    ""email"": ""Kzaman2908@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034611195726"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Hon kee Cha"",
+    ""address"": ""28 Jalan 30/108"",
+    ""district"": """",
+    ""city"": ""Taman Salak Jaya"",
+    ""province"": ""Taman Salak Jaya"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""57100"",
+    ""phone"": ""012-6677022"",
+    ""email"": ""jason_chk@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034611195717"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Chin Chuan Lee"",
+    ""address"": ""19,Lorong Segambut Pusat 1, Segambut Ind Area"",
+    ""district"": """",
+    ""city"": ""Kuala Lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""51200"",
+    ""phone"": ""012-3712266"",
+    ""email"": ""lee_chinchuan@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034611195724"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 72,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Zulkifle Abdullah"",
+    ""address"": ""No 27, jalan sbbc 5,sg besar Sekinchan Sekinchan"",
+    ""district"": """",
+    ""city"": ""Sg beaar"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""45300"",
+    ""phone"": ""011-26568686"",
+    ""email"": ""zulkifle.abdullah@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE320155351323ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034611195701"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 20,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Nash Nash"",
+    ""address"": ""G-cast Concrete Sdn.Bhd Lot 12448-12473 Kawasan Perindustrian Bidor, Mukim Bidor Daerah Batang Padan g Perak"",
+    ""district"": """",
+    ""city"": ""Bidor"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""35500"",
+    ""phone"": ""+1601159059234"",
+    ""email"": ""opo65764@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD6"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040147"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Chan Ai Hoon"",
+    ""address"": ""C/O S.T.Toh & Co, 111A, Jalan Batas Baru,"",
+    ""district"": """",
+    ""city"": ""Kuala Terengganu"",
+    ""province"": ""Terengganu"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""20300"",
+    ""phone"": ""0129563488"",
+    ""email"": ""aihoonchan@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040133"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Goh siew choon"",
+    ""address"": ""R 1 - 10 - 8 Setiawalk, persiaran wawasan., Pusat Bandar Puchong 47160 Puchong Selangor，Malaysia"",
+    ""district"": """",
+    ""city"": ""Puchong"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47160"",
+    ""phone"": ""010-4062862"",
+    ""email"": ""shurui2015@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040119"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ck Khoo"",
+    ""address"": ""52 ,Taman Sri  Utama Indah"",
+    ""district"": """",
+    ""city"": ""Gurun"",
+    ""province"": ""Kedah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""08300"",
+    ""phone"": ""012-4119339"",
+    ""email"": ""ck_khoo@hotmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040103"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Suhaili Mohd Yusoff"",
+    ""address"": ""15192, Jalan Banjar, Masjid Tinggi,Bagan Serai, Perak."",
+    ""district"": """",
+    ""city"": ""bagan serai"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""34300"",
+    ""phone"": ""019-4567145"",
+    ""email"": ""suhaili54@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040099"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Jefry Hamzah"",
+    ""address"": ""Epic OG Sdn Bhd, Lot 4000, Kawasan Perindustrian Telok Kalong Kawasan Perindustrian Telok Kalong"",
+    ""district"": """",
+    ""city"": ""Kemaman"",
+    ""province"": ""Terengganu"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""24007"",
+    ""phone"": ""019-9238992"",
+    ""email"": ""jhjefry.hamzah@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040108"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 189.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 180,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Tan Kiancheng"",
+    ""address"": ""Lot 725-2, Jalan Bukit Minyak 1, Batu 10."",
+    ""district"": """",
+    ""city"": ""Melaka"",
+    ""province"": ""Melaka"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""75250"",
+    ""phone"": ""016-3349596"",
+    ""email"": ""coey_chia93@hotmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581616T"",
+      ""description"": ""bits"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 5.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034713040110"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 488.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1016,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""MOHD HAFIS AHMAD"",
+    ""address"": ""No.22A, Jalan KE 13/2, Emerald West, Emerald West,"",
+    ""district"": """",
+    ""city"": ""Rawang"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""48000"",
+    ""phone"": ""012-5532490"",
+    ""email"": ""putrainternet@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HP12015121RMHX"",
+      ""description"": ""toy"",
+      ""description_origin_language"": ""玩具"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""3926909090""
+    },
+    {
+      ""sku"": ""HP11904476HEIDCK"",
+      ""description"": ""reservoir"",
+      ""description_origin_language"": ""储物器"",
+      ""unit_price"": 7.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9503006000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269368"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Kavimani Muthayam"",
+    ""address"": ""B1-1-6, Solaris Dutamas, No. 1, Jalan Dutamas 1"",
+    ""district"": """",
+    ""city"": ""Kuala Lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""50480"",
+    ""phone"": ""012-6810170"",
+    ""email"": ""Kavi_law@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD28"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269344"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 20,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Normah Sidek"",
+    ""address"": ""Lot 100, Jalan 4, Kg Melayu Sri Gombak Lot 100, Jalan 4, Kg Melayu Sri Gombak Lot 100, Jalan 4, Kg Melayu Sri Gombak"",
+    ""district"": """",
+    ""city"": ""Selangor"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""68100"",
+    ""phone"": ""018-3838320"",
+    ""email"": ""rabiatulmahfuz@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD6"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269331"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Kavimani Muthayam"",
+    ""address"": ""No. B1-1-6, Solaris Dutamas, No. 1, Jalan Dutamas 1"",
+    ""district"": """",
+    ""city"": ""Kuala Lumpur"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""50480"",
+    ""phone"": ""012-6810140"",
+    ""email"": ""kavi_law@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269345"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Aminah Abu Hassan"",
+    ""address"": ""111C, Felda Taib Andak"",
+    ""district"": """",
+    ""city"": ""kulai"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""81000"",
+    ""phone"": ""0197659732"",
+    ""email"": ""syukranuriman@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269329"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Rozlan bin ghazali"",
+    ""address"": ""Pejabat pendidikan daerah machang"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Kelantan"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""18500"",
+    ""phone"": ""01125691068"",
+    ""email"": ""roslanghazali9@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269317"",
+    ""declared_value"": 8.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 369,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ally Nawawi Jusuh"",
+    ""address"": ""50 Jalan SG 9/2 TAMAN SRI gombak TAMAN SRI gombak"",
+    ""district"": """",
+    ""city"": ""Taman Sri Gombak"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""68100"",
+    ""phone"": ""016-6913636"",
+    ""email"": ""dagholdings@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE31820596HBS4"",
+      ""description"": ""Cleaning brush"",
+      ""description_origin_language"": ""清洁刷"",
+      ""unit_price"": 8.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9603501100""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814269320"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 20,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Dr. Sidek Mohd Noah"",
+    ""address"": ""No 25 Jln BS 5 /4 Taman Bukit Serdang Seksyen 5 Taman Bukit Serdang Seksyen 5"",
+    ""district"": """",
+    ""city"": ""Seri Kembangan"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""43300"",
+    ""phone"": ""0122126312"",
+    ""email"": ""sideknoah@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD6"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034814680380"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""AZHAR IDRIS"",
+    ""address"": ""NO 14, JLN 2/3, TAMAN PINGGIRAN SENAWANG, SG GADUT SG GADUT"",
+    ""district"": """",
+    ""city"": ""SEREMBAN"",
+    ""province"": ""Negeri Sembilan"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""71450"",
+    ""phone"": ""012-340642"",
+    ""email"": ""rozysukar@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD28"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333879"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Abdul Karim Harun"",
+    ""address"": ""69, Kampong Kandang Hilir Kota Lama Kanan"",
+    ""district"": """",
+    ""city"": ""Kuala Kangsar"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""33040"",
+    ""phone"": ""019-5733756"",
+    ""email"": ""Habibkarim1958@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE320155354323ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333863"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Selvan Sinna"",
+    ""address"": ""34,jalan bersatu 9 . Taman bersatu"",
+    ""district"": """",
+    ""city"": ""Rawang"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""48000"",
+    ""phone"": ""0166694544"",
+    ""email"": ""selvansinna@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333877"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 215,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""NOORLIA IBRAHIM"",
+    ""address"": ""19 JALAN SEMBILANG, TELUK PULAI"",
+    ""district"": """",
+    ""city"": ""KLANG"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""41100"",
+    ""phone"": ""6019-4521010"",
+    ""email"": ""ibsalia@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE71905816JIN26"",
+      ""description"": ""bit"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8201500090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333868"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 164.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""strazawaf ibra"",
+    ""address"": ""57 Jalan Sutera Kuning 2"",
+    ""district"": """",
+    ""city"": ""Taman Sutera"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""81200"",
+    ""phone"": ""019-7282858"",
+    ""email"": ""strazawaf@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333849"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 58,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Muhamad zaki Abd.hamid"",
+    ""address"": ""No 469, lorong aman perwira 1/18 Taman aman perwira Taman aman perwira"",
+    ""district"": """",
+    ""city"": ""Kuala ketil"",
+    ""province"": ""Kedah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""09300"",
+    ""phone"": ""013-4527554"",
+    ""email"": ""Muhamadzhamid@yahoo.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE320155354223ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333851"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""ONG FOO HUA"",
+    ""address"": ""38LORONG JASA INTAN1 TAMAN JASA INTAN BUKIT MARTAJAM,PENANG"",
+    ""district"": """",
+    ""city"": ""PULAU PINANG"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""14000"",
+    ""phone"": ""017-4523339"",
+    ""email"": ""povaong@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892034915333859"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 70,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Abdul Karim Harun"",
+    ""address"": ""69, Kampong Kandang Hilir, Kota Lama Kanan,"",
+    ""district"": """",
+    ""city"": ""Kuala Kangsar"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""33040"",
+    ""phone"": ""019-5733756"",
+    ""email"": ""Habibkarim1958@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE320155351523ZD"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035016167987"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 20,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Tan Kim Pong"",
+    ""address"": ""118 Jalan Bungur"",
+    ""district"": """",
+    ""city"": ""Port Klang"",
+    ""province"": ""Port Klang"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""42000"",
+    ""phone"": ""017-6403275"",
+    ""email"": ""monyet118@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD6"",
+      ""description"": ""Fix the subsidies"",
+      ""description_origin_language"": ""修补贴"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""3506919090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035016167915"",
+    ""declared_value"": 8.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 369,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Gunasegaran Bala"",
+    ""address"": ""31a Persiaran Pengkalan Timur 21"",
+    ""district"": """",
+    ""city"": ""Ipoh"",
+    ""province"": ""Perak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""31650"",
+    ""phone"": ""016-5471224"",
+    ""email"": ""balagunasegaran685@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE31820596HBS4"",
+      ""description"": ""Cleaning brush"",
+      ""description_origin_language"": ""清洁刷"",
+      ""unit_price"": 8.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""9603501100""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035116988157"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 215,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Lam Wee leong"",
+    ""address"": ""21 c, rumah awam bertam ulu, 76450 Melaka, Melaka, Malaysia."",
+    ""district"": """",
+    ""city"": ""Melaka"",
+    ""province"": ""Melaka"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""76450"",
+    ""phone"": ""011-62016832"",
+    ""email"": ""Lamweeleong6511@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE71905816JIN26"",
+      ""description"": ""bit"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8201500090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035116988170"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Kok Pooi teng"",
+    ""address"": ""22G Grd Floor block E, jalan maju 3 /3 taman lembah maju 56100 Kuala Lumpur"",
+    ""district"": """",
+    ""city"": ""Taman lembah maju"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""56100"",
+    ""phone"": ""0126934209"",
+    ""email"": ""sugarteng@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035217803637"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 199.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 215,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Gopalan Srivaarahiconsultancysdn"",
+    ""address"": ""No,5-2, taman sri puchong"",
+    ""district"": """",
+    ""city"": ""Taman Sri Puchong"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47160"",
+    ""phone"": ""016-6263712"",
+    ""email"": ""gopisado@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE71905816JIN26"",
+      ""description"": ""bit"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8201500090""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035217803652"",
+    ""declared_value"": 5.7,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 149.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 120,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Ambeca Nair"",
+    ""address"": ""A1740 Jalan Tengku Muhammad"",
+    ""district"": """",
+    ""city"": ""Kuantan"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""25050"",
+    ""phone"": ""012-9830676"",
+    ""email"": ""ambeca.bknair391@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 1.9,
+      ""currency"": ""MYR"",
+      ""quantity"": 3,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035218083538"",
+    ""declared_value"": 5.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 119.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 80,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Zaleha Ismail"",
+    ""address"": ""Klinik komuniti pusat komuniti desa kuala Pahang"",
+    ""district"": """",
+    ""city"": ""Pekan"",
+    ""province"": ""Pahang"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""20050"",
+    ""phone"": ""01137498875"",
+    ""email"": ""izaleha51@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE32015535ZD06K"",
+      ""description"": ""The patch"",
+      ""description_origin_language"": ""补丁"",
+      ""unit_price"": 2.5,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""6117809000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892035318661007"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 169.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""52320"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""S.H.KHOW S.h.Khow"",
+    ""address"": ""3266Jalan Kampung selamat,kampung selamat"",
+    ""district"": """",
+    ""city"": ""Tasek gelugor"",
+    ""province"": ""Tasek gelugor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""13300"",
+    ""phone"": ""019-4236819"",
+    ""email"": ""Soonheong68@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""892100404066418"",
+    ""declared_value"": 15.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 2399.0,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 152,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""xushangqiang"",
+    ""company"": ""xushangqiang"",
+    ""address"": ""GDDGWNDwxushangqiang"",
+    ""city"": ""DG"",
+    ""province"": ""GD"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523200"",
+    ""phone"": ""1865025059"",
+    ""email"": ""zou.xz@jiahongn""
+  },
+  ""receiver"": {
+    ""name"": ""Mohd shahrull zainudin"",
+    ""address"": ""Lot 5812A jln rancangan kg jenjarom 42600 jenjarom kuala langat selangor"",
+    ""district"": """",
+    ""city"": ""Jenjarom"",
+    ""province"": ""Jenjarom"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""42600"",
+    ""phone"": ""0136093284"",
+    ""email"": ""Sharulangahmasai@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""HE7190581610T"",
+      ""description"": ""building materials"",
+      ""description_origin_language"": ""钻头"",
+      ""unit_price"": 15.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""8205100000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250003831"",
+    ""declared_value"": 40.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 69.81,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 600,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Glaiza Luna"",
+    ""company"": """",
+    ""address"": ""No. 6 Jalan PJU 7/20 Mutiara Damansara Petaling Jaya Selangor"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47800"",
+    ""phone"": "" 6001137657982"",
+    ""email"": ""lunaglaiza3@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250003861"",
+    ""declared_value"": 80.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 125.66,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1200,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""LIM CHOR KIAN"",
+    ""company"": """",
+    ""address"": ""JLN DAUD , 34-1 , Muar,JOH , Johor , Malaysia Johor"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""84000"",
+    ""phone"": "" 60017-3607075"",
+    ""email"": ""897734817@qq.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK561954660"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4202320000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250003864"",
+    ""declared_value"": 80.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 125.66,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1200,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Julia bunga"",
+    ""company"": """",
+    ""address"": ""74 jalan bunga chempaka.kampung pinang jawa. , kuching sarawak , Malaysia , Sarawak , Malaysia Sarawak"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""93050"",
+    ""phone"": "" 600128986335"",
+    ""email"": ""897734817@qq.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK580871534"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""牛津布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4202320000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250003872"",
+    ""declared_value"": 120.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 167.55,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1800,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Doreen Ho Siew Moi"",
+    ""company"": """",
+    ""address"": ""no. 56, Taman Sri Sinong, Bintulu, Sarawak 97000. , Sarawak , Malaysia , Sarawak , Malaysia Sarawak"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""97000"",
+    ""phone"": "" 600198144189"",
+    ""email"": ""897734817@qq.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK580871534"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""牛津布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202320000""
+    },
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    },
+    {
+      ""sku"": ""YCVPOK613124483"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250004039"",
+    ""declared_value"": 160.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 223.4,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 2400,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Tricahaya Bintang"",
+    ""company"": """",
+    ""address"": ""Jabatan ukur Dan Pemetaan 50578 KL , Kuala Lumpur , Malaysia , Kuala Lumpur"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Kuala Lumpur"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""54000"",
+    ""phone"": "" 600133588935"",
+    ""email"": ""897734817@qq.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK580871534"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""牛津布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 4,
+      ""hs_code"": ""4202320000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103250004086"",
+    ""declared_value"": 80.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 125.66,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1200,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Glaiza Luna"",
+    ""company"": """",
+    ""address"": ""No. 6 Jalan PJU 7/20 Mutiara Damansara Petaling Jaya Selangor"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47800"",
+    ""phone"": "" 6001137657982"",
+    ""email"": ""lunaglaiza3@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103300005189"",
+    ""declared_value"": 51.8,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 125.66,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1160,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""SUTIMAH BINTI KELONG"",
+    ""company"": """",
+    ""address"": ""LOT 350 HSE 19 LORONG POKOK RESAM 8 TAMAN BDC KOLOMBONG KOTA KINABALU , SABAH"",
+    ""district"": """",
+    ""city"": ""Sabah"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88450"",
+    ""phone"": "" 6001140121583"",
+    ""email"": ""949037613@qq.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK580871534"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""牛津布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202320000""
+    },
+    {
+      ""sku"": ""YCVPOK613148730"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""浅绿色棉麻艺钢架折叠收纳箱"",
+      ""unit_price"": 11.8,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103300005910"",
+    ""declared_value"": 120.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 167.54,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1800,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Nirmala N"",
+    ""company"": """",
+    ""address"": ""No. 6, Li Villa Townhouse, Off Jalan Jenjarum, SS23/6, (SAME ROW AS BEACONHOUSE ) 47400 Petaling Jay"",
+    ""district"": """",
+    ""city"": ""selangor"",
+    ""province"": ""Selangor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""47400"",
+    ""phone"": "" 600192198917"",
+    ""email"": ""Nirmala.nadeson@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    },
+    {
+      ""sku"": ""YCVPOK613124483"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2103310003190"",
+    ""declared_value"": 91.8,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 167.54,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1800,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Ali Salleh"",
+    ""company"": """",
+    ""address"": ""DBKK NO 15, LOT 9, LORONG BURUNG KELETO, PUSAT PERINDUSTRIAN NGEE LIM, MILE 5, JALAN TUARAN BYPASS"",
+    ""district"": """",
+    ""city"": ""Sabah"",
+    ""province"": ""Sabah"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""88450"",
+    ""phone"": "" 600138551966"",
+    ""email"": ""salleh@maribumi.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK561954660"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202320000""
+    },
+    {
+      ""sku"": ""YCVPOK613148730"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""浅绿色棉麻艺钢架折叠收纳箱"",
+      ""unit_price"": 11.8,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    },
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 40.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2104030006644"",
+    ""declared_value"": 40.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 69.98,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 46,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Amei Ting"",
+    ""company"": """",
+    ""address"": ""Jalan  Baleh,Lorong Baleh1A,Taman Jelita3,Taman Tunku Lot10565,"",
+    ""district"": """",
+    ""city"": ""Malaysia"",
+    ""province"": ""Sarawak"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""98000"",
+    ""phone"": "" 600198759770"",
+    ""email"": ""ameiting1180@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK912451322"",
+      ""description"": ""INVISIBLE LIFT-UP BRA"",
+      ""description_origin_language"": ""乳贴"",
+      ""unit_price"": 20.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4015909000""
+    }
+  ]
+}"
+"{
+  ""service"": {
+    ""channel_code"": ""CACNMYG01""
+  },
+  ""package"": {
+    ""reference_number"": ""2104070000732"",
+    ""declared_value"": 9.0,
+    ""declared_value_currency"": ""MYR"",
+    ""cod_value"": 167.54,
+    ""cod_value_currency"": ""MYR"",
+    ""actual_weight"": 1800,
+    ""shipment_term"": ""DDU"",
+    ""payment_method"": ""COD""
+  },
+  ""sender"": {
+    ""name"": ""Huang Yi"",
+    ""company"": ""EGOGO LOGISTICS CO.,LTD"",
+    ""address"": ""Hongmei Town, Dongguan City No.3 Hongjin Road,"",
+    ""district"": """",
+    ""city"": ""Dongguan City"",
+    ""province"": ""Guangdong Province"",
+    ""country_code"": ""CN"",
+    ""post_code"": ""523160"",
+    ""phone"": ""14776965079""
+  },
+  ""receiver"": {
+    ""name"": ""Devanai A P Selvadorai"",
+    ""company"": """",
+    ""address"": ""No 7 JALAN DATO ABDUL HAMID 31 TAMAN SENTOSA KLANG SELANGOR"",
+    ""district"": """",
+    ""city"": ""Johor"",
+    ""province"": ""Johor"",
+    ""country_code"": ""MY"",
+    ""post_code"": ""41200"",
+    ""phone"": "" 600149227383"",
+    ""email"": ""waniewirawanie@gmail.com"",
+    ""id_number"": """"
+  },
+  ""items"": [
+    {
+      ""sku"": ""YCVPOK613129616"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 3.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 1,
+      ""hs_code"": ""4202920000""
+    },
+    {
+      ""sku"": ""YCVPOK613124483"",
+      ""description"": ""Oxford Cloth Steel Frame Storage Box"",
+      ""description_origin_language"": ""棉麻布艺钢架折叠收纳箱"",
+      ""unit_price"": 3.0,
+      ""currency"": ""MYR"",
+      ""quantity"": 2,
+      ""hs_code"": ""4202920000""
+    }
+  ]
+}"

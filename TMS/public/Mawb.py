@@ -1,10 +1,13 @@
 import datetime
 import json
 import random
-
 import requests
 import time
+import urllib3
 from TMS.public.TMS_Login import login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
@@ -24,7 +27,8 @@ def create():
             "startCity":"NNG",
             "oawbState":"1",
             "outStatId":"1",
-            "transportType":"1",
+        "exCustomsClearanceArea":"5346",
+            "transportType":"3",
             "destIds":"",
             "destCode":param2["receiver"]["country_code"],
             "oriCountry":param2["sender"]["country_code"],
@@ -89,7 +93,7 @@ def create():
     headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
 
     if json.loads(response.text)["body"]["id"]:
         print("创建总运单："+mawb)
@@ -118,7 +122,7 @@ def select_BoxId(box_num):
     headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)["body"]["list"][0]:
         return json.loads(response.text)["body"]["list"][0]["id"]
     else:
@@ -141,7 +145,7 @@ def scan_box(box_num,mawb,mawb_id):
     headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)["body"]["baggingIdList"]:
         print("扫描箱子成功："+box_num)
 
@@ -173,7 +177,7 @@ def close_mawb(mawb,mawb_id):
             "totalBagPcs":1,
             "totalCount":"3",
             "totalPcs":"3",
-            "transportType":"1",
+            "transportType":"3",
             "mawbNo1":mawb,
             "oawbState":3,
             "token":token,
@@ -182,7 +186,7 @@ def close_mawb(mawb,mawb_id):
     headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)["result_code"] == 0 :
         print("总运单发送成功:" + mawb)
     else:

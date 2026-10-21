@@ -99,7 +99,7 @@ def create(token, properties):
             "oawbState": "1",
             "outStatId": "1",
             "transportType": "1",
-            "exCustomsClearanceArea": "000",
+            "exCustomsClearanceArea": "5346",
             "destIds": "",
             "destCode": order_data["receiver"]["country_code"],
             "oriCountry": order_data["sender"]["country_code"],

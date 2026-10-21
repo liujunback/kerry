@@ -1,0 +1,42 @@
+rules:
+  - id: NUM-TYPE-STRING
+    category: number_type
+    title: 数字字段传非法字符串
+    input: "abc"
+    expected: fail
+
+  - id: NUM-TYPE-OBJECT
+    category: number_type
+    title: 数字字段传对象
+    input: {}
+    expected: fail
+
+  - id: NUM-MIN-MINUS1
+    category: number_range
+    title: 小于最小值
+    generator: min_minus_one
+    expected: fail
+
+  - id: NUM-MIN
+    category: number_range
+    title: 等于最小值
+    generator: min_exact
+    expected: pass
+
+  - id: NUM-MAX
+    category: number_range
+    title: 等于最大值
+    generator: max_exact
+    expected: pass
+
+  - id: NUM-MAX-PLUS1
+    category: number_range
+    title: 超过最大值
+    generator: max_plus_one
+    expected: fail
+
+  - id: NUM-INT-FLOAT
+    category: integer_only
+    title: 整数字段传小数
+    input: 1.5
+    expected: fail

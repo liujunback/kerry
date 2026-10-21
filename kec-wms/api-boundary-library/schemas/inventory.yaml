@@ -1,0 +1,48 @@
+module: inventory
+
+schemas:
+  createAdjustmentSchema:
+    fields:
+      warehouseId:
+        ref: uuid
+      adjustmentType:
+        type: enum
+        required: true
+        enum_values:
+          - QUANTITY_ADJUST
+          - LOCATION_ADJUST
+          - QUALITY_ADJUST
+      reason:
+        type: string
+        required: true
+        min_length: 1
+        max_length: 500
+      lines:
+        type: array
+        required: true
+        min_items: 1
+        item_schema: adjustment_line
+
+  adjustment_line:
+    fields:
+      skuId:
+        ref: uuid
+      locationId:
+        type: string
+        required: false
+        format: uuid
+      fromLocationId:
+        type: string
+        required: false
+        format: uuid
+      toLocationId:
+        type: string
+        required: false
+        format: uuid
+      adjustQuantity:
+        type: integer
+        required: true
+      bucketType:
+        type: string
+        required: false
+        max_length: 32

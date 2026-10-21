@@ -30,6 +30,7 @@ def create_BOX():
     for i in range(5):
         parcel_list.append("TEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(i))
     payload["data"]["parcel_list"] = parcel_list
+    print(payload)
     payload = json.dumps(jwt(payload))
 
     headers = {

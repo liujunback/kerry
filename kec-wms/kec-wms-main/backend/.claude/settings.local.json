@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx playwright:*)",
+      "Bash(pkill:*)",
+      "Bash(lsof:*)",
+      "Bash(cd:*)",
+      "Bash(grep:*)",
+      "Bash(find test-results:*)",
+      "Bash(sleep:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd //c \"taskkill /PID 26216 /F\")",
+      "Bash(npx prisma:*)",
+      "Bash(ls D:kec-wmsbackendsrcmiddleware*)",
+      "Bash(ls D:kec-wmsbackendmiddleware*)"
+    ]
+  },
+  "outputStyle": "default"
+}

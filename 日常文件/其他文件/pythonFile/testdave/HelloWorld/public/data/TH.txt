@@ -1,0 +1,56 @@
+{
+    "items":[
+        {
+            "currency":"THB",
+            "description":"Apple iPhone 11 PROM",
+            "description_origin_language":"Apple iPhone 11 PROM",
+            "original_tracking_number":"KECTH91007026",
+            "quantity":1,
+            "unit_price":848
+        }
+    ],
+    "package":{
+        "actual_weight":300,
+        "cod_value":453,
+        "cod_value_currency":"thb",
+        "declared_value":848,
+        "declared_value_currency":"THB",
+        "height":"",
+        "length":"",
+        "payment_method":"PP",
+        "reference_number":"THBACK6181416575",
+        "shipment_term":"DDP",
+        "shipment_type":"General",
+        "number_of_package":2,
+        "shipping_fee":0,
+        "width":""
+    },
+    "receiver":{
+        "address":"บี สแควร์ พระราม 9-เหม่งจ๋าย 600/43 ซอย รามคำแหง",
+        "city":"วังทองหลาง/ Wang Thonglang",
+        "country_code":"TH",
+        "district":"123",
+        "email":"yig9mv8werlukdfsgsddfgdfghsdrtyhsrbgxfdgbxfbfgsdxfgdf@tdfasfawerwedrwerwsfsfwsedfsefemry-mail.nqeqet",
+        "location_code":"AA10294",
+        "name":"อิณทร์ฉัตร ทรัพย์กองฤทธา",
+        "phone":"123456789",
+        "post_code":"24000",
+        "province":"กรุงเทพมหานคร/ Bangkok"
+    },
+    "sale_platform":"anzhe",
+    "sender":{
+        "address":"Hangzhou Xiaoshan Airport Economic Zone",
+        "city":"xiaoshan",
+        "company":"anzhe",
+        "country_code":"CN",
+        "email":"yig9mv8werlukdfsgsddfgdfghsdrtyhsrbgxfdgbxfbfgsdxfgdf@tdfasfawerwedrwerwsfsfwsedfsefemry-mail.nqeqet",
+        "name":"GUOFANRONG",
+        "phone":"123456789",
+        "post_code":"55000",
+        "province":"hangzhou"
+    },
+    "service":{
+        "channel_code":"backtest",
+        "service_type":"pickup_point"
+    }
+}

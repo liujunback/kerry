@@ -27,7 +27,9 @@ def date(pakege_list, properties):
         with open("../../生产主流程/data/" + order_url, 'r',encoding= 'utf-8') as f:
             a = json.loads(f.read())#转换成字典
             f.close()
-            a["package"]["reference_number"]="ITTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))+str(random.randint(0,999))
+            ref_num = "ITTEST" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S'))+str(random.randint(0,9999))
+            a["package"]["reference_number"]=ref_num
+            print(ref_num)
         x.append(a)
     date["package_list"]=x
     return date
@@ -36,8 +38,9 @@ def Big_Bag_Create(pakege_list,token,properties):
     header={"Content-Type":"application/json","Authorization":"Bearer "+token}
     url = properties['url']+"pos-web/shipment/create/multiple"
     data = json.dumps(date(pakege_list, properties))
-    response=requests.post(url,data=data,headers=header,verify=False)
     time_start = time.time()
+    response=requests.post(url,data=data,headers=header,verify=False)
+
     request=json.loads(json.dumps(response.text))
     time_end = time.time()
     print('下单耗时：', round(time_end - time_start, 3), 's')

@@ -1,0 +1,25 @@
+cases:
+  - id: WAREHOUSE-POST-NUMBER-001
+    title: latitude 超出最大值失败
+    api: POST /api/v1/warehouses
+    body:
+      warehouseCode: "WH-T1"
+      warehouseName: "测试仓"
+      warehouseType: "SELF_BUILT"
+      latitude: 91
+    expected:
+      http_status: 400
+      success: false
+      message_contains: latitude
+
+  - id: WAREHOUSE-POST-ENUM-001
+    title: warehouseType 传非法枚举失败
+    api: POST /api/v1/warehouses
+    body:
+      warehouseCode: "WH-T2"
+      warehouseName: "测试仓"
+      warehouseType: "INVALID"
+    expected:
+      http_status: 400
+      success: false
+      message_contains: warehouseType

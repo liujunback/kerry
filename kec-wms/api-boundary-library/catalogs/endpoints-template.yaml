@@ -1,0 +1,68 @@
+version: 1
+owner: QA
+description: >
+  边界值测试库接口清单模板。这里登记“接口是什么”，不直接登记具体边界 case。
+
+endpoints:
+  - id: CLIENTS_POST
+    module: clients
+    method: POST
+    path: /api/v1/clients
+    auth: session
+    category: create
+    risk: P1
+    idempotent: false
+    write_operation: true
+    request_schema: createClientSchema
+    response_shape: standard_mutation
+    notes:
+      - 主数据接口
+      - 高价值，优先覆盖字符串、枚举、数值边界
+
+  - id: WAREHOUSES_POST
+    module: warehouses
+    method: POST
+    path: /api/v1/warehouses
+    auth: session
+    category: create
+    risk: P1
+    idempotent: false
+    write_operation: true
+    request_schema: createWarehouseSchema
+    response_shape: standard_mutation
+
+  - id: SKUS_POST
+    module: skus
+    method: POST
+    path: /api/v1/skus
+    auth: session
+    category: create
+    risk: P1
+    idempotent: false
+    write_operation: true
+    request_schema: createSkuSchema
+    response_shape: standard_mutation
+
+  - id: INVENTORY_ADJUSTMENTS_POST
+    module: inventory
+    method: POST
+    path: /api/v1/inventory/adjustments
+    auth: session
+    category: create
+    risk: P0
+    idempotent: false
+    write_operation: true
+    request_schema: createAdjustmentSchema
+    response_shape: standard_mutation
+
+  - id: RETURNS_SIGNIN_LOOKUP_POST
+    module: returns
+    method: POST
+    path: /api/v1/returns/sign-in/lookup
+    auth: session
+    category: action
+    risk: P1
+    idempotent: true
+    write_operation: false
+    request_schema: returnsSignInLookupSchema
+    response_shape: standard_lookup

@@ -1,0 +1,34 @@
+{
+  "name": "kec-wms-print-agent",
+  "version": "1.0.0",
+  "description": "本地打印中间件 - 通过 WebSocket 接收打印任务并发送到打印设备",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "build:win": "npm run build && node scripts/build-windows.js",
+    "package:win": "npm run build:win"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "build",
+    "assets": [
+      "node_modules/pdf-to-printer/dist/SumatraPDF-3.4.6-32.exe"
+    ]
+  },
+  "dependencies": {
+    "pdf-to-printer": "^5.7.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.13",
+    "pkg": "^5.8.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

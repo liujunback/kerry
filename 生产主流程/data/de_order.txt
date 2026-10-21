@@ -16,7 +16,7 @@
     "number_of_package": 1,
     "package_type": "WPX",
     "payment_method": "PP",
-    "reference_number": "317893141484",
+    "reference_number": "ITTEST20260904184108108",
     "shipment_term": "DDP",
     "shipping_fee": 0
   },
@@ -35,6 +35,7 @@
     "city": "Sevilla",
     "company": "test",
     "country_code": "ES",
+    "email": "12312@qq.com",
     "ioss_number": "",
     "name": "test",
     "phone": "676237901",

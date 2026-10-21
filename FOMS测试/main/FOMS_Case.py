@@ -20,25 +20,27 @@ from FOMS测试.public.sku_update import update_sku
 from FOMS测试.接收TWMS状态.ASN_status import ASN_Status
 from FOMS测试.接收TWMS状态.Order_status import Order_status
 import os
-os.environ["NO_PROXY"] = "stg-twms.kec-app.com"  # 让该域名直连
+os.environ["NO_PROXY"] = "stg-foms-api.kec-app.com"  # 让该域名直连
 
 class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
 
         properties = getProperties("test")
-        twms_login = Twms_CN_login(properties)
+        # twms_login = Twms_CN_login(properties)
 
         foms_token = foms_login(properties)
-
         print(foms_token)
-        # 创建sku
-        # for i in range(1):
-            # sku_number = create_SKU(properties,foms_token)
-        sku_number = "BACK_SKU202511197033520"
+        # foms_token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjM2NiwidXNlck5hbWUiOiIyMDI0MDgxNS5iYWNrIiwiaWF0IjoxNzc5Njg4ODIxLCJleHAiOjE3Nzk3NzUyMjF9.Tbtl2VU70UoM2dgXgZxYFjL8EfHr79yratpecopvalM"
+
+        # print(foms_token)
+        # # 创建sku
+        for i in range(1):
+            sku_number = create_SKU(properties,foms_token)
+        # sku_number = "BACK_SKU202601296879599"
 
         #
-        #  # 完结入库单
+         # 完结入库单
         # asn_number = create_ASN(sku_number,properties,foms_token)
         # # asn_number = "BACKASN20250417752693"
         # time.sleep(30)

@@ -1,0 +1,85 @@
+curl --location --request POST 'http://47.119.120.7:22900//pos-web/shipment/create' \
+--header 'version: 1.2' \
+--header 'Authorization: Bearer 3a978dd1-3a46-4dd6-a020-aab9c2eda76c' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "items": [
+    {
+      "category": "gifts",
+      "country_of_origin": "CN",
+      "currency": "THB",
+      "description": "gifts",
+      "description_destination_language": "",
+      "description_origin_language": "gift",
+      "quantity": 3,
+      "remark": "",
+      "sale_platform_url": "https://baike.baidu.com/item/",
+      "sku": "",
+      "unit_price": 25.12,
+      "unit_weight": 546
+    },
+    {
+      "category": "toys",
+      "country_of_origin": "CN",
+      "currency": "THB",
+      "description": "toys",
+      "description_destination_language": "",
+      "description_origin_language": "toys",
+      "quantity": 2,
+      "remark": "",
+      "sku": "",
+      "unit_price": 25,
+      "unit_weight": 25
+    }
+  ],
+  "package": {
+    "actual_weight": 1620,
+    "cod_value_currency": "",
+    "declared_value": 750.12,
+    "declared_value_currency": "THB",
+    "height": "150",
+    "length": "100",
+    "number_of_package": 3,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "TESTBACK20250312123423",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "90"
+  },
+  "receiver": {
+    "address": "test etst test testsssqqqqqq2",
+    "city": "Pak Kret",
+    "company": "",
+    "country_code": "TH",
+    "district": "",
+    "email": "1113245dfgdf@163.com",
+    "id_card_number": "000",
+    "id_card_number_type": "id_card",
+    "location_code": "SCL1673",
+    "name": "GLS",
+    "phone": "123456789",
+    "post_code": "12000",
+    "province": "Bangkok"
+  },
+  "sale_platform": "",
+  "sender": {
+    "address": "humen",
+    "city": "dongguan",
+    "company": "GLS",
+    "country_code": "CN",
+    "district": "",
+    "email": "3245dfgdf@163.com",
+    "name": "mMMM",
+    "phone": "00000000000",
+    "province": "GLS"
+  },
+  "service": {
+    "channel_code": "CACNTH998",
+    "delivery_instruction": "",
+    "service_type": "default"
+  }
+}'

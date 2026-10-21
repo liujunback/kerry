@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/claudecode -type f -name *.kt)",
+      "Bash(git:*)",
+      "Bash(./gradlew assembleDebug 2>&1)"
+    ]
+  }
+}

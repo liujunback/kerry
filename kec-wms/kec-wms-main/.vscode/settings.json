@@ -1,0 +1,27 @@
+{
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "[bat]": {
+    "files.eol": "\r\n"
+  },
+  "[cmd]": {
+    "files.eol": "\r\n"
+  },
+  "[powershell]": {
+    "files.eol": "\r\n"
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell UTF-8",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell UTF-8": {
+      "source": "PowerShell",
+      "args": [
+        "-NoExit",
+        "-File",
+        "${workspaceFolder}\\scripts\\use-utf8.ps1"
+      ]
+    }
+  }
+}

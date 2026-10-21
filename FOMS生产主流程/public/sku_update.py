@@ -55,7 +55,7 @@ def update_sku(properties,foms_token,sku_number):
       'Content-Type': 'application/json'
     }
 
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)['code']== 202:
         print("SKU更新成功。")
         print("")

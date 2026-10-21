@@ -1,0 +1,314 @@
+openapi: 3.0.0
+info:
+  title: WMS 外部 API - 库存管理
+  version: 1.0.0
+  description: |
+    库存查询与库存流水接口，用于外部系统查询当前库存和增量拉取库存事件。
+
+    **认证方式**：所有请求都需要在 HTTP Header 中携带 `X-API-Key`。
+servers:
+  - url: http://localhost:3000/api/v1
+    description: 开发环境
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: 库存
+    description: 库存明细与库存流水接口
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API Key 认证
+
+paths:
+  /inventory:
+    get:
+      tags:
+        - 库存
+      summary: 查询库存明细
+      description: |
+        按仓库、客户、库位、SKU、批次等条件查询库存明细。
+
+        说明：
+        - 支持 `warehouseCode`、`clientCode`、`locationCode` 等编码参数
+        - 若 API Key 绑定仓库或客户，结果会自动限制在该作用域内
+        - 默认返回聚合后的库存视图
+      parameters:
+        - name: warehouseCode
+          in: query
+          schema:
+            type: string
+          description: 仓库编码
+          example: WH-SH-001
+        - name: clientCode
+          in: query
+          schema:
+            type: string
+          description: 客户编码
+          example: CLIENT001
+        - name: locationCode
+          in: query
+          schema:
+            type: string
+          description: 单个库位编码
+          example: A-01-01
+        - name: locationCodes
+          in: query
+          schema:
+            type: string
+          description: 多个库位编码，逗号分隔
+          example: A-01-01,A-01-02
+        - name: skuCode
+          in: query
+          schema:
+            type: string
+          description: SKU编码，支持模糊匹配
+          example: SKU-001
+        - name: batchNo
+          in: query
+          schema:
+            type: string
+          description: 批次号
+          example: BATCH-202604
+        - name: lpn
+          in: query
+          schema:
+            type: string
+          description: LPN容器编号
+          example: LPN-0001
+        - name: asnNumber
+          in: query
+          schema:
+            type: string
+          description: ASN单号
+          example: ASN-20260428-001
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        skuCode:
+                          type: string
+                        skuName:
+                          type: string
+                        batchNumber:
+                          type: string
+                        lpn:
+                          type: string
+                        asnNumber:
+                          type: string
+                        quantityAvailable:
+                          type: integer
+                        quantityAllocated:
+                          type: integer
+                        quantityPicking:
+                          type: integer
+                        quantityFrozen:
+                          type: integer
+                        lockStatus:
+                          type: string
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                      pageSize:
+                        type: integer
+                      total:
+                        type: integer
+                      totalPages:
+                        type: integer
+              examples:
+                default:
+                  value:
+                    success: true
+                    data:
+                      - id: inv-summary-1
+                        skuCode: SKU-001
+                        skuName: 测试商品A
+                        batchNumber: BATCH-202604
+                        lpn: LPN-0001
+                        asnNumber: ASN-20260428-001
+                        quantityAvailable: 120
+                        quantityAllocated: 20
+                        quantityPicking: 5
+                        quantityFrozen: 0
+                        lockStatus: UNLOCKED
+                    pagination:
+                      page: 1
+                      pageSize: 20
+                      total: 1
+                      totalPages: 1
+
+  /inventory/transactions:
+    get:
+      tags:
+        - 库存
+      summary: 查询库存流水
+      description: |
+        按时间窗口和业务条件拉取库存流水，适合作为补偿拉取接口。
+
+        建议：
+        - 用 `eventNumber` 做幂等去重
+        - 配合 `startDate/endDate` 做增量同步
+      parameters:
+        - name: warehouseCode
+          in: query
+          schema:
+            type: string
+          description: 仓库编码
+          example: WH-SH-001
+        - name: clientCode
+          in: query
+          schema:
+            type: string
+          description: 客户编码
+          example: CLIENT001
+        - name: locationCode
+          in: query
+          schema:
+            type: string
+          description: 库位编码
+          example: A-01-01
+        - name: skuCode
+          in: query
+          schema:
+            type: string
+          description: SKU编码
+          example: SKU-001
+        - name: eventType
+          in: query
+          schema:
+            type: string
+          description: 事件类型
+          example: PUTAWAY
+        - name: referenceType
+          in: query
+          schema:
+            type: string
+          description: 关联单据类型
+          example: ASN
+        - name: referenceNumber
+          in: query
+          schema:
+            type: string
+          description: 关联单据编号
+          example: ASN-20260428-001
+        - name: startDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+          example: "2026-04-28T00:00:00Z"
+        - name: endDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+          example: "2026-04-28T23:59:59Z"
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        eventNumber:
+                          type: string
+                        eventType:
+                          type: string
+                        bucketType:
+                          type: string
+                        quantityDelta:
+                          type: integer
+                        quantityBefore:
+                          type: integer
+                        quantityAfter:
+                          type: integer
+                        referenceType:
+                          type: string
+                          nullable: true
+                        referenceNumber:
+                          type: string
+                          nullable: true
+                        createdAt:
+                          type: string
+                          format: date-time
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                      pageSize:
+                        type: integer
+                      total:
+                        type: integer
+                      totalPages:
+                        type: integer
+              examples:
+                default:
+                  value:
+                    success: true
+                    data:
+                      - id: evt-1
+                        eventNumber: EVT-MA1B2C-8XYZ12
+                        eventType: PUTAWAY
+                        bucketType: AVAILABLE
+                        quantityDelta: 100
+                        quantityBefore: 0
+                        quantityAfter: 100
+                        referenceType: ASN
+                        referenceNumber: ASN-20260428-001
+                        createdAt: "2026-04-28T10:15:20.000Z"
+                    pagination:
+                      page: 1
+                      pageSize: 20
+                      total: 1
+                      totalPages: 1

@@ -19,7 +19,7 @@ def cancel_asn(properties,foms_token,asn_number):
       'Authorization': 'Bearer ' + foms_token
     }
 
-    response = requests.request("GET", url, headers=headers, data=payload)
+    response = requests.request("GET", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)['code']== 200:
         print("取消ASN成功：" + asn_number)
         print("")
@@ -35,7 +35,7 @@ def select_asn_id(properties,foms_token,asn_number):
       'Authorization': 'Bearer '+foms_token
     }
 
-    response = requests.request("GET", url, headers=headers, data=payload)
+    response = requests.request("GET", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)['code']== 200:
         return str(json.loads(response.text)['data'][0]["id"])
     else:

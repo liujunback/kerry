@@ -1,0 +1,18 @@
+rules:
+  - id: ENUM-INVALID
+    category: enum_membership
+    title: 枚举字段传非法值
+    input: INVALID
+    expected: fail
+
+  - id: ENUM-LOWER
+    category: enum_membership
+    title: 枚举字段传小写值
+    generator: lower_case_variant
+    expected: fail
+
+  - id: ENUM-SPACED
+    category: enum_membership
+    title: 枚举字段前后带空格
+    generator: spaced_variant
+    expected: fail

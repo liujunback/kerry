@@ -1,0 +1,18 @@
+curl --location --request POST 'http://47.119.120.7:22900//pos-web/order/create_large_bag_inner' \
+--header 'Authorization: Bearer 67f90a98-2b10-11f0-b6b8-00163e16f4b8' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "bag_height": 120,
+    "bag_id": "1-test123123-C0001",
+    "bag_length": 120,
+    "bag_weight": 3000,
+    "bag_width": 120,
+    "number_of_package": 1,
+    "package_list": [
+        {
+            "actual_weight": 2000,
+            "reference_number": "TESTBACK202505131526313",
+            "tracking_number": "TESTBACK202505131526313"
+        }
+    ]
+}'

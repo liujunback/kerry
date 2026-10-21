@@ -1,0 +1,331 @@
+openapi: 3.0.0
+info:
+  title: WMS 外部 API - 退件管理
+  version: 1.0.0
+  description: |
+    退件管理接口，用于上游系统下发退件预报单，以及回传退件处理方式。
+
+    **重要提示**：所有请求必须在 HTTP Header 中携带 `X-API-Key` 进行认证，否则将返回 401 未授权错误。
+
+    **权限范围**：
+    - 创建退件预报单需要 `return:create`
+    - 下发处理方式需要 `return:disposition`
+  contact:
+    name: WMS API Support
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: 开发环境
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: 退件管理
+    description: 退件预报与处理方式接口
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API Key 认证
+
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: 错误描述
+        code:
+          type: string
+          example: ERROR_CODE
+        details:
+          type: object
+
+    ReturnLineInput:
+      type: object
+      required:
+        - skuCode
+        - expectedQty
+      properties:
+        skuCode:
+          type: string
+          maxLength: 64
+          example: SKU001
+          description: SKU 编码，必须是系统中已存在且启用的 SKU
+        expectedQty:
+          type: integer
+          minimum: 1
+          example: 2
+          description: 预报退件数量
+        notes:
+          type: string
+          maxLength: 500
+          nullable: true
+          example: 包装破损，待清点
+          description: 明细备注
+
+    ReturnCreateRequest:
+      type: object
+      required:
+        - clientCode
+        - warehouseCode
+        - preReturnNo
+        - logisticsNo
+        - lines
+      properties:
+        clientCode:
+          type: string
+          maxLength: 64
+          example: C001
+          description: 客户编码。若 API Key 绑定客户，则必须与绑定客户一致
+        warehouseCode:
+          type: string
+          maxLength: 32
+          example: WH-SH-001
+          description: 仓库编码。若 API Key 绑定仓库，则必须与绑定仓库一致
+        preReturnNo:
+          type: string
+          maxLength: 64
+          example: RTN-ERP-20260417-0001
+          description: 上游系统退件预报单号
+        logisticsNo:
+          type: string
+          maxLength: 64
+          example: SF1234567890
+          description: 退件物流单号
+        notes:
+          type: string
+          maxLength: 500
+          nullable: true
+          example: 上游系统创建的退件预报
+          description: 备注
+        lines:
+          type: array
+          minItems: 1
+          description: 退件预报明细
+          items:
+            $ref: '#/components/schemas/ReturnLineInput'
+
+    ReturnDispositionItem:
+      type: object
+      required:
+        - action
+        - quantity
+      properties:
+        returnLineNo:
+          type: string
+          maxLength: 40
+          example: RTN-WH-SH-001-260417-0001-001
+          description: 退件明细号。优先用该字段精确匹配明细
+        skuCode:
+          type: string
+          maxLength: 64
+          example: SKU001
+          description: SKU 编码。未提供 returnLineNo 时必填
+        quality:
+          type: string
+          enum: [GOOD, DAMAGED]
+          example: GOOD
+          description: 质量类型，用于辅助匹配明细
+        batchNumber:
+          type: string
+          maxLength: 64
+          nullable: true
+          example: BATCH001
+          description: 批次号，用于辅助匹配明细
+        expiryDate:
+          type: string
+          format: date
+          nullable: true
+          example: "2026-12-31"
+          description: 效期，用于辅助匹配明细
+        containerCode:
+          type: string
+          maxLength: 32
+          nullable: true
+          example: LBR2026041700001
+          description: 容器号，用于辅助匹配明细
+        tempLocationCode:
+          type: string
+          maxLength: 32
+          nullable: true
+          example: TJ001
+          description: 暂存库位，用于辅助匹配明细
+        action:
+          type: string
+          enum: [GOOD_PUTAWAY, DAMAGED_PUTAWAY, DESTROY]
+          example: GOOD_PUTAWAY
+          description: 处理方式。GOOD_PUTAWAY 良品上架，DAMAGED_PUTAWAY 不良品上架，DESTROY 销毁
+        quantity:
+          type: integer
+          minimum: 1
+          example: 2
+          description: 处理数量
+        notes:
+          type: string
+          maxLength: 500
+          nullable: true
+          example: 确认为良品，安排上架
+          description: 处理备注
+
+    ReturnDispositionRequest:
+      type: object
+      required:
+        - items
+      properties:
+        clientCode:
+          type: string
+          maxLength: 64
+          example: C001
+          description: 客户编码。API Key 未绑定客户时必填；已绑定时如传入则必须一致
+        warehouseCode:
+          type: string
+          maxLength: 32
+          example: WH-SH-001
+          description: 仓库编码。API Key 未绑定仓库时必填；已绑定时如传入则必须一致
+        items:
+          type: array
+          minItems: 1
+          description: 处理方式明细。每行必须提供 returnLineNo 或 skuCode
+          items:
+            $ref: '#/components/schemas/ReturnDispositionItem'
+
+paths:
+  /returns:
+    post:
+      tags:
+        - 退件管理
+      summary: 创建退件预报单
+      description: 上游系统通过外部 API 下发退件预报单。该接口只允许 API Key 调用，需要 `return:create` 权限。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReturnCreateRequest'
+            example:
+              clientCode: C001
+              warehouseCode: WH-SH-001
+              preReturnNo: RTN-ERP-20260417-0001
+              logisticsNo: SF1234567890
+              notes: 上游系统创建的退件预报
+              lines:
+                - skuCode: SKU001
+                  expectedQty: 2
+                  notes: 包装破损，待清点
+                - skuCode: SKU002
+                  expectedQty: 1
+      responses:
+        '200':
+          description: 创建成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: 预报退件单创建成功
+                  data:
+                    type: object
+        '400':
+          description: 参数错误或客户、仓库、SKU 校验失败
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: 未授权，缺少或无效的 X-API-Key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: 权限不足或非外部 API 调用
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /returns/by-number/{preReturnNo}/dispositions:
+    post:
+      tags:
+        - 退件管理
+      summary: 下发退件处理方式
+      description: 上游系统按退件预报单号下发处理方式。该接口只允许 API Key 调用，需要 `return:disposition` 权限。
+      parameters:
+        - name: preReturnNo
+          in: path
+          required: true
+          schema:
+            type: string
+          example: RTN-ERP-20260417-0001
+          description: 上游系统退件预报单号
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReturnDispositionRequest'
+            example:
+              clientCode: C001
+              warehouseCode: WH-SH-001
+              items:
+                - returnLineNo: RTN-WH-SH-001-260417-0001-001
+                  action: GOOD_PUTAWAY
+                  quantity: 2
+                  notes: 确认为良品，安排上架
+                - skuCode: SKU002
+                  quality: DAMAGED
+                  action: DESTROY
+                  quantity: 1
+      responses:
+        '200':
+          description: 保存成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: 处理意见已保存
+                  data:
+                    type: object
+        '400':
+          description: 参数错误、客户/仓库不匹配，或退件明细无法唯一匹配
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: 未授权，缺少或无效的 X-API-Key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: 权限不足或非外部 API 调用
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: 退件单不存在
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'

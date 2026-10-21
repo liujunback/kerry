@@ -71,7 +71,7 @@ def add_channel(name,country):
 
                 ],
                 "custAccountDeleteListStr":"",
-                "labelFormat":"",
+                "labelFormat":"127",
                 "labelCopies":"1",
                 "noRuleCode":"",
                 "a4Format":"",

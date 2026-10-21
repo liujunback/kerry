@@ -4,7 +4,7 @@ import requests
 import json
 
 
-def send_tracking(properties,tracking_number):
+def send_tracking(properties,tracking_number,event_code):
 
     url = properties['spider_url'] + "/package/tracking/spider"
 
@@ -14,7 +14,7 @@ def send_tracking(properties,tracking_number):
             {
                 "event_date": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                 "timezone": "+01:00",
-                "event_code": "E010670V",
+                "event_code": event_code,
                 "event_remark": "签收",
                 "location": "",
                 "ns": "12°44'N",
@@ -30,4 +30,5 @@ def send_tracking(properties,tracking_number):
     response = requests.request("POST", url, headers=headers, data=payload)
 
     if response.status_code == 201:
+        print(response.text)
         print("spider货态推送："+tracking_number)

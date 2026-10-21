@@ -1,0 +1,67 @@
+{
+    "sale_platform":null,
+    "service":{
+        "channel_code":"LATH01",
+        "service_type":"default"
+    },
+    "package":{
+        "reference_number":"210210H3HFE08P",
+        "declared_value":"363.0",
+        "declared_value_currency":"THB",
+        "cod_value":300,
+        "cod_value_currency":"THB",
+        "height":1,
+        "length":1,
+        "width":1,
+        "actual_weight":698,
+        "shipment_term":"DDP",
+        "payment_method":"cod",
+        "shipment_type":"General",
+        "sort_code":null
+    },
+    "sender":{
+        "name":"juheng",
+        "company":"聚恒电子商务有限公司",
+        "address":"广东省深圳市宝安区",
+        "district":null,
+        "city":"Shenzhen",
+        "province":"Guangdong",
+        "country_code":"CN",
+        "post_code":"518000",
+        "phone":"1232",
+        "email":null,
+        "id_number":null
+    },
+    "receiver":{
+        "name":"พิชญา ยงพิศาลภพ",
+        "company":"Really not",
+        "address":"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110",
+        "district":null,
+        "city":"อำเภอบางบัวทอง",
+        "province":null,
+        "country_code":"TH",
+        "post_code":"11110",
+        "phone":"66865651281",
+        "email":null,
+        "id_number":null
+    },
+    "items":[
+        {
+            "sku":"12431234",
+            "description":"Pants+&+Leggings - Pants * 1",
+            "description_origin_language":"裤子和打底裤 - 裤子",
+            "description_destination_language":null,
+            "height":212,
+            "length":122,
+            "width":313,
+            "category":null,
+            "unit_price":"121.0",
+            "currency":"THB",
+            "quantity":3,
+            "country_of_origin":null,
+            "hs_code":null,
+            "brand":null,
+            "remark":null
+        }
+    ]
+}

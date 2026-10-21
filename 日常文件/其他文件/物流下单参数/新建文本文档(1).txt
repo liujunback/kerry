@@ -1,0 +1,50 @@
+{
+  "service": {
+    "channel_code": "myke",
+    "service_type":"pickup_point"
+  },
+  "package": {
+    "reference_number": "XS210502125033419",
+    "declared_value": 3.0,
+    "declared_value_currency": "USD",
+    "actual_weight": 54,
+    "shipment_term": "DDU",
+    "payment_method": "PP"
+  },
+  "sender": {
+    "name": "fangqingyi",
+    "company": "fangqingyi",
+    "address": "changan zhen shatou",
+    "city": "guangdong",
+    "province": "donggua",
+    "country_code": "CN",
+    "post_code": "523000",
+    "phone": "13166668888",
+    "email": "jiachuang@166.com"
+  },
+  "receiver": {
+    "name": "Mary Ann Nathan",
+    "company": "",
+    "address": "42-44 Jalan Limau Nipis, Bangsar Park",
+    "district": "",
+    "city": "Kuala Lumpur",
+    "province": "Kuala Lumpur",
+    "country_code": "MY",
+    "post_code": "59000",
+    "phone": " 60450361331",
+    "email": "claudia_a92@hotmail.co.uk",
+    "id_number": "",
+    "location_code":"MY001"
+  },
+  "items": [
+    {
+      "sku": "YCWLWL485542608",
+      "description": "Style",
+      "description_origin_language": "金箔纸",
+      "unit_price": 3.0,
+      "currency": "USD",
+      "quantity": 1,
+      "hs_code": "3212100000"
+    }
+  ]
+}

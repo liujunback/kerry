@@ -1,0 +1,699 @@
+openapi: 3.0.0
+info:
+  title: WMS 外部 API - 出库订单管理
+  version: 1.3.0
+  description: |
+    出库订单管理接口，用于创建、查询出库订单，以及订单拦截相关能力。
+
+    **重要提示**：所有请求必须在 HTTP Header 中携带 `X-API-Key` 进行认证，否则将返回 401 未授权错误。
+  contact:
+    name: WMS API Support
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: 开发环境
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: 出库订单
+    description: 出库订单管理接口
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API Key 认证
+
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: 操作成功
+        data:
+          type: object
+
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: 错误描述
+        code:
+          type: string
+          example: ERROR_CODE
+
+paths:
+  /outbound-orders:
+    post:
+      tags:
+        - 出库订单
+      summary: 创建出库订单
+      description: 创建出库订单
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - clientCode
+                - warehouseCode
+                - consignee
+                - items
+              properties:
+                clientCode:
+                  type: string
+                  example: CLIENT001
+                  description: 客户编码，唯一标识客户
+                warehouseCode:
+                  type: string
+                  example: WH-SH-001
+                  description: 仓库编码，指定出库的源仓库
+                orderNo:
+                  type: string
+                  example: OUT-2024-001
+                  description: 订单号，不填则自动生成
+                externalOrderNo:
+                  type: string
+                  example: SO-12345
+                  description: 外部订单号，来自上游系统（如OMS、ERP）的销售订单号，用于后续查询/更新/删除操作的唯一标识
+                orderType:
+                  type: string
+                  enum: [STANDARD, RETURN, SCRAP, OTHER]
+                  default: STANDARD
+                  example: STANDARD
+                  description: 业务类型（STANDARD标准出库、RETURN退货出库、SCRAP报废出库、OTHER其他）
+                source:
+                  type: object
+                  description: 来源信息
+                  properties:
+                    platform:
+                      type: string
+                      enum: [SHOPIFY, AMAZON, MANUAL, OTHER]
+                      default: OTHER
+                      example: SHOPIFY
+                      description: 来源平台（SHOPIFY、AMAZON、MANUAL手工创建、OTHER其他）
+                    platformOrderId:
+                      type: string
+                      example: SHOP-ORDER-001
+                      description: 平台原始订单ID，电商平台的订单编号
+                    channel:
+                      type: string
+                      example: 官网
+                      description: 销售渠道，如官网、天猫、京东等
+                consignee:
+                  type: object
+                  required:
+                    - name
+                    - address
+                  description: 收货人信息
+                  properties:
+                    name:
+                      type: string
+                      example: 张三
+                      description: 收货人姓名
+                    phone:
+                      type: string
+                      example: "13800138000"
+                      description: 收货人电话
+                    email:
+                      type: string
+                      format: email
+                      example: zhangsan@example.com
+                      description: 收货人邮箱
+                    company:
+                      type: string
+                      example: 某某公司
+                      description: 收货公司
+                    address:
+                      type: object
+                      required:
+                        - line1
+                      description: 收货地址
+                      properties:
+                        line1:
+                          type: string
+                          example: 上海市浦东新区张江高科技园区
+                          description: 地址行1
+                        line2:
+                          type: string
+                          example: 999号
+                          description: 地址行2
+                        city:
+                          type: string
+                          example: 上海
+                          description: 城市
+                        province:
+                          type: string
+                          example: 上海
+                          description: 省份
+                        postalCode:
+                          type: string
+                          example: "201203"
+                          description: 邮编
+                        country:
+                          type: string
+                          default: CN
+                          example: CN
+                          description: 国家代码，ISO 3166-1 alpha-2标准（CN中国、US美国等）
+                shipping:
+                  type: object
+                  description: 物流信息
+                  properties:
+                    method:
+                      type: string
+                      example: 顺丰速运
+                      description: 配送方式，物流公司名称
+                    carrierCode:
+                      type: string
+                      example: SF
+                      description: 承运商编码，物流公司的标准代码
+                    trackingNumber:
+                      type: string
+                      example: SF1234567890
+                      description: 运单号，物流追踪单号
+                    shippingLabel:
+                      type: object
+                      description: 发货面单信息
+                      properties:
+                        url:
+                          type: string
+                          format: uri
+                          example: https://example.com/labels/12345.pdf
+                          description: 面单URL
+                        base64:
+                          type: string
+                          example: data:image/png;base64,iVBORw0KGg...
+                          description: 面单base64编码
+                    expectedShipDate:
+                      type: string
+                      format: date-time
+                      example: "2024-12-20T10:00:00Z"
+                      description: 预计发货日期
+                    expectedDeliveryDate:
+                      type: string
+                      format: date-time
+                      description: 预计送达日期
+                payment:
+                  type: object
+                  description: 支付信息
+                  properties:
+                    totalAmount:
+                      type: number
+                      example: 1089.00
+                      description: 订单总金额，包含所有商品的总价
+                    currency:
+                      type: string
+                      default: CNY
+                      example: CNY
+                      description: 币种，ISO 4217货币代码（CNY人民币、USD美元等）
+                    isPaid:
+                      type: boolean
+                      example: true
+                      description: 是否已支付
+                items:
+                  type: array
+                  description: 订单明细
+                  minItems: 1
+                  items:
+                    type: object
+                    required:
+                      - skuCode
+                      - quantity
+                    properties:
+                      lineNo:
+                        type: integer
+                        example: 1
+                        description: 行号，不填则自动生成
+                      skuCode:
+                        type: string
+                        example: SKU001
+                        description: SKU编码，必须是系统中已存在的SKU
+                      quantity:
+                        type: integer
+                        minimum: 1
+                        example: 10
+                        description: 出库数量，必须大于0
+                      unit:
+                        type: string
+                        example: PCS
+                        description: 单位编码
+                      unitPrice:
+                        type: number
+                        example: 99.00
+                        description: 商品单价，用于计算订单金额
+                      batchNo:
+                        type: string
+                        example: BATCH-2024-001
+                        description: 批次号，指定出库的批次，用于追溯和库存管理
+                      expiryDate:
+                        type: string
+                        format: date-time
+                        example: "2025-12-31T00:00:00Z"
+                        description: 效期，产品的有效期截止日期
+                      udf:
+                        type: string
+                        example: 红色-L码
+                        description: 自定义字段
+                      remark:
+                        type: string
+                        example: 红色款
+                        description: 备注
+                remark:
+                  type: string
+                  example: 请尽快发货
+                  description: 备注
+                tags:
+                  type: array
+                  description: 标签列表
+                  items:
+                    type: string
+                customFields:
+                  type: object
+                  description: 自定义字段
+                  additionalProperties: true
+            example:
+              clientCode: CLIENT001
+              warehouseCode: WH-SH-001
+              externalOrderNo: SO-12345
+              orderType: STANDARD
+              source:
+                platform: SHOPIFY
+                platformOrderId: SHOP-ORDER-001
+                channel: 官网
+              consignee:
+                name: 张三
+                phone: "13800138000"
+                address:
+                  line1: 上海市浦东新区张江高科技园区
+                  city: 上海
+                  province: 上海
+                  country: CN
+                  postalCode: "201203"
+              shipping:
+                method: 顺丰速运
+                trackingNumber: SF1234567890
+                shippingLabel:
+                  url: https://example.com/labels/12345.pdf
+                expectedShipDate: "2024-12-20T10:00:00Z"
+              payment:
+                totalAmount: 1089.00
+                currency: CNY
+              remark: 请尽快发货
+              items:
+                - skuCode: SKU001
+                  quantity: 10
+                  unitPrice: 99.00
+                  batchNo: BATCH-2024-001
+                  expiryDate: "2025-12-31T00:00:00Z"
+                  udf: 红色-L码
+                  remark: 红色款
+                - skuCode: SKU002
+                  quantity: 5
+      responses:
+        '200':
+          description: 创建成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: 订单创建成功
+                  data:
+                    type: object
+        '400':
+          description: 参数错误
+        '401':
+          description: 未授权
+
+  /outbound-orders/by-number/{externalOrderNo}:
+    get:
+      tags:
+        - 出库订单
+      summary: 获取出库订单详情
+      description: |
+        通过外部订单号获取出库订单详细信息。
+
+        说明：
+        - `shipments` 字段为本次补充的包裹信息列表
+        - 顶层 `trackingNumber` 仍保留，用于兼容旧接入方
+        - 若订单尚未生成包裹，则 `shipments` 返回空数组
+      parameters:
+        - name: externalOrderNo
+          in: path
+          required: true
+          description: 外部订单号
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          description: 客户编码（可选，API Key绑定客户时不需要）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      orderNumber:
+                        type: string
+                        example: OUT-2026-0001
+                      referenceNumber:
+                        type: string
+                        nullable: true
+                        example: SO-12345
+                      status:
+                        type: string
+                        example: PACKED
+                      trackingNumber:
+                        type: string
+                        nullable: true
+                        example: SF1234567890
+                      shippingMethod:
+                        type: string
+                        nullable: true
+                        example: 顺丰速运
+                      shipments:
+                        type: array
+                        description: 包裹信息列表
+                        items:
+                          type: object
+                          properties:
+                            shipmentNumber:
+                              type: string
+                            status:
+                              type: string
+                            carrierCode:
+                              type: string
+                              nullable: true
+                            carrierName:
+                              type: string
+                              nullable: true
+                            trackingNumber:
+                              type: string
+                              nullable: true
+                            shippingMethod:
+                              type: string
+                              nullable: true
+                            packageCount:
+                              type: integer
+                            totalWeightKg:
+                              type: number
+                              nullable: true
+                            shippedAt:
+                              type: string
+                              format: date-time
+                              nullable: true
+                            deliveredAt:
+                              type: string
+                              format: date-time
+                              nullable: true
+              examples:
+                withShipments:
+                  summary: 已生成包裹的订单
+                  value:
+                    success: true
+                    data:
+                      orderNumber: OUT-2026-0001
+                      referenceNumber: SO-12345
+                      status: PACKED
+                      trackingNumber: SF1234567890
+                      shippingMethod: 顺丰速运
+                      shipments:
+                        - shipmentNumber: SHP-2026-0001
+                          status: READY
+                          carrierCode: SF
+                          carrierName: 顺丰
+                          trackingNumber: SF1234567890
+                          shippingMethod: 顺丰速运
+                          packageCount: 1
+                          totalWeightKg: 1.25
+                          shippedAt: null
+                          deliveredAt: null
+                withoutShipments:
+                  summary: 尚未生成包裹的订单
+                  value:
+                    success: true
+                    data:
+                      orderNumber: OUT-2026-0002
+                      referenceNumber: SO-12346
+                      status: PENDING
+                      trackingNumber: null
+                      shippingMethod: null
+                      shipments: []
+        '404':
+          description: 订单不存在
+        '401':
+          description: 未授权
+
+    put:
+      tags:
+        - 出库订单
+      summary: 更新出库订单
+      description: 通过外部订单号更新出库订单信息（仅限特定状态）
+      parameters:
+        - name: externalOrderNo
+          in: path
+          required: true
+          description: 外部订单号
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                clientCode:
+                  type: string
+                  description: 客户编码（可选）
+                orderType:
+                  type: string
+                  enum: [STANDARD, RETURN, SCRAP, OTHER]
+                  description: 业务类型
+                consignee:
+                  type: object
+                  description: 收货人信息
+                  properties:
+                    name:
+                      type: string
+                      description: 收货人姓名
+                    phone:
+                      type: string
+                      description: 收货人电话
+                    address:
+                      type: object
+                      properties:
+                        line1:
+                          type: string
+                        city:
+                          type: string
+                        province:
+                          type: string
+                        postalCode:
+                          type: string
+                shipping:
+                  type: object
+                  description: 物流信息
+                  properties:
+                    method:
+                      type: string
+                      description: 配送方式
+                    carrierCode:
+                      type: string
+                      description: 承运商编码
+                    trackingNumber:
+                      type: string
+                      description: 运单号
+                remark:
+                  type: string
+                  description: 备注
+      responses:
+        '200':
+          description: 更新成功
+        '400':
+          description: 参数错误或状态不允许更新
+        '404':
+          description: 订单不存在
+        '401':
+          description: 未授权
+
+    delete:
+      tags:
+        - 出库订单
+      summary: 删除出库订单
+      description: 通过外部订单号删除出库订单（仅限特定状态）
+      parameters:
+        - name: externalOrderNo
+          in: path
+          required: true
+          description: 外部订单号
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          description: 客户编码（可选）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 删除成功
+        '400':
+          description: 状态不允许删除
+        '404':
+          description: 订单不存在
+        '401':
+          description: 未授权
+
+  /outbound-orders/by-number/{externalOrderNo}/cancel:
+    post:
+      tags:
+        - 出库订单
+      summary: 取消出库订单
+      description: |
+        取消出库订单。
+
+        - 未进入波次：直接取消订单
+        - 已进入波次且未签出：不直接取消，转为创建拦截案件，等待签出处阻断
+      parameters:
+        - name: externalOrderNo
+          in: path
+          required: true
+          description: 外部订单号
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - reason
+              properties:
+                clientCode:
+                  type: string
+                  description: 客户编码（可选）
+                reason:
+                  type: string
+                  description: 取消原因
+                  example: 客户要求取消订单
+      responses:
+        '200':
+          description: 取消成功或已转为拦截
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: 订单已标记拦截
+                  data:
+                    type: object
+                    properties:
+                      orderNo:
+                        type: string
+                        example: OUT-2024-001
+                      externalOrderNo:
+                        type: string
+                        example: SO-12345
+                      status:
+                        type: string
+                        example: PACKED
+                      interceptionStatus:
+                        type: string
+                        enum: [PENDING_INTERCEPTION]
+                        example: PENDING_INTERCEPTION
+                      interceptionSource:
+                        type: string
+                        enum: [FOMS_CANCEL]
+                        example: FOMS_CANCEL
+                      interceptedRemark:
+                        type: string
+                        example: 客户要求取消订单
+                      interceptedAt:
+                        type: string
+                        format: date-time
+              examples:
+                cancelledDirectly:
+                  summary: 未进入波次，直接取消成功
+                  value:
+                    success: true
+                    message: 订单取消成功
+                    data:
+                      orderNumber: OUT-2024-001
+                      referenceNumber: SO-12345
+                      status: CANCELLED
+                      notes: "[取消原因] 客户要求取消订单"
+                      updatedAt: "2026-04-07T11:20:00.000Z"
+                      client:
+                        clientCode: CLIENT001
+                        clientName: 测试客户
+                      warehouse:
+                        warehouseCode: WH001
+                        warehouseName: 上海仓
+                convertedToInterception:
+                  summary: 已进入波次，转为拦截案件
+                  value:
+                    success: true
+                    message: 订单已标记拦截
+                    data:
+                      id: 550e8400-e29b-41d4-a716-446655440000
+                      orderId: 11111111-2222-3333-4444-555555555555
+                      orderNo: OUT-2024-002
+                      externalOrderNo: SO-12346
+                      status: PACKED
+                      interceptionStatus: PENDING_INTERCEPTION
+                      interceptionSource: FOMS_CANCEL
+                      interceptedRemark: 客户要求取消订单
+                      interceptedAt: "2026-04-07T11:30:00.000Z"
+        '400':
+          description: 状态不允许取消
+        '409':
+          description: 已存在活动中的拦截案件
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                duplicatedInterception:
+                  summary: 重复命中活动拦截案件
+                  value:
+                    success: false
+                    message: 订单已存在活动中的拦截案件
+                    code: INT_008
+        '404':
+          description: 订单不存在
+        '401':
+          description: 未授权

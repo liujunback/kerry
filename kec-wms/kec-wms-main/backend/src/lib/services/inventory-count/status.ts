@@ -1,0 +1,39 @@
+export const InventoryCountBatchStatus = {
+  READY: 'READY',
+  IN_PROGRESS: 'IN_PROGRESS',
+  PENDING_RECOUNT: 'PENDING_RECOUNT',
+  RECOUNTING: 'RECOUNTING',
+  COMPLETED: 'COMPLETED',
+  CANCELLED: 'CANCELLED',
+} as const
+
+export const InventoryCountBatchType = {
+  FIRST: 'FIRST',
+  RECOUNT: 'RECOUNT',
+} as const
+
+export const InventoryCountDetailStatus = {
+  PENDING: 'PENDING',
+  FIRST_COUNTED: 'FIRST_COUNTED',
+  RECOUNT_PENDING: 'RECOUNT_PENDING',
+  RECOUNTED: 'RECOUNTED',
+  CONFIRMED: 'CONFIRMED',
+  ADJUST_CREATED: 'ADJUST_CREATED',
+  ADJUSTED: 'ADJUSTED',
+  CANCELLED: 'CANCELLED',
+} as const
+
+export const InventoryCountRoundLineStatus = {
+  PENDING: 'PENDING',
+  SUBMITTED: 'SUBMITTED',
+  RECOUNT_REQUIRED: 'RECOUNT_REQUIRED',
+  CONFIRMED: 'CONFIRMED',
+  CANCELLED: 'CANCELLED',
+} as const
+
+export const InventoryCountDisposalStatus = {
+  PENDING: 'PENDING',
+  PROCESSING: 'PROCESSING',
+  DONE: 'DONE',
+  CANCELLED: 'CANCELLED',
+} as const

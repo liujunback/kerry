@@ -39,7 +39,7 @@ def file_create_order(token):
         return "失败"
 
     reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(
-        random.randint(1, 300))
+        random.randint(1, 999999))
     param2['package']['reference_number'] = reference_number
     # param2['package']['tracking_number'] = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M')) + str(
     #     random.randint(1, 300))
@@ -55,11 +55,12 @@ def file_create_order(token):
         # print(f"尝试连接: {url}")
         try:
             time_start = time.time()
+            # print(json.dumps(param2))
             response = session.post(
                 url,
                 data=json.dumps(param2),
                 headers=header,
-                timeout=(10, 30)  # 连接超时10秒，读取超时30秒
+                timeout=(10, 30), verify=False, proxies={"http": None, "https": None}  # 连接超时10秒，读取超时30秒
             )
             time_end = time.time()
 
@@ -107,8 +108,8 @@ def file_create_order_simple(token):
         print(f"读取文件失败: {e}")
         return "失败"
 
-    reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S')) + str(
-        random.randint(1, 300))
+    reference_number = "TESTBACK" + str((datetime.datetime.now()).strftime('%Y%m%d%H%M%S%f')) + str(
+        random.randint(1, 999999))
     param2['package']['reference_number'] = reference_number
 
     url = "https://pos-kec-eng-uat.kec-app.com/pos-web/shipment/create"

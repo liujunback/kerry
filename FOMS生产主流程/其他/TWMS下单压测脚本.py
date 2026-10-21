@@ -12,12 +12,12 @@ import json
 
 class OrderLoadTest(HttpUser):
     wait_time = between(1, 3)
-    host = "https://stg-twms.kec-app.com"
+    host = "https://twms-my.kec-app.com"
     # host = "https://qh-cn-twms.kec-app.com"
     clients = [
         {
-            "client_code": "QTST02",
-            "skus": ["TRQHTS2025103104", "TRQHTS2025103105", "TRQHTS2025103106"]
+            "client_code": "ITTEST",
+            "skus": ["trWM20251203001"]
         },
         # {
         #     "client_code": "QTST",
@@ -72,7 +72,7 @@ class OrderLoadTest(HttpUser):
         total_weight = 200 + (len(items) * 100)
 
         order_data = {
-            "centre_code": "QT",
+            "centre_code": "ITTEST",
             "client_code": client["client_code"],
             "real_time_response": False,
             "created_at": "2025-06-25",
@@ -126,13 +126,13 @@ class OrderLoadTest(HttpUser):
             },
             "items": items
         }
-
+        # print(json.dumps(order_data))
         with self.client.post(
                 "/api/order",
                 json=order_data,
                 headers={
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer lfXTsgZIvhoFR5gdhY4Tfd6Qspj1BObfAV736HAFhgspDWidLLQK0BweHdDq'#
+                    'Authorization': 'Bearer 27X2RUlUI7BFEa0gtgL7atMW42HbViC86arvGqFofd8UvzEgWohN9trNrnw2'#
                     # 'Authorization':"Bearer ZCZ3CnAxLhFhbGbZXITdHW8Mpk6dNlBTBmBTAA4tWpOd9JlB2gxcPj5fHw1y"
                 },
                 catch_response=True,

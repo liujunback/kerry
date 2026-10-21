@@ -5,7 +5,9 @@ def getProperties(API="KEC"):
     # 修正文件路径映射，确保使用正确的文件名
     api_file_map = {
         "KEC-备用": "../../生产主流程/data/kec_备用.properties",
-        "KP": "../../生产主流程/data/KP_params.properties",
+        "KP": "../../生产主流程/data/DE_params.properties",
+        "KP2": "../../生产主流程/data/KEC_params2.properties",
+        "KP3": "../../生产主流程/data/KEC_params3.properties",
         "JP": "../../生产主流程/data/JP_params.properties",
         "DE": "../../生产主流程/data/DE_params.properties",
         "TH": "../../生产主流程/data/TH_params.properties",

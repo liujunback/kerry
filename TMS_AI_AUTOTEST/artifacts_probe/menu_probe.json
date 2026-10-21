@@ -1,0 +1,2612 @@
+[
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 0,
+    "child_title": "一级模块设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/module/primarymodule",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n一级模块设置\n新增 修改 删除 导出\n模块编码\n模块名称\n查询 重置\n\t启用\t模块编码\t模块名称\t模块功能说明\t模块应用场景\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n√\n\t\nBAS\n\t\nBAS_基础\n\t\n1、组织类模块 2、策略类模块 3、基础类模块\n\t\n111\n\t\n2018-12-20 18:35:08\n\t\n\t\n2020-05-14 00:39:43"
+  },
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 1,
+    "child_title": "平台菜单设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/menu/menumag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n平台菜单设置\n新增 修改 删除 同步菜单\n菜单编码\n菜单标题\n访问地址\n一级模块\n查询 重置\n序号\t菜单标题\t菜单编码\t菜单ID\t一级模块\t排序\t启用\t管理员独有\t登录入口\t按钮个数\t图标地址\t访问地址\t功能说明\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n平台配置\n\t\ntenantManage\n\t\n2\n\t\nSYS_平台\n\t\n1\n\t\n√\n\t\n√\n\t\nTMS"
+  },
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 2,
+    "child_title": "平台职位角色",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/role/platformrole",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n平台职位角色\n新增 修改 删除 角色授权\n\t启用\t标准职位\t语言\t职位等级\t职位\t职位说明\t网点类型\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n√\n\t\n√\n\t\n简体\n\t\n普通用户\n\t\n拉登\n\t\n是一个负责派件的派件员\n\t\n\t\n2020-05-14 15:17:46\n\t\n哲盟用户\n\t\n2020-05-14 19:25:22\n\t\n哲盟用户\n\n\n2\n\t\n√\n\t"
+  },
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 3,
+    "child_title": "销售板块设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/template/saletemplate",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n销售板块设置\n销售板块\n出港操作\n \n进港操作\n \n代理打单\n \nOMS\n \n轨迹追踪\n \n报价计算\n \n费用结算\n \n序号\t菜单标题\t一级模块\t销售绑定\t归属标准角色\t归属其他销售板块\t创建距今天数\t功能说明\n1\n\t\n配置管理\n\t\nSYS_平台\n\t\n\t\n\t\n进港操作,代理打单\n\t\n2705\n\t\n\n\n2\n\t\n打印配置\n\t\nBAS_基础\n\t\n\t\n\t\n\t\n26"
+  },
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 4,
+    "child_title": "平台选项",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/option/platformoption",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n平台选项\n全部\nSYS_平台\nBAS_基础\nOMS_订单\nTMS_运输\nBMS_结算\nLOG_日志\nCMN_公共\nTMI_任务\nTIN_接入\nTOU_推送\nTMP_临时\nDMO_模板\nPOS_平台\nTAS_移动\nBIS_报表\nCRM_客户关系\nMOA-监控\nOPS_分拣系统\n新增 修改 删除 同步选项\n表名\n描述\n所属平台选项\n标准状态\n查询 重置\n\t表名"
+  },
+  {
+    "main_index": 0,
+    "main_title": "平台配置",
+    "child_index": 5,
+    "child_title": "平台调用表配置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/call/callTable",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 一级模块设置\n\n 平台菜单设置\n\n 平台职位角色\n\n 销售板块设置\n\n 平台选项\n\n 平台调用表配置\n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n平台调用表配置\n新增 修改 删除\n调用表编码\n调用表名称\n查询 重置\n\t调用表编码\t调用表名称\t调用表类型\t绑定字段\t默认下拉字段\t编码字段\t扩展返回字段\t调用地址URL\tURL其他参数\t前端缓存\t前端缓存表名\t备注\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\nbas_scan_status_list3\n\t\n扫描状态集合（自定义异常，正常）\n\t\nTMS\n\t"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 0,
+    "child_title": "打印配置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/config/printconfig",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n打印配置\n报表类型\n袋中运单标签(baggingdtlprint)\n袋号标签(baggingprint)\n收货标签(code)\n收货标签PDF(codePDF)\n交接清单(handoverprint)\n发票打印(INVOICE)\n电子面单(lable)\n收件清单(manifestlist)\n总运单清单(oawbprint)\n板号标签(palle"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 1,
+    "child_title": "APP升级",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/config/appUpgrade",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nAPP升级\n升级信息\nAPP类型\n版本号\n升级方式\n是否推送\n升级内容\nAPP文件\n点击上传\n只能上传apk文件\n保存 获取app信息\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 2,
+    "child_title": "导出设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/exportset/exportset",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n导出设置\nVIP.订单列表.导出\n新格式\nVIP.订单管理.导出\nVIP.订单管理.导出1\nVIP.运单查询.导出\n新格式\nVIP.发票导出\n发票打印\n发票打印2\nvip.发货记录.导出\n订单摘要\n追踪报告\n订单详情\nVIP.订单管理.导出2\nOrder Detail\n新格式\n客户管理.导出\n新格式\n订单预报.导出\n订单预报Invoice导出\n"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 3,
+    "child_title": "导入设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/importset/importSet",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n导入设置\n结算.客户费用导入\n客户费用标准模版\nfeng费用导入\nfeng费用导入2222\n客户费用shopee模版\n结算.代理对账单导入\n代理帐单标准模板\n新格式\n订单.快递订单导入\n订单导入标准模板\n新格式\n运单.运单修改导入\n运单修改标准模板\n客服.运单轨迹导入\n运单轨迹导入标准模板\n运单轨迹导入删除模板\n运单轨迹重拉标准模板\n基础.品名"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 4,
+    "child_title": "参数设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/paramsSet/paramsSet",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n参数设置\nTMS_运输\n收件录单<TMS-002>\n订单导入<TMS-024>\n上板<TMS-065>\n装袋<TMS-009>\n出货<TMS-010>\n打单审核<TMS-028>\n专线录单<TMS-073>\n班次交接<TMS-071>\n打单查询<TMS-064>\n交货查询<TMS087>\n运单轨迹追踪<TMS-019>\n转运发件<TMS-012"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 5,
+    "child_title": "编码规则",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/coding/rules",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n编码规则\n修改 恢复默认值\n序号\t编码名称\t编码描述\t编码规则\t复位方式\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n客户编码\n\t\n生成客户编码\n\t\n网点简码+流水号5位\n\t\n流水号复位\n\t\n2020-07-01 20:00:00\n\t\n哲盟用户\n\t\n\t\n\n\n2\n\t\n代理编码\n\t\n生成代理编码\n\t\nD+流水号3位\n\t\n流水号复位\n\t\n2020-0"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 6,
+    "child_title": "短信设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/smsSet/smsSet",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n短信设置\n全部短信\n收件欠款短信\n单票欠款短信\n问题件短信\n短信格式<>\n变量\n短信说明\n1、客户解锁查询中，针对欠款运单由用户主动发起短信\n2、短信接收人为寄件人，短信接收手机号码为寄件手机\n保存\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 1,
+    "main_title": "配置管理",
+    "child_index": 7,
+    "child_title": "系统环境配置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/env/envmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 打印配置\n\n APP升级\n\n 导出设置\n\n 导入设置\n\n 参数设置\n\n 编码规则\n\n 短信设置\n\n 系统环境配置\n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n系统环境配置\n系统环境配置\n请求路径\nappId\nappKey\nappSecret\n保存\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 0,
+    "child_title": "公司设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/company",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n公司设置\n注意：\n1、公司名称、中文地址、英文地址等信息用打印报表输出\n2、主页信息用于登录后主页左上角图标\n3、各网点可独立设置自己的信息，如未设置，默认使用总公司信息\n总公司分公司\n总公司基本信息\n总公司编码\n总公司名称\n中文地址\n英文地址\n公司电话\n公司传真\n公司邮箱\n主页信息\n点击上传\n只能上传jpg/png文件，且"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 1,
+    "child_title": "首页设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/404page",
+    "body_head": ""
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 2,
+    "child_title": "网点管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/stat/statmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n网点管理\n新增 修改 删除 浏览 导出\n网点编码\n网点名称\n网点简码\n内部电话\n上级网点\n网点类型\n查询 重置\n序号\t网点名称\t网点编码\t启用\t网点简码\t网点类型\t网点中文\t网点英文\t所属国家\t所属州/省\t所属城市\t本位币\t委托录单网点\t负责人\t负责人电话\t经理\t经理电话\t投诉电话\t内部电话\t客服\t客服传真\t客服电话\t对账员"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 3,
+    "child_title": "员工管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/emp/staffmanagement",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n员工管理\n新增 修改 删除 浏览 导出\n所属网点\n所属部门\n员工编号\n员工姓名\n英文名\n手机号码\n在职状态\n查询 重置\n\t员工编号\t员工姓名\t英文名\t启用\t锁定\t性别\t主审批人\t副审批人\t所属网点\t所属部门\t所在职位\t职位描述\t职位状态\t出生年月\t民族\t籍贯\t身份证号\t手机号\tEmail\t电话\t工作QQ\t家庭电话\t紧急联系人"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 4,
+    "child_title": "职位角色",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/role/rolemag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n职位角色\n部门\nZB部门1\n  \ns\n  \n测试部\n \nZB部门2\n  \n运营部\n  \n运务部\n  \n虎门分拣\n  \n产品部\n  \n财务部\n  \n客服部\n  \nIT\n  \n仓库操作\n  \n出货岗位\n  \n新增 复制新增 修改 删除 角色授权 参数设置 导出 导出明细\n部门\n职位\n标准职位\n启用状态\n查询 重置\n\t\n\t启用\t标"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 5,
+    "child_title": "授权管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/user/accreditmanage",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n授权管理\n追加授权 特殊授权 重置密码 导出\n授权网点\n用户编号\n用户姓名\n授权角色\n启用状态\n查询 重置\n\t用户编号\t用户姓名\t启用\t管理员\t所属部门\t授权角色\t授权网点\t授权网点方式\t特殊授权\t登陆次数\t上次登录时间\t创建时间\t建立人\t修改时间\t修改人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 6,
+    "child_title": "选项设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/option/optionsetting",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n选项设置\n修改 同步到开放平台\n表名\n描述\n所属模块\n查询 重置\n\t标准选项\t只读\t对外开放\t表名\t表描述\t所属模块\t值编码长度\t值个数\t备注\n暂无数据\n\t启用\t值编码\t中文值名称\t英文值名称\t新增默认值\t排列顺序\t创建时间\t创建人\t修改时间\t修改人\n暂无数据\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 7,
+    "child_title": "OMS授权",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/user/accreditoms",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nOMS授权\nOMS角色\n客户测试\n \ntest2021100801\n \n客户禁用创单(测试）\n \ntest2021082401\n \n所有权限\n \n虎门分拨\n \n百顺达\n \n测试\n \n老王\n \n预报客户\n \n员工-广州分部\n \n订单管理员\n \n员工-深圳分拨\n \n新增 修改 删除 重置通知\n所属网点\n客户名称\n用户账号/手机号"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 8,
+    "child_title": "操作日志",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/operate/operateMag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n操作日志\n导出\n清\n空\n操作时间\n-\n操作网点\n功能菜单\n按钮\n操作用户\n查询 重置\n\t操作时间\t标识字段\t功能菜单\t按钮\t操作说明\t操作用户\t操作网点\t主数据表\t主数据ID\t命令\n1\n\t\n2026-05-07 11:02:56\n\t\nKEC064\n\t\n用户登录\n\t\n登录\n\t\n用户<KEC064.刘俊>在<155.254.12"
+  },
+  {
+    "main_index": 2,
+    "main_title": "组织",
+    "child_index": 9,
+    "child_title": "消息",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/env/msgmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 公司设置\n\n 首页设置\n\n 网点管理\n\n 员工管理\n\n 职位角色\n\n 授权管理\n\n 选项设置\n\n OMS授权\n\n 操作日志\n\n 消息\n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n消息\n写信\n文件夹\n收件箱\n发件箱\n草稿\n类型\n全部\n港前问题件\n转单变更\n系统消息\n消息提示设置\n屏幕弹窗提醒 \n仅消息个数提示 \n不提示\n收件箱（0）\n关联号码\n发送时间\n-\n作者\n查询 重置\n标记已读 删除\n序号\t\n\t主题\t附件\t发送时间\t作者\t消息类型\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 0,
+    "child_title": "目的地管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/dest/destmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n目的地管理\n新增 修改 删除 设置报音 导出\n目的地编码\n目的地名称\n国家简码\n英文名称\n国家别名\n业务类型\n启用状态\n开放现结客户\n查询 重置\n\t目的地编码\t目的地名称\t启用\t业务类型\t国家简码\t国家三字代码\t国家别名\t目的地国家币别\t目"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 1,
+    "child_title": "代理管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agentmanagement/agentmanagement",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n代理管理\n新增 修改 批量修改 浏览 删除 导出\n所属网点\n代理编码\n代理名称\n代理类型\n启用状态\n对账员\n查询 重置\n\t\n\t启用\t代理编码\t代理名称\t代理简码\t代理类型\t所属国家\t所属州/省\t所属城市\t所属网点\t对账员\t付款账号协议\t银行"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 2,
+    "child_title": "客户分组",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cust/custsetting",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户分组\n新增 修改 删除 共享 导出\n客户组编码\n客户组名称\n所属网点\n共享方式\n启用状态\n查询 重置\n\t客户组编码\t客户组名称\t启用\tVIP中隐藏公式\t现结客户\t所属网点\t共享方式\t共享网点\t备注\t建立时间\t建立人\t修改时间\t修改人\n1"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 3,
+    "child_title": "客户管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cust/custmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户管理\n新增 复制新增 修改 批量修改 删除 浏览 停用 收件人管理 导出\n清\n空\n所属网点\n客户名称\n客户曾用名\n客户状态\n客户等级\n客户类型\n 只显示含附件\n主客户编码\n销售员\n跟单员\n港前客服\n港后客服\n对账员\n查询 重置\n\t\n\t\n"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 4,
+    "child_title": "寄件人管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/sender/sender",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n寄件人管理\n新增 修改 批量修改 删除 导出\n寄件公司\n寄件人\n寄件电话\n所属网点\n分类标签\n启用状态\n查询 重置\n\t\n\t启用\t分类标签\t寄件公司\t寄件公司别名\t寄件人\t寄件电话\t寄件地址\t寄件地址2\t寄件地址3\t寄件国家\t寄件州/省\t寄件"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 5,
+    "child_title": "扫描状态",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/scan/scanmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n扫描状态\n新增 修改 删除 导出\n扫描编码\n扫描名称\n扫描分段\n货物状态\n标准状态\n启用状态\n查询 重置\n\t扫描名称\t扫描编码\t启用\t扫描分段\t货物状态\t履约状态\t读取时区标准\t异常\t结案\t标准状态\t客户可视\t排列顺序\tApi Code\tW"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 6,
+    "child_title": "问题状态",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/problemstatus/problemstatus",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n问题状态\n新增 修改 删除 导出\n问题编码\n问题名称\n问题大类\n问题类型\n标准状态\n启用状态\n查询 重置\n\t问题编码\t问题名称\t启用\t问题大类\t问题类型\t中文备注\t英文备注\t通知岗位\t指定处理岗位\t收件标识问题件\t打单标识问题件\t申请暂扣标"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 7,
+    "child_title": "科目管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/arded/ardedmag",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n科目管理\n新增 修改 删除 导出\n科目代号\n科目名称\n收付方向\n科目对象\n标准状态\n启用状态\n查询 重置\n\t科目代号\t科目名称\t科目英文名\t启用\t标准科目\t收付方向\t科目对象\t允许重复补录\tERP Charge Code\tERP Charg"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 8,
+    "child_title": "账单公式",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/invoice/invoiceformula",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n账单公式\n新增 修改 删除 浏览 启用 停用 导出\n公式编码\n收付方向\n启用状态\n查询 重置\n\t启用\t公式编码\t描述\t默认公式\t自动审核\t结算对象\t收付方向\t归属收支科目\t+科目\t-科目\t账单中文抬头\t账单英文抬头\t账单号码规则\t最近被使用"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 9,
+    "child_title": "汇率设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/curexch/curexchset",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n汇率设置\n新增 修改 删除 其他汇率 导出\n所属网点\n换算币别\n生效时间\n-\n只显示最新汇率\n查询 重置\n\t所属网点\t共享方式\t共享网点\t生效日期\t原币种\t换算汇率\t网点本位币\t创建时间\t创建人\t修改时间\t修改人\n暂无数据\n前往页\n共 0 "
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 10,
+    "child_title": "申报汇率",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/declaredExchangeRate/declaredExchangeRate",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n申报汇率\n申报汇率规则 (编码)\n \ntestName3 (testCode3)\n \ntestName1 (testCode1)\n \ntestName2 (testCode2)\n \n123 (test)\n \nbacktest(TH) (ba"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 11,
+    "child_title": "资金账户",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/arded/acctarded",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n资金账户\n新增 修改 删除 导出\n所属网点\n资金账户编码\n资金账户名称\n开户人\n账户分类\n启用状态\n查询 重置\n\t启用\t资金账户编码\t资金账户名称\t账户币别\t账户分类\t所属网点\t共享方式\t共享网点\t余额\t银行账号\t开户人\t开户银行\t收款手续"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 12,
+    "child_title": "收支科目",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/arded/szarded",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收支科目\n收入类\n主营业务收入\n押金收入\n折让收入\n其他业务收入\n少收折让\n支出类\n主营业务支出\n押金支出\n折让支出\n其他业务支出\n支出的分类\n \n费用类\n水电费\n \n新增 修改 删除\n科目编码\n科目名称\n一级分类\n启用状态\n查询 重置\n\t"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 13,
+    "child_title": "邮件推送设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/acceptEmail/acceptEmail",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n邮件推送设置\n新增 修改 删除\n邮件类型\n启用状态\n查询 重置\n\t启用\t邮件类型\t邮件流向\t管理客户\t清关承运商\t尾程\t目的港\t下一网点\t收件人列表\t抄送人列表\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n√\n\t\n客户货物入库报告\n\t\nCu"
+  },
+  {
+    "main_index": 3,
+    "main_title": "基础",
+    "child_index": 14,
+    "child_title": "销售员提成设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/salesCommissionSetting/salesCommissionSetting",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 目的地管理\n\n 代理管理\n\n 客户分组\n\n 客户管理\n\n 寄件人管理\n\n 扫描状态\n\n 问题状态\n\n 科目管理\n\n 账单公式\n\n 汇率设置\n\n 申报汇率\n\n 资金账户\n\n 收支科目\n\n 邮件推送设置\n\n 销售员提成设置\n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n销售员提成设置\n新增 导入 修改 删除 提成比例设置 提成科目设置 导出\n所属网点\n指定路线分类\n指定路线\n价格组\n备注\n查询 重置\n\t\n\t启用\t业务类型\t路线分类\t路线编码\t路线名称\t标准价\t标准价比例\tVIP价\tVIP价比例\tVVIP价"
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 0,
+    "child_title": "订单",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n轨迹推送配置\n\n品名对照规则\n\n品名管理\n\nLABEL设计\n\n运单分配规则\n\n客户对接授权\n\n商品备案信息\n\n货物类型策略\n\n分拣码\n\n平台指定路线策略\n\n货态描述映射\n\n平台货物类型策略\n\n报表分区\n\n货态比对策略\n\n货态订阅方案\n\n 操作 \n\n 代理 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量"
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 1,
+    "child_title": "轨迹推送配置",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 2,
+    "child_title": "品名对照规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 3,
+    "child_title": "品名管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 4,
+    "child_title": "LABEL设计",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 5,
+    "child_title": "运单分配规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 6,
+    "child_title": "客户对接授权",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 7,
+    "child_title": "商品备案信息",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 8,
+    "child_title": "货物类型策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 9,
+    "child_title": "分拣码",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 10,
+    "child_title": "平台指定路线策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 11,
+    "child_title": "货态描述映射",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 12,
+    "child_title": "平台货物类型策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 13,
+    "child_title": "报表分区",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 14,
+    "child_title": "货态比对策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 15,
+    "child_title": "货态订阅方案",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 16,
+    "child_title": "操作",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 操作 \n\n排货策略\n\n上板策略\n\n出货批次策略\n\n重量采集设置\n\n单号验证规则\n\nShopee Service Code\n\n 代理 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 17,
+    "child_title": "排货策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 18,
+    "child_title": "上板策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 19,
+    "child_title": "出货批次策略",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 20,
+    "child_title": "重量采集设置",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 21,
+    "child_title": "单号验证规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 22,
+    "child_title": "Shopee Service Code",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 23,
+    "child_title": "代理",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 操作 \n\n 代理 \n\n代理EDI接口\n\n转单分配规则\n\n英文品名规则\n\n打印配置\n\n轨迹匹配规则\n\n清关轨迹匹配规则\n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 24,
+    "child_title": "代理EDI接口",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 25,
+    "child_title": "转单分配规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 26,
+    "child_title": "英文品名规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 27,
+    "child_title": "打印配置",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 28,
+    "child_title": "轨迹匹配规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 4,
+    "main_title": "策略",
+    "child_index": 29,
+    "child_title": "清关轨迹匹配规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 0,
+    "child_title": "单票录入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/add/orderinput",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n单票录入\n基本信息\n客户\n货物重量(KG)\n货物类型\n普货\n件数\n包装类型\n目的地\n订单号码\n转单号码\nCOD\n  \nIOSS签发国\nIOSS number\n指定路线\n付款方式\n备注\nReason For Export\n服务类型\n申报金额\n  \n出口申报价值\n  \n平台运费\n  \n平台杂费\n  \n税金"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 1,
+    "child_title": "订单导入2",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/orderimport2",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n订单导入2\n客户\n指定路线\n模版特殊处理:\n导入\n0%\n导入文件\n状态\n总行数\n错误行数\n历史日志\n自定义格式\n序号\t行号\t订单号码\t错误说明\n暂无数据\n模板管理指定路线\n标准模板\n标准导入模板\nShopee订单导入模板\n新KEC upload order template(Multi-item si"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 2,
+    "child_title": "订单预报",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/orderprediction",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n订单预报\n尾程订单结算 指定模板打印 发票打印 发票下载 面单打印 修改 特殊导出 LABEL 打印 专线 LABEL Invoice 打印 收货标签 删除订单 终止平台订单 导出 ICBU操作 更多操作\n清\n空\n订单日期\n-\n寄件网点\n查录单\n客户类型\n客户\n含子客户\n排除\n跟单员\n走货路线\n指定路"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 3,
+    "child_title": "已删除订单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/orderdelete",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n已删除订单\n导出\n清\n订单日期 \n删除时间\n-\n客户\n查询 重置 恢复\n\t\n\t\n订单状态\n\t\n打印\n\t\n暂扣\n\t\n删除原因\n\t\n运单号码\n\t\n参考编号\n\t\n转单号码\n\t\n转寄原单号\n\t\n收货包号\n\t\n订单日期\n\t\n录单网点\n\t\n寄件网点\n\t\n客户编码\n\t\n客户名称\n\t\n指定路线\n\t\n目的地编码\n\t\n目"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 4,
+    "child_title": "订单下载日志",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/orderdownloadlog/orderdownloadlog",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n订单下载日志\n创建时间\n-\n平台类型\n只显示异常\n客户\n下载方式\n状态\n查询 重置\n序号\t创建时间\t状态\t解析订单数\t保存订单数\t下载异常\t客户\t店铺昵称\t平台类型\t报文\t订单数据条件\t下载方式\t接收完成时间\t解析完成时间\t保存完成时间\t结束时间\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 5,
+    "child_title": "清关订单导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/sheinimport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n清关订单导入\n导入模版\n模版下载\n导入\n0%\n导入文件\n状态\n总行数\n错误行数\n历史日志\n序号\t行号\t订单号码\t错误说明\n暂无数据\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 6,
+    "child_title": "入库大包号导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/import/boxInboundimport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n入库大包号导入\n导入模版\n模版下载\n导入\n0%\n导入文件\n状态\n总行数\n错误行数\n历史日志\n\t行号\t运单号码\t错误说明\n暂无数据\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 7,
+    "child_title": "平台下载订单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/downloadorder",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n平台下载订单\n清\n空\n订单日期\n-\n平台类型\n客户\n下载状态\n查询 重置\nOIS订单 0 POS订单 0 立即下载\n序号\n\t\n\t\n数据类型\n\t\n下载状态\n\t\n订单日期\n\t\n订单号码\n\t\n转单号码\n\t\n件数\n\t\n重量\n\t\n客户编码\n\t\n平台类型\n\t\n异常信息\n\t\n请求报文\n\t\n下载日志\n\t\n创建时间\n暂"
+  },
+  {
+    "main_index": 5,
+    "main_title": "订单",
+    "child_index": 8,
+    "child_title": "shopeeApi预报",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/ordershopeeapi",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 已删除订单\n\n 订单下载日志\n\n 清关订单导入\n\n 入库大包号导入\n\n 平台下载订单\n\n shopeeApi预报\n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nshopeeApi预报\n订单日期\n-\n指定路线\n目的地\n查询 导出\n\t订单时间\t运单号\t订单号\t客户代号\t类型\t件数\t重量\t货款\t目的地\t指定路线\t寄件电话\t寄件地址\t寄件城市\t寄件省\t寄件邮编\t寄件公司\t寄件人\t收件公司\t收件电话\t收件地址\t收件城市\t收件省\t收件国家\t收件邮编\t备注\tinvoice"
+  },
+  {
+    "main_index": 6,
+    "main_title": "集运",
+    "child_index": 0,
+    "child_title": "集运客户管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/consolidation/ConsolidationCustomerManagement",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 集运客户管理\n\n 集运单管理\n\n 集运单退货\n\n 集运单普敏转换\n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n集运客户管理\n新增 修改 停用\n清\n空\n客户名称\n客户状态\n查询 重置\n\t\n\t\n客户编码\n\t\n客户名称\n\t\n客户状态\n\t\n集运API Token\n\t\n集运OPS User\n\t\n集运OPS Password\n\t\n集运回传通知URL\n\t\n集运OPS仓库ID\n\t\n创建时间\n\t\n创建人\n\t\n修改时间\n\t\n修改人\n1\n\t\n\t\n700094\n\t\nShein\n\t\n√\n\t\nENNR28e6McnjtdcSW"
+  },
+  {
+    "main_index": 6,
+    "main_title": "集运",
+    "child_index": 1,
+    "child_title": "集运单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/consolidation/consolidationBillManagement",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 集运客户管理\n\n 集运单管理\n\n 集运单退货\n\n 集运单普敏转换\n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n集运单管理\n二段地址修改 二段拆单 销毁 终止平台一段订单 终止平台二段订单 违禁品登记\n清\n空\n货物状态时间查询\n-\n客户\n排除\n显示明文\n查询 重置 导出\n\t\n\t\n一段平台订单号\n\t\n一段参考编号\n\t\n一段快递单号\n\t\n客户编码\n\t\n收件人旺旺ID\n\t\n二段平台订单号\n\t\n二段参考编号\n\t\n二段运单号\n\t\n二段供应商\n\t\n二段供应商服务码\n\t\n二段单创建时间\n\t\n货物状态\n\t\n异常原因\n"
+  },
+  {
+    "main_index": 6,
+    "main_title": "集运",
+    "child_index": 2,
+    "child_title": "集运单退货",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/consolidation/consolidatedWaybillReturns",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 集运客户管理\n\n 集运单管理\n\n 集运单退货\n\n 集运单普敏转换\n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n集运单退货\n确认退货\n清\n空\n待退货时间\n-\n货物状态\n客户\n排除\n查询 重置 导出 \n显示明文\n\t一段参考编号\t一段快递单号\t客户编码\t货物状态\t待退返时间\t退返单号\t收件人名字\t收件人电话\t收件人州省\t收件人市\t收件人区\t收件人邮编\t收件人地址\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 6,
+    "main_title": "集运",
+    "child_index": 3,
+    "child_title": "集运单普敏转换",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/consolidation/generalConversion",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 集运客户管理\n\n 集运单管理\n\n 集运单退货\n\n 集运单普敏转换\n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n集运单普敏转换\n批量转换\n序号\t扫描时间\t扫描单号\t货物类型\n暂无数据\n请扫描或输入单号\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 0,
+    "child_title": "入库",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 入库 \n\n运单管理\n\n收件录单\n\n快速收货\n\n收货包管理\n\n运单查询\n\n运单导入修改\n\n运单修改\n\n变更审核\n\n 出库 \n\n 转运 \n\n 退件 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 1,
+    "child_title": "运单管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 2,
+    "child_title": "收件录单",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 3,
+    "child_title": "快速收货",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 4,
+    "child_title": "收货包管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 5,
+    "child_title": "运单查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 6,
+    "child_title": "运单导入修改",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 7,
+    "child_title": "运单修改",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 8,
+    "child_title": "变更审核",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 9,
+    "child_title": "出库",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 入库 \n\n 出库 \n\n大包管理\n\n出货批次管理\n\n 转运 \n\n 退件 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 10,
+    "child_title": "大包管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 11,
+    "child_title": "出货批次管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 12,
+    "child_title": "转运",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 入库 \n\n 出库 \n\n 转运 \n\n转运发件\n\n转运到件\n\n 退件 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 13,
+    "child_title": "转运发件",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 14,
+    "child_title": "转运到件",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 15,
+    "child_title": "退件",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 入库 \n\n 出库 \n\n 转运 \n\n 退件 \n\n退返客户\n\n退件入库\n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 16,
+    "child_title": "退返客户",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 7,
+    "main_title": "操作",
+    "child_index": 17,
+    "child_title": "退件入库",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 8,
+    "main_title": "干线",
+    "child_index": 0,
+    "child_title": "出港路由",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/outboundrouting/outboundrouting",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 出港路由\n\n 总运单管理\n\n 干线轨迹追踪\n\n 接驳单管理\n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n出港路由\n新增 修改 删除 共享 浏览 导出\n所属网点\n路由编码/名称\n下一网点\n干线运输方式\n目的国家简码\n启用状态\n查询 重置\n\t启用\t路由编码\t路由名称\t始发港\t下一网点\t干线运输方式\t起运国家简码\t目的国家简码\t目的港国家简码\t提单计抛\t计费货物类型\t所属网点\t共享方式\t共享网点\t一次转飞港\t二次转飞港\t三次转飞港\t四次转飞港\t备注\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\n√\n\t\nba"
+  },
+  {
+    "main_index": 8,
+    "main_title": "干线",
+    "child_index": 1,
+    "child_title": "总运单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/shipment/managewaybill",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 出港路由\n\n 总运单管理\n\n 干线轨迹追踪\n\n 接驳单管理\n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n总运单管理\n新增 修改 撤销 锁定 撤销锁定 关联大包 确认 撤销确认 补录 导入 变更总运单日期 打印 导入创建和确认 导出 清单导出 提单分组导出 运单维度报表 Invoice维度报表 特殊报表 分批转机 清关相关操作 下载附件 推送邮件 推送干线booking邮件 下载干线booking模板 推送mawb\n清\n总运单日期\n-\n操作网点\n下一网点\n干线运输方式\n总运单状态\n创建人\n查询 重置\n"
+  },
+  {
+    "main_index": 8,
+    "main_title": "干线",
+    "child_index": 2,
+    "child_title": "干线轨迹追踪",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/trunktracktracking/trunktracktracking",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 出港路由\n\n 总运单管理\n\n 干线轨迹追踪\n\n 接驳单管理\n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n干线轨迹追踪\n录入轨迹\n录入异常轨迹\n批量录入轨迹\n批量录入异常轨迹\n导入轨迹\n子运单轨迹维护\n导出\n刷新扣查票数\n清\n空\n总运单日期\n-\n操作网点\n目的国家简码\n最新状态\n干线运输方式\n只查看含承运分段\n查询 重置\n\n注意：总运单确认后才允许操作轨迹\n\n\t\n\t总运单号\t总运单日期\t总运单状态\t子单号\t操作网点\t干线运输方式\t目的国家简码\t出货票数\t出货实重\t出货件数\t最新状态\t最新状态时间\t头程"
+  },
+  {
+    "main_index": 8,
+    "main_title": "干线",
+    "child_index": 3,
+    "child_title": "接驳单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/shipment/connectionmanage",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 出港路由\n\n 总运单管理\n\n 干线轨迹追踪\n\n 接驳单管理\n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n接驳单管理\n新增 导入 修改 撤销 确认 撤销确认 打印 导出\n清\n创建日期\n-\n承运代理\n关联单号类型\n状态\n查询 重置\n忽略已导入承运账单\n\t\n\t状态\t导入承运账单\t接驳单号\t承运代理\t关联单号类型\t关联单号\t关联单号数\t票数\t出货实重\t备注\t创建时间\t创建人\t修改时间\t修改人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 0,
+    "child_title": "港前",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 港前 \n\n港前问题件登记\n\n港前问题件处理\n\n港前问题件查询\n\n菜鸟无主件扫描\n\n拼多多拒签\n\n抖音无主件扫描\n\n拼多多无主件扫描\n\n无主件处理\n\n 港后 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 1,
+    "child_title": "港前问题件登记",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 2,
+    "child_title": "港前问题件处理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 3,
+    "child_title": "港前问题件查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 4,
+    "child_title": "菜鸟无主件扫描",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 5,
+    "child_title": "拼多多拒签",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 6,
+    "child_title": "抖音无主件扫描",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 7,
+    "child_title": "拼多多无主件扫描",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 8,
+    "child_title": "无主件处理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 9,
+    "child_title": "港后",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 10,
+    "child_title": "港后问题件登记",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 港前 \n\n 港后 \n\n港后问题件登记\n\n港后问题件处理\n\n港后问题件查询\n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 11,
+    "child_title": "港后问题件处理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 9,
+    "main_title": "异常",
+    "child_index": 12,
+    "child_title": "港后问题件查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 0,
+    "child_title": "追踪查询",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/custserv/tracequery",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n追踪查询\n 运单号码\n 转单号码\n 参考编号\n 退件单号\n 子单号码\n 清空 查询\n回车后直接查询\n查询后选中单号\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 1,
+    "child_title": "运单轨迹追踪",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/trajectorytracking/trajectorytracking",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n运单轨迹追踪\n补录轨迹 批量导入轨迹 费用补录 港后问题件 切换网站 批量修改转单 编辑轨迹 通用导出 单号导出\n清\n空\n寄件日期\n-\n寄件网点\n客户\n含子客户\n销售员\n跟单员\n走货路线分类(可多选)\n走"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 2,
+    "child_title": "消息",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cust/shortmsg",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n短信\n短信发送 导入发送 导出\n关联号码\n创建时间\n-\n发送网点\n接收手机号\n短信类型\n发送状态\n查询 重置\n\t\n发送状态\n\t\n描述\n\t\n关联号码\n\t\n创建时间\n\t\n短信内容\n\t\n接收手机号\n\t\n接收人\n"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 3,
+    "child_title": "ICBU中心仓工单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/icbuCenter/icbuCenter",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nICBU中心仓工单\n新建 更新\n清\n空\n工单状态\n更新时间\n-\n查询 重置 导出\n序号\t工单号\t参考编号\t最新工单状态\t最新工作动作\t最新拦截/扣件\t工单类型\t最新跟进内容\t最新更新时间\t更新人\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 4,
+    "child_title": "报表导出",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/reportExport/reportExport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n报表导出\n清\n空\n运单维度报表\nInvoice维度报表\n特殊报表\n显示明文\n\n导出说明：\n\n1、运单维度报表，一个运单一行记录；可包含运单信息、节点时间、数据\n\n2、Invoice维度报表，一行invoi"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 5,
+    "child_title": "SLA复核",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/slaReconciliation/slaReconciliation",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nSLA复核\n复核模版\n模版下载 导入\n0%\n复核结果\n上传时间\n-\n复核模版\n处理进度\n查询\n\t复核模版\t上传时间\t复核完成时间\t处理进度\t失败原因\t复核结果\t创建人\n暂无数据\n前往页\n共 0 条\n常用功"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 6,
+    "child_title": "菜鸟Tracepush",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cainiaoTracePush/cainiaoTracePush",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n菜鸟Tracepush\n菜鸟LP号：\n推送内容：\n推送\n菜鸟处理结果：\n菜鸟处理详情：\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 7,
+    "child_title": "Shopee节点推送",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/shopeeNodePush/shopeeNodePush",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nShopee节点推送\n推送内容:\n提单号:\n原因编码:\n节点时间:\n节点位置:\n运输方式:\n推送\nShopee处理结果：\nShopee处理详情：\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 8,
+    "child_title": "运单附件导出",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/waybillAttachmentsExport/waybillAttachmentsExport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n运单附件导出\n导出类型 \n清\n空\n导出\n\n导出说明：\n\n1、若存在失败的运单，导出文件中会以EXCEL表另外显示\n\n2、输入单号上限是3000个，超过请使用导入数据\n\n使用导入数据\n导入\n模板下载\n导出结"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 9,
+    "child_title": "自提点查询",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cmn/pickuppoint",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n自提点查询\n尾程\n目的地编码\n类型\n 查询\n\t自提点代码\t尾程自提点代码\t类型\t名称\t国家码\t省\t市\t区\t详细地址\t邮编\t电话\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 10,
+    "child_title": "报表定时导出",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cmn/timedExportOfReports",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n报表定时导出\n创建 修改 删除\n\t\n\t\n任务名称\n\t\n条件\n\t\n是否断更\n\t\n创建人\n\t\n创建时间\n\t\n修改人\n\t\n修改时间\n1\n\t\n\t\ntest\n\t\nbacktest_30天_999666_07:00:"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 11,
+    "child_title": "Shopee导入出口报关文件",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cmn/shopeeDeclaration",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\nShopee导入出口报关文件\n导入模版\n模版下载\n导入\n0%\n导入文件\n状态\n总行数\n错误行数\n历史日志\n\t行号\t运单号码\t错误说明\n暂无数据\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 10,
+    "main_title": "客服",
+    "child_index": 12,
+    "child_title": "客户不可视轨迹列表",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cmn/customerInvisible",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 追踪查询\n\n 运单轨迹追踪\n\n 消息\n\n ICBU中心仓工单\n\n 报表导出\n\n SLA复核\n\n 菜鸟Tracepush\n\n Shopee节点推送\n\n 运单附件导出\n\n 自提点查询\n\n 报表定时导出\n\n Shopee导入出口报关文件\n\n 客户不可视轨迹列表\n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户不可视轨迹列表\n提交审批\n清\n空\n状态时间\n-\n轨迹状态\n客户(可多选)\n指定路线(可多选)\n查询 重置\n目的地\n审批状态\n\t\n\t\n运单号码\n\t\n参考编号\n\t\n转单号码\n\t\n大包号\n\t\n出货批次\n\t\n"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 0,
+    "child_title": "客户",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n指定路线\n\n应收客户运费2\n\n应收客户燃油\n\n应收整袋运费\n\n应收客户偏远费\n\n应收客户包装费\n\n应收客户超值费\n\n应收客户其他\n\n应收代收手续费\n\n应收专线偏远费\n\n进位规则\n\n计抛规则\n\n路线预估毛利\n\n应收客户增值费\n\n 派送代理 \n\n 承运代理 \n\n 内部 \n\n 查价 \n\n 清关信息设置 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 1,
+    "child_title": "指定路线",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 2,
+    "child_title": "应收客户运费2",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 3,
+    "child_title": "应收客户燃油",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 4,
+    "child_title": "应收整袋运费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 5,
+    "child_title": "应收客户偏远费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 6,
+    "child_title": "应收客户包装费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 7,
+    "child_title": "应收客户超值费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 8,
+    "child_title": "应收客户其他",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 9,
+    "child_title": "应收代收手续费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 10,
+    "child_title": "应收专线偏远费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 11,
+    "child_title": "进位规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 12,
+    "child_title": "计抛规则",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 13,
+    "child_title": "路线预估毛利",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 14,
+    "child_title": "应收客户增值费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 15,
+    "child_title": "派送代理",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n 派送代理 \n\n走货路线\n\n应付派送运费\n\n应付派送燃油\n\n应付派送其他\n\n应付代收手续费\n\n 承运代理 \n\n 内部 \n\n 查价 \n\n 清关信息设置 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 16,
+    "child_title": "走货路线",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 17,
+    "child_title": "应付派送运费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 18,
+    "child_title": "应付派送燃油",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 19,
+    "child_title": "应付派送其他",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 20,
+    "child_title": "应付代收手续费",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 21,
+    "child_title": "承运代理",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n 派送代理 \n\n 承运代理 \n\n应付承运报价\n\n 内部 \n\n 查价 \n\n 清关信息设置 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 22,
+    "child_title": "应付承运报价",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 23,
+    "child_title": "内部",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n 派送代理 \n\n 承运代理 \n\n 内部 \n\n内部取件成本\n\n内部成本报价\n\n销售成本报价\n\n 查价 \n\n 清关信息设置 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 24,
+    "child_title": "内部取件成本",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 25,
+    "child_title": "内部成本报价",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 26,
+    "child_title": "销售成本报价",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 27,
+    "child_title": "查价",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n 派送代理 \n\n 承运代理 \n\n 内部 \n\n 查价 \n\n应收报价查询\n\n应付报价查询\n\n销售成本查询\n\n偏远查询\n\n销售员成本查询\n\n专线偏远费查询\n\n 清关信息设置 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 28,
+    "child_title": "应收报价查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 29,
+    "child_title": "应付报价查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 30,
+    "child_title": "销售成本查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 31,
+    "child_title": "偏远查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 32,
+    "child_title": "销售员成本查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 33,
+    "child_title": "专线偏远费查询",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 34,
+    "child_title": "清关信息设置",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 客户 \n\n 派送代理 \n\n 承运代理 \n\n 内部 \n\n 查价 \n\n 清关信息设置 \n\n清关路线\n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 11,
+    "main_title": "报价",
+    "child_index": 35,
+    "child_title": "清关路线",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 12,
+    "main_title": "结算规则",
+    "child_index": 0,
+    "child_title": "收入成本规则",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/income/cost",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 收入成本规则\n\n 重量补差规则\n\n 收入成本源报表\n\n 月末结转\n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收入成本规则\n开始月份\n2025-09\n2021-12\n2021-07\n2021-06\n2021-01\n2020-11\n2020-08\n2020-04\n2020-03\n2020-01\n2019-11\n2019-10\n2019-09\n2019-06\n保存 取消\n客户收入合计规则\n序号\t分段号\t方向\t其他\t标题\t科目\n1\n\t\n01\n\t\n应收\n\t\n\t\n\t\n01\n01A\n\n\n2\n\t\n02\n\t\n应收\n"
+  },
+  {
+    "main_index": 12,
+    "main_title": "结算规则",
+    "child_index": 1,
+    "child_title": "重量补差规则",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/compen/weightrule",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 收入成本规则\n\n 重量补差规则\n\n 收入成本源报表\n\n 月末结转\n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n重量补差规则\n新增 修改 删除 导出\n所属网点\n客户编码\n客户名称\n指定路线\n查询 重置\n\t所属网点\t客户编码\t客户名称\t指定路线\t创建时间\t创建人\t修改时间\t修改人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 12,
+    "main_title": "结算规则",
+    "child_index": 2,
+    "child_title": "收入成本源报表",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/incomecost/report",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 收入成本规则\n\n 重量补差规则\n\n 收入成本源报表\n\n 月末结转\n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收入成本源报表\n收入成本刷新 报表说明︾\n清\n空\n寄件日期\n-\n寄件网点\n客户类型\n客户\n 含子客户\n 排除\n业务类型\n指定路线分类\n指定路线\n包装类型\n货物类型\n客户对账员\n目的地\n走货路线分类\n走货路线\n派件网点\n运单状态\n销售员\n查询 重置 导出\n D类报关\n 应收已对账\n 异地交件\n 应收未对账\n 收付重量差\n 应付已对账\n 公司毛利>0\n 应付未对账\n 公司毛利<0\n 公司毛利=0"
+  },
+  {
+    "main_index": 12,
+    "main_title": "结算规则",
+    "child_index": 3,
+    "child_title": "月末结转",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/monthend/forward",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 收入成本规则\n\n 重量补差规则\n\n 收入成本源报表\n\n 月末结转\n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n月末结转\n若月份数据更新不及时，请点击刷新按钮\n\n年月\n2026\n04\n03\n02\n01\n2025\n12\n11\n10\n09\n08\n07\n06\n05\n04\n03\n02\n01\n2024\n12\n11\n10\n09\n08\n07\n06\n05\n04\n03\n02\n01\n2023\n12\n11\n10\n09\n08\n07\n06\n05\n04\n03\n02\n01\n2022\n12\n11\n10\n09\n08\n07\n06\n05\n"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 0,
+    "child_title": "客户费用导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerFee/import",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户费用导入\n导入模版\n模版下载 自定义格式\n允许金额为负数\n允许导入已结算的数据\n允许导入没有运单的数据\n导入\n0%\n1、导入文件格式支持.xls、.xlsx，文件大小不超过10M\n2、寄件日期：有值并"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 1,
+    "child_title": "客户账单明细",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerbilldetail/customerbilldetail",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户账单明细\n账单制作 费用录入 批量修改 \n批价\n 锁定 审单 取消 出货解锁 费用补录 批价任务 刷新节点数据 导出 单号导出 快速导出 同步关联订单\n清\n空\n忽略已取消\n寄件 \n发生 \n结算节点 \n"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 2,
+    "child_title": "运单结算明细",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerbilldetail/waybillsettlement/0",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n运单结算明细\n运单信息\n运单号码\n参考编号\n转单号码\n退件单号\n寄件日期\n寄件网点\n包/板号\n客户\n目的地\n指定路线\n走货路线\n派件网点\n总运单号\n货物信息\n报关方式\n货物类型\n申报价值\n包装类型\n件数\n"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 3,
+    "child_title": "客户账单明细(包)",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerbilldetailbak/customerbilldetailbak",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户账单明细(包)\n账单制作 费用录入 刷新运单 批量修改 批价 修改导入 分摊 取消结算 特殊报表导出 导出\n清\n空\n收货日期\n-\n收货网点\n客户\n含子客户\n查询 重置\n指定路线\n只查空值\n科目\n结算状"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 4,
+    "child_title": "客户合并账单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/billmanagement/billmergemanagement",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户合并账单管理\n撤销账单 修改备注 审核 撤销审核 账单导出 导出\n清\n空\n账单日期\n-\n网点\n客户类型\n客户\n含子客户\n销售员\n对账员\n审核状态\n制作人\n查询 重置\n\t\n\t合并账单号码\t审核\t网点\t账"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 5,
+    "child_title": "客户账单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/billmanagement/billmanagement/0",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户账单管理\n批量撤销账单 修改备注 修改汇率 合并账单 审核 批量撤销审核 客户收款 导出默认格式 导出指定格式 合并币别导出 导出总账单 导出明细 导出\n清\n空\n账单日期\n-\n网点\n客户类型\n客户\n含"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 6,
+    "child_title": "客户余额管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/custbalance/custbalance",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户余额管理\n设置信用额 设置显示币别 客户收款 跟进日志 联络人 修改备注 重算 导出\n清\n空\n所属网点\n客户编码/名称\n客户类型\n结算周期\n跟单员\n可用余额\n客户状态\n锁机状态\n锁机模式\n对账员\n销售"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 7,
+    "child_title": "客户解锁查询",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerunlock/customerunlock/0",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n客户解锁查询\n出货解锁 取消解锁 欠款通知 导出\n清\n空\n寄件日期\n-\n寄件网点\n锁机状态\n解锁方式\n销售员\n对账员\n最新解锁人\n客户\n注意：此功能仅限于显示设置为\"出货锁机\"的客户\n单票解锁：基于单票运"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 8,
+    "child_title": "费用补录申请",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/invoicepre/apply/invoicepre",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n费用补录申请\n费用补录 导入 增值费导入 修改 删除 跟进 确认 导出\n清\n空\n录入时间\n-\n补录相关\n客户编码/名称\n数据来源\n科目\n对账员\n销售员\n跟单员\n提交状态\n提交人(可多选)\n查询 重置\n\t\n"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 9,
+    "child_title": "费用补录管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/invoicepre/invoicepre",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n费用补录管理\n补录 导入 增值费导入 修改 删除 跟进 提交  导出\n清\n空\n录入时间\n-\n补录相关\n客户编码/名称\n数据来源\n寄件网点\n科目\n对账员\n销售员\n提交状态\n提交人（可多选)\n录入人（可多选）"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 10,
+    "child_title": "单票报价",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerbilldetail/singlequotation",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n单票报价\n新增 修改 取消 审核 撤销审核 导出\n清\n申请日期\n-\n客户\n含子客户\n申请人\n查询 重置\n全部\n0\n待审核\n0\n已审核\n0\n已取消\n0\n\t\n\t状态\t运单号码\t寄件日期\t转单号码\t参考编号\t寄"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 11,
+    "child_title": "阶梯票数汇总",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/monthStatistical/monthStatistical",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n阶梯票数汇总\n寄件月份/月工作日\n2024-04 (20天)\n \n2024-03 (20天)\n \n2024-01 (23天)\n \n2023-10 (26天)\n \n2023-09 (22天)\n \n2023-"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 12,
+    "child_title": "销售员成本单票报价",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/salesman/costjobno",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n销售员成本单票报价\n新增 修改 取消 审核 撤销审核 导出\n清\n申请日期\n-\n销售员\n申请人\n查询 重置\n全部\n0\n待审核\n0\n已审核\n0\n已取消\n0\n\t\n\t状态\t运单号码\t销售员\t寄件日期\t转单号码\t参"
+  },
+  {
+    "main_index": 13,
+    "main_title": "应收结算",
+    "child_index": 13,
+    "child_title": "批价任务",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/bms/pijiatask/cust",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 客户费用导入\n\n 客户账单明细\n\n 运单结算明细\n\n 客户账单明细(包)\n\n 客户合并账单管理\n\n 客户账单管理\n\n 客户余额管理\n\n 客户解锁查询\n\n 费用补录申请\n\n 费用补录管理\n\n 单票报价\n\n 阶梯票数汇总\n\n 销售员成本单票报价\n\n 批价任务\n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n批价任务\n创建时间\n-\n任务状态\n查询 取消 批价任务说明︾\n\n批价任务说明：\n\n1、最大可执行任务数，不能超过10个；\n\n2、当前最大可批价总票数为<根据参数设置获取>；超过则需要等待执行完，再添加批价"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 0,
+    "child_title": "派送对账单导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agent/agentimport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n派送对账单导入\n导入模版\n模版下载 自定义格式\n1、补差账单只针对31科目\n2、导入的科目必须是账单公式内包含的科目\n3、上期调帐本期补退的费用，请到<派送代理账单明细>中处理\n\n应付网点\n派送代理\n对帐单号\n科目 \n币别\n自定义汇率\n账单公式\n补差账单\n导入\n0%\n批次号\n导入文件\n导入时间\n状态\n总行数\n错"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 1,
+    "child_title": "派送对账单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agent/agentmgr",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n派送对账单管理\n删除\n任务进度\n清\n导入时间\n-\n应付网点\n派送代理\n对账单状态\n查询 重置\n\t\n\t对账单号\t对账单状态\t补差账单\t应付网点\t派送代理\t笔数\t票数\t金额\t币别\t自定义汇率\t已对笔数\t已对金额\t客户补差\t审核时间\t审核人\t导入时间\t导入人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 2,
+    "child_title": "派送账单明细",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agent/agentdetail/0/0",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n派送账单明细\n账单制作 费用录入 费用导入 \n批量修改\n 批价 取消结算 毛利分析 导出 刷新结算节点时间 批价任务 单号导出 跟进记录\n清\n空\n忽略已取消\n发生日期 \n寄件日期\n-\n应付网点\n派送代理\n科目\n走货路线\n目的地\n结算节点\n寄件网点\n对账员\n付费重\n金额\n货物类型\n币别\n锁定\n报关方式\n数据来源\n"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 3,
+    "child_title": "承运账单明细",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/carrierbilldetail/carrierbilldetail",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n承运账单明细\n账单制作 费用录入 导入 修改 批价 锁定 取消 导出\n清\n空\n忽略已取消\n发生日期 \n出货日期\n-\n应付网点\n承运代理\n金额\n科目\n结算状态\n锁定状态\n数据来源\n最新状态\n承运分段\n出港路由\n始发港\n目的港\n航班/车牌号\n查询 重置\n\t\n\t\n承运分段\n\t\n单号类型\n\t\n费用主单号\n\t\n头程提单\n"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 4,
+    "child_title": "承运费用分摊",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/share/carrier",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n承运费用分摊\n批量分摊 批量撤销 特殊报表 导出\n清\n空\n发生日期 \n出货日期\n-\n应付网点\n承运代理\n科目\n注意：待重摊为已分摊后修 改金额，需重新分摊\n承运分段\n结算状态\n分摊方式\n分摊状态\n对账员\n查询 重置\n\t\n\t承运分段\t单号类型\t费用主单号\t头程提单\t二程提单\t对账单号\t运输号码\t结算状态\t分摊状态"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 5,
+    "child_title": "代理账单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agent/billspayable",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n代理账单管理\n撤销账单 修改备注 审核 撤销审核 付款申请 明细合并导出 特殊报表导出 导出\n清\n空\n账单日期\n-\n应付网点\n代理名称\n核销状态（可多选）\n制作人\n账单公式\n币别\n审核状态\n对账员\n查询 重置\n\t\n\t账单号码\t账单公式\t审核\t账单日期\t应付网点\t代理类型\t代理编码\t代理名称\t生成方式\t对账单号\t"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 6,
+    "child_title": "代理余额管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/agentbalance/agentbalance",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n代理余额管理\n所属网点\n代理编码\n代理名称\n对账员\n查询 重置 重算\n\t所属网点\t代理编码\t代理名称\t代理类型\t对账员\t当前余额\t预付款\t待审金额\t待审付款\t币别\t备注\t最近对账日期\n1\n\t\n虎门分拨\n\t\nD007\n\t\nHM代理\n\t\n承运代理\n\t\n\t\n127,622.00\n\t\n0.00\n\t\n661615\n\t\n0"
+  },
+  {
+    "main_index": 14,
+    "main_title": "应付结算",
+    "child_index": 7,
+    "child_title": "代理费用补录管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/invoicepre/agent/invoicepre",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 派送对账单导入\n\n 派送对账单管理\n\n 派送账单明细\n\n 承运账单明细\n\n 承运费用分摊\n\n 代理账单管理\n\n 代理余额管理\n\n 代理费用补录管理\n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n代理费用补录管理\n补录 修改 删除 提交 跟进 取消 导出\n清\n空\n录入时间\n-\n补录相关\n代理编码/名称\n数据来源\n科目\n对账员\n提交状态\n提交人（可多选）\n查询 重置\n\t\n\t\n运单号码\n\t\n转单号码\n\t\n代理编码\n\t\n代理名称\n\t\n应付网点\n\t\n科目编码\n\t\n科目名称\n\t\n计算公式\n\t\n金额\n\t\n币别\n\t\n"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 0,
+    "child_title": "货款导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/pay/import",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n货款导入\n导入模版\n模版下载\n导入\n0%\n1、只能导入xls、xlsx文件，文件大小不超过10M\n2、模板格式：运单号码、代收款、代收币别个栏位，所有栏位必须为必填\n3、支持代收款更新，支持无代收改为有代收（但不支持有代收改为无代收）\n\n批次号\n导入文件\n导入时间\n状态\n总行数\n错误行数\n文件下载 历史日志\n\t行号\t运单号码\t错误说明\n暂无数据"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 1,
+    "child_title": "货款回款",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/paymentreturn/paymentreturn",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n货款回款\n回款账单 修改 调整 取消结算 刷新签收时间 导出\n清\n空\n寄件日期 \n签收日期\n-\n结算网点\n派送代理\n客户\n含子客户\n调整状态\n签收状态\n回款结算\n返款结算\n只查运单变更\n查询 重置\n\t\n\t\n调整\n\t\n运单号码\n\t\n转单号码\n\t\n参考编号\n\t\n回款结算\n\t\n签收状态\n\t\n结算网点\n\t\n寄件日期\n\t\n签收时间\n\t\n派送代理\n\t\n客户"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 2,
+    "child_title": "回款对账单导入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/payreturnimport/payreturnimport",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n回款对账单导入\n导入模版\n模版下载\n派送代理\n对账单号\n导入\n0%\n批次号\n导入文件\n导入时间\n状态\n总行数\n错误行数\n文件下载 历史日志 回款对账单审核 错误说明下载\n\t行号\t运单号码\t错误说明\n暂无数据\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 3,
+    "child_title": "回款对账单管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/payreturnmgr/payreturnmgr",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n回款对账单管理\n删除\n清\n导入时间\n-\n结算网点\n派送代理\n对账单状态\n查询 重置\n\t\n\t对账单号\t对账单状态\t派件代理\t票数\t审核票数\t取消票数\t导入时间\t导入人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 4,
+    "child_title": "货款回款账单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/payreturninvoice/payreturninvoice",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n货款回款账单\n撤销账单 收款 快速返款 生成代收手续费 导出总账单 导出账单明细\n清\n账单日期\n-\n结算网点\n派送代理\n收款状态\n查询 重置\n\t\n\t回款账单号码\t账单日期\t结算网点\t派送代理\t票数\t代收款\t币别\t收款状态\t交易号\t水单\t生成代收手续费\t收款时间\t收款人\t收款备注\t账单制作时间\t账单制作人\n暂无数据\n前往页\n共 0 条\n常用功能设"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 5,
+    "child_title": "货款返款",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/paymentback/paymentback",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n货款返款\n返款账单 自动带客户 导出\n清\n空\n寄件日期\n-\n结算网点\n客户\n含子客户\n只查运单变更\n回款结算\n返款结算\n签收状态\n派送代理\n查询 重置\n\t\n\t运单号码\t转单号码\t回款账单号码\t回款结算\t返款结算\t寄件日期\t客户编码\t客户名称\t代收款\t币别\t变更备注\t结算网点\t派送代理\t寄件网点\t签收状态\t返款账单号码\t返款账单日期\t最新状态\t最"
+  },
+  {
+    "main_index": 15,
+    "main_title": "货款结算",
+    "child_index": 6,
+    "child_title": "货款返款账单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/paybackinvoice/paybackinvoice",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 货款导入\n\n 货款回款\n\n 回款对账单导入\n\n 回款对账单管理\n\n 货款回款账单\n\n 货款返款\n\n 货款返款账单\n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n货款返款账单\n撤销账单 付款 转预收款 生成代收手续费 撤销生成手续费 设置客户返款默认格式 导出默认格式 导出总账单 导出明细\n清\n账单日期\n-\n结算网点\n客户\n含子客户\n币别\n付款状态\n生成手续费\n查询 重置\n\t\n\t返款账单号码\t账单日期\t结算网点\t客户编码\t客户名称\t票数\t代收款\t币别\t付款状态\t交易号\t水单\t收取客户转帐手续费\t实际返款"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 0,
+    "child_title": "客户收款",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n客户收款登记\n\n客户收款管理\n\n客户收款审核\n\n客户核销管理\n\n客户收款登记2\n\n客户收款管理2\n\n 代理付款 \n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 1,
+    "child_title": "客户收款登记",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 2,
+    "child_title": "客户收款管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 3,
+    "child_title": "客户收款审核",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 4,
+    "child_title": "客户核销管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 5,
+    "child_title": "客户收款登记2",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 6,
+    "child_title": "客户收款管理2",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 7,
+    "child_title": "代理付款",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n代理付款申请\n\n代理付款管理\n\n代理核销管理\n\n代理付款\n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 8,
+    "child_title": "代理付款申请",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 9,
+    "child_title": "代理付款管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 10,
+    "child_title": "代理核销管理",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 11,
+    "child_title": "代理付款",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 12,
+    "child_title": "费用报销",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n 费用报销 \n\n费用报销\n\n报销付款\n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 13,
+    "child_title": "费用报销",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 14,
+    "child_title": "报销付款",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 15,
+    "child_title": "账户转账",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/acctransfer/acctransfer",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n账户转账\n新增 修改 撤销 批量审核 撤销审核 导出\n清\n空\n转账日期\n-\n转出网点\n转入网点\n转出账户\n转入账户\n转账状态\n查询 重置\n序号\t\n\t转账号码\t转账日期\t转账状态\t转入账户\t转入金额\t转入币别\t转出金额\t转出币别\t转出汇率\t转出账户\t转出网点\t水单\t交易号\t备注\t审核日期\t审核人\t创建时间\t创建人\t最后修改时间\t最后修改人\n暂无数据\n前往页"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 16,
+    "child_title": "其他出纳",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/accounting/accounting",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n其他出纳\n新增 修改 撤销 审核 撤销审核 导出\n清\n出纳日期\n-\n出纳网点\n科目\n资金账户\n状态\n查询 重置\n\t\n\t出纳日期\t出纳网点\t审核状态\t收据号码\t资金账户\t账户编码\t科目\t科目代号\t收入金额\t支出金额\t币别\t汇率\t出纳备注\t备注\t审核时间\t审核人\t录入时间\t录入人\t修改时间\t修改人\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 17,
+    "child_title": "资金帐户管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/accountfund/manger",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n资金帐户管理\n所属网点\n资金账户编码\n资金账户名称\n账户分类\n账户币别\n查询 重置\n\t所属网点\t资金账户编码\t资金账户名称\t账户币别\t账户分类\t当前余额\t最后交易时间\t银行账号\t开户银行\t开户人\t备注\n暂无数据\n前往页\n共 0 条\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 16,
+    "main_title": "出纳",
+    "child_index": 18,
+    "child_title": "出纳明细",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/cashier/cashierDetails",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 客户收款 \n\n 代理付款 \n\n 费用报销 \n\n 账户转账\n\n 其他出纳\n\n 资金帐户管理\n\n 出纳明细\n\n 报表 \n\n CRM \n\n 监控 \n\n 首页\n出纳明细\n导出\n清\n空\n收/付日期 \n交易日期\n-\n账户所属网点\n资金账户\n收/付人\n状态\n客户/代理\n业务网点\n收支状态\n科目二级分类\n收支科目\n来源\n币别\n金额\n备注\n查询 重置\n\t收/付日期\t单据号码\t业务网点\t来源\t科目二级分类\t收支科目\t客户/代理\t账户所属网点\t资金账户\t币别\t收入\t支出\t交易号\t交易日期\t审核时间\t收/付人\t转本汇率\t备注\n"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 0,
+    "child_title": "客户类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n客户发货日报表\n\n货量统计报表\n\nShoppeAPI预报监控报表\n\nshoppe马来预报货量\n\nWISH时效货量统计报表\n\n仓库库存报表\n\n 操作类 \n\n 承运类 \n\n 结算类 \n\n 毛利类 \n\n 销售类 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 1,
+    "child_title": "客户发货日报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 2,
+    "child_title": "货量统计报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 3,
+    "child_title": "ShoppeAPI预报监控报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 4,
+    "child_title": "shoppe马来预报货量",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 5,
+    "child_title": "WISH时效货量统计报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 6,
+    "child_title": "仓库库存报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 7,
+    "child_title": "操作类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n 操作类 \n\n仓库操作日报表\n\n出货预报日报表\n\n操作工作量日报表\n\n货态统计报表\n\n货态比对报表\n\n货态货量报表\n\n客户干线监控报表\n\n客户出货空运统计报表\n\n签收时效监控报表\n\n 承运类 \n\n 结算类 \n\n 毛利类 \n\n 销售类 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 8,
+    "child_title": "仓库操作日报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 9,
+    "child_title": "出货预报日报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 10,
+    "child_title": "操作工作量日报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 11,
+    "child_title": "货态统计报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 12,
+    "child_title": "货态比对报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 13,
+    "child_title": "货态货量报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 14,
+    "child_title": "客户干线监控报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 15,
+    "child_title": "客户出货空运统计报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 16,
+    "child_title": "签收时效监控报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 17,
+    "child_title": "承运类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n 操作类 \n\n 承运类 \n\n干线运输时效报表\n\n时效监控报表\n\n提单维度CC监控\n\n 结算类 \n\n 毛利类 \n\n 销售类 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 18,
+    "child_title": "干线运输时效报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 19,
+    "child_title": "时效监控报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 20,
+    "child_title": "提单维度CC监控",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 21,
+    "child_title": "结算类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n 操作类 \n\n 承运类 \n\n 结算类 \n\n客户对帐报表\n\n客户账龄报表\n\n资金进出报表\n\n客户往来报表\n\n应收账龄分析表\n\n超期账龄分析表\n\n超期未收款统计\n\n代理往来报表\n\n应收账龄分析表\n\n 毛利类 \n\n 销售类 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 22,
+    "child_title": "客户对帐报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 23,
+    "child_title": "客户账龄报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 24,
+    "child_title": "资金进出报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 25,
+    "child_title": "客户往来报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 26,
+    "child_title": "应收账龄分析表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 27,
+    "child_title": "超期账龄分析表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 28,
+    "child_title": "超期未收款统计",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 29,
+    "child_title": "代理往来报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 30,
+    "child_title": "应收账龄分析表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 31,
+    "child_title": "毛利类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n 操作类 \n\n 承运类 \n\n 结算类 \n\n 毛利类 \n\n指定路线毛利分析\n\n总运单毛利分析\n\n网点毛利\n\n公司毛利分析\n\n销售员毛利统计\n\n公司预提数\n\n 销售类 \n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 32,
+    "child_title": "指定路线毛利分析",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 33,
+    "child_title": "总运单毛利分析",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 34,
+    "child_title": "网点毛利",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 35,
+    "child_title": "公司毛利分析",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 36,
+    "child_title": "销售员毛利统计",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 37,
+    "child_title": "公司预提数",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 38,
+    "child_title": "销售类",
+    "status": "content_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n 客户类 \n\n 操作类 \n\n 承运类 \n\n 结算类 \n\n 毛利类 \n\n 销售类 \n\n销售客户数报表\n\n客户走货报表\n\n客户营业额报表\n\n客户签收时效报表\n\n销售员提成报表\n\n CRM \n\n 监控 \n\n 首页\n收货阶段\n订单导入\n订单预报\n运单管理\n转运阶段\n转运发件\n转运到件\n出货阶段\n出货批次管理\n总运单管理\n港前异常\n问题登记\n问题回复\n问题处理\n退件\n退件入库\n退返客户\n操作导航业务看板货量走势看板\n常用功能设置\n暂无数据"
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 39,
+    "child_title": "销售客户数报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 40,
+    "child_title": "客户走货报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 41,
+    "child_title": "客户营业额报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 42,
+    "child_title": "客户签收时效报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 17,
+    "main_title": "报表",
+    "child_index": 43,
+    "child_title": "销售员提成报表",
+    "status": "error:TimeoutError",
+    "url": "https://tms-kec-eng-uat.kec-app.com/home",
+    "body_head": ""
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 0,
+    "child_title": "销售员设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/salesmanview",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n销售员设置\n销售\n测试1\n  \n测试01\n  \ncsssss1\n \n销售主管\n  \n销售员\n查询 重置\n\t销售员编号\t销售员姓名\t分组名称\t创建时间\t创建人\t修改时间\t修改人\n1\n\t\nzmuser\n\t\n哲盟用户\n\t\n测试1\n\t\n2020-10-0"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 1,
+    "child_title": "客户视图",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/customerview",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n客户视图\n全部客户 0\n停用客户 0\n正常客户 0\n一周内待解锁 0\n一周内走货 0\n超三天未发货 0\n超两周未发货 0\n  销售员 \n 刷新\n\t\n客户编码\n\t\n客户名称\n\t\n结算周期\n\t\n最后走货时间\n\t\n锁机模式\n\t\n最高限额\n\t\n可用余额\n"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 2,
+    "child_title": "运单视图",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/manifestview/manifestview",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n运单视图\n清\n空\n寄件日期\n-\n客户类型\n客户\n含子客户\n销售员\n0%\n 失败/成功/总票数 0/ 0/ 0 追踪日志\n路线分类\n指定路线\n货物类型\n目的地\n收件人/邮编/城市(%) \n运单/参考/转单(%) \n查询 重置\n全部\n0\n待出货\n0\n"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 3,
+    "child_title": "单票录入",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/crm/orderinput",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n单票录入\n基本信息\n客户\n货物重量(KG)\n货物类型\n普货\n件数\n包装类型\n目的地\n订单号码\n转单号码\nCOD\n  \nIOSS签发国\nIOSS number\n指定路线\n付款方式\n备注\nReason For Export\n服务类型\n申报金额\n  \n"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 4,
+    "child_title": "订单导入2",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/crm/orderimport2",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n订单导入2\n客户\n指定路线\n模版特殊处理:\n导入\n0%\n导入文件\n状态\n总行数\n错误行数\n历史日志\n自定义格式\n序号\t行号\t订单号码\t错误说明\n暂无数据\n模板管理指定路线\n标准模板\n标准导入模板\nShopee订单导入模板\n新KEC upload "
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 5,
+    "child_title": "订单预报",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/order/crm/orderPredictionCrm",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n订单预报\n尾程订单结算 指定模板打印 发票打印 发票下载 面单打印 修改 特殊导出 LABEL 打印 专线 LABEL Invoice 打印 收货标签 删除订单 终止平台订单 导出 ICBU操作 更多操作\n清\n空\n订单日期\n-\n寄件网点\n查录单\n"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 6,
+    "child_title": "港前问题件查询",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/problems/problemsbefore",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n港前问题件查询\n回复 问题件交接 打印 删除 导出\n清\n空\n登记时间 \n处理完毕时间\n-\n客户名称\n问题类型\n问题状态\n登记网点\n登记人\n处理网点\n指定处理人\n处理状态\n查询 重置\n\t\n\t\n处理状态\n\t\n运单号码\n\t\n转单号码\n\t\n参考编号\n\t\n"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 7,
+    "child_title": "港后问题件查询",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/problemsafterport/crmproblemsquery",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n港后问题件查询\n回复 打印 导出\n清\n空\n登记时间 \n处理完毕时间\n-\n问题状态\n客户\n走货路线分类\n登记网点\n登记人\n处理网点\n处理状态\n查询 重置\n\t\n\t\n处理状态\n\t\n运单号码\n\t\n转单号码\n\t\n参考编号\n\t\n登记日期\n\t\n问题状态\n\t\n问"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 8,
+    "child_title": "客户报价单",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/customerquotation/customerquotation",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n客户报价单\n1\n\t\n<850013>850013<虎门分拨>刘俊<>\n\n\n2\n\t\n<861422>861422<虎门分拨>刘俊<>\n\n\n3\n\t\n<300200>Quince<虎门分拨>刘俊<>\n\n\n4\n\t\n<300202>Rhino Shield"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 9,
+    "child_title": "单票报价",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/customerbilldetail/singlequotation",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n单票报价\n新增 修改 取消 导出\n清\n申请日期\n-\n客户\n申请人\n查询 重置\n全部\n0\n待审核\n0\n已审核\n0\n已取消\n0\n\t\n\t状态\t运单号码\t寄件日期\t转单号码\t参考编号\t寄件网点\t客户编号\t客户名称\t科目\t金额\t运费单价\t币别\t指定路线\t目"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 10,
+    "child_title": "销售员统计报表",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/statistics",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n销售员统计报表\n寄件日期\n-\n客户\n销售员/跟单员\n按销售员统计 \n按跟单员统计\n目的地\n指定路线分类\n指定路线\n查询 重置 所有明细 导出\n按销售员分组按客户和销售员分组按指定路线和销售员分组按指定路线和客户分组\n序号\n\t\n销售员编码\n\t\n销售"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 11,
+    "child_title": "销售员额度管理",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/salequotamanage/salequotamanage",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n销售员额度管理\n新增 修改 删除 刷新额度 导出\n所属网点\n员工编号\n员工姓名\n 总额度 \n启用状态\n查询 重置\n\t\n启用\n\t\n所属网点\n\t\n员工编号\n\t\n员工姓名\n\t\n总额度\n\t\n可用额度\n\t\n已用额度\n\t\n额度日志\n\t\n备注\n\t\n创建时间\n\t"
+  },
+  {
+    "main_index": 18,
+    "main_title": "CRM",
+    "child_index": 12,
+    "child_title": "销售员提成设置",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/crm/basesalary/salarycommission",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 销售员设置\n\n 客户视图\n\n 运单视图\n\n 单票录入\n\n 订单导入2\n\n 订单预报\n\n 港前问题件查询\n\n 港后问题件查询\n\n 客户报价单\n\n 单票报价\n\n 销售员统计报表\n\n 销售员额度管理\n\n 销售员提成设置\n\n 监控 \n\n 首页\n销售员提成设置\n新增 复制新增 修改 删除 底薪设置\n\t生效月份\t业务类型\t客户类型\t业绩区间(起始)\t业绩区间(终止)\t提成系数\t生效对象\t备注\t建立时间\t建立人\n1\n\t\n2021-02\n\t\n快递业务\n\t\n内部结算客户\n\t\n1.00\n\t\n111"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 0,
+    "child_title": "spider轨迹对接监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/spiderTrajectoryMonitoring/spiderTrajectoryMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nspider轨迹对接监控\n请求时间\n-\n状态\n查询 导出\n\t\n请求时间\n\t\n响应时间\n\t\n状态\n\t\n请求起始ID\n\t"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 1,
+    "child_title": "轨迹推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/trajectoryPushMonitoring/trajectoryPushMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n轨迹推送监控\n清\n数据写入时间\n-\n客户\nApi Code\n状态\n查询 导出 再次推送\n\t\n\t\n数据写入时间\n\t\n推"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 2,
+    "child_title": "Kafka日志监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/kafkaLogsMonitoring/kafkaLogsMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nKafka日志监控\n清\n发送时间 \n消费时间\n-\n状态\n仅查询补发\n事件\n生产者\n查询 导出\n\t\n主数据单号\n\t\n状"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 3,
+    "child_title": "平台对接监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/platformDockingMonitoring/platformDocking",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n平台对接监控\nWISHICBU菜鸟RWMSSHOPIFY京东SHOPEEOpen ApiConso ApiTikTo"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 4,
+    "child_title": "outbound推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/shipment2/outboundLog",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\noutbound推送监控\n清\n数据写入时间\n-\n状态\n查询 导出 再次推送\n\t\n\t\n数据写入时间\n\t\n推送状态\n\t\n"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 5,
+    "child_title": "Restart推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/shipment2/restartLog",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nRestart推送监控\n清\n数据写入时间\n-\n状态\n查询 导出 再次推送\n\t\n\t\n数据写入时间\n\t\n推送状态\n\t\n异"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 6,
+    "child_title": "珊瑚COD推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/CODPushMonitoring/CODPushMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n珊瑚COD推送监控\n清\n数据写入时间 \n寄件日期\n-\n客户\n状态\n查询 导出  再次推送\n序号\n\t\n\t\n数据写入时间"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 7,
+    "child_title": "清关数据推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/clearanceDataPushMonitoring/clearanceDataPushMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n清关数据推送监控\n进口清关出口清关\n清\n数据写入时间\n-\n状态\n查询 导出 重推\n\t\n\t\n数据写入时间\n\t\nUUID"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 8,
+    "child_title": "异步下单监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/asyncOrderMonitoring/asyncOrderMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n异步下单监控\n清\n更新时间\n-\n客户\n状态\n查询\n序号\n\t\n\t\n更新时间\n\t\n推送状态\n\t\n客户编码\n\t\n转单号码\n"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 9,
+    "child_title": "保险邮件推送",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/insuranceEmailPush/insuranceEmailPush",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n保险邮件推送\n清\n数据写入时间\n-\n状态\n查询 再次推送\n\t\n\t\n数据写入时间\n\t\n推送状态\n\t\n数据推送时间\n\t\n"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 10,
+    "child_title": "KEC ERP 监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/kecErpMonitoring/kecErpMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nKEC ERP 监控\n清\n推送时间\n-\n服务接口\n状态\n查询 重推 重置\n\t\n\t\n主数据单号\n\t\n服务接口\n\t\n推送"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 11,
+    "child_title": "邮件推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/emailPush/emailPush",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n邮件推送监控\n清\n邮件类型\n推送时间\n-\n状态\n查询\n\t邮件推送配置ID\t邮件类型\t邮件流向\t总运单\t推送时间\t推送"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 12,
+    "child_title": "spider文件对接监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/spiderFileMonitoring/spiderFileMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nspider文件对接监控\n请求时间\n-\n状态\n查询 导出 异常记录（状态为失败，写入失败>0、重复数据>0）保留7天"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 13,
+    "child_title": "安踏9610监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/antaMonitoring/antaMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\n安踏9610监控\n清\n数据写入时间\n-\n状态\n接口类型\n查询 导出 已推送的数据，最大保留60天\n\t\n数据推送时间\n"
+  },
+  {
+    "main_index": 19,
+    "main_title": "监控",
+    "child_index": 14,
+    "child_title": "MAWB推送监控",
+    "status": "route_changed",
+    "url": "https://tms-kec-eng-uat.kec-app.com/mawMonitoring/mawMonitoring",
+    "body_head": "审批列表\n3\n导出列表\n控件\n消息\n简体中文 \n虎门分拨 \n\n 平台配置 \n\n 配置管理 \n\n 组织 \n\n 基础 \n\n 策略 \n\n 订单 \n\n 集运 \n\n 操作 \n\n 干线 \n\n 异常 \n\n 客服 \n\n 报价 \n\n 结算规则 \n\n 应收结算 \n\n 应付结算 \n\n 货款结算 \n\n 出纳 \n\n 报表 \n\n CRM \n\n 监控 \n\n spider轨迹对接监控\n\n 轨迹推送监控\n\n Kafka日志监控\n\n 平台对接监控\n\n outbound推送监控\n\n Restart推送监控\n\n 珊瑚COD推送监控\n\n 清关数据推送监控\n\n 异步下单监控\n\n 保险邮件推送\n\n KEC ERP 监控\n\n 邮件推送监控\n\n spider文件对接监控\n\n 安踏9610监控\n\n MAWB推送监控\n\n 首页\nMAWB推送监控\n清\n数据写入时间\n-\n服务接口\n状态\n查询 导出 再次推送\n\t\n\t\n请求时间\n\t\n总运单\n\t\n提单"
+  }
+]

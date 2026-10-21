@@ -1,9 +1,13 @@
 import json
 import requests
 import time
+import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from TMS.public.Controller_Login import Controller_Login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def create_retry_session():
@@ -31,13 +35,13 @@ def inbound(tracking_number):
 
     payload = {
         "token": token,
-        "height": 100,
+        "height": 40,
         "isPrint": 0,
         "isVol": 1,
-        "length": 1000,
+        "length": 50,
         "trackingNumber": tracking_number,
-        "width": 300,
-        "weight": 1100,
+        "width": 60,
+        "weight": 1174,
         "imgBase64": "",
         "isPreviewInput": 0
     }
@@ -56,7 +60,8 @@ def inbound(tracking_number):
             headers=headers,
             data=json.dumps(payload),
             timeout=30,  # 设置超时时间
-            verify=False  # 如果SSL证书有问题，可以暂时关闭验证
+            verify=False,  # 如果SSL证书有问题，可以暂时关闭验证
+            proxies={"http": None, "https": None}  # 禁用代理
         )
 
         if response.status_code == 200:
@@ -115,7 +120,8 @@ def inbound_with_manual_retry(tracking_number, max_retries=3):
                 headers=headers,
                 data=json.dumps(payload),
                 timeout=30,
-                verify=False
+                verify=False,
+                proxies={"http": None, "https": None}
             )
 
             if response.status_code == 200:

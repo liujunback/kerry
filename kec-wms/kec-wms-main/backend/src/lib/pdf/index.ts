@@ -1,0 +1,1 @@
+export { generateBarcode } from './barcode'

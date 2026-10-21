@@ -1,0 +1,59 @@
+{
+    "service":{
+        "channel_code":"CACNMYG01"
+    },
+    "package":{
+        "reference_number":"2104070000732",
+        "declared_value":9,
+        "declared_value_currency":"MYR",
+        "cod_value":167.54,
+        "cod_value_currency":"MYR",
+        "actual_weight":1800,
+        "shipment_term":"DDU",
+        "payment_method":"COD"
+    },
+    "sender":{
+        "name":"Huang Yi",
+        "company":"EGOGO LOGISTICS CO.,LTD",
+        "address":"Hongmei Town, Dongguan City No.3 Hongjin Road,",
+        "district":"",
+        "city":"Dongguan City",
+        "province":"Guangdong Province",
+        "country_code":"CN",
+        "post_code":"523160",
+        "phone":"14776965079"
+    },
+    "receiver":{
+        "name":"Devanai A P Selvadorai",
+        "company":"",
+        "address":"No 7 JALAN DATO ABDUL HAMID 31 TAMAN SENTOSA KLANG SELANGOR",
+        "district":"",
+        "city":"Johor",
+        "province":"Johor",
+        "country_code":"MY",
+        "post_code":"41200",
+        "phone":" 600149227383",
+        "email":"waniewirawanie@gmail.com",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"YCVPOK613129616",
+            "description":"Oxford Cloth Steel Frame Storage Box",
+            "description_origin_language":"棉麻布艺钢架折叠收纳箱",
+            "unit_price":3,
+            "currency":"MYR",
+            "quantity":1,
+            "hs_code":"4202920000"
+        },
+        {
+            "sku":"YCVPOK613124483",
+            "description":"Oxford Cloth Steel Frame Storage Box",
+            "description_origin_language":"棉麻布艺钢架折叠收纳箱",
+            "unit_price":3,
+            "currency":"MYR",
+            "quantity":2,
+            "hs_code":"4202920000"
+        }
+    ]
+}

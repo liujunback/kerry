@@ -1,0 +1,48 @@
+{
+   "service": {
+    "channel_code": "CTCNHK000"
+  },
+  "package": {
+    "reference_number": "2104200014701",
+    "declared_value": 3.0,
+    "declared_value_currency": "USD",
+    "actual_weight": 86,
+    "shipment_term": "DDU",
+    "payment_method": "PP"
+  },
+  "sender": {
+    "name": "fangqingyi",
+    "company": "fangqingyi",
+    "address": "changan zhen shatou",
+    "city": "guangdong",
+    "province": "donggua",
+    "country_code": "CN",
+    "post_code": "523000",
+    "phone": "13166668888",
+    "email": "jiachuang@166.com"
+  },
+  "receiver": {
+    "name": "Thapa Gupta",
+    "company": "",
+    "address": "Rm-1115, Shui yee House, Tin Shui Estate, Tin Shui Wai N/A",
+    "district": "",
+    "city": "Yuen Long",
+    "province": "Hong Kong Island",
+    "country_code": "HK",
+    "post_code": "999077",
+    "phone": " 85254155411",
+    "email": "thjiwan@yahoo.com",
+    "id_number": ""
+  },
+  "items": [
+    {
+      "sku": "YCRCTU551137959",
+      "description": "Outdoor Casual Baseball Cap",
+      "description_origin_language": "棒球帽",
+      "unit_price": 3.0,
+      "currency": "USD",
+      "quantity": 1,
+      "hs_code": "6504000000"
+    }
+  ]
+}

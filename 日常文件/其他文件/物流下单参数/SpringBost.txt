@@ -1,0 +1,67 @@
+{
+    "sale_platform":"",
+    "service":{
+        "channel_code":"cahkfr001",
+        "service_type":""
+    },
+    "package":{
+        "reference_number":"TH8947",
+        "declared_value":2,
+        "declared_value_currency":"EUR",
+        "cod_value":0,
+        "cod_value_currency":"",
+        "height":"",
+        "length":"",
+        "width":"",
+        "actual_weight":29,
+        "shipment_term":"",
+        "payment_method":"PP",
+        "shipment_type":""
+    },
+    "sender":{
+        "name":"back",
+        "company":"kerry",
+        "address":"futian",
+        "district":"futian",
+        "city":"ShenZhen",
+        "province":"GuangDong",
+        "country_code":"CN",
+        "post_code":"54930",
+        "phone":"1",
+        "email":"",
+        "id_number":""
+    },
+    "receiver":{
+        "name":"test",
+        "company":"kerryTest",
+        "address":"14 Rue du Rocher",
+        "district":"",
+        "city":"Paris",
+        "province":"",
+        "country_code":"FR",
+        "post_code":"75008",
+        "phone":"+33 1 45 22 24 10",
+        "email":"",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"",
+            "description":"Socks",
+            "description_origin_language":"TR",
+            "description_destination_language":"",
+            "category":"",
+            "unit_price":2,
+            "unit_weight": 123,
+            "height": 2123,
+            "length": 123,
+            "width": 123,
+            "currency":"USD",
+            "quantity":1,
+            "country_of_origin":"",
+            "hs_code":"123",
+            "brand":"",
+            "remark":""
+        }
+    ]
+}

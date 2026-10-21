@@ -1,9 +1,13 @@
 import json
 import requests
 import time
+import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from TMS.public.Controller_Login import Controller_Login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def create_retry_session(max_retries=3):
@@ -52,7 +56,8 @@ def close_Box_Scan(tracking_number, box_num="", max_retries=3):
                 headers=headers,
                 data=json.dumps(payload),
                 timeout=30,  # 设置超时
-                verify=False  # 跳过SSL验证
+                verify=False,  # 跳过SSL验证
+                proxies={"http": None, "https": None}  # 禁用代理
             )
 
             if response.status_code == 200:
@@ -100,7 +105,7 @@ def close_Box(box_num,tracking_num):
       'Content-Type': 'application/json'
     }
 
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data=json.dumps(payload), verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)["code"] == 200:
         print("关箱成功")
     else:

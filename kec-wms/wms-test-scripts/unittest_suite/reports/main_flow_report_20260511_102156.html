@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>主流程测试报告</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+    h1, h2 { margin-bottom: 12px; }
+    .summary { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+    .summary-card, .context-card { border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; background: #fafafa; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    th { background: #f0f0f0; }
+    pre { white-space: pre-wrap; margin: 0; font-family: Consolas, monospace; }
+    .contexts { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; }
+  </style>
+</head>
+<body>
+  <h1>主流程测试报告</h1>
+  <p>生成时间：2026-05-11 10:21:56</p>
+  <div class="summary">
+    <div class="summary-card">总数：28</div>
+    <div class="summary-card">通过：28</div>
+    <div class="summary-card">失败：0</div>
+    <div class="summary-card">错误：0</div>
+    <div class="summary-card">跳过：0</div>
+    <div class="summary-card">结果：成功</div>
+  </div>
+  <h2>执行上下文</h2>
+  <div class="contexts">
+    <div class='context-card'><h3>TestMainFlowPositive</h3><p>unique_tag: 1778466074923</p><p>sku_source: AUTO_CREATED</p><p>created_sku_id: 546c7fd6-da7c-409d-9090-9438f1f3e66d</p><p>created_sku_code: AUTO-SKU-8466074923</p><p>inventory_prepare_status: SUCCESS</p><p>asn_id: 0ca5b0ba-0f38-4bb1-9b9e-6ab4eeca2436</p><p>asn_number: ASN-WH-SH-001-260511-0021</p><p>asn_line_id: cb5f206f-b2ca-4731-b3bf-f8aa5597cb05</p><p>receive_record_number: RCV1778466078251BVZQ</p><p>putaway_order_id: d16d523e-2334-4db8-a51f-47daff69e205</p><p>putaway_location_code: AUTO-EMPTY-1778466092912</p><p>order_number: OB-WH-SH-001-260506-3803</p><p>pick_order_number: PK-WH-SH-001-260507-0035</p><p>checkout_number: PY-BAG-1778466102843</p><p>manifest_number: WH-SH-001ONLINE2605110011</p><ul><li>订单分配不可用: 1 个订单状态不允许分配库存 | 订单状态: ALLOCATED | 当前环境已分配订单数: 10</li></ul></div><div class='context-card'><h3>TestMainFlowNegative</h3><p>unique_tag: 1778466113300</p><p>sku_source: AUTO_CREATED</p><p>created_sku_id: d8b2c15f-4964-489c-a8e3-4f05f6700f8c</p><p>created_sku_code: AUTO-SKU-8466113300</p><p>inventory_prepare_status: </p><p>asn_id: </p><p>asn_number: </p><p>asn_line_id: </p><p>receive_record_number: </p><p>putaway_order_id: </p><p>putaway_location_code: </p><p>order_number: </p><p>pick_order_number: </p><p>checkout_number: </p><p>manifest_number: </p><ul><li>无</li></ul></div>
+  </div>
+  <h2>用例明细</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>测试用例</th>
+        <th>状态</th>
+        <th>耗时(秒)</th>
+        <th>消息</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>校验基础主数据可用</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_01_base_data_should_be_available</td><td>PASS</td><td>2.063</td><td><pre></pre></td></tr><tr><td>校验 ASN 创建签收收货成功</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_02_asn_create_sign_receive_should_succeed</td><td>PASS</td><td>1.366</td><td><pre></pre></td></tr><tr><td>校验库存查询成功</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_03_inventory_query_should_succeed</td><td>PASS</td><td>0.377</td><td><pre></pre></td></tr><tr><td>校验出库订单创建成功</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_04_outbound_order_create_should_succeed</td><td>PASS</td><td>0.542</td><td><pre></pre></td></tr><tr><td>校验出库订单详情查询成功</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_05_outbound_order_detail_should_succeed</td><td>PASS</td><td>0.429</td><td><pre></pre></td></tr><tr><td>校验库存分配接口返回结果</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_06_allocate_should_return_result</td><td>PASS</td><td>1.387</td><td><pre></pre></td></tr><tr><td>校验自动备货流程有返回结果</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_07_prepare_available_inventory_should_return_result</td><td>PASS</td><td>18.512</td><td><pre></pre></td></tr><tr><td>校验非法 SKU 下单失败</td><td>unittest_suite.tests.test_api_regression.TestApiRegression.test_08_invalid_sku_should_fail</td><td>PASS</td><td>0.374</td><td><pre></pre></td></tr><tr><td>加载主流程基础主数据</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_01_load_base_data</td><td>PASS</td><td>2.052</td><td><pre></pre></td></tr><tr><td>执行备货与上架准备</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_02_prepare_inventory</td><td>PASS</td><td>18.017</td><td><pre></pre></td></tr><tr><td>创建主流程出库订单</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_03_create_order</td><td>PASS</td><td>0.531</td><td><pre></pre></td></tr><tr><td>查询主流程订单详情</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_04_order_detail</td><td>PASS</td><td>0.405</td><td><pre></pre></td></tr><tr><td>执行分配或回退复用拣货单</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_05_allocate_or_fallback_pick</td><td>PASS</td><td>2.558</td><td><pre></pre></td></tr><tr><td>查询拣货单详情</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_06_pick_detail</td><td>PASS</td><td>0.425</td><td><pre></pre></td></tr><tr><td>执行打包前查询</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_07_packing_lookup</td><td>PASS</td><td>0.399</td><td><pre></pre></td></tr><tr><td>执行打包流程</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_08_packing</td><td>PASS</td><td>3.533</td><td><pre></pre></td></tr><tr><td>执行签出流程</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_09_checkout</td><td>PASS</td><td>2.179</td><td><pre></pre></td></tr><tr><td>查询签出单详情</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_10_checkout_detail</td><td>PASS</td><td>0.623</td><td><pre></pre></td></tr><tr><td>校验重复签出扫描失败</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_11_duplicate_checkout_scan_should_fail</td><td>PASS</td><td>0.996</td><td><pre></pre></td></tr><tr><td>执行集运流程</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_12_manifest</td><td>PASS</td><td>2.177</td><td><pre></pre></td></tr><tr><td>查询集运单详情</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_13_manifest_detail</td><td>PASS</td><td>0.403</td><td><pre></pre></td></tr><tr><td>校验已完成集运单再次校验失败</td><td>unittest_suite.tests.test_main_flow_positive.TestMainFlowPositive.test_14_manifest_validate</td><td>PASS</td><td>0.398</td><td><pre></pre></td></tr><tr><td>加载异常流程基础主数据</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_01_load_base_data</td><td>PASS</td><td>1.741</td><td><pre></pre></td></tr><tr><td>校验非法 SKU 创建订单失败</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_02_invalid_sku_should_fail</td><td>PASS</td><td>0.377</td><td><pre></pre></td></tr><tr><td>校验非法客户创建订单失败</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_03_invalid_client_should_fail</td><td>PASS</td><td>0.375</td><td><pre></pre></td></tr><tr><td>校验不存在的集运单号失败</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_04_invalid_manifest_number_should_fail</td><td>PASS</td><td>0.393</td><td><pre></pre></td></tr><tr><td>校验非法集运单创建失败</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_05_invalid_manifest_creation_should_fail</td><td>PASS</td><td>0.388</td><td><pre></pre></td></tr><tr><td>校验查询不存在订单失败</td><td>unittest_suite.tests.test_main_flow_negative.TestMainFlowNegative.test_06_query_nonexistent_order_should_fail</td><td>PASS</td><td>0.389</td><td><pre></pre></td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

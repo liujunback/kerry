@@ -1,73 +1,84 @@
 {
+  "extra_info": {
+    "additional_services": "sigsss",
+    "shopname": "aaa"
+  },
   "items": [
     {
-      "currency": "USD",
-      "description": "板鞋",
-      "description_origin_language": "休闲鞋",
-      "excc_legal_qty1": 0.7,
 
-      "hs_code": "6402992900",
-      "measure_unit": "025",
-      "measure_unit_value": 12.12317,
-      "origin_of_cnex_code": "35059",
+      "currency": "THB",
+      "standard_manufacturer_productid":"423",
+      "nonstandard_manufacturer_productid": "THB",
+      "description": "gifs",
+      "description_origin_language": "礼物",
+      "hs_code": "2534564646",
+      "measure_unit": "个",
+      "origin_of_cnex_code": "10025",
       "quantity": 1,
-      "sku": "122418016-2",
-      "spec": "1|0|款式:未过踝|鞋面材料:合成革/网布|外底材料:EVA/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:122418016-2|||",
-      "unit_price": 37.66,
-      "unit_weight": 700
-    },
-    {
-      "currency": "USD",
-      "description": "板鞋",
-      "description_origin_language": "休闲鞋",
-      "excc_legal_qty1": 0.7,
-      "hs_code": "6402992900",
-      "measure_unit": "025",
-      "measure_unit_value": 12.12317,
-      "origin_of_cnex_code": "35059",
-      "quantity": 1,
-      "sku": "122418016-3",
-      "spec": "1|0|款式:未过踝|鞋面材料:合成革/网布|外底材料:EVA/橡胶|品牌:中文品牌:安踏 英文品牌:ANTA|货号:122418016-3|||",
-      "unit_price": 37.66,
-      "unit_weight": 700
+      "sku": "12132423432543512132423432543512",
+      "spec": "1|2|NuPhy|Kick75卡带灰超红nano键盘-IO|无线111",
+      "unit_price": 25,
+      "unit_weight": 45.64647
     }
   ],
   "package": {
-    "actual_weight": 1,
-    "declared_value": 75.32,
-    "declared_value_currency": "USD",
-    "number_of_package": 1,
-    "package_type": "WPX",
+    "actual_weight": 99,
+    "declared_value": 25,
+    "declared_value_currency": "THB",
+    "height": "77",
+    "incidental_fee": 0,
+    "incidental_fee_currency": "USD",
+    "length": "67",
+    "number_of_package": 3,
+
     "payment_method": "PP",
-    "pickup_tn": "MX5102000915709",
-    "reference_number": "MX5102000915709",
+    "pickup_tn": "",
+    "reason_for_export": "",
+    "reference_number": "TESTBACK20260929164025642107",
     "shipment_term": "DDP",
     "shipment_type": "General",
-    "tracking_number": ""
+    "shipping_fee": 0,
+    "shipping_fee_currency": "USD",
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "56"
   },
   "receiver": {
-    "address": "Q*************W",
-    "city": "F*******P",
-    "company": "A*************N",
+    "address": "test etst test testsssqqqqqq2",
+    "city": "Hampton",
+    "company": "KEC-TH",
     "country_code": "TH",
-    "location_code": "anta_lazada",
-    "name": "X*******T",
-    "phone": "4*******8",
-    "post_code": "21000"
+    "district": "Phuong 19",
+    "email": "1113245dfgdf@163.com",
+    "id_card_number": "000",
+    "id_card_number_type": "id_card",
+    "id_number": "35345754511",
+    "id_number_type": "",
+    "location_code": "RAGI2929",
+    "name": "KECTH",
+    "phone": "123456789",
+    "post_code": "21000",
+    "province": "Victoria"
   },
-  "sale_platform": "SHOPEE",
+  "sale_platform": "AAAA",
   "sender": {
-    "address": "test",
-    "city": "test",
-    "company": "test",
+    "address": "humen",
+    "city": "dongguan dongguan dongguan",
+    "company": "11LS",
     "country_code": "CN",
-    "name": "厦门安之意体育用品有限公司",
-    "phone": "test",
-    "post_code": "test"
+    "district": "",
+    "email": "3245dfgdf@163.com",
+    "id_number": "11154511222",
+    "id_number_type": "",
+    "name": "mMMM",
+    "phone": "00000000000",
+    "province": "GLS"
   },
   "service": {
-    "channel_code": "backtest",
-    "delivery_instruction": "remark",
-    "service_type": "default"
+    "channel_code": "ETFRFRQ42",
+    "delivery_instruction": "",
+    "pickup_at": "",
+    "pickup_cutoff_at": "",
+    "service_type": "QQA"
   }
 }

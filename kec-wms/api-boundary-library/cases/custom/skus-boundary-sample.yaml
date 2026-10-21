@@ -1,0 +1,25 @@
+cases:
+  - id: SKUS-POST-UUID-001
+    title: clientId 非 UUID 失败
+    api: POST /api/v1/skus
+    body:
+      clientId: "not-a-uuid"
+      skuCode: "SKU-T1"
+      skuName: "测试SKU"
+    expected:
+      http_status: 400
+      success: false
+      message_contains: clientId
+
+  - id: SKUS-POST-BOOL-001
+    title: isBatchManaged 传字符串失败
+    api: POST /api/v1/skus
+    body:
+      clientId: "11111111-1111-1111-1111-111111111111"
+      skuCode: "SKU-T2"
+      skuName: "测试SKU"
+      isBatchManaged: "true"
+    expected:
+      http_status: 400
+      success: false
+      message_contains: isBatchManaged

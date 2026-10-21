@@ -1,0 +1,23 @@
+cases:
+  - id: CLIENTS-POST-STRING-001
+    title: clientCode 最小长度减一失败
+    api: POST /api/v1/clients
+    body:
+      clientCode: "A"
+      clientName: "测试客户"
+    expected:
+      http_status: 400
+      success: false
+      message_contains: clientCode
+
+  - id: CLIENTS-POST-NUMBER-001
+    title: creditLimit 传非法字符串失败
+    api: POST /api/v1/clients
+    body:
+      clientCode: "C001"
+      clientName: "测试客户"
+      creditLimit: "abc"
+    expected:
+      http_status: 400
+      success: false
+      message_contains: creditLimit

@@ -51,6 +51,7 @@ def Check_Weight(
                 headers=headers,
                 verify=False,
                 timeout=10  # 请求超时设置
+                , proxies={"http": None, "https": None}
             )
             response.raise_for_status()  # 检查HTTP状态码
 

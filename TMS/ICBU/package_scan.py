@@ -20,7 +20,7 @@ def package_scan(tracking_number):
         "Authorization":token,
       'Content-Type': 'application/json'
     }
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data=json.dumps(payload),timeout=30,verify=False,proxies={"http": None, "https": None})
     if json.loads(response.text)['code'] != 200:
         print(response.text)
     else:

@@ -1,0 +1,18 @@
+rules:
+  - id: DATE-FORMAT-INVALID
+    category: datetime_format
+    title: 日期字段传非法格式
+    input: not-a-date
+    expected: fail
+
+  - id: DATE-FORMAT-SLASH
+    category: datetime_format
+    title: 日期字段传斜杠格式
+    input: "2026/05/20"
+    expected: fail
+
+  - id: DATE-TYPE-NUMBER
+    category: datetime_format
+    title: 日期字段传数字
+    input: 123
+    expected: fail

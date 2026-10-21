@@ -1,8 +1,6 @@
 import unittest
 from time import sleep
 
-import openpyxl
-
 from TMS.channel_code.public.channel import add_channel, select_hubInId
 from TMS.channel_code.public.hubout import add_hubout, select_hubOutId
 from TMS.channel_code.public.sort_code import add_sortcode
@@ -17,11 +15,8 @@ class MyTestCase(unittest.TestCase):
         for i in range(1):
             # wb = openpyxl.load_workbook('channel.xlsx')#读取execl订单后入库
             # ws = wb.active
-            # name = str(ws['A'+str(i)].value)
-            # even_mess = str(ws['B'+str(i)].value)
-            name = "CAHKPHS51"
-            country = "PH"
-            # sortCode = "TH-15"
+            name = "ETFRFRQ44"
+            country = "TH"
             # name = str(ws['A'+str(i)].value)
             # country = str(ws['B'+str(i)].value)
             sortCode = name

@@ -1,0 +1,63 @@
+{
+    "sale_platform":"",
+    "service":{
+        "channel_code":"acptest",
+        "service_type":""
+    },
+    "package":{
+        "reference_number":"TH21707522",
+        "declared_value":2,
+        "declared_value_currency":"USD",
+        "cod_value":11,
+        "cod_value_currency":"USD",
+        "height":"11",
+        "length":"112",
+        "width":"121",
+        "actual_weight":29,
+        "shipment_term":"",
+        "payment_method":"COD",
+        "shipment_type":""
+    },
+    "sender":{
+        "name":"back",
+        "company":"Kerry Test",
+        "address":"FuTianQu",
+        "district":"FuTianQu",
+        "city":"ShenZhen",
+        "province":"GuangDong",
+        "country_code":"CN",
+        "post_code":"361006",
+        "phone":"13576795994",
+        "email":"2749004871@qq.com",
+        "id_number":""
+    },
+    "receiver":{
+        "name":"Irene Cheung",
+        "company":"Aircitypost LLC ACP",
+        "address":"210 E Sunrise Highway",
+        "district":"Valley Stream",
+        "city":"NY",
+        "province":"NY",
+        "country_code":"US",
+        "post_code":"11581",
+        "phone":"516-495 3000",
+        "email":"",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"",
+            "description":"Socks",
+            "description_origin_language":"TR",
+            "description_destination_language":"CN",
+            "category":"",
+            "unit_price":2,
+            "currency":"USD",
+            "quantity":1,
+            "country_of_origin":"CN",
+            "hs_code":"123",
+            "brand":"",
+            "remark":""
+        }
+    ]
+}

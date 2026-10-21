@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "currency": "EUR",
+      "description": "Handbag",
+      "description_origin_language": "手提包",
+      "quantity": 1,
+      "unit_price": 38.99
+    }
+  ],
+  "package": {
+    "actual_weight": 3200,
+    "declared_value": 38.99,
+    "declared_value_currency": "EUR",
+    "incidental_fee": 0,
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "ITTEST202605221301",
+    "shipment_term": "DDP",
+    "shipping_fee": 0
+  },
+  "receiver": {
+    "address": "Calle Juan de la Cierva, 40 Miura Logistics",
+    "city": "Villalbilla",
+    "company": "",
+    "country_code": "ES",
+    "name": "Facalon Consulting",
+    "phone": "34620402947",
+    "post_code": "28810",
+    "province": "Madrid"
+  },
+  "sender": {
+    "address": "AVENIDA DUQUE DE ARCOS BLOQUE 4 SEXTO C ",
+    "city": "San Fernando",
+    "company": "SARA LEBRERO",
+    "country_code": "ES",
+    "ioss_number": "",
+    "name": "SARA LEBRERO",
+    "phone": "697334679",
+    "post_code": "11100",
+    "province": "Cádiz"
+  },
+  "service": {
+    "channel_code": "DXESESPTC"
+  }
+}

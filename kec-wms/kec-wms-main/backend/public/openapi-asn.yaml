@@ -1,0 +1,446 @@
+openapi: 3.0.0
+info:
+  title: WMS 外部 API - ASN 入库管理
+  version: 1.2.0
+  description: |
+    ASN（Advanced Shipping Notice）入库通知单管理接口。
+
+    **重要提示**：所有请求必须在 HTTP Header 中携带 `X-API-Key` 进行认证，否则将返回 401 未授权错误。
+  contact:
+    name: WMS API Support
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: 开发环境
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: ASN
+    description: 入库通知单管理接口
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API Key 认证
+
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: 操作成功
+        data:
+          type: object
+
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: 错误描述
+        code:
+          type: string
+          example: ERROR_CODE
+
+paths:
+  /asn:
+    post:
+      tags:
+        - ASN
+      summary: 创建ASN
+      description: 创建入库通知单
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - clientCode
+                - warehouseCode
+                - externalNumber
+                - lines
+              properties:
+                clientCode:
+                  type: string
+                  example: CLIENT001
+                  description: 客户编码，唯一标识客户
+                warehouseCode:
+                  type: string
+                  example: WH-SH-001
+                  description: 仓库编码，指定入库的目标仓库
+                asnNumber:
+                  type: string
+                  example: ASN-2026-001
+                  description: ASN单号，不填则自动生成
+                externalNumber:
+                  type: string
+                  example: PO-12345
+                  description: 外部单号，来自上游系统的采购单号或订单号，用于后续查询/更新/删除操作的唯一标识
+                asnType:
+                  type: string
+                  enum: [NORMAL, RETURN, TRANSFER, PRODUCTION, ADJUSTMENT]
+                  default: NORMAL
+                  example: NORMAL
+                  description: ASN类型（NORMAL正常入库、RETURN退货入库、TRANSFER调拨入库、PRODUCTION生产入库、ADJUSTMENT调整入库）
+                expectedArrivalDate:
+                  type: string
+                  format: date-time
+                  example: "2024-12-20T10:00:00Z"
+                  description: 预计到货日期
+                expectedArrivalTime:
+                  type: string
+                  example: "10:00:00"
+                  description: 预计到货时间
+                notes:
+                  type: string
+                  example: 请注意轻拿轻放
+                  description: 备注
+                lines:
+                  type: array
+                  description: ASN明细行
+                  minItems: 1
+                  items:
+                    type: object
+                    required:
+                      - skuCode
+                      - expectedQty
+                    properties:
+                      skuCode:
+                        type: string
+                        example: SKU001
+                        description: SKU编码，必须是系统中已存在的SKU
+                      expectedQty:
+                        type: integer
+                        minimum: 1
+                        example: 100
+                        description: 预期入库数量，必须大于0
+                      uomCode:
+                        type: string
+                        example: PCS
+                        description: 单位编码
+                      batchNumber:
+                        type: string
+                        example: BATCH001
+                        description: 批次号，用于追溯和库存管理
+                      carton:
+                        type: string
+                        example: CARTON001
+                        description: 箱号
+                      expiryDate:
+                        type: string
+                        format: date-time
+                        example: "2025-12-31T00:00:00Z"
+                        description: 效期，产品的有效期截止日期
+                      notes:
+                        type: string
+                        example: 第一批货物
+                        description: 备注
+            example:
+              clientCode: CLIENT001
+              warehouseCode: WH-SH-001
+              asnNumber: ASN-2026-001
+              externalNumber: PO-12345
+              asnType: NORMAL
+              expectedArrivalDate: "2024-12-20T10:00:00Z"
+              notes: 请注意轻拿轻放
+              lines:
+                - skuCode: SKU001
+                  expectedQty: 100
+                  batchNumber: BATCH001
+                  expiryDate: "2025-12-31T00:00:00Z"
+                  notes: 第一批货物
+                - skuCode: SKU002
+                  expectedQty: 50
+      responses:
+        '200':
+          description: 创建成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: ASN创建成功
+                  data:
+                    type: object
+        '400':
+          description: 参数错误
+        '401':
+          description: 未授权
+
+    get:
+      tags:
+        - ASN
+      summary: 查询ASN列表
+      description: 查询ASN入库通知单列表，支持分页和筛选
+      parameters:
+        - name: clientCode
+          in: query
+          description: 客户编码
+          schema:
+            type: string
+        - name: warehouseCode
+          in: query
+          description: 仓库编码
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: 页码，从1开始
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          description: 每页数量
+          schema:
+            type: integer
+            default: 20
+        - name: status
+          in: query
+          description: ASN状态
+          schema:
+            type: string
+            enum: [CREATED, PENDING_RECEIVING, RECEIVING, RECEIVED, PUTTING_AWAY, COMPLETED, CANCELLED, CLOSED]
+        - name: asnType
+          in: query
+          description: ASN类型
+          schema:
+            type: string
+            enum: [NORMAL, RETURN, TRANSFER, PRODUCTION, ADJUSTMENT]
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: array
+                    items:
+                      type: object
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                      pageSize:
+                        type: integer
+                      total:
+                        type: integer
+                      totalPages:
+                        type: integer
+        '401':
+          description: 未授权
+
+  /asn/by-number/{externalNumber}:
+    get:
+      tags:
+        - ASN
+      summary: 获取ASN详情
+      description: 通过外部单号获取ASN详细信息
+      parameters:
+        - name: externalNumber
+          in: path
+          required: true
+          description: 外部单号
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          description: 客户编码（可选，API Key绑定客户时不需要）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+        '404':
+          description: ASN不存在
+        '401':
+          description: 未授权
+
+    put:
+      tags:
+        - ASN
+      summary: 更新ASN
+      description: 通过外部单号更新ASN信息（仅限CREATED状态）
+      parameters:
+        - name: externalNumber
+          in: path
+          required: true
+          description: 外部单号
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                clientCode:
+                  type: string
+                  description: 客户编码（可选）
+                asnType:
+                  type: string
+                  enum: [NORMAL, RETURN, TRANSFER, PRODUCTION, ADJUSTMENT]
+                  description: ASN类型
+                expectedArrivalDate:
+                  type: string
+                  format: date-time
+                  description: 预计到货日期
+                expectedArrivalTime:
+                  type: string
+                  description: 预计到货时间
+                notes:
+                  type: string
+                  description: 备注
+      responses:
+        '200':
+          description: 更新成功
+        '400':
+          description: 参数错误或状态不允许更新
+        '404':
+          description: ASN不存在
+        '401':
+          description: 未授权
+
+    delete:
+      tags:
+        - ASN
+      summary: 删除ASN
+      description: 通过外部单号删除ASN（仅限CREATED状态）
+      parameters:
+        - name: externalNumber
+          in: path
+          required: true
+          description: 外部单号
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          description: 客户编码（可选）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 删除成功
+        '400':
+          description: 状态不允许删除
+        '404':
+          description: ASN不存在
+        '401':
+          description: 未授权
+
+  /asn/by-number/{externalNumber}/cancel:
+    post:
+      tags:
+        - ASN
+      summary: 取消ASN
+      description: 取消ASN入库通知单
+      parameters:
+        - name: externalNumber
+          in: path
+          required: true
+          description: 外部单号
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - reason
+              properties:
+                clientCode:
+                  type: string
+                  description: 客户编码（可选）
+                reason:
+                  type: string
+                  description: 取消原因
+                  example: 供应商延迟发货
+      responses:
+        '200':
+          description: 取消成功
+        '400':
+          description: 状态不允许取消
+        '404':
+          description: ASN不存在
+        '401':
+          description: 未授权
+
+  /asn/by-number/{externalNumber}/status:
+    get:
+      tags:
+        - ASN
+      summary: 获取ASN状态
+      description: 获取ASN当前状态信息
+      parameters:
+        - name: externalNumber
+          in: path
+          required: true
+          description: 外部单号
+          schema:
+            type: string
+        - name: clientCode
+          in: query
+          description: 客户编码（可选）
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 查询成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      status:
+                        type: string
+                        example: RECEIVING
+                      statusName:
+                        type: string
+                        example: 收货中
+        '404':
+          description: ASN不存在
+        '401':
+          description: 未授权

@@ -1,0 +1,59 @@
+{
+"sale_platform": "",
+"service": {
+"channel_code": "springpostderict",
+"service_type": ""
+},
+"package": {
+"reference_number": "TH32537025208747",
+"declared_value": 2,
+"declared_value_currency": "USD",
+"cod_value": 0,
+"cod_value_currency": "",
+"height": "",
+"length": "",
+"width": "",
+"actual_weight": 29,
+"shipment_term": "",
+"payment_method": "PP",
+"shipment_type": ""
+},
+"sender": {
+"name": "Jacky Chan",
+"company": "Guangzhou Ruiku",
+"address": "Tianhequ ZhuCun HuiShunDaSha C412",
+"city": "Guangzhou",
+"province": "Guangdong",
+"country_code": "CN",
+"post_code": "510000",
+"phone": "18618612345",
+"email": ""
+},
+"receiver": {
+"name": "Mohd Muzery bin Munasir",
+"address": "Inter multi furniture sdn bhd NO 23 jalan Peserai 83500 parit Sulong batu pahat Johor",
+"city": "Johor",
+"province": "Batu Pahat",
+"country_code": "CA",
+"post_code": "83000",
+"phone": "0177692634",
+"email": "etwentye054@gmail.com",
+"id_number": ""
+},
+"items": [
+{
+"sku": "",
+"description": "Socks",
+"description_origin_language": "",
+"description_destination_language": "",
+"category": "",
+"unit_price": 2,
+"currency": "USD",
+"quantity": 1,
+"country_of_origin": "",
+"hs_code": "123",
+"brand": "",
+"remark": ""
+}
+]
+}

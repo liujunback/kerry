@@ -15,7 +15,7 @@ def Cancel_Order(properties,foms_token,cancel_order):
       'Content-Type': 'application/json'
     }
 
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)['code'] in [202,201]:
         print("取消订单成功：" + cancel_order)
         print("")

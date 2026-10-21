@@ -8,6 +8,9 @@ import time
 from TMS.public.Controller_Login import Controller_Login
 
 
+import os
+
+os.environ["NO_PROXY"] = "spider.kec-app.com,cb-tms-kp-de.kec-app.com,tms-eng.kec.kln.cn,cb-pos-kp-de.kec-app.com,cb-ops-kp-de.kec-app.com,pos-eng.kec.kln.cn,pos.jp.kec-app.com,ops-eng.kec.kln.cn,tms.jp.kec-app.com"
 class CaiNiao:
     def create(self):
         url = "https://tms-kec-eng-uat.kec-app.com/tms-saas-web/cainiao-conso/cargo/create"
@@ -85,7 +88,7 @@ class CaiNiao:
                                     "itemQuantity": "3",
                                     "itemSkuProperty": "测试32",
                                     "currency": "CNY",
-                                    "categoryName": "12341234",
+                                    "categoryName": "U盘",
                                     "totalActualPayment": "0",
                                     "skuId": "2-12-123",
                                     "categoryId": "294034",
@@ -124,7 +127,9 @@ class CaiNiao:
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        response = requests.request("POST", url, headers=headers, data=urllib.parse.urlencode(payload), files=files)
+        response = requests.request("POST", url, headers=headers, data=urllib.parse.urlencode(payload), files=files  ,          verify=False,
+            timeout=15  # 添加超时设置,  # 连接超时3秒，读取超时27秒
+            ,proxies = {"http": None, "https": None})
         # print(response.text)
         print(trcking_number)
         return {"reference_number":reference_number,"trcking_number":trcking_number}
@@ -201,7 +206,9 @@ class CaiNiao:
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        response = requests.request("POST", url, headers=headers, data=urllib.parse.urlencode(payload), files=files)
+        response = requests.request("POST", url, headers=headers, data=urllib.parse.urlencode(payload), files=files,verify=False,
+            timeout=15  # 添加超时设置,  # 连接超时3秒，读取超时27秒
+            ,proxies = {"http": None, "https": None})
         print(response.text)
         return reference_number
 
@@ -224,7 +231,9 @@ class CaiNiao:
             'Authorization': token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload)  ,          verify=False,
+            timeout=15  # 添加超时设置,  # 连接超时3秒，读取超时27秒
+            ,proxies = {"http": None, "https": None})
         print(json.loads(response.text)['msg'])
 
     def ops_put(tracking_number):
@@ -238,11 +247,16 @@ class CaiNiao:
             'Authorization': token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload),            verify=False,
+            timeout=15  # 添加超时设置,  # 连接超时3秒，读取超时27秒
+            ,proxies = {"http": None, "https": None})
         print(json.loads(response.text)['msg'])
     def ops_picking(kd,tracking_number):
+        import os
+
+        os.environ["NO_PROXY"] = "spider.kec-app.com,cb-tms-kp-de.kec-app.com,tms-eng.kec.kln.cn,cb-pos-kp-de.kec-app.com,cb-ops-kp-de.kec-app.com,pos-eng.kec.kln.cn,pos.jp.kec-app.com,ops-eng.kec.kln.cn,tms.jp.kec-app.com"
         token = Controller_Login()
-        url = "https://ops-eng-uat.kec-app.com//controller/conso/cargo/picking"
+        url = "https://ops-eng-uat.kec-app.com/controller/conso/cargo/picking"
         payload = {
               "consoOrderNo": kd,
               "scPickupTn": tracking_number
@@ -251,16 +265,20 @@ class CaiNiao:
             'Authorization': token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload),verify=False, proxies={"http": None, "https": None})
         # print(response.text)
         print(json.loads(response.text)['msg'])
 
-for i in range(3):
-    tracking_data = CaiNiao.create(1)
-    # tracking_number = "ITTEST20251211002"
-    CaiNiao.ops_inbound(tracking_data["trcking_number"])
-    CaiNiao.ops_put(tracking_data["trcking_number"])
+for i in range(1):
+    # tracking_data = CaiNiao.create(1)
+    # # tracking_number = "ITTEST20251211002"
+    # CaiNiao.ops_inbound(tracking_data["trcking_number"])
+    # CaiNiao.ops_put(tracking_data["trcking_number"])
+    # time.sleep(5)
     # kd = CaiNiao.jiyun(tracking_data["reference_number"])
     # time.sleep(30)
     # print(kd)
-    # CaiNiao.ops_picking(kd,tracking_data["trcking_number"])
+
+    kd = "LP4147311345"
+    tracking_data = {"reference_number": "reference_number", "trcking_number": "YT3495601792"}
+    CaiNiao.ops_picking(kd,tracking_data["trcking_number"])

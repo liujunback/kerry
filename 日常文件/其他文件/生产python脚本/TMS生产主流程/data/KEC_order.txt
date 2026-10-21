@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "category": "",
+      "country_of_origin": "CN",
+      "currency": "CNY",
+      "description": "女装/女士精品_连衣裙",
+      "description_destination_language": "",
+      "description_origin_language": "女装/女士精品_连衣裙",
+      "quantity": 1,
+      "remark": "",
+      "sku": "",
+      "unit_price": 40.02
+    }
+  ],
+  "package": {
+    "actual_weight": 150,
+    "cod_value": 0,
+    "cod_value_currency": "",
+    "declared_value": 40.02,
+    "declared_value_currency": "CNY",
+    "height": "1",
+    "length": "1",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "LP00647483645001",
+    "shipment_term": "DDP",
+    "shipment_type": "General",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "1"
+  },
+  "receiver": {
+    "address": "59 Moo 2, Thepkrasattri Road T. Koh Kaew, A. Muang Mueang Phuket District, Phuket 83000, Thailand",
+    "city": "เมืองภูเก็ต",
+    "company": "Lin Yupar Aung",
+    "country_code": "TH",
+    "district": "เกาะแก้ว",
+    "id_card_number": "000",
+    "id_card_number_type": "id_card",
+    "name": "Lin Yupar Aung",
+    "phone": "-822192814",
+    "post_code": "83000",
+    "province": "ภูเก็ต"
+  },
+  "sale_platform": "嘉里集运",
+  "sender": {
+    "address": "虎门镇赤岗社区富马三路8号",
+    "city": "东莞市",
+    "company": "KEC",
+    "country_code": "CN",
+    "district": "",
+    "name": "虎门镇赤岗社区富马三路8号",
+    "phone": "00000000000",
+    "post_code": "000000",
+    "province": "KEC"
+  },
+  "service": {
+    "channel_code": "CTCNTH711",
+    "delivery_instruction": "",
+    "service_type": "default"
+  }
+}

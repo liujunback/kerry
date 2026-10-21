@@ -1,11 +1,12 @@
 import json
-
 import datetime
 import random
-
 import requests
-
+import urllib3
 from TMS.public.TMS_Login import login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 token = login()
 
@@ -26,7 +27,7 @@ def shipment_add():
     headers = {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-    response = requests.request("POST", url = url, data = payload, headers = headers)
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text)['message'] != "EnumResCode.OK":
         print(response.text)
     print(response.text)
@@ -54,7 +55,7 @@ def shipment_num_ids(shipment_num):
     headers = {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-    response = requests.request("POST", url = url, data = payload, headers = headers)
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
     #print(response.text)
     if json.loads(response.text)['message'] == "请求成功":
         shipment_num_ids=json.loads(response.text)['body']['list'][0]['id']#出货批次id号
@@ -77,7 +78,7 @@ def shipment_scan(box_num,shipment_num):
     headers = {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-    response = requests.request("POST", url = url, data = payload, headers = headers)
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
     #print(response.text)
     if json.loads(response.text)['result_code'] != 0:
         print(response.text)
@@ -98,7 +99,7 @@ def shipment_close(shipmentbatchId,shopment_num):
     headers = {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-    response = requests.request("POST", url = url, data = payload, headers = headers)
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
     print(response.text)
     if json.loads(response.text)['message'] == "EnumResCode.OK":
         print("出货成功："+shopment_num)

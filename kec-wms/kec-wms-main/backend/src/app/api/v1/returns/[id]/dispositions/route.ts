@@ -1,0 +1,24 @@
+import { NextRequest } from 'next/server'
+import { createAuthHandler, type RouteContext } from '@/lib/api/create-handler'
+import { buildReturnAuth, fail, ok, readJson } from '@/lib/returns/api-utils'
+import { saveReturnDispositions } from '@/lib/returns/return-service'
+import { dispositionSchema } from '@/lib/validations/returns'
+
+export const POST = createAuthHandler<RouteContext<{ id: string }>>(async (
+  request: NextRequest,
+  auth,
+  context
+) => {
+  try {
+    const { id } = await context.params
+    const parseResult = dispositionSchema.safeParse(await readJson(request))
+    if (!parseResult.success) {
+      return fail(new Error(parseResult.error.errors[0]?.message || '参数错误'), 400)
+    }
+
+    const data = await saveReturnDispositions(buildReturnAuth(auth.user), id, parseResult.data)
+    return ok(data, '处理方式已保存')
+  } catch (error) {
+    return fail(error)
+  }
+})

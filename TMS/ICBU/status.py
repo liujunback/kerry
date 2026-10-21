@@ -1,11 +1,12 @@
 import json
-
 import datetime
 import urllib
-
 import requests
-
+import urllib3
 from TMS.public.TMS_Login import login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 
@@ -33,9 +34,11 @@ def status(tracking_number,statu,message='test'):
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
     # print(payload)
-    response = requests.request("POST", url = url, data = payload, headers = headers)
-    if json.loads(response.text)['body'] == 1:
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
+    if 1 in json.loads(response.text):
         print("补录成功")
+    else:
+        print(response.text)
 
 
 
@@ -89,7 +92,7 @@ def manifestId(tracking_number):
     headers = {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-    response = requests.request("POST", url = url, data = payload, headers = headers)
+    response = requests.request("POST", url = url, data = payload, headers = headers, verify=False, proxies={"http": None, "https": None})
     if json.loads(response.text):
         # print(json.loads(response.text)['body']['list'][0]["manifestId"])
         return {"manifestId":json.loads(response.text)['body']['list'][0]["manifestId"],#获取转单号manifestId("KECTH91000794"),

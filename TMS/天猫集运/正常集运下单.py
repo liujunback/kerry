@@ -2,12 +2,17 @@ import json
 import random
 import requests
 import time
+import urllib3
 from TMS.public.Controller_Login import Controller_Login
+
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 class CaiNiao:
 
     token = Controller_Login()
+    print(token)
     def create(self):
         scPickupTn = "YD01" + str(random.randint(1, 9999999999))
         reference_number = "AT1" + str(random.randint(1, 9999999999))
@@ -36,44 +41,68 @@ class CaiNiao:
                 {
                     "unitPrice": 0.01,
                     "quantity": 1,
-                    "description": "篮球鞋",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "description": "篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5",
+                    "descriptionOriginLanguage": "篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮12234234234球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5篮球鞋5",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋6",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋6",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋5",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋6",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋4",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋5",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋3",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋5",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋2",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋4",
                     "sku": "11921104S-37CN"
                 }, {
                     "unitPrice": 0.01,
                     "quantity": 1,
                     "description": "篮球鞋1",
-                    "descriptionOriginLanguage": "篮球鞋",
+                    "descriptionOriginLanguage": "篮球鞋4",
+                    "sku": "11921104S-37CN"
+                }, {
+                    "unitPrice": 0.01,
+                    "quantity": 1,
+                    "description": "篮球鞋1",
+                    "descriptionOriginLanguage": "篮球鞋3",
+                    "sku": "11921104S-37CN"
+                }, {
+                    "unitPrice": 0.01,
+                    "quantity": 1,
+                    "description": "篮球鞋1",
+                    "descriptionOriginLanguage": "篮球鞋2",
+                    "sku": "11921104S-37CN"
+                }, {
+                    "unitPrice": 0.01,
+                    "quantity": 1,
+                    "description": "篮球鞋1",
+                    "descriptionOriginLanguage": "篮球鞋1",
+                    "sku": "11921104S-37CN"
+                }, {
+                    "unitPrice": 0.01,
+                    "quantity": 1,
+                    "description": "篮球鞋123",
+                    "descriptionOriginLanguage": "篮球鞋123",
                     "sku": "11921104S-37CN"
                 }
             ]
@@ -83,7 +112,7 @@ class CaiNiao:
             'Authorization': 'Bearer xBfMWfrrD1x4dAtzdby87KHSMKMJMZ5rrMStbkJKF45QAXK55h4TEZY85SiAJcar'
         }
 
-        response = requests.request("POST", url, headers=headers, data=payload)
+        response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
 
         # print(response.text)
         print(scPickupTn)
@@ -138,7 +167,7 @@ class CaiNiao:
             'Authorization': 'Bearer xBfMWfrrD1x4dAtzdby87KHSMKMJMZ5rrMStbkJKF45QAXK55h4TEZY85SiAJcar'
         }
 
-        response = requests.request("POST", url, headers=headers, data=payload)
+        response = requests.request("POST", url, headers=headers, data=payload, verify=False, proxies={"http": None, "https": None})
 
         print(response.text)
         print(f"集运订单号: {reference_number}, 包含包裹数: {len(tracing_numbers)}")
@@ -161,7 +190,8 @@ class CaiNiao:
             'Authorization': self.token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload), verify=False, proxies={"http": None, "https": None})
+        # print(response.text)
         print(json.loads(response.text)['msg'])
 
     def ops_put(self, tracking_number):
@@ -175,7 +205,8 @@ class CaiNiao:
             'Authorization': self.token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload), verify=False, proxies={"http": None, "https": None})
+        # print(response.text)
         print(json.loads(response.text)['msg'])
 
     def ops_picking(self, kd, tracking_number):
@@ -189,7 +220,7 @@ class CaiNiao:
             'Authorization': self.token,
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+        response = requests.request("POST", url, headers=headers, data=json.dumps(payload), verify=False, proxies={"http": None, "https": None})
         # print(response.text)
         print(json.loads(response.text)['msg'])
 
@@ -199,18 +230,20 @@ if __name__ == "__main__":
     cainiao = CaiNiao()
 
     # 创建多个包裹
-    tracking_numbers = []
-    for i in range(50):
-        tracking_data = cainiao.create()
-        tracking_numbers.append(tracking_data["trcking_number"])
-        # 可选：执行入库等操作
-        cainiao.ops_inbound(tracking_data["trcking_number"])
-        cainiao.ops_put(tracking_data["trcking_number"])
-
-    # 将多个包裹集运
-    kd = cainiao.jiyun(tracking_numbers)
-
-    # 可选：等待一段时间后执行拣货
-    # time.sleep(30)
+    for i in range(1):
+        tracking_numbers = []
+        for i in range(1):
+            tracking_data = cainiao.create()
+            # tracking_data = {"trcking_number": "1174663", "reference_number": "reference_number"}
+            tracking_numbers.append(tracking_data["trcking_number"])
+            # 可选：执行入库等操作
+            cainiao.ops_inbound(tracking_data["trcking_number"])
+            cainiao.ops_put(tracking_data["trcking_number"])
+    #
+    #     # 将多个包裹集运
+    #     kd = cainiao.jiyun(tracking_numbers)
+    # # kd = "CWB_2036965842925A"
+    # # 可选：等待一段时间后执行拣货
+    # # time.sleep(30)
     # for tracking_number in tracking_numbers:
     #     cainiao.ops_picking(kd, tracking_number)

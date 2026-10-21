@@ -6,8 +6,7 @@ import time
 
 import  warnings
 
-import pandas as pd
-
+from TMS.public.create_clearance_order import create_clearance_order
 from TMS.public.spider import spider
 
 warnings.filterwarnings('ignore')
@@ -28,7 +27,8 @@ from TMS.public.Inbaound import inbound
 from TMS.public.delivery import delivery
 from TMS.public.shipment import shipment_add, shipment_num_ids, shipment_scan, shipment_close
 
-
+import os
+os.environ["NO_PROXY"] ="tms-kec-eng-uat.kec-app.com,spider-stg.kec-app.com"
 class MyTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -48,8 +48,13 @@ class MyTestCase(unittest.TestCase):
         shipment_num=0        # token = "aacc2b37-d5f4  -4f3e-9a26-12cae1320e7a"
         if x>=1:
             for i in range(1):
-                # tracking_num = file_create_order(token)
-                tracking_num = "KECTH92001285"
+                tracking_num = file_create_order(token)
+
+                # spider(tracking_num,"010")
+                # spider(tracking_num, "113")
+                # spider(trak[i], "POD")
+
+                # tracking_num = "SPXSG06911260693A"
                 if tracking_num == "失败":
                     fail=fail+1
                 else:
@@ -58,15 +63,18 @@ class MyTestCase(unittest.TestCase):
             if x>=2:
                 for i in range(len(trak)):
                     if i == 0:
-                        time.sleep(10)
-                        # spider(trak[i])
-                        # package_scan(trak[i])
+
+                        time.sleep(20)
+                        # create_clearance_order(token, tracking_num)
+                        # spider(trak[i],"POD")
+                        package_scan(trak[i])
                         inbound(trak[i])
-                        time.sleep(1)
+                        time.sleep(10)
+                        # status(trak[i], "OK", "签收")
                         box_num = close_Box_Scan(trak[i])
                         box_list.append(box_num)
                     else:
-                        # spider(trak[i])
+                        # spider(trak[i], "POD")
                         inbound(trak[i])
                         close_Box_Scan(trak[i],box_num)
                 close_Box(box_num,trak)
@@ -74,34 +82,38 @@ class MyTestCase(unittest.TestCase):
                 check_weight(box_num,trak)
                 shipment_num = shipment_add()
                 mawb_data = create()
-                time.sleep(30)
+                time.sleep(10)
                 shipmentbatchId = shipment_scan(box_num,shipment_num)
                 shipment_close(shipmentbatchId,shipment_num)
                 time.sleep(10)
                 scan_box(box_num,mawb_data["mawb"],mawb_data["id"])
                 close_mawb(mawb_data["mawb"],mawb_data["id"])
-                time.sleep(10)
+                # time.sleep(10)
                 # status(trak[i],"OR","出口报关开始")
-                time.sleep(1)
-                for i in trak:
-                    print(i)
+                # time.sleep(1)
+                # status(trak[i], "RN", "RN")
+                # status(trak[i], "OR", "OR")
+                # time.sleep(1)
+                # for i in trak:
+                #     print(i)
+                #     time.sleep(60)
+                #     status(i, "ES", "出口清关开始")
+                #     time.sleep(60)
                 #     status(i,"FX","出口清关完成")
-                    status(i, "ZY", "包裹到达分拣中心")
-                    time.sleep(1)
-                    status(i, "TH", "退回")
-                # status(trak[i],"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
-                # time.sleep(1)
-                # status(trak[i],"OF","航班抵达")
-                # time.sleep(1)
-                # status(trak[i],"OS","进口清关开始")
-                # time.sleep(1)
-                # status(trak[i], "OQ", "进口清关完成")
-                # time.sleep(1)
-                # status(trak[i], "ZY", "包裹到达分拣中心")
-                # time.sleep(1)
-                # status(trak[i], "SP", "派送")
-                # time.sleep(1)
-                # status(trak[i], "OK", "用户签收")
+                #     time.sleep(60)
+                #     status(i,"OC","航班起飞")#CAINIAO_GLOBAL_LINEHAUL_DEPARTURE_CALLBACK
+                #     time.sleep(60)
+                #     status(i,"OF","航班抵达")
+                #     time.sleep(60)
+                #     status(i,"OS","进口清关开始")
+                #     time.sleep(60)
+                #     status(i, "OQ", "进口清关完成")
+                #     time.sleep(60)
+                #     status(i, "ZY", "包裹到达分拣中心")
+                    # time.sleep(60)
+                    # status(i, "SP", "派送")
+                    # time.sleep(60)
+                    # status(i, "OK", "用户签收")
                 # time.sleep(1)
                 # status(trak[i],"LT","干线转运中")
                 # time.sleep(1)
@@ -210,14 +222,39 @@ class MyTestCase(unittest.TestCase):
 
     # @unittest.skip("")
     def test_case_order_create12(self):
-        num = 200
+        num = 10
         trakings=[]
         box_num_list = []
         shipment_num = shipment_add()
         mawb = create()
         pos_token = login()
-        for i in range(num):
+        max_workers = 3
+        order_results = [None] * num
+
+        def create_one_order(index):
             tracking_num = file_create_order(pos_token)
+            if not tracking_num or tracking_num in ("\u5931\u8d25", "\u6fb6\u8fab\u89e6"):
+                print(f"order {index + 1} create failed: {tracking_num}")
+                return None
+            print(f"order {index + 1} create success: {tracking_num}")
+            return tracking_num
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_index = {
+                executor.submit(create_one_order, i): i
+                for i in range(num)
+            }
+            for future in as_completed(future_to_index):
+                index = future_to_index[future]
+                try:
+                    order_results[index] = future.result()
+                except Exception as e:
+                    print(f"order {index + 1} create exception: {e}")
+
+        trakings.extend([tracking_num for tracking_num in order_results if tracking_num])
+        print(f"order create finished: success {len(trakings)} / {num}")
+        if not trakings:
+            self.fail("all orders failed, stop next flow")
             # wb = openpyxl.load_workbook('../case/test.xlsx', read_only=True, data_only=True)#读取execl订单后入库
             # ws = wb.active
             # tr=str(ws['A'+str(i)].value)
@@ -226,9 +263,8 @@ class MyTestCase(unittest.TestCase):
         #     tr = row['number']
         #     print(str(index) + "行数" + row['number'])
         #     tracking_num = tr
-            trakings.append(tracking_num)
         track_list = [trakings[i:i+10] for i in range(0,len(trakings),10)]
-        time.sleep(30)
+        # time.sleep(30)
         for x in track_list:
             one = 0
             box_num = 0
@@ -258,7 +294,7 @@ class MyTestCase(unittest.TestCase):
                     inbound(track)
                     close_Box_Scan(track,box_num)
         shipmentbatchId = 0
-        time.sleep(10)
+        # time.sleep(10)
         for i in range(len(box_num_list)):
             shipmentbatchId = shipment_scan(box_num_list[i],shipment_num)
         shipment_close(shipmentbatchId,shipment_num)

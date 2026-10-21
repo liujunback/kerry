@@ -14,20 +14,23 @@ from locust import HttpUser,TaskSet,task
 class Test(TaskSet):
 
     def on_start(self):
-        url = "https://stg-foms-api.kec-app.com/user/login"
-        # url = "https://foms.kec-app.com/user/login"
-        param2 = {
-                    "username":"20240815.back","password":"20240815.backD"
-        }
-        headers = {
-          'Content-Type': 'application/json'
-        }
-        response = requests.post(url ,json.dumps(param2), headers = headers)
-        if "200" in response.text:
-            self.token =  json.loads(response.text)['data']['token']
+        # url = "https://stg-foms-api.kec-app.com/user/login"
+        url = "https://foms-api.kec-app.com//user/login"
+        credentials = {"username": "backtest.backtest", "password": "123456.backT"}
+
+        headers = {'Content-Type': 'application/json'}
+
+        response = requests.post(url, json.dumps(credentials), headers=headers)
+        # print(response.text)
+        if response.status_code == 200:
+            result = json.loads(response.text)
+            if result.get("code") == 200:
+                self.token = result['data']['token']
+                print(f"FOMS登录成功，token: {self.token}")
+            else:
+                print(f"FOMS登录失败: {response.text}")
         else:
-            print(response.text)
-        print(self.token)
+            print(f"FOMS登录HTTP错误: {response.status_code}")
 
     @task()
     def create_order(self):#下单
@@ -80,7 +83,7 @@ class Test(TaskSet):
                     },
                     "items": [
                         {
-                            "sku_code": "BACK_SKU202509287351170",
+                            "sku_code": "BACK_SKU20260910001",
                             "description": "backtest",
                             "unit_price": 167600,
                             "qty": 1,
@@ -102,8 +105,9 @@ class Test(TaskSet):
                             'Content-Type': 'application/json',
                             'Authorization': f'Bearer {self.token}'
                         },
-                        catch_response=True,
+                        catch_response=True, verify=False,
                         name="创建出库订单") as response:
+            print(response.text)
             if json.loads(response.text)["code"]==202 or json.loads(response.text)["code"]==201:
                 # print("创建Order成功")
                 # pool = redis.ConnectionPool(host='localhost', port=6379, db = 3)
@@ -119,6 +123,6 @@ class Test(TaskSet):
 
 class websitUser(HttpUser):
     tasks = [Test]
-    host = "https://stg-foms-api.kec-app.com"
+    host = "https://foms.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒

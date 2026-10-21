@@ -10,6 +10,10 @@ class KECUser(HttpUser):
 
     # 确保下载目录存在
     def on_start(self):
+        self.headers = {
+            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjE5NzEzLCJ1c2VyTmFtZSI6ImtlY3N0cmVzc3Rlc3QuYXBpIiwiaWF0IjoxNzkyNDc1NDY4LCJleHAiOjE3OTUwNjc0Njh9.XyjoPZmskEVJzlW-zEtl-7cmAM_QRNh5O4W7_n7h6ho',
+            'Content-Type': 'application/json'
+        }
         self.download_dir = "pdf_downloads"
         if not os.path.exists(self.download_dir):
             os.makedirs(self.download_dir)
@@ -24,9 +28,7 @@ class KECUser(HttpUser):
         """下载PDF文件到本地"""
         try:
             # 使用相同的认证头文件
-            headers = {
-                'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjE5NzEzLCJ1c2VyTmFtZSI6ImtlY3N0cmVzc3Rlc3QuYXBpIiwiaWF0IjoxNzYxNTQ5MjU0LCJleHAiOjE3NjQxNDEyNTR9.1VcvM9Gb15UIxyQRbm3N3d5hUvQCmjs5iissB1V3jD8'
-            }
+            headers = self.headers
 
             # 使用Locust的client下载，这样也会被统计在性能数据中
             response = self.client.get(label_url.replace(self.host, ""), headers=headers, name="Download_PDF")
@@ -104,10 +106,7 @@ class KECUser(HttpUser):
             "parcel": []
         }
 
-        headers = {
-            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWNfaGtfb21zX3YyLjAiLCJ1c2VySWQiOjE5NzEzLCJ1c2VyTmFtZSI6ImtlY3N0cmVzc3Rlc3QuYXBpIiwiaWF0IjoxNzYyNDI0MTU3LCJleHAiOjE3NjUwMTYxNTd9.tKxSBtKE3w7B64c-MphlDGxa2pn9c1Jgavtp9_OuCP8',
-            'Content-Type': 'application/json'
-        }
+        headers = self.headers
 
         # 发送创建运单请求
         with self.client.post(

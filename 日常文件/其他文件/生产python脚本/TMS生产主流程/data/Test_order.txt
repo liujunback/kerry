@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "currency": "USD",
+      "description": "Lips",
+      "description_origin_language": "COLORKEY珂拉琪空气唇釉丝绒系列 1.7g R608（2023年barbie版）",
+      "hs_code": "",
+      "quantity": 1,
+      "sku": "6975326782739",
+      "unit_price": 5,
+      "unit_weight": 1
+    }
+  ],
+  "package": {
+    "actual_weight": 1,
+    "declared_value": 5,
+    "declared_value_currency": "USD",
+    "height": "10.00",
+    "length": "10.00",
+    "number_of_package": 1,
+    "package_type": "WPX",
+    "payment_method": "PP",
+    "reference_number": "BACK202312069415594",
+    "shipment_term": "DDP",
+    "shipment_type": "Sensitive",
+    "shipping_fee": 0,
+    "sort_code": "",
+    "tracking_number": "",
+    "width": "10.00"
+  },
+  "receiver": {
+    "address": ".số 13 nguyễn thông p7 tp bac liêu .",
+    "city": "Thành phố Bạc Liêu",
+    "company": "",
+    "country_code": "VN",
+    "district": "Phường 7",
+    "email": "",
+    "id_card_number": "",
+    "id_number": "",
+    "name": "Oanh",
+    "phone": "0948707895",
+    "post_code": "31822",
+    "province": "Tỉnh Bạc Liêu"
+  },
+  "sale_platform": "OTHER",
+  "sender": {
+    "address": "广东省清远市清城区横荷街道建设二路海琴湾销售中心对面工业园内美创云仓-美创供应链余梓楷",
+    "city": "清远市",
+    "company": "美尚",
+    "country_code": "CN",
+    "district": "清城区",
+    "email": "smt@meishangcorp.com",
+    "ioss_number": "",
+    "name": "余梓楷",
+    "phone": "18934297098",
+    "post_code": "511517",
+    "province": "广东省"
+  },
+  "service": {
+    "channel_code": "kevnghtk"
+  }
+}

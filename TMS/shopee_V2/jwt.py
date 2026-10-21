@@ -46,13 +46,8 @@ with open("../shopee_V2/box_data.txt", 'r', encoding='utf-8') as f:
 # }
 # print(payload)
 
-print(json.dumps(jwt({
-  "data": {
-    "carrier_tn": "TWSPTEST20251027142832",
-    "unique_id": "BACKTEST20251027142832"
-  },
-  "timestamp": 1688061603
-})))
+print(json.dumps(jwt({'data': {'parcel_list': ['TEST202601231827460', 'TEST202601231827461', 'TEST202601231827462', 'TEST202601231827463', 'TEST202601231827464'], 'order': {'unique_id': 'BACKTEST20260123182746', 'carton_length': 45, 'receiver': {'address': 'Jalan Lapangan Terbang, 93250 Kuching, Sarawak，Malaysia', 'city': 'Kuching', 'zipcode': 523000, 'phone': -658930936, 'name': 'Shopee', 'state': 'Sarawak', 'region': 'Malaysia', 'region_code': 'MY'}, 'pre_carrier_info': {'carrier_name': 'TWYS'}, 'destination_region_name': 'Malaysia', 'destination_region': 'MY', 'handling_type': 1, 'carton_no': 'TWSPTEST20260123182746', 'carton_weight': 21.085, 'next_carrier_info': {'carrier_tn': 'TWYSPKM25090400802', 'carrier_name': 'ABX-(IM)MY', 'carrier_code': 110091}, 'ilh_shopee_no': 'BACKTEST20260123182746', 'carrier_tn': 'TWSPTEST20260123182746', 'sender': {'address': 'Si hai road 1666', 'city': 'Jinhua', 'phone': 149772764, 'district': 'Yiwu', 'name': 'Logistics Sorting Hub', 'state': 'Zhejiang', 'region': 'China', 'region_code': 'CN'}, 'parcel_qty': 89, 'carton_height': 49.5, 'transport_type': 1, 'carton_volume': 120285, 'service_code': 'MB76', 'goods_type': 0, 'carton_width': 54}}, 'timestamp': 1676447280}
+)))
 # parcel_list=["TEST202509051142480"]
 # parcel_list_data = []
 # for i in range(len(parcel_list)):

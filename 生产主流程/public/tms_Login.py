@@ -44,7 +44,8 @@ def tms_login(properties):
         response = requests.post(
             url=url_with_params,
             verify=False,  # 注意：生产环境应使用有效证书
-            timeout=(3.05, 27)  # 连接超时3秒，读取超时27秒
+            timeout=(3.05, 27),  # 连接超时3秒，读取超时27秒
+            proxies = {"http": None, "https": None}
         )
 
         # 检查HTTP状态码

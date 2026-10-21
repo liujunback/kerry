@@ -1,0 +1,48 @@
+{
+    "service":{
+        "channel_code":"CACNTHG00"
+    },
+    "package":{
+        "reference_number":"XS210428154128259-4",
+        "declared_value":3,
+        "declared_value_currency":"USD",
+        "actual_weight":143,
+        "shipment_term":"DDU",
+        "payment_method":"PP"
+    },
+    "sender":{
+        "name":"fangqingyi",
+        "company":"fangqingyi",
+        "address":"changan zhen shatou",
+        "city":"guangdong",
+        "province":"donggua",
+        "country_code":"CN",
+        "post_code":"523000",
+        "phone":"13166668888",
+        "email":"jiachuang@166.com"
+    },
+    "receiver":{
+        "name":"Loui Warren",
+        "company":"",
+        "address":"59 MOO 14 BAAN NON SUNG, DISTRICT THAPH RANG",
+        "district":"",
+        "city":"AMPHOE PHRA THONG KHAM",
+        "province":"NAKHON RATCHASIMA",
+        "country_code":"TH",
+        "post_code":"30220",
+        "phone":"66 929192873",
+        "email":"louirwarren@hotmail.com",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"YCSHDA994612707",
+            "description":"Garden plug-in",
+            "description_origin_language":"花园插件",
+            "unit_price":3,
+            "currency":"USD",
+            "quantity":1,
+            "hs_code":"8306299000"
+        }
+    ]
+}

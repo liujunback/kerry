@@ -1,50 +1,51 @@
 {
     "parcel_list": [
-
+        "VN260524640488WT"
     ],
     "order": {
-        "unique_id": "BACKTEST20250928094439",
+        "unique_id": "UVN262031528470ST",
         "carton_length": 45,
         "receiver": {
-            "address": "Jalan Lapangan Terbang, 93250 Kuching, Sarawak，Malaysia",
-            "city": "Kuching",
-            "zipcode": 523000,
-            "phone": -658930936,
-            "name": "Shopee",
-            "state": "Sarawak",
-            "region": "Malaysia",
-            "region_code": "MY"
+            "address": "test address",
+            "city": "Huyện Bình Lục",
+            "zipcode": 12312313,
+            "phone": 123133,
+            "district": "Xã Bình Nghĩa",
+            "name": "123133",
+            "state": "Hà Nam",
+            "region": "Vietnam",
+            "email": "123133",
+            "region_code": "VN"
         },
         "pre_carrier_info": {
-            "carrier_name": "TWYS"
+            "carrier_name": "joint test line export 4",
+            "carrier_code": 110003
         },
-        "destination_region_name": "Malaysia",
-        "destination_region": "MY",
-        "carton_no": "TWSPTEST20250928094439",
-        "handling_type": "2",
-        "carton_weight": 21.085,
+        "destination_region_name": "Vietnam",
+        "destination_region": "VN",
+        "carton_no": "1779951894673",
+        "carton_weight": 1.38,
         "next_carrier_info": {
-            "carrier_tn": "TWYSPKM25090400802",
-            "carrier_name": "ABX-(IM)MY",
-            "carrier_code": 110091
+            "carrier_name": "CB_VN_SPX_N",
+            "carrier_code": 5018
         },
-        "ilh_shopee_no": "BACKTEST20250928094439",
-        "carrier_tn": "TWSPTEST20250928094439",
+        "ilh_shopee_no": "LVN269457746032OT",
+        "carrier_tn": "1779951894673",
         "sender": {
-            "address": "Si hai road 1666",
-            "city": "Jinhua",
-            "phone": 149772764,
-            "district": "Yiwu",
-            "name": "Logistics Sorting Hub",
-            "state": "Zhejiang",
-            "region": "China",
-            "region_code": "CN"
+            "address": "test address",
+            "city": "Huyện Bình Lục",
+            "zipcode": 123123,
+            "district": "Thị Trấn Bình Mỹ",
+            "name": "shopee",
+            "state": "Hà Nam",
+            "region": "Vietnam",
+            "region_code": "VN"
         },
-        "parcel_qty": 89,
+        "parcel_qty": 1,
         "carton_height": 49.5,
         "transport_type": 1,
         "carton_volume": 120285,
-        "service_code": "MB79",
+        "service_code": "V1003NDG",
         "goods_type": 0,
         "carton_width": 54
     }

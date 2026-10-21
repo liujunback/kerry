@@ -1,0 +1,48 @@
+{
+    "service":{
+        "channel_code":"CACNMYG00"
+    },
+    "package":{
+        "reference_number":"XS210501121141481-2",
+        "declared_value":12,
+        "declared_value_currency":"USD",
+        "actual_weight":297,
+        "shipment_term":"DDU",
+        "payment_method":"PP"
+    },
+    "sender":{
+        "name":"fangqingyi",
+        "company":"fangqingyi",
+        "address":"changan zhen shatou",
+        "city":"guangdong",
+        "province":"donggua",
+        "country_code":"CN",
+        "post_code":"523000",
+        "phone":"13166668888",
+        "email":"jiachuang@166.com"
+    },
+    "receiver":{
+        "name":"wendy tan",
+        "company":"",
+        "address":"Lot 2935 faradale commercial center lot 2935 faradale commercial center",
+        "district":"",
+        "city":"Sarawak",
+        "province":"Johor",
+        "country_code":"MY",
+        "post_code":"98000",
+        "phone":" 600168701911",
+        "email":"wendywei1911@gmail.com",
+        "id_number":""
+    },
+    "items":[
+        {
+            "sku":"YCMQVY218265607",
+            "description":"Mobile phone video screen magnifier",
+            "description_origin_language":"手机视频屏幕放大器",
+            "unit_price":12,
+            "currency":"USD",
+            "quantity":1,
+            "hs_code":"9013801000"
+        }
+    ]
+}

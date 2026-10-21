@@ -1,0 +1,9 @@
+.env
+.pytest_cache/
+__pycache__/
+artifacts/
+playwright-report/
+test-results/
+.idea/
+.vscode/
+

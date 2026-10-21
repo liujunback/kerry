@@ -30,10 +30,11 @@ def create_big_box_id(pakege_list):
     token=login()
     header={"Content-Type":"application/json","Authorization":"Bearer "+token}
     # url = "http://120.78.66.231:8000/pos-web/shipment/create/multiple"
-    url = "http://47.119.120.7:8000/pos-web/shipment/create/multiple"
+    url = "https://pos-kec-eng-uat.kec-app.com/pos-web/shipment/create/multiple"
+    url =
     data = json.dumps(date(pakege_list))
     # print(data)
-    r1=requests.post(url,data=data,headers=header)
+    r1=requests.post(url,data=data,headers=header,timeout=(10, 30), verify=False, proxies={"http": None, "https": None})
     request=json.loads(json.dumps(r1.text))
     print("order:"+request)
     return json.loads(r1.text)["data"]["bag_id"]
@@ -83,3 +84,4 @@ def big_box(box_num):
 
     print(response.text)
 
+create_big_box_id(100)

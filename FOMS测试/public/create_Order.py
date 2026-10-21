@@ -27,6 +27,7 @@ def create_Order(sku_number,properties,token):
     }
 
     response = requests.request("POST", url, headers=headers, data= json.dumps(payload))
+    print(order_num)
     # print(response.text)
     if json.loads(response.text)['code'] in [202,201]:
         print("创建订单成功：" + order_num)

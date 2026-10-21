@@ -1,17 +1,23 @@
 {
     "warehouse_code": "ITST",
+    "pickup_code":"2342",
     "merchant_code": "KEC-2342",
     "logistics_provider": {
         "code": "FLOSHIP_FEDEX",
         "tracking_number": "BACK_OR2024082367262"},
     "order_number": "BACK_OR202408209967262",
-    "platform": {
 
+
+    "platform": {
+"name":"shoopee"
     },
-    "currency": "THB",
+    "currency": "USD",
     "shipment_term": "DDU",
+    "destination_declared_value": "123",
+    "destination_declared_currency": "THB",
     "cod_value_currency": "THB",
     "declared_value": 1,
+    "pickup_code": "T12312HB",
     "require_customized_invoice": "0",
     "remarks": "",
     "self_pick_store1":"0070186601866",
@@ -25,31 +31,35 @@
         "country_code": "CN",
         "post_code": "21001",
         "phone": "123456789",
-        "email": "123@abnc.com"
+        "email": "123@abnc.com",
+                "tax_id": "12323",
+        "tax_id_type": "VAT",
+        "taxid_issued_country_code":"TH"
     },
     "receiver": {
         "name": "test",
-        "company": "test com12222222222222222222222222222222222222222222222212312312322222222pany",
+        "company": "test ",
         "address": "test",
         "district": "test",
         "city": "SZ",
-        "province": "GD",
-        "country_code": "KR",
+        "province": "Saskat(chewan (CA)",
+        "country_code": "TH",
         "post_code": "21000",
-
+        "house_number":"23423",
         "phone": "223456789",
         "email": "123@abnc.com",
                 "tax_id": "t2342342",
-        "tax_id_type": "ID_CARD",
+        "tax_id_type": "VAT",
         "taxid_issued_country_code":"TW"
     },
     "items": [
         {
             "sku_code": "BACK_SKU202412237355561",
             "description": "backtest",
-            "unit_price": 167600,
+            "unit_price": 20,
+            "destination_unit_price": 10,
             "qty": 2,
-            "condition": "GOOD",
+            "condition": "EXPIRED_HOLD",
             "weight": 6,
             "properties": [
                 {

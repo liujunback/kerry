@@ -37,16 +37,16 @@ class MyTestCase(unittest.TestCase):
         # 创建SKU
         for i in range(1):
             sku_number = create_SKU(properties,foms_token)
-        # sku_number = "BACK_SKU202509011949921"
+        # sku_number = "BACK_SKU20260813620565"
 
         # 更新SKU
         update_sku(properties,foms_token,sku_number)
 
 
-        #  完结入库单
+         # 完结入库单
         asn_number = create_ASN(sku_number,properties,foms_token)
         # asn_number = "BACKASN202508062767494"
-        time.sleep(10)
+        # time.sleep(10)
         # asn_data = select_asn_id(properties,twms_login,asn_number)
         # asn_receive(properties,twms_login,asn_data,sku_number)
         # asn_confirm(properties,twms_login,asn_data)
@@ -63,7 +63,8 @@ class MyTestCase(unittest.TestCase):
 
         # 订单主流程
         time_start = time.time()
-        order_number = create_Order(sku_number,properties,foms_token)
+        for i in range(1):
+            order_number = create_Order(sku_number,properties,foms_token)
         # order_number = "BACK_OR202508069176154"
         time_end = time.time()
         print('下单耗时：', round(time_end - time_start, 2), 's')

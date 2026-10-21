@@ -56,7 +56,10 @@ def Ops_Login(properties):
             headers=headers,
             verify=False,  # 注意：verify=False有安全风险，生产环境应使用有效证书
             timeout=(3.05, 27)  # 连接超时3秒，读取超时27秒
+            ,  # 连接超时3秒，读取超时27秒
+            proxies={"http": None, "https": None}
         )
+        response.close()
 
         # 5. 检查HTTP状态码
         if response.status_code != 200:

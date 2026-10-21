@@ -1,9 +1,15 @@
 import requests
 import json
 import time
+import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# 禁用SSL警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+import os
+os.environ["NO_PROXY"] ="pos-kec-eng-uat.kec-app.com,tms-kec-eng-uat.kec-app.com,spider-stg.kec-app.com"
 
 def Controller_Login(max_retries=3, backoff_factor=1):
     """
@@ -17,12 +23,13 @@ def Controller_Login(max_retries=3, backoff_factor=1):
         str: 登录成功返回token，失败返回None
     """
     data = {
-        "userNo": "kec064",
-        "password": "123465"
+        "userNo": "KEC064",
+        "password": "123465",
+        "server": "",
+        "company": "kec"
     }
     headers = {
-        'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'Content-Type': 'application/json'
     }
 
     # 创建Session并配置重试策略
@@ -49,10 +56,11 @@ def Controller_Login(max_retries=3, backoff_factor=1):
 
             response = session.post(
                 url,
-                data=json.dumps(data),
+                json=data,
                 headers=headers,
                 timeout=30,  # 设置超时时间
-                verify=True  # 验证SSL证书
+                verify=False,  # 跳过SSL证书验证
+                proxies={"http": None, "https": None}  # 禁用代理
             )
 
             # 检查HTTP状态码

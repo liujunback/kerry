@@ -35,10 +35,10 @@ class Test(TaskSet):
             if "success" in response.text:
                 response.success()
                 print(json.loads(response.text)["data"]["label"])
-                url = json.loads(response.text)["data"]["label"]
-                pdf = requests.get(url)
-                with open("D:\pdf\\"+reference_number+".pdf", 'wb') as f:
-                    f.write(pdf.content)
+                # url = json.loads(response.text)["data"]["label"]
+                # pdf = requests.get(url)
+                # with open("D:\pdf\\"+reference_number+".pdf", 'wb') as f:
+                #     f.write(pdf.content)
             else:
                 response.failure("fail")
                 print(reference_number)
@@ -48,6 +48,6 @@ class Test(TaskSet):
 
 class websitUser(HttpUser):
     tasks = [Test]
-    host = "http://stg.spider.tec-api.com:38005"
+    host = "https://spider-stg-waf-test.kec-app.com"
     min_wait = 1000  # 单位为毫秒
     max_wait = 2000  # 单位为毫秒

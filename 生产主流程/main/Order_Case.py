@@ -20,13 +20,13 @@ from 生产主流程.public.Ops_Login import Ops_Login
 from 生产主流程.public.Pos_Login import Pos_Login
 from 生产主流程.public.tms_Login import tms_login
 import os
-os.environ["NO_PROXY"] = "pos-eng.kec.kln.cn"
+os.environ["NO_PROXY"] ="spider.kec-app.com,cb-tms-kp-de.kec-app.com,tms-eng.kec.kln.cn,cb-pos-kp-de.kec-app.com,cb-ops-kp-de.kec-app.com,pos-eng.kec.kln.cn,pos.jp.kec-app.com,ops-eng.kec.kln.cn,tms.jp.kec-app.com"
 
 class MyTestCase(unittest.TestCase):
 
     def test_case_order(self):
         fail = 0
-        company = "test"  # KEC-备用
+        company = "KEC"  # KEC-备用
         properties = getProperties(company)
         print(f"当前公司: {company}")
 
@@ -39,9 +39,8 @@ class MyTestCase(unittest.TestCase):
         tms_token = tms_login(properties)
         print(f"POS Token: {pos_token}")
         # print(f"OPS Token: {ops_token}")
-        # print(f"TMS Token: {tms_token}")
+        print(f"TMS Token: {tms_token}")
         box_num = 0  # 存储箱号
-
         try:
             # 第一阶段：创建订单
             if x >= 1:
@@ -54,8 +53,12 @@ class MyTestCase(unittest.TestCase):
                         # tracking_number = str(ws['A'+str(i)].value)
 
                         # 创建新订单
-                        # tracking_number = Order_Create(properties, pos_token)
-                        tracking_number = "ITTEST20251225180049132"
+                        tracking_number = Order_Create(properties, pos_token)
+                        # tracking_number = "ITTEST20260824001"
+                        # send_tracking(properties, tracking_number, "ES0100")  # 推送shpider货态
+                        # send_tracking(properties, tracking_number, "ES1400")  # 推送shpider货态
+                        # send_tracking(properties, tracking_number, "ES0400")  # 推送shpider货态
+                        # Big_Bag_Create(50, pos_token, properties)
 
                         if "失败" in tracking_number:
                             fail += 1
@@ -78,7 +81,7 @@ class MyTestCase(unittest.TestCase):
                     try:
                         if i == 0:  # 第一个订单特殊处理
                             print(f"处理首单: {tracking_number}")
-                            # time.sleep(30)
+                            time.sleep(30)
                             OPS_Inbound(tracking_number, properties, ops_token)
                             time.sleep(10)
                             box_num = Outbound_Scan(tracking_number, properties, ops_token)
@@ -113,14 +116,14 @@ class MyTestCase(unittest.TestCase):
                     time.sleep(5)
                     close_mawb(mawb_data["mawb"], mawb_data["id"], tms_token, properties)
                     time.sleep(5)
-                    mawb_status(mawb_data["id"], "OF", tms_token, properties)
+                    mawb_status(mawb_data["id"], "FX", tms_token, properties)
                     time.sleep(5)
                     # status(tracking_number, "OK", tms_token, properties, "签收成功")
                     export_packing_list(tracking_number, tms_token,properties)
                     time.sleep(10)
-                    check_file_urls(tms_token, properties)
+                    # check_file_urls(tms_token, properties)
                     time.sleep(1)
-                    send_tracking(properties,tracking_number)#推送shpider货态
+                    send_tracking(properties,tracking_number,"ES0100")#推送shpider货态
                     # status(tracking_number,"EH",tms_token,properties,"出口清关查件")
                     # time.sleep(1)
                     # status(tracking_number,"EN",tms_token,properties,"违禁品")
@@ -141,7 +144,7 @@ class MyTestCase(unittest.TestCase):
                     # time.sleep(1)
                     # status(tracking_number,"HL",tms_token,properties,"交货到末公里")
                     time.sleep(1)
-                    status(tracking_number,"ZY",tms_token,properties,"包裹到达分拣中心")
+                    # status(tracking_number,"ZY",tms_token,properties,"包裹到达分拣中心")
                     time.sleep(1)
                     status(tracking_number,"SP",tms_token,properties,"站点发出")
                     # time.sleep(1)

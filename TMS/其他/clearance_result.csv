@@ -1,0 +1,2 @@
+﻿referenceNo,status,queryCode,queryMessage,orderNo,logisticsNo,invtNo,ieDate,pushPayload,pushResult,error
+5552028720204474,DONE,SYS000,Success,20260705S030000000002,CNG00828778884642,53142026E606875699,20260705,"{""appTime"": ""20260806113932"", ""copNo"": ""CNG00828778884642"", ""ieDate"": ""20260705"", ""invtNo"": ""53142026E606875699"", ""logisticsNo"": ""CNG00828778884642""}","{""code"": 500, ""message"": ""运单不存在""}",

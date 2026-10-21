@@ -1,0 +1,54 @@
+version: 1
+
+modules:
+  - code: clients
+    name: 客户管理
+    priority: P1
+    focus:
+      - 字符串长度
+      - 枚举
+      - 数值
+      - 激活状态
+
+  - code: warehouses
+    name: 仓库管理
+    priority: P1
+    focus:
+      - 经纬度
+      - 国家码
+      - 枚举
+      - 状态切换
+
+  - code: skus
+    name: SKU 管理
+    priority: P1
+    focus:
+      - UUID
+      - 布尔值
+      - 单位
+      - 尺寸重量
+
+  - code: inventory
+    name: 库存与调整
+    priority: P0
+    focus:
+      - 数量边界
+      - 数组结构
+      - 关联字段
+      - 状态机
+
+  - code: returns
+    name: 退件
+    priority: P1
+    focus:
+      - 物流单号
+      - 仓库上下文
+      - 状态前置
+
+  - code: outbound
+    name: 出库
+    priority: P0
+    focus:
+      - 地址对象
+      - 订单行数组
+      - 优先级与状态

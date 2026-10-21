@@ -1,0 +1,12 @@
+中间件下发数据格式：
+URL:{{URL}}
+Content-type: application/x-www-form-urlencoded; charset=UTF-8
+Authorization:Bearer {{token}}
+
+body:
+msg_id=lsb-g3%2Ctask%2C548599634%2Cmagellan-channel-pro%2C1%2C0&msg_name=jingdong_magellan_pushdown_channel&msg_payload=%7B%22orderType%22%3A%221%22%2C%22orderSource%22%3A%22JOYBUY%E4%B8%8B%E5%8D%95%22%2C%22orderNumber%22%3A%22ZJ01024503140800%22%2C%22orderCreateTime%22%3A%22Jul+30%2C+2021+2%3A22%3A03+PM%22%2C%22ddl%22%3A%22ZJ01024503140800%22%7D&msg_pin=jd_51676128fefa1
+
+
+
+麦哲伦货态映射#
+{"sort_in":["PK","pickup"],"uplift":["DP","departure from origin port"],"import":["CR","customs released"],"handover_linehaul":["HO","hub-out"],"handover_lastmile":["HL","handover to last mile"],"receive":["DL","delivered"],"reject":["DF","deliver failed"],"lastmile_in_transit":["AT","Your order arrived at destination station"],"first_delivery_attempt":["OP","Out for delivery"], "ata": ["CC", "customs clearance"]}

@@ -41,6 +41,7 @@ def Close_Box(
                 headers=headers,
                 verify=False,
                 timeout=10  # 添加超时设置
+                , proxies={"http": None, "https": None}
             )
             response.raise_for_status()  # 检查HTTP状态码
 

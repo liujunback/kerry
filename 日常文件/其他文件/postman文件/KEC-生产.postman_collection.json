@@ -1,0 +1,1873 @@
+{
+	"info": {
+		"_postman_id": "f6661283-3753-4aba-addc-ba7631d19810",
+		"name": "KEC-生产",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "天猫集运",
+			"item": [
+				{
+					"name": "天猫集运下单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "token",
+								"value": "eyJ0-W1l#3RhbXAiOjE2NDY^$DQ3$jk0$zYsIm5vbmNlIjoiV25BbVBYWX$iLCJ0b2tlbiI6IjdlNj$5$WI0LTgzOTQtNGE5NS1iOTBkLTg5$D#0ZTNkYmQ^$iJ9",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "msg_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "data_digest",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "partner_code",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "msg_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "from_code",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "logistics_interface",
+									"value": "{\"logisticsEvent\":{\"eventHeader\":{\"eventTime\":\"2022-03-15 21:57:16\",\"eventTimeZone\":\"UTC+8\",\"eventType\":\"CONSO_WAREHOUSE_CONSIGN\"},\"eventBody\":{\"logisticsDetail\":{\"isLastPackage\":\"Y\",\"orderSource\":\"1\",\"bizType\":\"CONSO4PL\",\"consoWarehouseCode\":\"TRAN_STORE_30742064\",\"buyerDetail\":{\"country\":\"ประเทศไทย\",\"zipCode\":\"37210\",\"province\":\"กรุงเทพมหานคร\",\"userRecogCode\":\"X2M0E5G3\",\"phone\":\"\",\"city\":\"บางบอน\",\"streetAddress\":\"泰国曼谷测试地址，请勿修改，，，，\",\"district\":\"\",\"name\":\"测试\",\"mobile\":\"86-13658962352\",\"membership\":{\"paidType\":\"N\",\"userLevel\":\"regularMember\"},\"wangwangId\":\"小壮测试账号01\"},\"deliveryType\":\"HOME_DELIVERY\",\"logisticsOrderCode\":\"LP0050129094\",\"check\":\"false\",\"grayTag\":\"true\",\"categoryFeature\":\"normal\",\"mailNo\":\"501378924\",\"isSplitConsign\":\"N\",\"carrierCode\":\"TTKDEX\",\"packageQuantity\":\"1\",\"senderDetail\":{\"country\":\"中国\",\"zipCode\":\"311100\",\"province\":\"浙江省\",\"town\":\"五常街道乐佳国际2号楼\",\"city\":\"杭州市\",\"streetAddress\":\"浙江省^^^杭州市^^^余杭区^^^ 五常街道乐佳国际2号楼\",\"district\":\"余杭区\",\"name\":\"小壮\",\"mobile\":\"14111111111\",\"shopName\":\"商家测试账号（小壮）\",\"wangwangId\":\"商家测试账号（小壮）\"},\"items\":[{\"itemId\":\"636639562613\",\"itemUnitPrice\":\"1\",\"itemPicUrl\":\"https://img.alicdn.com/imgextra/i1/263669477/O1CN01fH0cbf2JsW8fvHFwx_!!263669477.jpg\",\"itemName\":\"(测试商品请不要拍)克隆商品42985775812\",\"itemQuantity\":\"1\",\"itemSkuProperty\":\"颜色分类:深紫色\",\"currency\":\"CNY\",\"categoryName\":\"饰品/流行首饰/时尚饰品新_发饰\",\"totalActualPayment\":\"1\",\"skuId\":\"4737935298631\",\"categoryId\":\"50013864_50013878\",\"currencyUnit\":\"CENT\"}]},\"paymentDetail\":{\"tradeOrderValue\":\"1\",\"currency\":\"CNY\",\"totalShippingFee\":\"0\",\"currencyUnit\":\"CENT\"},\"tradeDetail\":{\"tradeOrderId\":\"2524657323150645519\",\"dereRecogCode\":\"RUGANEFUEQCN3\"}}}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TMS Url}}/tms-saas-web/cainiao-conso/cargo/create",
+							"host": [
+								"{{TMS Url}}"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"cargo",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "天猫集运更新",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "logistics_interface",
+									"value": "{\n    \"logisticsEvent\":{\n        \"eventHeader\":{\n            \"eventTime\":\"2017-05-21 08:00:00\",\n            \"eventTimeZone\":\"UTC+8\",\n            \"eventType\":\"CONSO_WAREHOUSE_CANCEL_CONSIGN\"\n        },\n        \"eventBody\":{\n            \"logisticsDetail\":{\n                \"mailNo\":\"342342342342\",\n                \"targetWarehouseCode\":\"TRAN_STORE_30491082\",\n                \"consoWarehouseCode\":\"CONSO-WAREHOUSE-001\",\n                \"carrierCode\":\"YTO\",\n                \"logisticsOrderCode\":\"RE1122813624\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								},
+								{
+									"key": "msg_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "data_digest",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "partner_code",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "msg_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "from_code",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TMS Url}}/tms-saas-web/cainiao-conso/cargo/update",
+							"host": [
+								"{{TMS Url}}"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"cargo",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "天猫集运取消",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "logistics_interface",
+									"value": "{\n    \"logisticsEvent\":{\n        \"eventHeader\":{\n            \"eventTime\":\"2017-05-21 08:00:00\",\n            \"eventTimeZone\":\"UTC+8\",\n            \"eventType\":\"CONSO_WAREHOUSE_CANCEL_CONSIGN\"\n        },\n        \"eventBody\":{\n            \"logisticsDetail\":{\n                \"consoWarehouseCode\":\"CONSO-WAREHOUSE-001\",\n                \"logisticsOrderCode\":\"RE3337698121\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								},
+								{
+									"key": "msg_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "data_digest",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "partner_code",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "msg_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "from_code",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TMS Url}}/tms-saas-web/cainiao-conso/cargo/cancel",
+							"host": [
+								"{{TMS Url}}"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"cargo",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "天猫集运退货",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "logistics_interface",
+									"value": "{\n    \"logisticsEvent\":{\n        \"eventHeader\":{\n            \"eventTime\":\"2017-10-09 20:25:00\",\n            \"eventTimeZone\":\"UTC+8\",\n            \"eventType\":\"CONSO_WAREHOUSE_RETURN_REFUND_NOTICE\"\n        },\n        \"eventBody\":{\n            \"logisticsDetail\":{\n                \"consoWarehouseCode\":\"TRANS_001\",\n                \"occurTime\":\"2017-10-09 20:25:00\",\n                \"logisticsOrderCode\":\"RE1122813624\",\n                \"timeZone\":\"UTC+8\",\n                \"items\":[\n                    {\n                        \"itemId\":\"1231\",\n                        \"quantity\":\"2\",\n                        \"skuId\":\"123131\"\n                    }\n                ],\n                \"status\":\"REFUND_SUCCESS\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								},
+								{
+									"key": "msg_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "data_digest",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "partner_code",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "msg_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "from_code",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TMS Url}}/tms-saas-web/cainiao-conso/cargo/refund",
+							"host": [
+								"{{TMS Url}}"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"cargo",
+								"refund"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "出货通知 退货",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0-W1l#3RhbXAiOjE2NDY^$DQ3$jk0$zYsIm5vbmNlIjoiV25BbVBYWX$iLCJ0b2tlbiI6IjdlNj$5$WI0LTgzOTQtNGE5NS1iOTBkLTg5$D#0ZTNkYmQ^$iJ9"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "logistics_interface",
+									"value": "{\n    \"logisticsEvent\":{\n        \"eventHeader\":{\n            \"eventTime\":\"2017-10-09 20:25:00\",\n            \"eventTimeZone\":\"UTC+8\",\n            \"eventType\":\"CONSO_WAREHOUSE_OUTBOUND_NOTICE\"\n        },\n        \"eventBody\":{\n            \"logisticsDetail\":{\n                \"popStationDetail\":{\n                    \"stationType\":\"1\",\n                    \"stationId\":\"123123\"\n                },\n                \"orderSource\":\"1\",\n                \"totalLogisticsOrderCodes\":\"LP000198849128394|LP00084928498294\",\n                \"bizType\":\"CONSO\",\n                \"sortingCode\":\"01-001\",\n                \"consoWarehouseCode\":\"TRANS_CODE_001\",\n                \"carrierCode\":\"TRANS_CODE_001\",\n                \"logisticsOrderCode\":\"LP0012311231232\",\n                \"receiverDetail\":{\n                    \"country\":\"Thailand\",\n                    \"zipCode\":\"24000\",\n                    \"town\":\"乡镇/街道\",\n                    \"city\":\"九龙\",\n                    \"mobile\":\"1219280324\",\n                    \"membership\":{\n                        \"paidType\":\"Y/N\",\n                        \"userLevel\":\"regularMember / seniorMember\"\n                    },\n                    \"wangwangId\":\"买家旺旺Id\",\n                    \"identityNo\":\"身份证号\",\n                    \"province\":\"香港特别行政区\",\n                    \"userRecogCode\":\"用户识别码\",\n                    \"phone\":\"1219280324\",\n                    \"streetAddress\":\"详细地址\",\n                    \"district\":\"北区\",\n                    \"name\":\"张三\",\n                    \"email\":\"test@test.com\"\n                },\n                \"outboundLogisticsOrderCodes\":\"RE1126443922\",\n                \"segmentCode\":\"RETURNSELLER\",\n                \"majorlogisticsOrderCode\":\"LP0008733454\"\n            },\n            \"paymentDetail\":{\n                \"payOrderId\":\"324523457353\",\n                \"payTimeZone\":\"UTC+8\",\n                \"shippingFee\":\"1000\",\n                \"payTime\":\"2017-10-09 20:25:00\",\n                \"payWeight\":\"1000\",\n                \"currency\":\"CNY\",\n                \"currencyUnit\":\"CENT\",\n                \"weightUnit\":\"GRAM\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TMS Url}}/tms-saas-web/cainiao-conso/conso-order/create?cainiao_channel=CTCNTH000",
+							"host": [
+								"{{TMS Url}}"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"conso-order",
+								"create"
+							],
+							"query": [
+								{
+									"key": "cainiao_channel",
+									"value": "CTCNTH000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "出货通知",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5004efe9-d12a-496c-b3c7-2f2d0bc15bce",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0-W1l#3RhbXAiOjE2NDY^$DQ3$jk0$zYsIm5vbmNlIjoiV25BbVBYWX$iLCJ0b2tlbiI6IjdlNj$5$WI0LTgzOTQtNGE5NS1iOTBkLTg5$D#0ZTNkYmQ^$iJ9"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "logistics_interface",
+									"value": "{\n    \"logisticsEvent\":{\n        \"eventHeader\":{\n            \"eventType\":\"CONSO_WAREHOUSE_OUTBOUND_NOTICE\",\n            \"eventTime\":\"2022-05-02 11:17:26\"\n        },\n        \"eventBody\":{\n            \"paymentDetail\":{\n                \"payOrderId\":\"2602383697404199884\",\n                \"payTime\":\"2022-04-29 18:09:22\",\n                \"payTimeZone\":\"UTC+8\",\n                \"shippingFee\":\"18550\",\n                \"payWeight\":\"12960\",\n                \"weightUnit\":\"GRAM\",\n                \"currencyUnit\":\"CENT\",\n                \"currency\":\"CNY\"\n            },\n            \"extendData\":{\n                \"promotionMoney\":\"0\"\n            },\n            \"logisticsDetail\":{\n                \"consoWarehouseCode\":\"TRAN_STORE_30742064\",\n                \"logisticsOrderCode\":\"LP00508248128236\",\n                \"outboundLogisticsOrderCodes\":\"LP00507336869234|LP00507014869432\",\n                \"bizType\":\"CONSO4PL\",\n                \"segmentCode\":\"SENDTORECVER\",\n                \"carrierCode\":\"DISTRIBUTOR_30741777\",\n                \"receiverDetail\":{\n                    \"name\":\"Wei\",\n                    \"mobile\":\"66-806132570\",\n                    \"country\":\"泰国\",\n                    \"streetAddress\":\"Villa No.11Andara Resort and Villas, 15 Moo 6 Kamala Beach Kathu Phuket 83150\",\n                    \"zipCode\":\"83000\",\n                    \"wangwangId\":\"荣小花joyce\",\n                    \"userRecogCode\":\"1ON6MGB\",\n                    \"membership\":\"\"\n                },\n                \"majorlogisticsOrderCode\":\"LP00508248128236\",\n                \"orderSource\":\"1\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/cainiao-conso/conso-order/create?cainiao_channel=860777",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"cainiao-conso",
+								"conso-order",
+								"create"
+							],
+							"query": [
+								{
+									"key": "cainiao_channel",
+									"value": "860777"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "其他",
+			"item": [
+				{
+					"name": "量方机",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logistics_info\": {\r\n        \"logisticsCode\": \"msd\",\r\n        \"waybillCode\": \"KECL600313980\",\r\n        \"weight\": 2807,\r\n        \"cusFlag\": \"OUT\",\r\n        \"oprNo\": \"\",\r\n        \"batchNo\": \"admin\",\r\n        \"vol\": {\r\n            \"length\": 10,\r\n            \"width\": 10,\r\n            \"height\": 10\r\n        }\r\n    },\r\n    \"encrypt_data\": \"YjgzMTAxNGI3NzNmYzQxZGMyODc2NGE2MGZjMTI1ZjY=\",\r\n    \"timestamp\": \"2022-10-25 14:39:30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://112.74.187.191:8001/Yltd/dimension?TMS=HM",
+							"protocol": "http",
+							"host": [
+								"112",
+								"74",
+								"187",
+								"191"
+							],
+							"port": "8001",
+							"path": [
+								"Yltd",
+								"dimension"
+							],
+							"query": [
+								{
+									"key": "TMS",
+									"value": "HM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KP互通接口",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var moment = require(\"moment\");\r",
+									"var now = moment().format(\"YYYY-MM-DD HH:mm:ss\");\r",
+									"pm.environment.set(\"now\", now);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"reference_number\": \"TEST20230201191433111\",\r\n \"tracking_number\": \"PQ7LEX0410336430128521H\",\r\n \"status_code\": \"origin_sc_inbound_success\",\r\n \"weight\": 1200,\r\n \"event_time\": \"2023-02-01 19:15:30\",\r\n \"location\": \"Shenzhen\",\r\n \"remark\": \"\",\r\n \"length\": 12.4,\r\n \"width\": 13.9,\r\n \"height\": 14.1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/tms/manifesttrack/apiPod",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"tms",
+								"manifesttrack",
+								"apiPod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "slug",
+			"item": [
+				{
+					"name": "correos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e0J7AjwuDEsNb2sJxTgEZq4cQPXvlyMyL7v8nk4m3vfmgrJk1KKuDl91zfKr",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shipper\": {\r\n     \"house_number\": \"\",\r\n      \"address1\": \"\\u5317\\u4EAC\\u5E02\\u671D\\u9633\\u533A\\u9152\\u4ED9\\u6865\\u4E1C\\u8DEF\",\r\n      \"address2\": \"\",\r\n      \"province\": \"-\",\r\n      \"city\": \"\\u5317\\u4EAC\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"CN\",\r\n      \"email\": \"\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"\\u71D5\\u6587\",\r\n      \"tax_number\": \"\",\r\n      \"company_name\": \"\\u5317\\u4EAC\\u71D5\\u6587\\u7269\\u6D41\\u80A1\\u4EFD\\u6709\\u9650\\u516C\\u53F8\",\r\n      \"phone\": \"010-64656790\",\r\n      \"postcode\": \"100015\",\r\n      \"ioss_number\": \"\",\r\n      \"ioss_number_country\": \"\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\",\r\n      \"pickup_at\": \"\"\r\n    },\r\n    \"consignee\": {\r\n    \"house_number\": \"\",\r\n      \"address1\": \"\\u0E2A\\u0E48\\u0E07\\u0E02\\u0E2D\\u0E07\\u0E17\\u0E35\\u0E48 \\u0E2A\\u0E38\\u0E27\\u0E34\\u0E0A\\u0E32\\u0E14\\u0E32 \\u0E04\\u0E33\\u0E08\\u0E35\\u0E19 602/59(\\u0E40\\u0E25\\u0E02\\u0E43\\u0E2B\\u0E21\\u0E4842) \\u0E16.\\u0E1E\\u0E38\\u0E17\\u0E18\\u0E21\\u0E13\\u0E11\\u0E25\\u0E2A\\u0E32\\u0E22 2  \\u0E0B\\u0E2D\\u0E22 2\\u0E41\\u0E02\\u0E27\\u0E07\\u0E1A\\u0E32\\u0E07\\u0E41\\u0E04\\u0E40\\u0E2B\\u0E19\\u0E37\\u0E2D \\u0E40\\u0E02\\u0E15\\u0E1A\\u0E32\\u0E07\\u0E41\\u0E04 \\u0E01\\u0E17\\u0E21.10160 602/59(new number 42) Phutthamonthon Sai 2 Rd. Soi 2, Bang Khae Nuea Subdistrict Bang Khae District Bangkok 10160 \",\r\n      \"address2\": \"\",\r\n      \"province\": \"Bangkok\",\r\n      \"city\": \"bang khae\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"TH\",\r\n      \"email\": \"ach460425@gmail.com\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"suwichada kumchin\",\r\n      \"tax_number\": \"0000000\",\r\n      \"company_name\": \"suwichada kumchin\",\r\n      \"phone\": \"+66891400189\",\r\n      \"postcode\": \"10160\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\"\r\n    },\r\n    \"package\": {\r\n      \"actual_weight\": \"0.101\",\r\n      \"estimate_weight\": \"0.101\",\r\n      \"weight_unit\": \"kg\",\r\n      \"cod_value\": \"0.00\",\r\n      \"cod_value_currency\": \"THB\",\r\n      \"declared_value\": \"497.69\",\r\n      \"declared_value_currency\": \"THB\",\r\n      \"dimension_height\": \"\",\r\n      \"dimension_length\": \"\",\r\n      \"dimension_width\": \"\",\r\n      \"dimension_unit\": \"cm\",\r\n      \"item_quantity\": \"1\",\r\n      \"order_number\": \"KECTH903475936\",\r\n      \"shipper_reference_id\": \"ITTEST20240305164706278\",\r\n      \"payment_method\": \"PP\",\r\n      \"number_of_package\": \"1\",\r\n      \"shipment_term\": \"DDP\",\r\n      \"insurance_value\": \"0.00\",\r\n      \"insurance_currency\": \"\",\r\n      \"insurance_type\": \"\",\r\n      \"shipping_fee\": \"0.00\",\r\n      \"cargo_value\": \"\",\r\n      \"package_type\":\"WPX\"\r\n    },\r\n         \"reference\":{\r\n                \"track_require\":false,\r\n                \"delivery_method\":\"to_door\",\r\n                \"user_uuid\":\"times-oms\",\r\n                \"provider_info\":{\"fixed_shipper_name\":\"\",\"label_show_shipper\":\"N\",\"action_code\":\"U\",\"label_type\":\"default\",\"is_enable_insurance_service\":\"\",\"fixed_shipper_district\":\"\",\"fixed_shipper_postcode\":\"\",\"company_slug\":\"kerryth\",\"company_account\":\"KIKEC\",\"is_local_shipment\":\"no\",\"service_code\":\"AUTO\",\"tracking_number\":\"true\",\"cod_type\":\"CASH\",\"company_token\":\"c2094d39-0e7f-40a8-9816-469d9cb3e9e2\",\"is_show_item\":\"Y\",\"is_skip_declaredValue_verify\":\"no\",\"show_cod\":\"true\",\"show_fob\":\"true\",\"fixed_shipper_phone\":\"\",\"fixed_shipper_country_code\":\"\",\"cs_info\":\"-\",\"fixed_shipper_address1\":\"\",\"fixed_shipper_city\":\"\",\"fixed_shipper_address2\":\"\",\"fixed_shipper_province\":\"\"},\r\n                \"extra_response_info\":\"-\",\r\n                \"sort_code\":\"THCH_KEBK_00\",\r\n                \"client_code\":\"999666\",\r\n                \"client_name\":\"BackTest\",\r\n                \"ori_pickup_no\":\"\",\r\n                \"service\":{\"service_type\":\"default\"}\r\n            },\r\n\r\n    \"items\": [\r\n{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"plushie(44430171013375)\",\"name\": \"plushie(44430171013375)\",\"description_origin_language\": \"\\u73A9\\u5076\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"497.69\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"}    ]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://47.119.160.122:8088/package/booking",
+							"protocol": "http",
+							"host": [
+								"47",
+								"119",
+								"160",
+								"122"
+							],
+							"port": "8088",
+							"path": [
+								"package",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shaoke",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "e0J7AjwuDEsNb2sJxTgEZq4cQPXvlyMyL7v8nk4m3vfmgrJk1KKuDl91zfKr",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shipper\": {\r\n        \"house_number\": \"\",\r\n        \"address1\": \"North side of Chuangxin street, Sihui City\",\r\n        \"address2\": \"\",\r\n        \"province\": \"-\",\r\n        \"city\": \"Zhaoqing\",\r\n        \"district\": \"-\",\r\n        \"sub_district\": \"-\",\r\n        \"country_code\": \"CN\",\r\n        \"email\": \"\",\r\n        \"location_id\": \"\",\r\n        \"name\": \"ZQ02\",\r\n        \"tax_number\": \"\",\r\n        \"company_name\": \"ZQ02\",\r\n        \"phone\": \"33066276\",\r\n        \"postcode\": \"526200\",\r\n        \"ioss_number\": \"IM3720014058\",\r\n        \"ioss_number_country\": \"\",\r\n        \"tax_number_type\": \"\",\r\n        \"id_card_number\": \"\",\r\n        \"id_card_number_type\": \"\",\r\n        \"pickup_at\": \"\"\r\n    },\r\n    \"consignee\": {\r\n        \"house_number\": \"\",\r\n        \"address1\": \"Altentr\\u00FCdingen 68 \",\r\n        \"address2\": \"\",\r\n        \"province\": \"Bayern\",\r\n        \"city\": \"Wassertr\\u00FCdingen\",\r\n        \"district\": \"-\",\r\n        \"sub_district\": \"-\",\r\n        \"country_code\": \"DE\",\r\n        \"email\": \"4btvxctw4q1308b@eu.shipping.temuemail.com\",\r\n        \"location_id\": \"\",\r\n        \"name\": \"Livia R\\u00FCger\",\r\n        \"tax_number\": \"GB999999999\",\r\n        \"company_name\": \"Livia R\\u00FCger\",\r\n        \"phone\": \"499999999999\",\r\n        \"postcode\": \"91717\",\r\n        \"tax_number_type\": \"tax_card\",\r\n        \"id_card_number\": \"\",\r\n        \"id_card_number_type\": \"\"\r\n    },\r\n    \"package\": {\r\n        \"actual_weight\": \"0.728\",\r\n        \"estimate_weight\": \"0.728\",\r\n        \"weight_unit\": \"kg\",\r\n        \"cod_value\": \"0.00\",\r\n        \"cod_value_currency\": \"EUR\",\r\n        \"declared_value\": \"37.93\",\r\n        \"declared_value_currency\": \"EUR\",\r\n        \"dimension_height\": \"\",\r\n        \"dimension_length\": \"\",\r\n        \"dimension_width\": \"\",\r\n        \"dimension_unit\": \"cm\",\r\n        \"item_quantity\": \"1\",\r\n        \"order_number\": \"\",\r\n        \"shipper_reference_id\": \"ITTEST20230911008\",\r\n        \"payment_method\": \"PP\",\r\n        \"number_of_package\": \"1\",\r\n        \"shipment_term\": \"DDP\",\r\n        \"insurance_value\": \"0.00\",\r\n        \"insurance_currency\": \"\",\r\n        \"insurance_type\": \"\",\r\n        \"shipping_fee\": \"0.00\",\r\n        \"cargo_value\": \"\",\r\n        \"package_type\": \"WPX\"\r\n    },\r\n    \"reference\": {\r\n        \"track_require\": false,\r\n        \"delivery_method\": \"to_door\",\r\n        \"user_uuid\": \"times-oms\",\r\n        \"provider_info\": {\r\n            \"company_slug\": \"shaoke\",\r\n            \"company_account\": \"-\",\r\n            \"product_code\": \"P11441\",\r\n            \"company_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMDUsImlhdCI6MTY4MDg3MDM5NSwiZXhwIjoxNzEyNDA2Mzk1fQ.wQ4Nu83QrWXisWvgBJy8IZXZcA_4vumbHsAIPPDN4MU\"\r\n        },\r\n        \"extra_response_info\": \"-\",\r\n        \"sort_code\": \"DEKR_SK01_03\",\r\n        \"client_code\": \"860915\",\r\n        \"client_name\": \"PDD \\u4E0A\\u6D77\\u79B9\\u74A8\\u4FE1\\u606F\\u6280\\u672F\\u6709\\u9650\\u516C\\u53F8\",\r\n        \"ori_pickup_no\": \"\",\r\n        \"service\": {}\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Hair removal device\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Hair removal device\",\r\n            \"name\": \"Hair removal device\",\r\n            \"description_origin_language\": \"\\u8131\\u6BDB\\u4EEA\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"4.53\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"8543709099\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Plastic shape stickers\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Plastic shape stickers\",\r\n            \"name\": \"Plastic shape stickers\",\r\n            \"description_origin_language\": \"\\u5851\\u6599\\u5236\\u5F62\\u72B6\\u8D34\\u7EB8\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"1.76\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"3919908099\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Makeup Brush\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Makeup Brush\",\r\n            \"name\": \"Makeup Brush\",\r\n            \"description_origin_language\": \"\\u7F8E\\u7532\\u5DE5\\u5177\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"2\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"1.13\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"9603298000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Correction Tape\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Correction Tape\",\r\n            \"name\": \"Correction Tape\",\r\n            \"description_origin_language\": \"\\u4FEE\\u6B63\\u5E26\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"2.08\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"3926100000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Webcam\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Webcam\",\r\n            \"name\": \"Webcam\",\r\n            \"description_origin_language\": \"\\u6444\\u50CF\\u5934\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"2.93\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"8525890000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"body lotion\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"body lotion\",\r\n            \"name\": \"body lotion\",\r\n            \"description_origin_language\": \"\\u9762\\u971C\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"2.64\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"3304990000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Electric hair clipper\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Electric hair clipper\",\r\n            \"name\": \"Electric hair clipper\",\r\n            \"description_origin_language\": \"\\u7535\\u52A8\\u7406\\u53D1\\u5668\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"19.48\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"8510200000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"Labial line pen\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"Labial line pen\",\r\n            \"name\": \"Labial line pen\",\r\n            \"description_origin_language\": \"\\u5507\\u7EBF\\u7B14\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"0.75\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"3304100000\"\r\n        },\r\n        {\r\n            \"category_id\": \"\",\r\n            \"category_name\": \"nail glue\",\r\n            \"brand\": \"\",\r\n            \"model\": \"\",\r\n            \"description\": \"nail glue\",\r\n            \"name\": \"nail glue\",\r\n            \"description_origin_language\": \"\\u7532\\u6CB9\\u80F6\",\r\n            \"platform_id\": \"-\",\r\n            \"platform_name\": \"-\",\r\n            \"quantity\": \"1\",\r\n            \"sku\": \"\",\r\n            \"unit_price\": \"1.50\",\r\n            \"currency\": \"EUR\",\r\n            \"weight_unit\": \"kg\",\r\n            \"single_weight\": \"0.072\",\r\n            \"dimension_height\": \"\",\r\n            \"dimension_length\": \"\",\r\n            \"dimension_width\": \"\",\r\n            \"sale_platform_url\": \"\",\r\n            \"dimension_unit\": \"cm\",\r\n            \"manufacture_country_code\": \"CN\",\r\n            \"manufacture_country_name\": \"CHINA, PEOPLES REPUBLIC\",\r\n            \"original_tracking_number\": \"\",\r\n            \"description_destination_language\": \"\",\r\n            \"battery_type\": \"\",\r\n            \"number_of_batteries\": \"\",\r\n            \"platform_product_id\": \"\",\r\n            \"hts_code\": \"3304300000\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "spider03-aws.kec-app.com/package/booking",
+							"host": [
+								"spider03-aws",
+								"kec-app",
+								"com"
+							],
+							"path": [
+								"package",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "拼多多集运",
+			"item": [
+				{
+					"name": "订单下发",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bizType\": \"CONSO\",\r\n    \"buyerCode\": \"69243b1fe7edc227d0ee1085d690529f\",\r\n    \"buyerDetail\": {\r\n        \"city\": \"Ayer Hitam\",\r\n        \"country\": \"MY\",\r\n        \"detailAddress\": \"我\",\r\n        \"district\": \"Ayer Hitam\",\r\n        \"name\": \"我\",\r\n        \"postCode\": \"123\",\r\n        \"province\": \"Johor\",\r\n        \"telePhone\": \"123456789\"\r\n    },\r\n    \"consoType\": \"AIR\",\r\n    \"consoWarehouseCode\": \"JIALIJY001\",\r\n    \"dereRecogCode\": \"@DD#40130EBJ80208#\",\r\n    \"items\": [\r\n        {\r\n            \"categoryName\": \"T恤\",\r\n            \"currency\": \"CNY\",\r\n            \"currencyUnit\": \"CENT\",\r\n            \"goodsType\": \"NORMAL\",\r\n            \"itemId\": \"406341023457\",\r\n            \"itemName\": \"测试商品勿拍拍下后不发货\",\r\n            \"itemPicUrl\": \"https://t16img.yangkeduo.com/garner-api/97d52831e53dcf1433accc6146aca31b.jpeg\",\r\n            \"itemQuantity\": 1,\r\n            \"totalActualPayment\": 1\r\n        }\r\n    ],\r\n    \"logisticsOrderCode\": \"backtest20240130004\",\r\n    \"mailDetails\": [\r\n        {\r\n            \"expressCode\": \"SF\",\r\n            \"mailNo\": \"backtest20240130003\"\r\n        }\r\n    ],\r\n    \"packageQuantity\": 1,\r\n    \"paymentDetail\": {\r\n        \"currency\": \"CNY\",\r\n        \"currencyUnit\": \"CENT\",\r\n        \"tradeOrderActualAmount\": 1,\r\n        \"tradeOrderSn\": \"240130-420138218461908\",\r\n        \"tradeOrderValue\": 1\r\n    },\r\n    \"providerCode\": \"JIA_LI_MY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.order.create",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.order.create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "订单更新",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"providerCode\":\"ABC\",\r\n    \"consoWarehouseCode\":\"wh001\",\r\n    \"logisticsOrderCode\":\"backtest2024012231\",\r\n    \"bizType\":\"CONSO\",\r\n    \"consoType\":\"FAST\",\r\n    \"buyerCode\":\"BC0001\",\r\n    \"dereRecogCode\":\"backtest2024012231\",\r\n    \"packageQuantity\":1,\r\n    \"mailDetails\":[\r\n        {\r\n            \"expressCode\": \"STO\",\r\n            \"mailNo\": \"backtest202245645\"\r\n        },{\r\n            \"expressCode\": \"test\",\r\n            \"mailNo\": \"backtest2022456459\"\r\n        }\r\n    ],\r\n    \"items\":[\r\n        {\r\n            \"itemId\":\"1234467\",\r\n            \"itemName\":\"牛09\",\r\n            \"categoryName\":\"衣12服\",\r\n            \"totalActualPayment\":5300,\r\n            \"currencyUnit\":\"CENT\",\r\n            \"currency\":\"CNY\",\r\n            \"itemQuantity\":2,\r\n            \"itemPicUrl\":\"https://img.pddpic.com/xxx.jpeg\",\r\n            \"itemSkuPropety\":\"黑色15寸\",\r\n            \"chargedStatus\":true,\r\n            \"magneticStatus\":true\r\n        }\r\n    ],\r\n    \"buyerDetail\":{\r\n        \"name\":\"zhangsan\",\r\n        \"telePhone\":\"13134563214\",\r\n        \"country\":\"中国\",\r\n        \"province\":\"香港特别行政区\",\r\n        \"city\":\"九龙\",\r\n        \"district\":\"黄大仙区\",\r\n        \"detailAddress\":\"详细地址\",\r\n        \"postCode\":\"xxx\"\r\n    },\r\n    \"paymentDetail\":{\r\n        \"tradeOrderSn\":\"xx0000002\",\r\n        \"tradeOrderValue\":5000,\r\n        \"currencyUnit\":\"CENT\",\r\n        \"currency\":\"CNY\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.order.update",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.order.update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "出库通知",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"buyerCode\": \"69243b1fe7edc227d0ee1085d690529f\",\r\n    \"consoType\": \"AIR\",\r\n    \"consoWarehouseCode\": \"JIALIJY001\",\r\n    \"freightFeeDetail\": {\r\n        \"currency\": \"CNY\",\r\n        \"currencyUnit\": \"CENT\",\r\n        \"discountFee\": \"0\",\r\n        \"feeDetails\": [\r\n            {\r\n                \"amount\": 800,\r\n                \"currency\": \"CNY\",\r\n                \"currencyUnit\": \"CENT\",\r\n                \"scene\": \"freight_fee\",\r\n                \"type\": \"freight_fee\"\r\n            }\r\n        ],\r\n        \"freightPrice\": \"800\",\r\n        \"goodsType\": \"NORMAL\",\r\n        \"payOrderId\": \"240130-te123123\",\r\n        \"payTime\": 1706604219000,\r\n        \"weight\": 500\r\n    },\r\n    \"mailDetails\": [\r\n        {\r\n            \"expressCode\": \"SF\",\r\n            \"mailNo\": \"backtest20240130003\"\r\n        }\r\n    ],\r\n    \"orderCode\": \"backtest20240130005\",\r\n    \"providerCode\": \"JIA_LI_MY\",\r\n    \"receiverDetail\": {\r\n        \"city\": \"Ayer Hitam\",\r\n        \"country\": \"MY\",\r\n        \"detailAddress\": \"我\",\r\n        \"district\": \"Ayer Hitam\",\r\n        \"name\": \"我\",\r\n        \"postCode\": \"123\",\r\n        \"province\": \"Johor\",\r\n        \"telePhone\": \"123456789\"\r\n    },\r\n    \"segmentCode\": \"SENDTORECEVER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.outbound.notice",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.outbound.notice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "集运查价",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bizType\": \"CONSO\",\r\n    \"consoType\": \"AIR\",\r\n    \"consoWarehouseCode\": \"JIALIJY001\",\r\n    \"logisticsOrderCodes\": [\r\n        \"PP24013014899426106226484\"\r\n    ],\r\n    \"mailDetails\": [\r\n        {\r\n            \"expressCode\": \"EMS\",\r\n            \"mailNo\": \"SF1621129770927\"\r\n        }\r\n    ],\r\n    \"needFailResponse\": false,\r\n    \"needMock\": false,\r\n    \"providerCode\": \"JIA_LI_MY\",\r\n    \"receiverDetail\": {\r\n   \"city\": \"广东\",\r\n   \"country\": \"MY\",\r\n   \"district\": \"Ayer Hitam\",\r\n   \"postCode\": \"89000\",\r\n   \"province\": \"Johor\"\r\n  },\r\n    \"segmentCode\": \"SENDTORECEVER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.fee.query",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.fee.query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "轨迹订阅",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\":\"{\\\"trackingOrderNo\\\":\\\"KECL600331665\\\",\\\"trackingNumber\\\":\\\"KECL600331665\\\"}\",\"ship_id\":\"487\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.reverse.subscribe",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.reverse.subscribe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "拒签通知",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"consoWarehouseCode\": \"JLJY001\",\r\n  \"orderCode\": \"PP20240123006\",\r\n  \"orderType\": \"hebao\",\r\n  \"providerCode\": \"JIA_LI_MY\",\r\n  \"status\": \"cancelOutbound\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.reverse.notify",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.reverse.notify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "退货通知",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"buyerCode\": \"eb2e28c1660d8df4be278105c8e587fb\",\r\n  \"consoWarehouseCode\": \"JLJY001\",\r\n  \"freightFeeDetail\": {\r\n   \"currency\": \"CNY\",\r\n   \"currencyUnit\": \"CENT\",\r\n   \"freightPrice\": 550,\r\n   \"payOrderId\": \"240123-375474155152638\",\r\n   \"payTime\": \"2024-01-23 21:10:51\",\r\n   \"rentFee\": 0,\r\n   \"weight\": 1000\r\n  },\r\n  \"mailDetails\": [\r\n   {\r\n    \"expressCode\": \"EMS\",\r\n    \"mailNo\": \"20240123001\"\r\n   }\r\n  ],\r\n  \"needFailResponse\": false,\r\n  \"needMock\": false,\r\n  \"orderCode\": \"PT24012313743345345\",\r\n  \"providerCode\": \"JIA_LI_MY\",\r\n  \"receiverDetail\": {\r\n   \"city\": \"上海市\",\r\n   \"country\": \"中国\",\r\n   \"detailAddress\": \"娄山关路金虹桥国际中心南楼2号\",\r\n   \"district\": \"长宁区\",\r\n   \"name\": \"玛蒂尔\",\r\n   \"province\": \"上海市\",\r\n   \"telePhone\": \"15691757118\"\r\n  },\r\n  \"segmentCode\": \"RETURNSELLER\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.outbound.notice",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.outbound.notice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "货态查询",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ship_id\": \"\",\r\n    \"data\": \"{\\\"trackingNumber\\\":\\\"1595347265\\\"}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/pdd-conso/pdd.service.conso.reverse.query",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"pdd-conso",
+								"pdd.service.conso.reverse.query"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API标准集运",
+			"item": [
+				{
+					"name": "发货预报",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "TkFeTTJiwZA1ZKQ7pFejwpsjCS4AcBw1SwNfNRmSbbyTmKsTyeKhDb8bPRAh3Cfa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cargo_no\":\"ITTEST20250212002\",\r\n    \"sc_pickup_tn\":\"ITTEST202502120102\",\r\n    \"carrier_code\":\"SF\",\r\n    \"package\":{\r\n        \"value\":10,\r\n        \"value_currency\":\"CNY\",\r\n        \"height\":5,\r\n        \"length\":10,\r\n        \"width\":25,\r\n        \"actual_weight\":544\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"test\",\r\n        \"company\":\"test\",\r\n        \"address\":\"test\",\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518001\",\r\n        \"phone\":\"18618612345\",\r\n        \"email\":\"jacky@ecommerce.com\"\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"4573102554468\",\r\n            \"description\":\"test\",\r\n            \"description_origin_language\":\"测试\",\r\n            \"category\":\"测试\",\r\n            \"unit_price\":10,\r\n            \"currency\":\"CNY\",\r\n            \"quantity\":1,\r\n            \"unit_weight\":104,\r\n            \"height\":5,\r\n            \"length\":10,\r\n            \"width\":25\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/conso/cargo-precreate",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"conso",
+								"cargo-precreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "取消发货",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2b6ce374-c875-452e-97eb-af158032f349",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0-W1l#3RhbXAiOjE2NDY^$DQ3$jk0$zYsIm5vbmNlIjoiV25BbVBYWX$iLCJ0b2tlbiI6IjdlNj$5$WI0LTgzOTQtNGE5NS1iOTBkLTg5$D#0ZTNkYmQ^$iJ9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cargo_no\":\"KE1021541\",\r\n    \"sc_pickup_tn\":\"SF000001\",\r\n    \"carrier_code\":\"SF\",\r\n    \"package\":{\r\n        \"value\":10,\r\n        \"value_currency\":\"CNY\",\r\n        \"height\":5,\r\n        \"length\":10,\r\n        \"width\":25,\r\n        \"actual_weight\":544\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"Jacky Chan\",\r\n        \"company\":\"eCommerce Seller Limited\",\r\n        \"address\":\"Block C, 8 Hanhai Ave\",\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518001\",\r\n        \"phone\":\"18618612345\",\r\n        \"email\":\"jacky@ecommerce.com\"\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"4573102554468\",\r\n            \"description\":\"clothes\",\r\n            \"description_origin_language\":\"衣服\",\r\n            \"category\":\"clothes\",\r\n            \"unit_price\":10,\r\n            \"currency\":\"CNY\",\r\n            \"quantity\":1,\r\n            \"unit_weight\":104,\r\n            \"height\":5,\r\n            \"length\":10,\r\n            \"width\":25\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/conso/cargo-precreate",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"conso",
+								"cargo-precreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "集包出库",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "TkFeTTJiwZA1ZKQ7pFejwpsjCS4AcBw1SwNfNRmSbbyTmKsTyeKhDb8bPRAh3Cfa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0-W1l#3RhbXAiOjE2NDY^$DQ3$jk0$zYsIm5vbmNlIjoiV25BbVBYWX$iLCJ0b2tlbiI6IjdlNj$5$WI0LTgzOTQtNGE5NS1iOTBkLTg5$D#0ZTNkYmQ^$iJ9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_no\":\"ITTEST202501002201\",\r\n    \"carrier_service\":\"CTCNTH901\",\r\n        \"tracking_number\":\"ITTEST20250121202\",\r\n    \"label_url\":\"http://stg.spider.tec-api.com:38005/package/1e130f25-826c-e996-c41f-6ca97b195827/label\",\r\n    \"conso_shipment_carrier\":\"KEC\",\r\n    \"shipment_term\":\"DDU\",\r\n    \"pickup_tn_list\":[\r\n        \"ITTEST202502120102\"\r\n    ],\r\n    \"receiver\":{\r\n        \"address\":\"Block C, 8 Hanhai Ave\",\r\n        \"city\":\"บางบอน\",\r\n        \"country_code\":\"TH\",\r\n        \"name\":\"test\",\r\n        \"phone\":\"12345678\",\r\n        \"post_code\":\"24000\",\r\n        \"province\":\"Phayao\"\r\n    },\r\n       \"sender\":{\r\n        \"address\":\"Block C, 8 Hanhai Ave\",\r\n        \"city\":\"บางบอน\",\r\n        \"country_code\":\"TH\",\r\n        \"name\":\"test\",\r\n        \"phone\":\"12345678\",\r\n        \"post_code\":\"24000\",\r\n        \"province\":\"Phayao\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/conso/cargo-consolidation",
+							"protocol": "https",
+							"host": [
+								"tms-kec",
+								"kerry-ecommerce",
+								"com",
+								"cn"
+							],
+							"path": [
+								"tms-saas-web",
+								"conso",
+								"cargo-consolidation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "获取token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data=JSON.parse(responseBody);\r",
+							"//获取token值\r",
+							"var token=data.body.token;\r",
+							"//设置成环境变量\r",
+							"pm.environment.set(\"KEC-生产Token\", token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"999666_KERRYCN\",\r\n    \"password\": \"1fc11311376347a59770cdc5c48080ea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/token/get",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"token",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建运单（单件）",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"brand\": \"\",\r\n      \"category\": \"\",\r\n      \"country_of_origin\": \"\",\r\n      \"currency\": \"THB\",\r\n      \"description\": \"metal wire\",\r\n      \"description_destination_language\": \"\",\r\n      \"description_origin_language\": \"金属丝\",\r\n      \"hs_code\": \"\",\r\n      \"quantity\": 485,\r\n      \"remark\": \"\",\r\n      \"sku\": \"\",\r\n      \"unit_price\": 1.06\r\n    }\r\n  ],\r\n  \"package\": {\r\n    \"actual_weight\": 1656,\r\n    \"declared_value\": 514.18,\r\n    \"declared_value_currency\": \"THB\",\r\n    \"height\": \"\",\r\n    \"length\": \"\",\r\n    \"number_of_package\": 1,\r\n    \"package_type\": \"WPX\",\r\n    \"payment_method\": \"PP\",\r\n    \"reference_number\": \"ITTEST20250213111531221\",\r\n    \"shipment_term\": \"DDP\",\r\n    \"shipment_type\": \"\",\r\n    \"shipping_fee\": 0,\r\n    \"sort_code\": \"\",\r\n    \"tracking_number\": \"\",\r\n    \"width\": \"\"\r\n  },\r\n  \"receiver\": {\r\n    \"address\": \"22/37-38, Moo12, Napa \",\r\n    \"city\": \"Maung Chonburi\",\r\n    \"company\": \"Nawatasana Krasae\",\r\n    \"country_code\": \"TH\",\r\n    \"district\": \"\",\r\n    \"email\": \"faahdentalclinic@gmail.com\",\r\n    \"id_number\": \"\",\r\n    \"location_code\": \"\",\r\n    \"name\": \"Nawatasana Krasae\",\r\n    \"phone\": \"0612619261\",\r\n    \"post_code\": \"20000\",\r\n    \"province\": \"Chonburi\"\r\n  },\r\n  \"sale_platform\": \"\",\r\n  \"sender\": {\r\n    \"address\": \"北京市朝阳区酒仙桥东路\",\r\n    \"city\": \"北京\",\r\n    \"company\": \"北京燕文物流股份有限公司\",\r\n    \"country_code\": \"CN\",\r\n    \"district\": \"\",\r\n    \"email\": \"\",\r\n    \"id_number\": \"\",\r\n    \"ioss_number\": \"\",\r\n    \"name\": \"燕文\",\r\n    \"phone\": \"010-64656790\",\r\n    \"post_code\": \"100015\",\r\n    \"province\": \"\"\r\n  },\r\n  \"service\": {\r\n    \"channel_code\": \"CTCNTH000\",\r\n    \"delivery_instruction\": \"\",\r\n    \"service_type\": \"default\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/shipment/create",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"shipment",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建运单（批量）",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bag_id\":\"BOXTEST20230701903\",\r\n    \"bag_weight\":\"7320\",\r\n    \"bag_length\":\"312\",\r\n    \"bag_width\":10,\r\n    \"bag_height\":2,\r\n    \"package_list\":[\r\n        {\r\n            \"items\":[\r\n                {\r\n                    \"country_of_origin\":\"CN\",\r\n                    \"currency\":\"USD\",\r\n                    \"description\":\"144624\",\r\n                    \"description_origin_language\":\"Redmi Note 11S NFC Global Version Gray+8GB+128GB\",\r\n                    \"category\":\"test\",\r\n                    \"hs_code\":\"88823223\",\r\n                    \"height\":6,\r\n                    \"length\":9,\r\n                    \"quantity\":1,\r\n                    \"sku\":\"144624\",\r\n                    \"unit_price\":100,\r\n                    \"unit_weight\":509,\r\n                    \"width\":17\r\n                }\r\n            ],\r\n            \"package\":{\r\n                \"actual_weight\":2800,\r\n                \"declared_value\":100,\r\n                \"declared_value_currency\":\"USD\",\r\n                \"height\":\"6\",\r\n                \"length\":\"17\",\r\n                \"number_of_package\":1,\r\n                \"payment_method\":\"PP\",\r\n                \"reference_number\":\"TESTBACK2023071900108\",\r\n                \"shipment_term\":\"DDP\",\r\n                \"shipment_type\":\"General\",\r\n                \"shipping_fee\":0,\r\n                \"sort_code\":\"\",\r\n                \"width\":\"9\"\r\n            },\r\n            \"receiver\":{\r\n                \"address\":\"33 Elm Street Suite A5\",\r\n                \"city\":\"Merrimack\",\r\n                \"company\":\"auguste barrellon\",\r\n                \"country_code\":\"TH\",\r\n                \"email\":\"k.huet@laposte.net\",\r\n                \"name\":\"Jimmy GAO\",\r\n                \"phone\":\"8502934747\",\r\n                \"post_code\":\"03054\",\r\n                \"province\":\"New Hampshire\"\r\n            },\r\n            \"sale_platform\":\"自有网站\",\r\n            \"sender\":{\r\n                \"address\":\"UNIT 14 24/F WELL FUNG INDUSTRIAL CENTER NO.68 TA CHUEN PING STREET\",\r\n                \"city\":\"KWAI CHUNG\",\r\n                \"company\":\"GOBOO\",\r\n                \"country_code\":\"HK\",\r\n                \"email\":\"k.huet@laposte.net\",\r\n                \"name\":\"LME EXP (HK) LIMITED\",\r\n                \"phone\":\"+85231535221\",\r\n                \"post_code\":\"999000\",\r\n                \"province\":\"\"\r\n            },\r\n            \"service\":{\r\n                \"channel_code\":\"KEC-TESTGX\",\r\n                \"service_type\":\"default\"\r\n            }\r\n        },\r\n        {\r\n            \"items\":[\r\n                {\r\n                    \"country_of_origin\":\"CN\",\r\n                    \"currency\":\"USD\",\r\n                    \"description\":\"144624\",\r\n                    \"description_origin_language\":\"Redmi Note 11S NFC Global Version Gray+8GB+128GB\",\r\n                    \"category\":\"test\",\r\n                    \"hs_code\":\"88823223\",\r\n                    \"height\":6,\r\n                    \"length\":9,\r\n                    \"quantity\":1,\r\n                    \"sku\":\"144624\",\r\n                    \"unit_price\":100,\r\n                    \"unit_weight\":509,\r\n                    \"width\":17\r\n                }\r\n            ],\r\n            \"package\":{\r\n                \"actual_weight\":2800,\r\n                \"declared_value\":100,\r\n                \"declared_value_currency\":\"USD\",\r\n                \"height\":\"6\",\r\n                \"length\":\"17\",\r\n                \"number_of_package\":1,\r\n                \"payment_method\":\"PP\",\r\n                \"reference_number\":\"TESTBACK2023071900109\",\r\n                \"shipment_term\":\"DDP\",\r\n                \"shipment_type\":\"General\",\r\n                \"shipping_fee\":0,\r\n                \"sort_code\":\"\",\r\n                \"width\":\"9\"\r\n            },\r\n            \"receiver\":{\r\n                \"address\":\"33 Elm Street Suite A5\",\r\n                \"city\":\"Merrimack\",\r\n                \"company\":\"auguste barrellon\",\r\n                \"country_code\":\"TH\",\r\n                \"email\":\"k.huet@laposte.net\",\r\n                \"name\":\"Jimmy GAO\",\r\n                \"phone\":\"8502934747\",\r\n                \"post_code\":\"03054\",\r\n                \"province\":\"New Hampshire\"\r\n            },\r\n            \"sale_platform\":\"自有网站\",\r\n            \"sender\":{\r\n                \"address\":\"UNIT 14 24/F WELL FUNG INDUSTRIAL CENTER NO.68 TA CHUEN PING STREET\",\r\n                \"city\":\"KWAI CHUNG\",\r\n                \"company\":\"GOBOO\",\r\n                \"country_code\":\"HK\",\r\n                \"email\":\"k.huet@laposte.net\",\r\n                \"name\":\"LME EXP (HK) LIMITED\",\r\n                \"phone\":\"+85231535221\",\r\n                \"post_code\":\"999000\",\r\n                \"province\":\"\"\r\n            },\r\n            \"service\":{\r\n                \"channel_code\":\"KEC-TESTGX\",\r\n                \"service_type\":\"default\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/shipment/create/multiple",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"shipment",
+						"create",
+						"multiple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除运单",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/orders/KECTH50167103",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"orders",
+						"KECTH50167103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取渠道列表",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/channel/list",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"channel",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "货态查询",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/shipment/status?tracking_number=BACK_OR202401056648311",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"shipment",
+						"status"
+					],
+					"query": [
+						{
+							"key": "tracking_number",
+							"value": "BACK_OR202401056648311"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取面单",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bag_id\":\"TESTTH20210234253453\",\r\n    \"bag_weight\":151,\r\n    \"bag_length\":52,\r\n    \"bag_width\":55,\r\n    \"bag_height\":45,\r\n    \"package_list\":[\r\n        {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"LATH01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH0708453453453453\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":null,\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n       {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"CACNTHG01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH0708567453453\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n        {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"LATH01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH070857456345\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":null,\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n       {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"CACNTHG01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH07085723324\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n       {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"CACNTHG01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH070845645\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n       {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"CACNTHG01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH0708234234\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n},\r\n       {\r\n    \"sale_platform\":null,\r\n    \"service\":{\r\n        \"channel_code\":\"CACNTHG01\",\r\n        \"service_type\":\"default\"\r\n    },\r\n    \"package\":{\r\n        \"reference_number\":\"TH07081234123\",\r\n        \"declared_value\":\"363.0\",\r\n        \"declared_value_currency\":\"THB\",\r\n        \"cod_value\":300,\r\n        \"cod_value_currency\":\"THB\",\r\n        \"height\":1,\r\n        \"length\":1,\r\n        \"width\":1,\r\n        \"actual_weight\":698,\r\n        \"shipment_term\":\"DDP\",\r\n        \"payment_method\":\"COD\",\r\n        \"shipment_type\":\"General\",\r\n        \"sort_code\":null\r\n    },\r\n    \"sender\":{\r\n        \"name\":\"juheng\",\r\n        \"company\":\"聚恒电子商务有限公司\",\r\n        \"address\":\"广东省深圳市宝安区\",\r\n        \"district\":null,\r\n        \"city\":\"Shenzhen\",\r\n        \"province\":\"Guangdong\",\r\n        \"country_code\":\"CN\",\r\n        \"post_code\":\"518000\",\r\n        \"phone\":\"1232\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"receiver\":{\r\n        \"name\":\"พิชญา ยงพิศาลภพ\",\r\n        \"company\":\"Really not\",\r\n        \"address\":\"109/68 หมู่5 หมู่บ้านคูณทรัพย์รดา ถ.จันทร์ทองเอี่ยม ต.บางรักพัฒนา อำเภอบางบัวทอง จังหวัดนนทบุรี 11110\",\r\n        \"district\":null,\r\n        \"city\":\"อำเภอบางบัวทอง\",\r\n        \"province\":\"test\",\r\n        \"country_code\":\"TH\",\r\n        \"post_code\":\"11110\",\r\n        \"phone\":\"66865651281\",\r\n        \"email\":null,\r\n        \"id_number\":null\r\n    },\r\n    \"items\":[\r\n        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        },        {\r\n            \"sku\":\"12431234\",\r\n            \"description\":\"Pants+&+Leggings - Pants * 1\",\r\n            \"description_origin_language\":\"裤子和打底裤 - 裤子\",\r\n            \"description_destination_language\":null,\r\n            \"height\":212,\r\n            \"length\":122,\r\n            \"width\":313,\r\n            \"category\":null,\r\n            \"unit_price\":\"121.0\",\r\n            \"currency\":\"THB\",\r\n            \"quantity\":3,\r\n            \"country_of_origin\":null,\r\n            \"hs_code\":null,\r\n            \"brand\":null,\r\n            \"remark\":null\r\n        }\r\n    ]\r\n}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/shipment/label?tracking_number=KECTH50472155",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"shipment",
+						"label"
+					],
+					"query": [
+						{
+							"key": "tracking_number",
+							"value": "KECTH50472155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取自提点",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/pickup_point/list?channel_code=KEC-TESTFD&country_code=MY",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"pickup_point",
+						"list"
+					],
+					"query": [
+						{
+							"key": "channel_code",
+							"value": "KEC-TESTFD"
+						},
+						{
+							"key": "country_code",
+							"value": "MY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "订单拦截和解除拦截",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"tracking_number\": \"ALS14563459339866\",\r\n                \"action\": \"unblock\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/order/block",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"order",
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "订单更换产品码",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"channel_code\":\"LACNMYS00\",\r\n    \"tracking_number\":\"KECL910037249\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/order/update_channel",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"order",
+						"update_channel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建订单出货信息",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mawb\":\"1234-412116899\",\r\n    \"number_of_bag\":3,\r\n    \"bag_list\":[\r\n        {\r\n            \"bag_id\":\"BAG2023091310033\",\r\n            \"bag_weight\":15000,\r\n            \"bag_length\":52,\r\n            \"bag_width\":55,\r\n            \"bag_height\":45,\r\n            \"number_of_package\":3,\r\n            \"package_list\":[\r\n                {\r\n                    \"reference_number\":\"ITTEST20241018180855115\",\r\n                    \"tracking_number\":\"KECTH50532182\",\r\n                    \"actual_weight\":\"230\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/order/create_bag",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"order",
+						"create_bag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "中间件-->TMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://120.79.229.241:8000/tms-saas-web/api/jdwl?msg_id=lsb-g3%2Ctask%2C548599634%2Cmagellan-channel-pro%2C1%2C0&msg_name=jingdong_magellan_pushdown_channel&msg_payload=%7B%22orderType%22%3A%221%22%2C%22orderSource%22%3A%22JOYBUY%E4%B8%8B%E5%8D%95%22%2C%22orderNumber%22%3A%22ZJ01028180803500%22%2C%22orderCreateTime%22%3A%22Jul+30%2C+2021+2%3A22%3A03+PM%22%2C%22ddl%22%3A%22ZJ01028180803500%22%7D&msg_pin=jd_51676128fefa1\n",
+					"protocol": "http",
+					"host": [
+						"120",
+						"79",
+						"229",
+						"241"
+					],
+					"port": "8000",
+					"path": [
+						"tms-saas-web",
+						"api",
+						"jdwl"
+					],
+					"query": [
+						{
+							"key": "msg_id",
+							"value": "lsb-g3%2Ctask%2C548599634%2Cmagellan-channel-pro%2C1%2C0"
+						},
+						{
+							"key": "msg_name",
+							"value": "jingdong_magellan_pushdown_channel"
+						},
+						{
+							"key": "msg_payload",
+							"value": "%7B%22orderType%22%3A%221%22%2C%22orderSource%22%3A%22JOYBUY%E4%B8%8B%E5%8D%95%22%2C%22orderNumber%22%3A%22ZJ01028180803500%22%2C%22orderCreateTime%22%3A%22Jul+30%2C+2021+2%3A22%3A03+PM%22%2C%22ddl%22%3A%22ZJ01028180803500%22%7D"
+						},
+						{
+							"key": "msg_pin",
+							"value": "jd_51676128fefa1\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "重量尺寸更新接口",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"tracking_number\": \"KECTH50532160\",\r\n \"weight\":\"1213\",\r\n  \"height\": \"23\",\r\n \"length\": 2,\r\n \"width\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/order/package/update",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"order",
+						"package",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Amazon货态获取",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<AmazonTrackingRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\nxsi:noNamespaceSchemaLocation=\"AmazonTrackingRequest.xsd\">\r\n<Validation>\r\n<UserID>AMZN</UserID>\r\n<Password>12345</Password>\r\n</Validation>\r\n<APIVersion>4.0</APIVersion>\r\n<TrackingNumber>KECTH91022389</TrackingNumber>\r\n<TrackingNumber>KECTH910223012</TrackingNumber>\r\n</AmazonTrackingRequest>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{TMS Url}}/tms-saas-web/amazon/status",
+					"host": [
+						"{{TMS Url}}"
+					],
+					"path": [
+						"tms-saas-web",
+						"amazon",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "生产spider",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "e0J7AjwuDEsNb2sJxTgEZq4cQPXvlyMyL7v8nk4m3vfmgrJk1KKuDl91zfKr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shipper\": {\r\n     \"house_number\": \"\",\r\n      \"address1\": \"\\u6C5F\\u82CF\\u7701\\u6DEE\\u5B89\\u5E02\\u6D2A\\u6CFD\\u533A\\u781A\\u9A6C\\u6CB3\\u8DEF2\\u53F7\\u552F\\u65B0\\u98DF\\u54C1\\u4EA7\\u4E1A\\u56ED\\u82B1\\u77E5\\u6653\\u4ED3\\u50A8\\u53D1\\u8D27\",\r\n      \"address2\": \"\",\r\n      \"province\": \"Jiangsu\",\r\n      \"city\": \"Huaian\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"CN\",\r\n      \"email\": \"dummy@dummy.com\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"\\u82B1\\u77E5\\u6653\",\r\n      \"tax_number\": \"\",\r\n      \"company_name\": \"\\u82B1\\u77E5\\u6653\",\r\n      \"phone\": \"18121665321\",\r\n      \"postcode\": \"223199\",\r\n      \"ioss_number\": \"\",\r\n      \"ioss_number_country\": \"\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\",\r\n      \"pickup_at\": \"\",\r\n      \"pickup_cutoff_at\": \"\"\r\n    },\r\n    \"consignee\": {\r\n    \"house_number\": \"\",\r\n      \"address1\": \"588, 34 \\u0E0B\\u0E2D\\u0E22 \\u0E2D\\u0E48\\u0E2D\\u0E19\\u0E19\\u0E38\\u0E0A 70/1 Khwaeng Prawet, Khet Prawet, Bangkok 10250, Thailand\",\r\n      \"address2\": \"\",\r\n      \"province\": \"Bangkok\",\r\n      \"city\": \"Bangkok\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"TH\",\r\n      \"email\": \"dummy@dummy.com\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"Fon\",\r\n      \"tax_number\": \"0000000\",\r\n      \"company_name\": \"Fon\",\r\n      \"phone\": \"0972496156\",\r\n      \"postcode\": \"10250\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\"\r\n    },\r\n    \"package\": {\r\n      \"actual_weight\": \"1.464\",\r\n      \"estimate_weight\": \"1.464\",\r\n      \"weight_unit\": \"kg\",\r\n      \"cod_value\": \"0.00\",\r\n      \"cod_value_currency\": \"THB\",\r\n      \"declared_value\": \"1759.00\",\r\n      \"declared_value_currency\": \"THB\",\r\n      \"dimension_height\": \"\",\r\n      \"dimension_length\": \"\",\r\n      \"dimension_width\": \"\",\r\n      \"dimension_unit\": \"cm\",\r\n      \"item_quantity\": \"1\",\r\n      \"order_number\": \"KECTH90501592\",\r\n      \"shipper_reference_id\": \"ITTEST2024103123221\",\r\n      \"payment_method\": \"PP\",\r\n      \"number_of_package\": \"1\",\r\n      \"shipment_term\": \"DDP\",\r\n      \"insurance_value\": \"0.00\",\r\n      \"insurance_currency\": \"\",\r\n      \"insurance_type\": \"\",\r\n      \"shipping_fee\": \"0.00\",\r\n      \"cargo_value\": \"\",\r\n      \"package_type\":\"WPX\"\r\n    },\r\n         \"reference\":{\r\n                \"track_require\":false,\r\n                \"delivery_method\":\"to_door\",\r\n                \"user_uuid\":\"times-oms\",\r\n                \"provider_info\":{\"fixed_shipper_name\":\"\",\"label_show_shipper\":\"N\",\"action_code\":\"U\",\"label_type\":\"\",\"is_enable_insurance_service\":\"\",\"fixed_shipper_district\":\"\",\"fixed_shipper_postcode\":\"\",\"company_slug\":\"kerryth\",\"company_account\":\"KIKEC\",\"is_local_shipment\":\"no\",\"tracking_number\":\"true\",\"service_code\":\"AUTO\",\"cod_type\":\"CASH\",\"company_token\":\"c2094d39-0e7f-40a8-9816-469d9cb3e9e2\",\"is_show_item\":\"N\",\"is_skip_declaredValue_verify\":\"N\",\"show_cod\":\"true\",\"show_fob\":\"true\",\"fixed_shipper_phone\":\"\",\"fixed_shipper_country_code\":\"\",\"cs_info\":\"\",\"fixed_shipper_address1\":\"\",\"fixed_shipper_city\":\"\",\"fixed_shipper_address2\":\"\",\"fixed_shipper_province\":\"\"},\r\n                \"extra_response_info\":\"-\",\r\n                \"sort_code\":\"THCH_KEBK_00\",\r\n                \"client_code\":\"999666\",\r\n                \"client_name\":\"BackTest\",\r\n                \"ori_pickup_no\":\"\",\r\n                \"sale_platform\":\"KEC\",\r\n                \"service\":{}\r\n            },\r\n\r\n\r\n    \"items\": [\r\n{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Little Angel Highlighter L02\",\"name\": \"Little Angel Highlighter L02\",\"description_origin_language\": \"\\u5C0F\\u5929\\u4F7F\\u9AD8\\u5149\\u7C89L02\\u5931\\u4E50\\u56ED\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"211.43\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Little Angel Lipstick C04 Cupid\",\"name\": \"Little Angel Lipstick C04 Cupid\",\"description_origin_language\": \"\\u5C0F\\u5929\\u4F7F\\u5507\\u6CE5\\u68D2C04\\u4E18\\u6BD4\\u7279\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"141.07\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Little Angel Cream Blush 04 Rose Ashes\",\"name\": \"Little Angel Cream Blush 04 Rose Ashes\",\"description_origin_language\": \"\\u5C0F\\u5929\\u4F7F\\u816E\\u7EA2\\u818F04\\u73AB\\u7470\\u7070\\u70EC\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"183.29\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Rococo Lipgloss G04\",\"name\": \"Rococo Lipgloss G04\",\"description_origin_language\": \"\\u6D1B\\u53EF\\u53EF\\u4EAE\\u9762\\u5507\\u91C9G04\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"32.72\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Golden Butterfly Hair Clip\",\"name\": \"Golden Butterfly Hair Clip\",\"description_origin_language\": \"\\u6D77\\u5916\\u7248--\\u82B1\\u77E5\\u6653\\u4EF2\\u590F\\u591C\\u7CFB\\u5217\\u53D1\\u5939 \\u91D1\\u8774\\u8776\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"56.29\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Midsummer Blush 01\",\"name\": \"Midsummer Blush 01\",\"description_origin_language\": \"\\u4EF2\\u590F\\u591C\\u816E\\u7EA201\\u7EFD\\u653E\\u65F6\\u523B\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"183.29\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Cloud Collar Makeup Palette\",\"name\": \"Cloud Collar Makeup Palette\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u9762\\u90E8\\u7EFC\\u5408\\u76D802\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"246.61\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Highlight Contour Palette 02\",\"name\": \"Highlight Contour Palette 02\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u9AD8\\u5149\\u4FEE\\u5BB9\\u76D802\\u8336\\u68D5\\u76D8\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"246.61\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Cloud Collar Eyeliner Brown\",\"name\": \"Cloud Collar Eyeliner Brown\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u773C\\u7EBF\\u6DB2\\u7B14\\u8336\\u68D5\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"105.54\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Cloud Collar Hand Mirror\",\"name\": \"Cloud Collar Hand Mirror\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u624B\\u6301\\u955C\\u82B1\\u9752\\u8272\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"176.25\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Cloud Collar Powder Brush\",\"name\": \"Cloud Collar Powder Brush\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u70B9\\u5F69\\u5237\\u6708\\u767D\\u8272\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"105.54\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"},{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Cloud Collar Paper Box\",\"name\": \"Cloud Collar Paper Box\",\"description_origin_language\": \"\\u4E91\\u80A9\\u7CFB\\u5217\\u7EB8\\u76D2\\u5B50\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"70.36\",\"currency\": \"THB\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"}    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spider.kec-app.com/package/booking",
+					"protocol": "https",
+					"host": [
+						"spider",
+						"kec-app",
+						"com"
+					],
+					"path": [
+						"package",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新服务器spider",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jiArPhizJS0devD2DsEtRdxo31b3sBTgyqpJVzGaIxS2YRMy8RtHhcRsbUwI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shipper\": {\r\n     \"house_number\": \"\",\r\n      \"address1\": \"C/ Sig\\uFFFDenza 5,  1\\uFFFD C\",\r\n      \"address2\": \"\",\r\n      \"province\": \"-\",\r\n      \"city\": \"ORUGA\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"ES\",\r\n      \"email\": \"dummy@dummy.com\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"Esther L\\\\u00F3pez Montoli\\\\u00FA\",\r\n      \"tax_number\": \"A83052407\",\r\n      \"company_name\": \"Esther L\\\\u00F3pez Montoli\\\\u00FA\",\r\n      \"phone\": \"0\",\r\n      \"postcode\": \"28804\",\r\n      \"ioss_number\": \"\",\r\n      \"ioss_number_country\": \"\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\",\r\n      \"pickup_at\": \"\",\r\n      \"pickup_cutoff_at\": \"\"\r\n    },\r\n    \"consignee\": {\r\n    \"house_number\": \"\",\r\n      \"address1\": \"C. de Ram\\u00F3n y Cajal, 22, 28914 Legan\\u00E9s, Madrid,\",\r\n      \"address2\": \"\",\r\n      \"province\": \"-\",\r\n      \"city\": \" Legan\\u00E9s\",\r\n      \"district\": \"-\",\r\n      \"sub_district\": \"-\",\r\n      \"country_code\": \"ES\",\r\n      \"email\": \"Project.KParcel.CS.CN@k-parcel.com\",\r\n      \"location_id\": \"\",\r\n      \"name\": \"TEMU Customer Return\",\r\n      \"tax_number\": \"000000\",\r\n      \"company_name\": \"TEMU Customer Return\",\r\n      \"phone\": \"0034999999999\",\r\n      \"postcode\": \"28070\",\r\n      \"tax_number_type\": \"\",\r\n      \"id_card_number\": \"\",\r\n      \"id_card_number_type\": \"\"\r\n    },\r\n    \"package\": {\r\n      \"actual_weight\": \"0.609\",\r\n      \"estimate_weight\": \"0.609\",\r\n      \"weight_unit\": \"kg\",\r\n      \"cod_value\": \"0.00\",\r\n      \"cod_value_currency\": \"EUR\",\r\n      \"declared_value\": \"10.00\",\r\n      \"declared_value_currency\": \"EUR\",\r\n      \"dimension_height\": \"\",\r\n      \"dimension_length\": \"\",\r\n      \"dimension_width\": \"\",\r\n      \"dimension_unit\": \"cm\",\r\n      \"item_quantity\": \"1\",\r\n      \"order_number\": \"ITTEST2024012400109\",\r\n      \"shipper_reference_id\": \"ITTEST2024012400109\",\r\n      \"payment_method\": \"PP\",\r\n      \"number_of_package\": \"1\",\r\n      \"shipment_term\": \"DDP\",\r\n      \"insurance_value\": \"0.00\",\r\n      \"insurance_currency\": \"\",\r\n      \"insurance_type\": \"\",\r\n      \"shipping_fee\": \"0.00\",\r\n      \"cargo_value\": \"\",\r\n      \"package_type\":\"WPX\"\r\n    },\r\n         \"reference\":{\r\n                \"track_require\":false,\r\n                \"delivery_method\":\"to_door\",\r\n                \"user_uuid\":\"times-oms\",\r\n                \"provider_info\":{\"company_slug\":\"correos\",\"fixed_product_logo\":\" -\",\"company_account\":\"W8117207579JR\",\"cover_shipper_detail\":\"-\",\"use_shipper_address\":\"1\",\"is_asyn\":\"0\",\"open_hscode\":\"no\",\"label_type\":\"correos\",\"cod_producto\":\"S0148\",\"pudo_type\":\"ST\",\"labeling_code\":\"79JR\",\"company_token\":\"8,q4iXB(\"},\r\n                \"extra_response_info\":\"-\",\r\n                \"sort_code\":\"ESKP_TM_RTN\",\r\n                \"client_code\":\"861116\",\r\n                \"client_name\":\"PDD(HK) Radiance Sea Hong Kong Limited\",\r\n                \"ori_pickup_no\":\"\",\r\n                \"sale_platform\":\"KEC\",\r\n                \"service\":{}\r\n            },\r\n\r\n\r\n    \"items\": [\r\n{\"category_id\": \"\",\"category_name\":  \"\",\"brand\":  \"\",\"model\": \"\",\"description\": \"Daily Necessiarily\",\"name\": \"Daily Necessiarily\",\"description_origin_language\": \"\\u65E5\\u5E38\\u7528\\u54C1\",\"platform_id\": \"-\",\"platform_name\": \"-\",\"quantity\": \"1\",\"sku\": \"\",\"unit_price\": \"10.00\",\"currency\": \"EUR\",\"weight_unit\": \"kg\",\"single_weight\": \"\",\"dimension_height\": \"\",\"dimension_length\": \"\",\"dimension_width\": \"\",\"sale_platform_url\": \"\",\"dimension_unit\": \"cm\",\"manufacture_country_code\": \"\",\"manufacture_country_name\": \"\",\"original_tracking_number\": \"\",\"description_destination_language\": \"\",\"battery_type\": \"\",\"number_of_batteries\": \"\",\"platform_product_id\": \"\",\"hts_code\": \"\"}    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spider.kec-app.com/package/booking",
+					"protocol": "https",
+					"host": [
+						"spider",
+						"kec-app",
+						"com"
+					],
+					"path": [
+						"package",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ICBU订单下发",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookingOrderDTO\": \"{\\\"aliOrderNo\\\":\\\"ITTEST20231018001\\\",\\\"consignee\\\":{\\\"city\\\":\\\"Mueang Chiang Mai\\\",\\\"companyCN\\\":\\\"XIAO S8_005\\\",\\\"countryCode\\\":\\\"TH\\\",\\\"email\\\":\\\"1225379163@qq.com\\\",\\\"lastLevelAreaId\\\":\\\"920900230022000000\\\",\\\"mobile\\\":\\\"961474503\\\",\\\"name1\\\":\\\"XIAO S8_005\\\",\\\"name2\\\":\\\"XIAO S8_005\\\",\\\"postalCode\\\":\\\"50000\\\",\\\"province\\\":\\\"50\\\",\\\"stateRegionCode\\\":\\\"Chiang Mai\\\",\\\"street1\\\":\\\"120/3,  Mueang Sat, Nong Hoi \\\",\\\"telephone\\\":\\\"0961474503\\\"},\\\"consignor\\\":{\\\"city\\\":\\\"广州市\\\",\\\"companyCN\\\":\\\"惠州市惠城区金石缘石料行\\\",\\\"countryCode\\\":\\\"CN\\\",\\\"email\\\":\\\"Jinshiyuan1996@outlook.com\\\",\\\"lastLevelAreaId\\\":\\\"440103\\\",\\\"mobile\\\":\\\"18476893688\\\",\\\"name1\\\":\\\"王莹莹\\\",\\\"name2\\\":\\\"惠州市惠城区金石缘石料行\\\",\\\"postalCode\\\":\\\"510140\\\",\\\"stateRegionCode\\\":\\\"广东省\\\",\\\"street1\\\":\\\"荔湾广场南塔一楼FD52\\\",\\\"telephone\\\":\\\"86-020-81392115\\\"},\\\"customsDeclaration\\\":{\\\"currencyCode\\\":\\\"USD\\\",\\\"declarationType\\\":\\\"QT\\\",\\\"exportSupervisionMode\\\":\\\"0\\\",\\\"needTaxRebate\\\":false,\\\"totalAmount\\\":100.000},\\\"extInfo\\\":\\\"{\\\\\\\"placeOrderTime\\\\\\\":\\\\\\\"2023-10-18 18:35:33\\\\\\\",\\\\\\\"totalWeight\\\\\\\":\\\\\\\"18.6\\\\\\\",\\\\\\\"transactionId\\\\\\\":\\\\\\\"t8cKTgKVdkStHXzSVUNJy3wvLgheJ880\\\\\\\",\\\\\\\"solutionCode\\\\\\\":\\\\\\\"EX_ASP_KERRY_SOUTHEAST_ASIA\\\\\\\",\\\\\\\"tags\\\\\\\":\\\\\\\"[]\\\\\\\"}\\\",\\\"needInsurance\\\":false,\\\"needPickUp\\\":false,\\\"packages\\\":[{\\\"height\\\":35,\\\"length\\\":45,\\\"packageType\\\":\\\"BOX\\\",\\\"quantity\\\":1,\\\"unit\\\":\\\"CM\\\",\\\"weight\\\":18.6,\\\"weightUnit\\\":\\\"KG\\\",\\\"width\\\":35},{\\\"height\\\":35,\\\"length\\\":45,\\\"packageType\\\":\\\"BOX\\\",\\\"quantity\\\":1,\\\"unit\\\":\\\"CM\\\",\\\"weight\\\":18.6,\\\"weightUnit\\\":\\\"KG\\\",\\\"width\\\":35},{\\\"height\\\":35,\\\"length\\\":45,\\\"packageType\\\":\\\"BOX\\\",\\\"quantity\\\":1,\\\"unit\\\":\\\"CM\\\",\\\"weight\\\":18.6,\\\"weightUnit\\\":\\\"KG\\\",\\\"width\\\":35}],\\\"products\\\":[{\\\"declarationPrice\\\":1,\\\"hasBattery\\\":false,\\\"hsCode\\\":\\\"7116200000\\\",\\\"material\\\":\\\"Stone\\\",\\\"productName\\\":\\\"石头工艺品\\\",\\\"productNameEn\\\":\\\"Semi-Precious Stone Craft\\\",\\\"productQuantity\\\":100,\\\"productType\\\":[{\\\"carriable\\\":true,\\\"children\\\":[],\\\"code\\\":\\\"general\\\",\\\"name\\\":\\\"普货\\\"}],\\\"productUnit\\\":\\\"pcs\\\",\\\"purpose\\\":\\\"Decoration\\\"}],\\\"referenceNo\\\":\\\"901047237698\\\",\\\"serviceCode\\\":\\\"COCNWW888\\\",\\\"testOrder\\\":false,\\\"warehouse\\\":{\\\"code\\\":\\\"ASP_KERRY_SZ\\\",\\\"name\\\":\\\"嘉里东莞仓\\\"}}\",\r\n  \"sign\": \"302c021403f1e4e8dfd6ea395554b2266f7b567f80d847a202144a11fadf7d33fe4a46ed019ff763103ba0c9160f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tms-kec.kerry-ecommerce.com.cn/tms-saas-web/order/booking",
+					"protocol": "https",
+					"host": [
+						"tms-kec",
+						"kerry-ecommerce",
+						"com",
+						"cn"
+					],
+					"path": [
+						"tms-saas-web",
+						"order",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "菜鸟订单下发",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data_digest",
+							"value": "fOzYH+3L0d7LZya9mURGsQ==",
+							"type": "text"
+						},
+						{
+							"key": "msg_type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "logistics_interface",
+							"value": "{\n    \"bizType\":\"AE_4PL_STANDARD\",\n    \"channelCode\":\"CACNPTKPE\",\n    \"cloudPrintData\":\"{\\\"encryptedData\\\":\\\"AES:rU904rj6UH2oqfSUb43+Z+XlOkZaULeerkScS5xbmfjfOtjhyPghWJNstKdXcOx3hju/7mz/uTv2bhtgMa6wOW9PNZa8MfArAapK4xmFECGinG2oGmX+4TYzI1I3fg5153eXQj0/yecSagpiM2qv0nDeyd6s6RdDEuoO2dZHfx0TQrC65tnYFet0MCtMa8J/pldE1zUr6Ziui9IcCEnxS3V4ft5IWeH2yxaG2uE9wRKfDPNUIPda5OFT0EXGq8fc7XpdyQBISg7vy7VoxHyaZadbLhQ5LY6TqLn5Vf0G4rIdvCRDGS8+XnhUXJQxl/7uQK1/jx04bT5NLf7OhMxeA+oFnVCfSE2Au4A6bei8/rozqx0pjGYneFtWHQJsC2aBnxwAFldqNCCzxO+l0TFHEFGYIgFBAa+/wx6squ5ohKei4L8pkQNBtKgD7O4Wf4JDMvIZswXL8M04lNQTSh7AJgJTvV+SjagN50T5ckVEHcF4CM2YNnWfRaBgONx2DZgn/EONiyuEVMDaGkgoMRoXaW2BNX0TQWBj4riM4KEJPe7MGXS+luc1qQ5FVdISOMtxoCCYBDr1slTv389ARxJzwuIv8Cc5817sq4A5Ie8oyRWWuxepwtRGWKl9HOUFWbdEfgbplTBvCstSgeN63Pdg772kz2IU+zXQeVdBfd6mE/dR1A1J7kM6nmDj6iP8A/oEmJ3urUMcGDUKbReaa33eKxTlJ4jQaqwxwO+pBQLrLinSrrN3GcfW1iBskVLO3fFmiEWpkcfDWS+AVvOTL9U7PdMhowDG2iFDkTs33I3L6FDFs7AFsYu9Z5Mdh3wtPg+aCxnrB4r+ECHJRL5D2cXhKEBQdw8Yh3WkOWv0ipafwgJPq4oEtAS6S2ekctR/4MpFIU6yngx+x2xIwj6/KE6MllASoXCqhJGCZieWNh7HTR1O8auBppxQ3JX8Zx9NPwUnro9qAt57ZILzExAJ622Pgsyzxg3EU8PXLECYHe+G6iF514SjLFf7weDdkaHc1Wv/P1n067gUzJLyjvGrYUt40RKoDqGv7tXpRvfRUaMZNIfg5ukWT+MOS2WCej2TrNSmzXe0CMG/PDkHr444JaddoK7OocqhpXHs4HFFfoGjGwfcDBAKsgsGMCqlhhnYEvhNvwvnSyy0GM71eXWVh8wybJiH21ZDbPT+6cDawcxn/+D8XfRuzBgXy63FTnB+c3k8PJIkXEl3ppCYpWGzabh5N4NE7H2l8kNpCLzKLbQ2u/HzGw9HdIKaHlbz4ND9Kgm+toHl5ddcPgj5tNbisz66L4ek7fveiD9ElmCGodFQMcqw8YOH3Dw/0WZZUAL+XJThXAobwEZwXpFyUgGko9oVpsrpF7RQ8Pi4vBMQ5X8zgNIGtNvIuOUzkaIbCEJZqg5XQNvuN1D0TJf2NRMiutfbYEDfe1WCYwmLmAYib8Ee3iLR+cKd4pRO8OoL2+ZcxCQIGVyqFbHkzn8DWE/scPhvPiCnw73uG6qp/yZ111sLlR/chrVGasJV7v9rqwjKfNQphuKw8r9Bgtwz7a71mizOY5xOTHImVE+Z3A3sFY6ndf0tckSuco1JxayS40EZcxlj7LNK0vLfbCgGH33WmqcEGiqkbTIJDx1lpdTyh6rTIQ/4h27pNXDE/2kS9cWiF9+I8U32IFEmmrVGfynEK7b9bVoxP+O/drspCvKj6nIybVRLGbTP98HLWI0YbMkdE0X+8hOF0Xp1VrpJI9omK75Oby+aZTsiMeiycRY32LURDx/hMUvlMcLGQOqvz2HAAxbxrz4LZh2dKMLTxn6esyHmGMgKBAOlFiaS7OtsplKsMDOcAShvUZ2X6nnQYp1AT9PT//YMODs4f9jFs+OPgpTbnE0WxapjMyQecmIaAuvWGUj8dTOowXfpzrEfkD8BDjHAcuRUZ5CrN0fhyyrDSPVvuZrLkMUc2UY1cHJER/xHQA/ZWt6qgijY3PzZzvHQBj3pA+4rSVSSByGxZ4DN3hT+zjoH61ACksfzjvYwLNAvavpTqKS3mrBNUgOG0fnIK9d3FLDSmnM1y+lfs8OAG2fVM6WEyAkfIauRyhvOL3OUIIYGLbap3i72gwcvG/gpC08gg9hYPPIv1qYc8iVw8vU2tv7oIXHI9NrPeHAn8JJ3qc9h02Ez1xDJMgqkLM3ASodK1TcjhFR/6nhQmvnTXlPTvW8bDNbEIPrAyFYlofIpq1c5OM/IbvDGmhdUXz5/26fDTD6EFEf1WI/gcxzy9Yj2qe1ftahzbIFVYKklmAUXjIvOfZhs3tpcm0DXAPoyoNp7TxJoQFuxQXWQejaAgaVFInEqlZxDM2DzGwOvAwe8I+zyvXxA2fz+SmvfPNcCU0C5cxbOP3jcC0O0O6iXgoA7nnOjWrbnVgu2ckoQexwcmGv6IVqrB78Un8imNS+DfQW+alVzMmcNUVRVfNcqv4mddxFRvjLFSGQJ/8PICbir0gA6PTzkod8pmVNmsst84q0S2aMawsa3/gtKczNHvJqqb0dgXbwbfFRalhGlXuDHWZ5Z33JaCHSNhXL+g9BiFuli8me94p1glFkq1noL+jsQv2E9DOMKevUTMYYDz+irTMNWp63iLlfedt7MhL01xXdwhNPuQDTilBqm6gWgPeJby/V/dZqfMfc/wA4Z7l9ODExqzKWWwj3Kz+cIBZgJsVXNz+ow9xPMIpZ3OFik1dBy2a+V6B2jEtntEtWVb2G2sJ+NvkfNbVIYh4trJal04yBpnPDmhbVciQajhMvfIwOy/vHJ2kVh0bzZyhC7GfdY+5o2zlqs2bkajxoB/INZtwkZH3w5L1b0XszlUqvlF+7DiydKjR5ESL8Wmziqd8TQxZJaPNmyU4YWc7d8nitVANm7AWeQg0ZvE7yf97hMv3I01Er7ECHp/efyuEySprd86IQ20yiXpLlN0knFQVfSLGdz\\\",\\\"signature\\\":\\\"MD:nEOB5skBK6E2QkCTZ3HAjA==\\\",\\\"templateURL\\\":\\\"http://cloudprint.cainiao.com/cloudprint/template/getStandardTemplate.json?template_id=364421\\\",\\\"ver\\\":\\\"\\\"}\",\n    \"currentCPResCode\":\"DISTRIBUTOR_30310151\",\n    \"customs\":{\n        \"declarePriceTotal\":210\n    },\n    \"insuranceInfo\":{\n\n    },\n    \"interCPResCode\":\"DISTRIBUTOR_30310151\",\n    \"laneCode\":\"L-AE_STANDARD_SINOTRANS_CORREIOEXPRESS\",\n    \"logisticsOrderCode\":\"LP00461123412341732\",\n    \"mailBoxItem\":\"N\",\n    \"nextCPResCode\":\"\",\n    \"outboundTime\":\"2021-08-25 19:19:57\",\n    \"parcel\":{\n        \"bigBagID\":\"KP0000043002\",\n        \"bigBagWeight\":4450,\n        \"bigBagWeightUnit\":\"g\",\n        \"goodsList\":[\n            {\n                \"categoryCNName\":\"面部美容\",\n                \"categoryFeature\":\"00\",\n                \"categoryID\":\"201308301\",\n                \"categoryName\":\"Face Skin Care Tools (None Electric)\",\n                \"cnName\":\"面部美容\",\n                \"declarePrice\":210,\n                \"itemPrice\":0,\n                \"name\":\"Facial care\",\n                \"price\":210,\n                \"priceCurrency\":\"USD\",\n                \"priceUnit\":\"CENT\",\n                \"productCategory\":\"Beauty & Health|Skin Care Tool|Facial Care Tool|Face Skin Care Tools (None Electric)\",\n                \"productID\":\"1005001361521467\",\n                \"quantity\":5,\n                \"suggestedCNName\":\"绷带\",\n                \"suggestedENName\":\"belt\",\n                \"url\":\"http://www.aliexpress.com/item//1005001361521467.html\",\n                \"weight\":29,\n                \"weightUnit\":\"g\"\n            }\n        ],\n        \"parcelQuantity\":38,\n        \"price\":210,\n        \"priceCurrency\":\"USD\",\n        \"priceUnit\":\"CENT\",\n        \"suggestedWeight\":29,\n        \"weight\":119,\n        \"weightUnit\":\"g\"\n    },\n    \"preCPResCode\":\"TRUNK_30321644\",\n    \"receiver\":{\n        \"address\":{\n            \"city\":\"povoa de santo adriao\",\n            \"country\":\"PT\",\n            \"detailAddress\":\"loja n 1 praceta Florbela espanca\",\n            \"district\":\"\",\n            \"province\":\"lisboa\"\n        },\n        \"areaId\":\"168\",\n        \"email\":\"  facebook_103398  281931395@aliexpress.com  \",\n        \"imID\":\"********\",\n        \"mobile\":\"925224110\",\n        \"name\":\"Angelica Santos\",\n        \"zipCode\":\"2620-141\"\n    },\n    \"returnParcel\":{\n        \"address\":{\n            \"city\":\"东莞市\",\n            \"country\":\"中国\",\n            \"detailAddress\":\"********\",\n            \"district\":\"企石镇\",\n            \"province\":\"广东省\"\n        },\n        \"email\":\"********\",\n        \"imID\":\"********\",\n        \"name\":\"********\",\n        \"phone\":\"********\",\n        \"undeliverableOption\":\"1\",\n        \"zipCode\":\"523000\"\n    },\n    \"routingTrial\":1,\n    \"sender\":{\n        \"address\":{\n            \"city\":\"dong guan shi\",\n            \"country\":\"China\",\n            \"detailAddress\":\"~~~Xihengyi Road, Kapok Industrial Zone, Dongshan Village\",\n            \"district\":\"qi shi zhen\",\n            \"province\":\"guang dong sheng\"\n        },\n        \"imID\":\"********\",\n        \"name\":\"NongXiansheng\",\n        \"phone\":\"19148421258\",\n        \"storeName\":\"TP Makeup Store\",\n        \"zipCode\":\"523000\",\n\"email\":\"  facebook_103398  2819313951@aliexpr ess.com  \",\n    },\n    \"trackingNumber\":\"635902201812126123206\",\n    \"trade\":{\n        \"price\":989,\n        \"priceCurrency\":\"USD\",\n        \"priceUnit\":\"CENT\",\n        \"purchaseTime\":1629730369000,\n        \"tradeID\":\"8137337488363501\"\n    }\n}",
+							"type": "text"
+						},
+						{
+							"key": "partner_code",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "from_code",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "msg_id",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{TMS Url}}/tms-saas-web/kparcel/cainiao/order?channel_code=CACNPTKPE",
+					"host": [
+						"{{TMS Url}}"
+					],
+					"path": [
+						"tms-saas-web",
+						"kparcel",
+						"cainiao",
+						"order"
+					],
+					"query": [
+						{
+							"key": "channel_code",
+							"value": "CACNPTKPE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "运单信息校验",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{KEC-生产Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"brand\": \"GLORIOUS\",\r\n      \"category\": \"Keyboard\",\r\n      \"country_of_origin\": \"CN\",\r\n      \"currency\": \"USD\",\r\n      \"description\": \"Glorious Numpad Prebuilt - Black Slate\",\r\n      \"description_destination_language\": \"Glorious Numpad Prebuilt - Black Slate\",\r\n      \"description_origin_language\": \"電腦鍵盤\",\r\n      \"hs_code\": \"8471602000\",\r\n      \"quantity\": 1,\r\n      \"sale_platform_url\": \"12345\",\r\n      \"sku\": \"GLO-GMMK-NP-FOX-B\",\r\n      \"unit_price\": 129.99,\r\n      \"unit_weight\": 1000\r\n    }\r\n  ],\r\n  \"package\": {\r\n    \"actual_weight\": 1000,\r\n    \"declared_value\": 129.99,\r\n    \"declared_value_currency\": \"USD\",\r\n    \"height\": \"5\",\r\n    \"length\": \"19\",\r\n    \"number_of_package\": 1,\r\n    \"payment_method\": \"PP\",\r\n    \"reference_number\": \"00000051901201\",\r\n    \"shipment_term\": \"DDU\",\r\n    \"shipment_type\": \"General\",\r\n    \"shipping_fee\": 0,\r\n    \"width\": \"16\"\r\n  },\r\n  \"receiver\": {\r\n    \"address\": \"12920 Meadow Creek Lane APT 204 Pineville\",\r\n    \"city\": \"Pineville\",\r\n    \"company\": \"Zachary Aranyi\",\r\n    \"country_code\": \"US\",\r\n    \"email\": \"zacharyaranyi@gmail.com\",\r\n    \"id_number\": \"\",\r\n    \"name\": \"Zachary Aranyi\",\r\n    \"phone\": \"(704) 302-4507\",\r\n    \"post_code\": \"28134\",\r\n    \"province\": \"North Carolina\"\r\n  },\r\n  \"sale_platform\": \"Normal\",\r\n  \"sender\": {\r\n    \"address\": \"Unit G02, G/F, Kerry Warehouse Sheung Shui, 2 San Po Street, Sheung Shui, N.T.\",\r\n    \"city\": \"HK\",\r\n    \"company\": \"Glorious\",\r\n    \"country_code\": \"HK\",\r\n    \"district\": \"HK\",\r\n    \"id_number\": \"Sender Id Number\",\r\n    \"ioss_number\": \"1234\",\r\n    \"name\": \"Glorious\",\r\n    \"phone\": \"+85251010328\",\r\n    \"post_code\": \"00000\",\r\n    \"province\": \"Sender Province\"\r\n  },\r\n  \"service\": {\r\n    \"channel_code\": \"KEC-TESTFD\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{KEC-生产}}/pos-web/shipment/validation",
+					"host": [
+						"{{KEC-生产}}"
+					],
+					"path": [
+						"pos-web",
+						"shipment",
+						"validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "产品码列表获取接口(内部全量)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var moment = require(\"moment\");\r",
+							"var now = moment().format(\"YYYY-MM-DD HH:mm:ss\");\r",
+							"pm.environment.set(\"now\", now);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "m78xtb00-tc69-1xkv-a8mf-53biwyzrggj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{TMS Url}}/tms-saas-web/internal_api/channel_code/get",
+					"host": [
+						"{{TMS Url}}"
+					],
+					"path": [
+						"tms-saas-web",
+						"internal_api",
+						"channel_code",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "上架接口",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "e0J7AjwuDEsNb2sJxTgEZq4cQPXvlyMyL7v8nk4m3vfmgrJk1KKuDl91zfKt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"put_away_at\": \"2023-01-09 17:45:19\",\r\n  \"tracking_number\": \"TESTBACK6294694951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.119.120.7:8000/pos-web/order/put_away",
+					"protocol": "http",
+					"host": [
+						"47",
+						"119",
+						"120",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"pos-web",
+						"order",
+						"put_away"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建订单出货信息 Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "85d7e37b-8736-4185-9967-8ba3f0457a74",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mawb\":\"923-999666\",\r\n    \"number_of_bag\":3,\r\n    \"bag_list\":[\r\n        {\r\n            \"bag_id\":\"BOXTEST2023090601\",\r\n            \"bag_weight\":15000,\r\n            \"bag_length\":52,\r\n            \"bag_width\":55,\r\n            \"bag_height\":45,\r\n            \"number_of_package\":3,\r\n            \"package_list\":[\r\n                {\r\n                    \"reference_number\":\"ITTEST20230906184646137\",\r\n                    \"tracking_number\":\"KE0000206387801\",\r\n                    \"actual_weight\":\"230\"\r\n                },\r\n                {\r\n                    \"reference_number\":\"ITTEST2023090618464890\",\r\n                    \"tracking_number\":\"KE0000206387901\",\r\n                    \"actual_weight\":\"230\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pos-kec.kerry-ecommerce.com.cn/pos-web/order/create_bag",
+					"protocol": "https",
+					"host": [
+						"pos-kec",
+						"kerry-ecommerce",
+						"com",
+						"cn"
+					],
+					"path": [
+						"pos-web",
+						"order",
+						"create_bag"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

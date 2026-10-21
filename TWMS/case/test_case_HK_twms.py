@@ -23,7 +23,7 @@ from TWMS.public.TWMS_Select_Order_id import select_order_id
 
 import unittest
 import os
-os.environ["NO_PROXY"] = "stg-twms.kec-app.com"
+os.environ["NO_PROXY"] = "twms-hk.kec-app.com"
 
 class MyTestCase(unittest.TestCase):
 

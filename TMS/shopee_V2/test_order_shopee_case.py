@@ -19,13 +19,14 @@ class MyTestCase(unittest.TestCase):
     def test_case_order_shopee_create(self):
         box_list = []
         for i in range(1):
-            time.sleep(1)
+            # time.sleep(1)
             box_da = create_BOX()#大包下单
             create_order_shopee(box_da["carrier_tn"],box_da["ilh_shopee_no"],box_da["parcel_list"])
             big_bag_num = box_da["carrier_tn"]
             box_list.append(big_bag_num)
-            # big_bag_num = "TWYW20230714110302"
-            time.sleep(100)
+            # big_bag_num = "TWSPKN26060300001"
+            box_list.append(big_bag_num)
+            # time.sleep(60)
         time_start = time.time()
         for i in box_list:
             big_bag_inbound(i)
@@ -37,10 +38,10 @@ class MyTestCase(unittest.TestCase):
         time.sleep(10)
         shipmentbatchId = shipment_scan(big_bag_num,shipment_num)
         shipment_close(shipmentbatchId,shipment_num)
-        mawb_data = create()
-        time.sleep(10)
-        scan_box(big_bag_num,mawb_data["mawb"],mawb_data["id"])
-        close_mawb(mawb_data["mawb"],mawb_data["id"])
+        # mawb_data = create()
+        # time.sleep(10)
+        # scan_box(big_bag_num,mawb_data["mawb"],mawb_data["id"])
+        # close_mawb(mawb_data["mawb"],mawb_data["id"])
 
 
 if __name__ == '__main__':

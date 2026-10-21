@@ -17,7 +17,7 @@ def foms_login(properties):
       'Content-Type': 'application/json'
     }
 
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data=json.dumps(payload), verify=False, proxies={"http": None, "https": None})
     if "200" in response.text:
         return json.loads(response.text)['data']['token']
     else:

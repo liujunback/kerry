@@ -1,0 +1,29 @@
+[mysqld]
+# Character set
+character-set-server=utf8mb4
+collation-server=utf8mb4_unicode_ci
+
+# Performance - 优化以支持更高并发
+innodb_buffer_pool_size=512M  # 从256M提升到512M，提升缓存能力
+innodb_log_file_size=128M     # 从64M提升到128M，减少日志刷新频率
+innodb_flush_log_at_trx_commit=2
+innodb_flush_method=O_DIRECT
+
+# Connections - 提升连接数以支持更多并发
+max_connections=1000          # 从500提升到1000，支持更多应用实例
+max_connect_errors=100
+
+# Timeouts
+wait_timeout=28800
+interactive_timeout=28800
+
+# Logging
+slow_query_log=1
+slow_query_log_file=/var/lib/mysql/slow.log
+long_query_time=2
+
+[client]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4

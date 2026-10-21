@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 
-wb = load_workbook(u"../其他/test12.xlsx")
+wb = load_workbook(u"原始单号.csv")
 sheetnames = wb.sheetnames # 获得表单名字
 x = "TESTIT20230214001-01"
 sheet = wb[sheetnames[0]]

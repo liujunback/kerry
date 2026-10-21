@@ -1,0 +1,47 @@
+module: skus
+schema: createSkuSchema
+
+fields:
+  skuCode:
+    type: string
+    required: true
+    min_length: 2
+    max_length: 64
+
+  skuName:
+    type: string
+    required: true
+    min_length: 1
+    max_length: 256
+
+  clientId:
+    ref: uuid
+
+  categoryId:
+    type: string
+    required: false
+    format: uuid
+
+  unit:
+    type: string
+    required: true
+    max_length: 32
+
+  isBatchManaged:
+    ref: bool_flag
+
+  isSerialManaged:
+    ref: bool_flag
+
+  isExpiryManaged:
+    ref: bool_flag
+
+  storageCondition:
+    type: enum
+    required: true
+    enum_values:
+      - NORMAL
+      - COLD
+      - FROZEN
+      - HAZMAT
+      - CONTROLLED

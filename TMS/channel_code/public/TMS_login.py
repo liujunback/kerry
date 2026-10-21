@@ -14,3 +14,4 @@ def login():
             print(response.text)
     except json.decoder.JSONDecodeError:
         print("系统正在升级")
+login()

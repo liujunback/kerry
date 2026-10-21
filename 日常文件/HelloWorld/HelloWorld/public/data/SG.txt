@@ -1,0 +1,60 @@
+{
+    "service":{
+        "channel_code":"CACNSGG00"
+    },
+    "package":{
+        "reference_number":"VWKF2FUBIAU001",
+        "declared_value":"13.0",
+        "declared_value_currency":"SGD",
+        "length":59,
+        "width":38,
+        "height":11,
+        "actual_weight":"3050.0",
+        "payment_method":"PP"
+    },
+    "sender":{
+        "name":"VIWO",
+        "company":"VIWO",
+        "address":"VANKE ONLINE 113, WUHE ROAD 2 BANTIAN LONGGANG",
+        "district":"FuTian",
+        "city":"Shenzhen",
+        "province":"Guangdong",
+        "post_code":"518000",
+        "country_code":"CN",
+        "phone":"0755-28993059",
+        "email":null,
+        "id_number":"12345"
+    },
+    "receiver":{
+        "name":"marcus low",
+        "company":null,
+        "address":"1003 LOWER DELTA ROAD, #03-03",
+        "city":"SINGAPORE",
+        "province":"SINGAPORE",
+        "post_code":"099308",
+        "country_code":"SG",
+        "phone":"96948569",
+        "email":"liuxuekai@gmail.com",
+        "id_number":"12345"
+    },
+    "items":[
+        {
+            "sku":"767571220380",
+            "description":"BOARD GAME standard",
+            "description_origin_language":"桌游产品标准版",
+            "unit_price":"8.0",
+            "currency":"SGD",
+            "quantity":1,
+            "hs_code":null
+        },
+        {
+            "sku":"767571220403",
+            "description":"BOARD GAME cushion",
+            "description_origin_language":"桌游产品软垫",
+            "unit_price":"5.0",
+            "currency":"SGD",
+            "quantity":1,
+            "hs_code":null
+        }
+    ]
+}

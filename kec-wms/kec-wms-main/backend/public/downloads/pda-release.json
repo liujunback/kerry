@@ -1,0 +1,14 @@
+{
+  "versionCode": 3,
+  "versionName": "1.0.2",
+  "minSupportedVersionCode": 1,
+  "forceUpdate": false,
+  "downloadUrl": "/pda-download",
+  "releaseNotes": [
+    "修复 ASN 签收成功后重复扫描同一 ASN 时单号被清空的问题。",
+    "退件签收、清点、上架同步显示当前仓库。"
+  ],
+  "fileSize": 12853022,
+  "fileSha256": "41164de337f74142da2d36cf7804ef64c579bd00b9b858daed63a90676dffe7d",
+  "publishedAt": "2026-05-08T18:19:53+08:00"
+}

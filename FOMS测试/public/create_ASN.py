@@ -24,7 +24,7 @@ def create_ASN(sku_number,properties,token):
       'Authorization': 'Bearer ' + token,
       'Content-Type': 'application/json'
     }
-    response = requests.request("POST", url, headers=headers, data= json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data= json.dumps(payload), verify=False, proxies={"http": None, "https": None})
     if  "Created" in response.text:
         print("创建ASN成功：" + asn_number)
         return asn_number

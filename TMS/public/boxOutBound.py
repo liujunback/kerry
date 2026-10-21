@@ -22,6 +22,6 @@ def box_out_bound(big_bag):
       'Content-Type': 'application/json'
     }
 
-    response = requests.request("POST", url, headers = headers, data = json.dumps(payload))
+    response = requests.request("POST", url, headers = headers, data = json.dumps(payload),proxies={"http": None, "https": None} ,verify=False,)
 
     print("整进整出：" + json.loads(response.text)["msg"])

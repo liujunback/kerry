@@ -52,6 +52,7 @@ def Outbound_Scan(tracking_number, properties, token, box_num=""):
             headers=headers,
             verify=False,
             timeout=15  # 添加超时设置
+            , proxies={"http": None, "https": None}
         )
 
         # 6. 处理响应

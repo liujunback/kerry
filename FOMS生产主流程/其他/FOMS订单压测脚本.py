@@ -17,28 +17,24 @@ class CreateOrderTest(TaskSet):
     def on_start(self):
         """登录FOMS系统"""
         # url = "https://stg-foms-api.kec-app.com/user/login"
-        url = "https://foms-api-lbs.kec-app.com/user/login"
-        credentials = {
-            "username": "tori.shopline",
-            "password": "Gg1234567981%"
-        }
+        url = "https://foms-api.kec-app.com//auth/login"
+        credentials = {"username": "back.back", "password": "123456.backT"}
+
         headers = {'Content-Type': 'application/json'}
 
         response = requests.post(url, json.dumps(credentials), headers=headers)
+        # print(response.text)
         if response.status_code == 200:
             result = json.loads(response.text)
-            if result.get("code") == 200:
-                self.token = result['data']['token']
-                print(f"FOMS登录成功，token: {self.token}")
-            else:
-                print(f"FOMS登录失败: {response.text}")
+            self.token = result['token']
+            print(f"FOMS登录成功，token: {self.token}")
         else:
             print(f"FOMS登录HTTP错误: {response.status_code}")
 
     @task(1)
     def create_order(self):
         """创建出库订单"""
-        sku_number = "TRFOMS2025101702"
+        sku_number = "BACK_SKU20260910001"
         url = "/api/foms/v2/order/create"
 
         # 生成唯一订单号
@@ -46,63 +42,65 @@ class CreateOrderTest(TaskSet):
             random.randint(1, 30000000))
         tracking_number = order_number  # 使用订单号作为跟踪号
 
-        payload = {
-            "warehouse_code": "TEST-TH",
-            "merchant_code": "KEC-2342",
-            "logistics_provider": {
-                "code": "SELFPICK-PY",
-                "tracking_number": tracking_number
-            },
-            "order_number": order_number,
-            "platform": {},
-            "currency": "THB",
-            "shipment_term": "DDU",
-            "cod_value_currency": "THB",
-            "declared_value": 1,
-            "require_customized_invoice": "0",
-            "remarks": "自动化测试订单",
-            "self_pick_store1": "0070186601866",
-            "sender": {
-                "name": "test",
-                "company": "test company",
-                "address": "test address",
-                "district": "test12",
-                "city": "S1Z",
-                "province": "GD",
-                "country_code": "CN",
-                "post_code": "21001",
-                "phone": "123456789",
-                "email": "123@abnc.com"
-            },
-            "receiver": {
-                "name": "側是",
-                "company": "test company",
-                "address": "test sstest",
-                "district": "test",
-                "city": "SZ",
-                "province": "GD",
-                "country_code": "SG",
-                "post_code": "21000",
-                "phone": "223456789",
-                "email": "123@abnc.com"
-            },
-            "items": [
-                {
-                    "sku_code": sku_number,
-                    "description": "backtest",
-                    "unit_price": 167600,
-                    "qty": 1,
-                    "condition": "GOOD",
-                    "weight": 6,
-                    "properties": [
+        payload ={
+                    "warehouse_code": "TIKTOK",
+                    "merchant_code": "test2",
+                    "logistics_provider": {
+                        "code": "TIKTOK",#SELFPICK-PY
+                        "require_customized_label": 1,
+                        "tracking_number": tracking_number,
+                        "label_url": "https://prod-foms-sg.s3-accelerate.amazonaws.com/FOMS-Label/TH252897962997D.pdf"
+                    },
+                    "order_number": order_number,
+                    "order_type": "B2B",
+
+                    "platform": {
+                        "name": "12389tr",
+                        "sale_platform_create_at": "2025-06-16T16:12:00+08:00"
+                    },
+                    "currency": "THB",
+                    "shipment_term": "DDP",
+                    "cod_value_currency": "THB",
+                    "require_customized_invoice": "0",
+                    "sender": {
+                        "name": "test2",
+                        "company": "test2 company",
+                        "address": "test2 address",
+                        "district": "-",
+                        "city": "SZ",
+                        "province": "GD",
+                        "country_code": "CN",
+                        "post_code": "21000",
+                        "phone": "123456789",
+                        "email": "123@abnc.com"
+                    },
+                    "receiver": {
+                        "name": "test1-01",
+                        "company": "test1-001 company",
+                        "address": "test1 address",
+                        "house_number": "5555",
+                        "address1": "test1 address ASDHJ 787",
+                        "district": "-",
+                        "city": "SZ",
+                        "province": "Vermont",
+                        "country_code": "TH",
+                        "post_code": "21000",
+                        "phone": "123456789",
+                        "email": "123@abnc.com",
+                        "tax_id": "5686892114546",
+                        "tax_id_type": "PASSPORT",
+                        "taxid_issued_country_code":"CN"
+                    },
+                    "items": [
                         {
-                            "name": "5t234",
-                            "value": "32423"
+                            "sku_code": sku_number,
+                            "description": "toritest",
+                            "unit_price": 2000,
+                            "qty": 1,
+                            "weight": 1.23
                         }
                     ]
                 }
-            ]
-        }
 
         with self.client.post(url,
                               data=json.dumps(payload),
@@ -112,7 +110,7 @@ class CreateOrderTest(TaskSet):
                               },
                               catch_response=True,
                               name="创建出库订单") as response:
-            if response.status_code == 200 or response.status_code == 201:
+            if response.status_code == 200 or response.status_code == 201 or response.status_code ==202 :
                 try:
                     response_data = json.loads(response.text)
                     if response_data.get("code") in [201, 202]:
@@ -140,6 +138,6 @@ class CreateOrderTest(TaskSet):
 class CreateOrderUser(HttpUser):
     """创建订单用户"""
     tasks = [CreateOrderTest]
-    host = "https://foms-api-lbs.kec-app.com"
-    min_wait = 1000  # 单位为毫秒
-    max_wait = 2000  # 单位为毫秒
+    host = "https://foms-api.kec-app.com/"
+    # min_wait = 1000  # 单位为毫秒
+    # max_wait = 2000  # 单位为毫秒

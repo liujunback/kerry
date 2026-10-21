@@ -28,5 +28,5 @@ def big_bag_inbound(big_bag):
       'Content-Type': 'application/json'
     }
     time_start = time.time()
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+    response = requests.request("POST", url, headers=headers, data=json.dumps(payload),proxies={"http": None, "https": None} ,verify=False,)
     print(json.loads(response.text)["msg"])

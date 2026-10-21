@@ -1,0 +1,42 @@
+rules:
+  - id: STR-REQ-NULL
+    category: string_required
+    title: 必填字符串传 null
+    input: null
+    expected: fail
+
+  - id: STR-REQ-EMPTY
+    category: string_required
+    title: 必填字符串传空串
+    input: ""
+    expected: fail
+
+  - id: STR-LEN-MIN-MINUS1
+    category: string_length
+    title: 小于最小长度 1
+    generator: min_length_minus_one
+    expected: fail
+
+  - id: STR-LEN-MIN
+    category: string_length
+    title: 等于最小长度
+    generator: min_length_exact
+    expected: pass
+
+  - id: STR-LEN-MAX
+    category: string_length
+    title: 等于最大长度
+    generator: max_length_exact
+    expected: pass
+
+  - id: STR-LEN-MAX-PLUS1
+    category: string_length
+    title: 超过最大长度 1
+    generator: max_length_plus_one
+    expected: fail
+
+  - id: STR-CHARSET-INVALID
+    category: string_charset
+    title: 非法字符集
+    generator: invalid_charset
+    expected: fail

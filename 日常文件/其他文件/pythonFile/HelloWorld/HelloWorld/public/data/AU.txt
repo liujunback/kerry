@@ -1,0 +1,44 @@
+{
+    "items":[
+        {
+            "country_of_origin":"CN",
+            "currency":"USD",
+            "description":"Shoes",
+            "hs_code":"6403990090",
+            "quantity":1,
+            "sku":"S76687330000B",
+            "unit_price":9.97
+        }
+    ],
+    "package":{
+        "actual_weight":750,
+        "declared_value":9.97,
+        "declared_value_currency":"USD",
+        "payment_method":"PP",
+        "reference_number":"56129838_amb"
+    },
+    "receiver":{
+        "address":"Hafnarbraut 42 ",
+        "city":"Sydney",
+        "company":"test nl",
+        "country_code":"AU",
+        "name":"test nl",
+        "phone":"00611234234",
+        "post_code":"2001",
+        "province":"New South Wales"
+    },
+    "sale_platform":"LITB",
+    "sender":{
+        "address":"No.60 Xinyuan 2nd Rd, Songbailang Park,Dalang Town ",
+        "city":"DONGGUAN",
+        "company":"LIGHT IN THE BOX CO.LTD",
+        "country_code":"CN",
+        "name":"XI LU",
+        "phone":"86755-33263898",
+        "post_code":"523782",
+        "province":"GD"
+    },
+    "service":{
+        "channel_code":"CACNAU888"
+    }
+}

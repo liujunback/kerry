@@ -1,0 +1,17 @@
+{
+  "name": "kec-wms-tooling",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "precommit": "lint-staged",
+    "check:encoding": "node scripts/check-text-encoding.mjs"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2"
+  },
+  "lint-staged": {
+    "*": "node scripts/check-text-encoding.mjs",
+    "backend/**/*.{js,jsx,ts,tsx}": "node scripts/run-backend-eslint-staged.mjs"
+  }
+}
